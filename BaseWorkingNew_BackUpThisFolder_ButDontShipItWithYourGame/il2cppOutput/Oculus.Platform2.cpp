@@ -15579,7 +15579,7 @@ IL_0066_1:
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_17 = V_0;
 				NullCheck(L_17);
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18;
-				L_18 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(40 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_17);
+				L_18 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(42 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_17);
 				V_2 = L_18;
 				goto IL_0079;
 			}

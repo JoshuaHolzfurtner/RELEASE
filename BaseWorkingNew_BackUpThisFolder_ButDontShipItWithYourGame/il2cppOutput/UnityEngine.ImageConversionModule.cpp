@@ -99,6 +99,25 @@ struct IntPtr_t_StaticFields
 	intptr_t ___Zero_1;
 };
 
+// System.UInt32
+struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
+{
+	// System.UInt32 System.UInt32::m_value
+	uint32_t ___m_value_0;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
@@ -259,6 +278,26 @@ IL_000c:
 		bool L_3 = V_0;
 		return L_3;
 	}
+}
+// System.Void* UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToPNG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* ImageConversion_UnsafeEncodeNativeArrayToPNG_m5ADDC56B7A9E423C4D99EBC74803A352DF263537 (void* ___array0, int32_t* ___sizeInBytes1, int32_t ___format2, uint32_t ___width3, uint32_t ___height4, uint32_t ___rowBytes5, const RuntimeMethod* method) 
+{
+	typedef void* (*ImageConversion_UnsafeEncodeNativeArrayToPNG_m5ADDC56B7A9E423C4D99EBC74803A352DF263537_ftn) (void*, int32_t*, int32_t, uint32_t, uint32_t, uint32_t);
+	static ImageConversion_UnsafeEncodeNativeArrayToPNG_m5ADDC56B7A9E423C4D99EBC74803A352DF263537_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ImageConversion_UnsafeEncodeNativeArrayToPNG_m5ADDC56B7A9E423C4D99EBC74803A352DF263537_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToPNG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32)");
+	void* icallRetVal = _il2cpp_icall_func(___array0, ___sizeInBytes1, ___format2, ___width3, ___height4, ___rowBytes5);
+	return icallRetVal;
+}
+// System.Void* UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToJPG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* ImageConversion_UnsafeEncodeNativeArrayToJPG_m19AB03A1F3E5019BEDA20CC0D3A15A760932E53D (void* ___array0, int32_t* ___sizeInBytes1, int32_t ___format2, uint32_t ___width3, uint32_t ___height4, uint32_t ___rowBytes5, int32_t ___quality6, const RuntimeMethod* method) 
+{
+	typedef void* (*ImageConversion_UnsafeEncodeNativeArrayToJPG_m19AB03A1F3E5019BEDA20CC0D3A15A760932E53D_ftn) (void*, int32_t*, int32_t, uint32_t, uint32_t, uint32_t, int32_t);
+	static ImageConversion_UnsafeEncodeNativeArrayToJPG_m19AB03A1F3E5019BEDA20CC0D3A15A760932E53D_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ImageConversion_UnsafeEncodeNativeArrayToJPG_m19AB03A1F3E5019BEDA20CC0D3A15A760932E53D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToJPG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32,System.Int32)");
+	void* icallRetVal = _il2cpp_icall_func(___array0, ___sizeInBytes1, ___format2, ___width3, ___height4, ___rowBytes5, ___quality6);
+	return icallRetVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

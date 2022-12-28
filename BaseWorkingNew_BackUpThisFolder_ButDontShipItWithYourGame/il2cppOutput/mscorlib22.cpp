@@ -2368,8 +2368,12 @@ struct EventAttribute_t9015B21A2C903C10E9747B2A17BCA1EE47E5F882  : public Attrib
 	int32_t ___U3CLevelU3Ek__BackingField_1;
 	// System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventAttribute::<Keywords>k__BackingField
 	int64_t ___U3CKeywordsU3Ek__BackingField_2;
+	// System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventAttribute::<Opcode>k__BackingField
+	int32_t ___U3COpcodeU3Ek__BackingField_3;
 	// System.String System.Diagnostics.Tracing.EventAttribute::<Message>k__BackingField
-	String_t* ___U3CMessageU3Ek__BackingField_3;
+	String_t* ___U3CMessageU3Ek__BackingField_4;
+	// System.Diagnostics.Tracing.EventTask System.Diagnostics.Tracing.EventAttribute::<Task>k__BackingField
+	int32_t ___U3CTaskU3Ek__BackingField_5;
 };
 
 // System.Diagnostics.Tracing.EventSourceAttribute
@@ -16237,7 +16241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackTrace_GetFullNameForStackTrace_m4B2
 		Type_t* L_8 = V_0;
 		NullCheck(L_8);
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_9;
-		L_9 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(101 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_8, ((int32_t)62));
+		L_9 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(102 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_8, ((int32_t)62));
 		V_2 = L_9;
 		V_3 = 0;
 		goto IL_0049;
@@ -16660,7 +16664,7 @@ IL_0012:
 		Type_t* L_5 = V_0;
 		NullCheck(L_5);
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_6;
-		L_6 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(101 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_5, ((int32_t)62));
+		L_6 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(102 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_5, ((int32_t)62));
 		V_1 = L_6;
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_7 = V_1;
 		if (L_7)
@@ -16985,13 +16989,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventAttribute_set_Keywords_m8C5B6570028
 		return;
 	}
 }
+// System.Void System.Diagnostics.Tracing.EventAttribute::set_Opcode(System.Diagnostics.Tracing.EventOpcode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventAttribute_set_Opcode_m1030930DC96FE3D1B258A4353BA7B510A5DB304C (EventAttribute_t9015B21A2C903C10E9747B2A17BCA1EE47E5F882* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___U3COpcodeU3Ek__BackingField_3 = L_0;
+		return;
+	}
+}
 // System.Void System.Diagnostics.Tracing.EventAttribute::set_Message(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventAttribute_set_Message_mF7058552E7B49F728EC9015ADE79FC6048748CC9 (EventAttribute_t9015B21A2C903C10E9747B2A17BCA1EE47E5F882* __this, String_t* ___value0, const RuntimeMethod* method) 
 {
 	{
 		String_t* L_0 = ___value0;
-		__this->___U3CMessageU3Ek__BackingField_3 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMessageU3Ek__BackingField_3), (void*)L_0);
+		__this->___U3CMessageU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMessageU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EventAttribute::set_Task(System.Diagnostics.Tracing.EventTask)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventAttribute_set_Task_m518E6FB8C569B777D77864CEDA0E44DEB5EF35C0 (EventAttribute_t9015B21A2C903C10E9747B2A17BCA1EE47E5F882* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___U3CTaskU3Ek__BackingField_5 = L_0;
 		return;
 	}
 }
@@ -17109,6 +17131,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventSource_Dispose_mF14781ABBB50FDB6CAE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventSource_Dispose_m9F164B3103C672CA687CDFCD08A01007AEE8062E (EventSource_tA86759A1E6F272632C299AAC181C0A67E5C52F25* __this, bool ___disposing0, const RuntimeMethod* method) 
 {
 	{
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventSource_WriteEvent_mD47EF44EB053B445434B40266F008E3005072E37 (EventSource_tA86759A1E6F272632C299AAC181C0A67E5C52F25* __this, int32_t ___eventId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___eventId0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)0);
+		EventSource_WriteEvent_mD93F560C6627CA14D4EBC29243EF9790FECFE22F(__this, L_0, L_1, NULL);
 		return;
 	}
 }

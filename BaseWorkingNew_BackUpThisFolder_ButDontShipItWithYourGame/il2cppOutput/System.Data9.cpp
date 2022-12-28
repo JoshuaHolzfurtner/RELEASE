@@ -515,7 +515,7 @@ struct ConcurrentDictionary_2_t01EC89866F72177CED9A0249F17948367F151834  : publi
 struct ConcurrentDictionary_2_t01EC89866F72177CED9A0249F17948367F151834_StaticFields
 {
 	// System.Boolean System.Collections.Concurrent.ConcurrentDictionary`2::s_isValueWriteAtomic
-	bool ___s_isValueWriteAtomic_7;
+	bool ___s_isValueWriteAtomic_9;
 };
 struct Il2CppArrayBounds;
 
@@ -15477,7 +15477,7 @@ IL_0047:
 		RuntimeObject* L_14 = ___value1;
 		NullCheck(L_13);
 		bool L_15;
-		L_15 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_13, L_14);
+		L_15 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_13, L_14);
 		if (L_15)
 		{
 			goto IL_005b;
@@ -16031,7 +16031,7 @@ IL_0025:
 		Type_t* L_6 = __this->___type_0;
 		NullCheck(L_6);
 		FieldInfo_t* L_7;
-		L_7 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(87 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_6, _stringLiteralDA4BE0F963380DB493604E9CA0B0B54F040F58C9, ((int32_t)24));
+		L_7 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(88 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_6, _stringLiteralDA4BE0F963380DB493604E9CA0B0B54F040F58C9, ((int32_t)24));
 		V_1 = L_7;
 		FieldInfo_t* L_8 = V_1;
 		bool L_9;
