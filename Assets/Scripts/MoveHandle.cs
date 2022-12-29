@@ -6,19 +6,21 @@ public class MoveHandle : MonoBehaviour
 {
     private bool direction; //direction 0-> Drawing backwards & 1-> if forwards
     private float lastPoint;
+    private int strokeCounter = 0;
     
-    public Material[] materialList; //List of all used Materials
-    private Renderer rend; /* Stores the renderer of Object which has this 
+    /*public Material[] materialList; //List of all used Materials
+    private Renderer rend;
+    /* Stores the renderer of Object which has this 
                             * script attached*/
-
+    
     // Start is called before the first frame update
     void Start()
     {
         lastPoint = transform.position.z;
         
-        rend = GetComponent<Renderer>();
+        /*rend = GetComponent<Renderer>();
         rend.enabled = true;
-        rend.sharedMaterial = materialList[0]; //Starting Material
+        rend.sharedMaterial = materialList[0]; //Starting Material*/
 
 
     }
@@ -31,11 +33,14 @@ public class MoveHandle : MonoBehaviour
             direction = !direction;
             if (direction)
             {
-                rend.sharedMaterial = materialList[0];
+                //rend.sharedMaterial = materialList[0];
+                Debug.Log(strokeCounter);
+                strokeCounter++;
             }
             else
             {
-                rend.sharedMaterial = materialList[1];
+                //rend.sharedMaterial = materialList[1];
+                Debug.Log(strokeCounter);
 
             }
             lastPoint = transform.position.z;
