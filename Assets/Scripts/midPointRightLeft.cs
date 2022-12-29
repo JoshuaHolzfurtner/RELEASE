@@ -24,8 +24,8 @@ public class midPointRightLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        newX = transformFollow.position.x;
-        transform.position = new Vector3(transformFollow.position.x, transform.position.y, transform.position.z);
+        newX = (transformFollow.position.x)/2;
+        transform.position = new Vector3(newX, transform.position.y, transform.position.z);
         
     }
 }
