@@ -7,17 +7,20 @@ public class midPointRightLeft : MonoBehaviour
     public Transform transformBase;
     public Transform transformMid;
     public Transform transformFollow;
-    private Vector3 lastTransformMid;
-    private Vector3 lastTransformFollow;
-    private float distMidBase;
-    private float distFollowBase;
-    private float distFactor;
+    //private Vector3 lastTransformMid;
+    //private Vector3 lastTransformFollow;
+    //private float distMidBase;
+    //private float distFollowBase;
+    //private float distFactor;
     private float newX;
+    private float newY;
+    private float startY;
     // Start is called before the first frame update
     void Start()
     {
         //lastTransformFollow = transformFollow.position;
         //lastTransformMid = transformMid.position;
+        startY = transform.position.y;
         
     }
 
@@ -25,7 +28,8 @@ public class midPointRightLeft : MonoBehaviour
     void Update()
     {
         newX = (transformFollow.position.x)/2;
-        transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+        newY = Mathf.Max(transformFollow.position.y * 0.9f, startY);
+        transform.position = new Vector3(newX, newY, transform.position.z);
         
     }
 }
