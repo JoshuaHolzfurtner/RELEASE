@@ -7,6 +7,7 @@ public class MoveHandle : MonoBehaviour
 {
     public TextMeshProUGUI strokeRateText;
     public TextMeshProUGUI strokesText;
+    public Transform trackedObject;
     private bool direction; //direction 0-> Drawing backwards & 1-> if forwards
     private float lastPoint;
     private int strokeCounter = 0;
@@ -24,7 +25,7 @@ public class MoveHandle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lastPoint = transform.position.z;
+        lastPoint = trackedObject.transform.position.z;
         
         /*rend = GetComponent<Renderer>();
         rend.enabled = true;
@@ -38,7 +39,7 @@ public class MoveHandle : MonoBehaviour
     {
         LastStrokeDuration += Time.deltaTime;
 
-        if ((direction && (lastPoint > transform.position.z)) || ((!direction) && ((lastPoint < transform.position.z))))
+        if ((direction && (lastPoint > trackedObject.transform.position.z)) || ((!direction) && ((lastPoint < trackedObject.transform.position.z))))
         {
             
             if (direction)
@@ -59,13 +60,13 @@ public class MoveHandle : MonoBehaviour
             {
                 //rend.sharedMaterial = materialList[1];
                 Debug.Log("Release");
-                LastIntensity = transform.position.z;
-                Debug.Log("LastIntenssity: " + LastIntensity);
+                //LastIntensity = transform.position.z;
+                //Debug.Log("LastIntenssity: " + LastIntensity);
 
 
             }
             direction = !direction;
-            lastPoint = transform.position.z;
+            lastPoint = trackedObject.transform.position.z;
         }
 
         /*Has the direction changed for Update
