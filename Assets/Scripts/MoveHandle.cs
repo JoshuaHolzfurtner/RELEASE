@@ -7,6 +7,8 @@ public class MoveHandle : MonoBehaviour
 {
     public TextMeshProUGUI strokeRateText;
     public TextMeshProUGUI strokesText;
+    public TextMeshProUGUI intensityText;
+    public TextMeshProUGUI pointsText;
     public Transform trackedObject;
     private bool direction; //direction 0-> Drawing backwards & 1-> if forwards
     private float lastPoint;
@@ -15,6 +17,9 @@ public class MoveHandle : MonoBehaviour
     private float LastIntensity = 0;
     private int roundedStrokeRate = 0;
     private float strokeRate = 0;
+    private float factor = 1;//determines by which factor Points will be added
+    private float basePoints = 100; //number of points that gets added to pointscounter multiplied by factor
+    private float pointsCounter = 0; //counts points currently achieved
 
 
     /*public Material[] materialList; //List of all used Materials
@@ -53,6 +58,10 @@ public class MoveHandle : MonoBehaviour
                 LastStrokeDuration = 0;
                 strokeRateText.text = outputText;
                 strokesText.text = strokeCounter.ToString();
+                pointsCounter += basePoints * factor;
+                pointsText.text = pointsCounter.ToString();
+                string mid = "MID";
+                intensityText.text = mid;
 
 
             }
@@ -74,4 +83,19 @@ public class MoveHandle : MonoBehaviour
          *by changing the color of the Handle.*/
 
     }
+
+    public void resetCounters()
+    {
+        strokeCounter = 0;
+        LastStrokeDuration = 0;
+        LastIntensity = 0;
+        roundedStrokeRate = 0;
+        strokeRate = 0;
+        //factor = 1;
+        //basePoints = 100; 
+        pointsCounter = 0; 
+    }
+
+
+
 }
