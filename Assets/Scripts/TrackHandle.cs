@@ -16,6 +16,8 @@ public class TrackHandle : MonoBehaviour
     private bool direction; //true->pull, false->release
     private int strokeCounter;
     private float lastPointZ;
+    private float lastStrokeDuration;
+    private int pointsCounter;
 
     // Start is called before the first frame update
     void Start()
@@ -27,12 +29,16 @@ public class TrackHandle : MonoBehaviour
 
         direction = true;
         strokeCounter = 0;
+        pointsCounter = 0;
+
+        lastStrokeDuration = 0f;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        lastStrokeDuration += Time.deltaTime;
         currentZ = transform.position.z;
         if ((currentZ < farthestBackZ) && (direction == true))
         {
@@ -45,13 +51,28 @@ public class TrackHandle : MonoBehaviour
             direction = false;
             strokeCounter++;
             strokesText.text = strokeCounter.ToString();
+            
             if (farthestBackZ > -0.5f)
             {
                 intensityText.text = "LOW";
+                 
+                strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
+
+                lastStrokeDuration = 0f;
+
+                pointsCounter += 25;
+                pointsText.text = pointsCounter.ToString();
+
             }
             else if (farthestBackZ <= -0.5f)
             {
                 intensityText.text = "HIGH";
+                strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
+
+                lastStrokeDuration = 0f;
+
+                pointsCounter += 75;
+                pointsText.text = pointsCounter.ToString();
 
             }
         }
