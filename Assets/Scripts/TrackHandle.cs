@@ -52,7 +52,7 @@ public class TrackHandle : MonoBehaviour
             strokeCounter++;
             strokesText.text = strokeCounter.ToString();
             
-            if (farthestBackZ > -0.5f)
+            if (farthestBackZ >= -0.5f)
             {
                 intensityText.text = "LOW";
                  
@@ -64,7 +64,18 @@ public class TrackHandle : MonoBehaviour
                 pointsText.text = pointsCounter.ToString();
 
             }
-            else if (farthestBackZ <= -0.5f)
+            else if ((farthestBackZ > -0.75f) && (farthestBackZ < -0.5f))
+            {
+                intensityText.text = "MID";
+                strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
+
+                lastStrokeDuration = 0f;
+
+                pointsCounter += 50;
+                pointsText.text = pointsCounter.ToString();
+
+            }
+            else if (farthestBackZ <= -0.75f)
             {
                 intensityText.text = "HIGH";
                 strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
