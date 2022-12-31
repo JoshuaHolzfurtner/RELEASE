@@ -12,6 +12,7 @@ public class MoveHandle : MonoBehaviour
     public Transform trackedObject;
     private bool direction; //direction 0-> Drawing backwards & 1-> if forwards
     private float lastPoint;
+    private float lastLastPoint;
     private int strokeCounter = 0;
     private float LastStrokeDuration = 0;
     private float LastIntensity = 0;
@@ -20,6 +21,7 @@ public class MoveHandle : MonoBehaviour
     private float factor = 1;//determines by which factor Points will be added
     private float basePoints = 100; //number of points that gets added to pointscounter multiplied by factor
     private float pointsCounter = 0; //counts points currently achieved
+    private float farthestBackY;
 
 
     /*public Material[] materialList; //List of all used Materials
@@ -30,8 +32,10 @@ public class MoveHandle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lastPoint = trackedObject.transform.position.z;
-        
+        lastPoint = trackedObject.transform.position.y;
+        lastLastPoint = lastPoint;
+        farthestBackY = lastPoint;
+
         /*rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = materialList[0]; //Starting Material*/
@@ -43,8 +47,15 @@ public class MoveHandle : MonoBehaviour
     void Update()
     {
         LastStrokeDuration += Time.deltaTime;
-
-        if ((direction && (lastPoint > trackedObject.transform.position.z)) || ((!direction) && ((lastPoint < trackedObject.transform.position.z))))
+        if(farthestBackY > trackedObject.transform.position.y) //y Values get smaller the more you pull the band
+        {
+            farthestBackY = trackedObject.transform.position.y;
+        }
+        lastLastPoint = lastPoint;
+        lastPoint = trackedObject.transform.position.y;
+        string mid = farthestBackY.ToString();//"MID";
+        intensityText.text = mid;
+        /*if ((direction && (lastPoint > trackedObject.transform.position.y)) || ((!direction) && ((lastPoint < trackedObject.transform.position.y))))
         {
             
             if (direction)
@@ -60,23 +71,29 @@ public class MoveHandle : MonoBehaviour
                 strokesText.text = strokeCounter.ToString();
                 pointsCounter += basePoints * factor;
                 pointsText.text = pointsCounter.ToString();
-                string mid = "MID";
+                string mid = farthestBackY.ToString();//"MID";
                 intensityText.text = mid;
+                farthestBackY = 4;
 
 
             }
             else if(!direction)
             {
                 //rend.sharedMaterial = materialList[1];
+
+
+
                 Debug.Log("Release");
+
+
                 //LastIntensity = transform.position.z;
                 //Debug.Log("LastIntenssity: " + LastIntensity);
 
 
             }
             direction = !direction;
-            lastPoint = trackedObject.transform.position.z;
-        }
+            
+        }*/
 
         /*Has the direction changed for Update
          *than our direction as a whole will be recognized to have reversed
