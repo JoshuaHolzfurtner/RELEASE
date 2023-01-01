@@ -26981,10 +26981,10 @@ struct TakeRecorder_t1C44C6CCFA139B9B7036F7D230CA3853741E4FC6_StaticFields
 // TeleportToOther
 struct TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.GameObject TeleportToOther::beingTeleported
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___beingTeleported_4;
-	// UnityEngine.GameObject TeleportToOther::teleportationGoal
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___teleportationGoal_5;
+	// UnityEngine.Transform TeleportToOther::beingTeleported
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___beingTeleported_4;
+	// UnityEngine.Transform TeleportToOther::teleportationGoal
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___teleportationGoal_5;
 	// System.Boolean TeleportToOther::teleportationOn
 	bool ___teleportationOn_6;
 	// UnityEngine.Vector3 TeleportToOther::offset

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class TeleportToOther : MonoBehaviour
 {
-    public GameObject beingTeleported;
-    public GameObject teleportationGoal;
+    public Transform beingTeleported;
+    public Transform teleportationGoal;
     private bool teleportationOn;
-    private Vector3 offset;
+    public Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
         teleportationOn = false;
-        offset = new Vector3(90, 90, 0);
+        //offset = new Vector3(0, 90, 0);
     }
 
     // Update is called once per frame
@@ -23,12 +23,19 @@ public class TeleportToOther : MonoBehaviour
 
     public void startTeleportation()
     {
+        float xRot = 0f;
+        float yRot = 0f;
+        float zRot = 0f;
+        //xRot = teleportationGoal.transform.eulerAngles.x;
+        yRot = teleportationGoal.transform.eulerAngles.y - 100f;
+        //zRot = teleportationGoal.transform.eulerAngles.z;
+        beingTeleported.transform.eulerAngles = new Vector3(xRot, yRot, zRot);
         teleportationOn = true;
         if (teleportationOn)
         {
-            //beingTeleported.GetComponent<Transform>().rotation = Quaternion.Euler(offset) * teleportationGoal.GetComponent<Transform>().localRotation;
             
-            beingTeleported.GetComponent<Transform>().position = new Vector3(teleportationGoal.GetComponent<Transform>().position.x, teleportationGoal.GetComponent<Transform>().position.y, teleportationGoal.GetComponent<Transform>().position.z + 0.075f);
+            
+            beingTeleported.position = (new Vector3(teleportationGoal.position.x, teleportationGoal.position.y, teleportationGoal.position.z)) +  offset;
         }
     }
     public void stopTeleportation()
