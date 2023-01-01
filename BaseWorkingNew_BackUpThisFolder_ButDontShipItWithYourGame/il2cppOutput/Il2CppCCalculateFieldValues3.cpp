@@ -27028,6 +27028,12 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	int32_t ___format_10;
 	// System.Collections.Generic.Dictionary`2<Timer/TimerFormats,System.String> Timer::timeformats
 	Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* ___timeformats_11;
+	// System.Boolean Timer::timerStopped
+	bool ___timerStopped_12;
+	// System.Boolean Timer::timeHasBeenReset
+	bool ___timeHasBeenReset_13;
+	// System.Single Timer::resetSeconds
+	float ___resetSeconds_14;
 };
 
 // Oculus.Voice.Demo.BuiltInDemo.TimerController
@@ -28569,9 +28575,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9044[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9045[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9046[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9046[11] = 
 {
-	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerText_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___countDown_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasLimit_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerLimit_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasFormat_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___format_10)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeformats_11)),};
+	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerText_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___countDown_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasLimit_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerLimit_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasFormat_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___format_10)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeformats_11)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerStopped_12)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeHasBeenReset_13)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___resetSeconds_14)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9047[13] = 
 {
 	static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeRateText_4)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___intensityText_5)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokesText_6)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsText_7)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___trackedObject_8)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestBackZ_9)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestFrontZ_10)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___currentZ_11)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___direction_12)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCounter_13)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastPointZ_14)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastStrokeDuration_15)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsCounter_16)),};

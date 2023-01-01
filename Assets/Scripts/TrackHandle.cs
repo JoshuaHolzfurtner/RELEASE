@@ -10,6 +10,7 @@ public class TrackHandle : MonoBehaviour
     public TextMeshProUGUI strokesText;
     public TextMeshProUGUI pointsText;
     public Transform trackedObject;
+    public float thresholdDirection; //Distance to last point still acceptable so were still moving in the same direction
     private float farthestBackZ; //farthest Point back on the z-Axis on this Stroke
     private float farthestFrontZ;
     private float currentZ;
@@ -18,6 +19,7 @@ public class TrackHandle : MonoBehaviour
     private float lastPointZ;
     private float lastStrokeDuration;
     private int pointsCounter;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class TrackHandle : MonoBehaviour
         pointsCounter = 0;
 
         lastStrokeDuration = 0f;
+        thresholdDirection = 0f;
 
     }
 
@@ -51,7 +54,9 @@ public class TrackHandle : MonoBehaviour
             direction = false;
             strokeCounter++;
             strokesText.text = strokeCounter.ToString();
-            
+
+
+            //Determine Intesity of stroke
             if (farthestBackZ >= -0.5f)
             {
                 intensityText.text = "LOW";
