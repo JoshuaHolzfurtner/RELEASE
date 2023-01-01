@@ -18,18 +18,45 @@ public class Timer : MonoBehaviour
     public TimerFormats format;
     private Dictionary<TimerFormats, string> timeformats = new Dictionary<TimerFormats, string>();
     // Start is called before the first frame update
+    public bool timerStopped;
+    public bool timeHasBeenReset;
+    public float resetSeconds;
     void Start()
     {
         timeformats.Add(TimerFormats.Whole, "0");
         timeformats.Add(TimerFormats.TenthDecimal, "0.00");
         timeformats.Add(TimerFormats.HundrethsDecimal, "0.00");
-
+        timerStopped = true;
+        timeHasBeenReset = false;
+        resetSeconds = 5f;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
+        if(!timerStopped)
+        {
+            currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
+
+        }
+
+        //After the timer has been reset, it stops for a while so the player can take the handle again
+        if(timeHasBeenReset)
+        {
+            if(resetSeconds < 0)
+            {
+                timeHasBeenReset = false;
+                timerStopped = false;
+                resetSeconds = 5f;
+
+            }
+            else
+            {
+                resetSeconds -= Time.deltaTime;
+            }
+        }
+        //currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
         
         if (hasLimit && ((countDown && (currentTime<=timerLimit))|| (!countDown && (currentTime >= timerLimit))))
         {
@@ -61,5 +88,21 @@ public class Timer : MonoBehaviour
         string outputText = string.Format("{0:00}:{1:00}", minutes, seconds);
         return outputText;
 
+    }
+
+    public void stopTimer()
+    {
+        timerStopped = true;
+    }
+    public void startTimer()
+    {
+        timerStopped = false;
+    }
+    public void ResetTimer()
+    {
+        currentTime = 0;
+        SetTimerText();
+        timerStopped = true;
+        timeHasBeenReset = true;
     }
 }
