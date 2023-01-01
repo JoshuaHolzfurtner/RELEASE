@@ -27,7 +27,7 @@ public class TeleportToOther : MonoBehaviour
         float yRot = 0f;
         float zRot = 0f;
         //xRot = teleportationGoal.transform.eulerAngles.x;
-        yRot = teleportationGoal.transform.eulerAngles.y - 100f;
+        yRot = teleportationGoal.transform.eulerAngles.y;//- 100f;
         //zRot = teleportationGoal.transform.eulerAngles.z;
         beingTeleported.transform.eulerAngles = new Vector3(xRot, yRot, zRot);
         teleportationOn = true;
