@@ -9,7 +9,14 @@ public class TrackHandle : MonoBehaviour
     public TextMeshProUGUI intensityText;
     public TextMeshProUGUI strokesText;
     public TextMeshProUGUI pointsText;
-    public TextMeshProUGUI DebugText;
+    public TextMeshProUGUI DebugTextOne;
+    public TextMeshProUGUI DebugTextTwo;
+    public TextMeshProUGUI DebugTextThree;
+    public TextMeshProUGUI DebugTextFour;
+
+
+
+
 
     public Transform trackedObject;
     
@@ -19,7 +26,13 @@ public class TrackHandle : MonoBehaviour
     private float currentZ;
     private bool direction; //true->pull, false->release
     private int strokeCounter;
+
     private float lastPointZ;
+    private float lastLastPointZ;
+    private float lastLastLastPointZ;
+    private float lastLastLastLastPointZ;
+
+
     private float lastStrokeDuration;
     private int pointsCounter;
     
@@ -52,7 +65,7 @@ public class TrackHandle : MonoBehaviour
             intensityText.text = farthestBackZ.ToString();
         }
 
-        else if((lastPointZ < currentZ) && (direction == true)) // we start moving forward on the z-axis again
+        else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
         {
             direction = false;
             strokeCounter++;
@@ -95,14 +108,22 @@ public class TrackHandle : MonoBehaviour
 
             }
         }
-        else if((lastPointZ > currentZ) && (direction == false))
+        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ))
         {
             direction = true;
             farthestBackZ = lastPointZ;
         }
-        lastPointZ = currentZ;
 
-        DebugText.text = lastPointZ.ToString();
+        lastLastLastLastPointZ = lastLastLastPointZ;
+        lastLastLastPointZ = lastLastPointZ;
+        lastLastPointZ = lastPointZ;
+        lastPointZ = currentZ;
+        if((lastPointZ <= currentZ) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ) && (lastLastLastLastPointZ <= currentZ))
+        {
+            DebugTextTwo.text = "TRUE";
+        }
+
+        DebugTextOne.text = lastPointZ.ToString();
         
     }
 }
