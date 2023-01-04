@@ -84,6 +84,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_011_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_ARKitFaceCapture_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_CompanionApp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_Networking_CodeGenModule;
@@ -99,7 +100,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_WebView_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[80] = 
+const Il2CppCodeGenModule* g_CodeGenModules[81] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_AssistantCoreSDKRuntime_CodeGenModule),
@@ -167,6 +168,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[80] =
 	(&g_UnityEngine_VideoModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
 	(&g_Unity_InternalAPIEngineBridge_011_CodeGenModule),
+	(&g_Unity_LiveCapture_ARKitFaceCapture_CodeGenModule),
 	(&g_Unity_LiveCapture_CodeGenModule),
 	(&g_Unity_LiveCapture_CompanionApp_CodeGenModule),
 	(&g_Unity_LiveCapture_Networking_CodeGenModule),
@@ -187,18 +189,18 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	23,
 	g_ReversePInvokeWrapperPointers,
-	57739,
+	58875,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	12394,
+	12511,
 	g_Il2CppInvokerPointers,
-	2176,
+	2217,
 	g_UnresolvedVirtualMethodPointers,
-	1015,
+	1018,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	80,
+	81,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
