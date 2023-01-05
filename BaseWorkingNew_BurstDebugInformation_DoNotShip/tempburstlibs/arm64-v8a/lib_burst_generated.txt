@@ -182,6 +182,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.LiveCapture.ARKitFaceCapture.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.LiveCapture.Ltc.dll
+--root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Recorder.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/WebView.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Facebook.Wit.Conduit.dll
@@ -198,6 +199,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.LiveCapture.Ntp.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Subsystem.Registration.dll
+--root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Recorder.Base.dll
 --assembly-folder=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=UnityEngine.Animations.ProcessAnimationJobStruct`1[[UnityEngine.Animations.Rigging.OverrideTransformJob, Unity.Animation.Rigging, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Animations.Rigging.OverrideTransformJob&, Unity.Animation.Rigging, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--0c6ccfd2bba93d68e31208c014c56d05
