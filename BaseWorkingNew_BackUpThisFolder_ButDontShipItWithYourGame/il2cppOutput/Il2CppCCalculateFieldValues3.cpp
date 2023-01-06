@@ -30526,30 +30526,36 @@ struct TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F  : public MonoBehav
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___DebugTextFour_11;
 	// UnityEngine.Transform TrackHandle::trackedObject
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___trackedObject_12;
+	// UnityEngine.Transform TrackHandle::headPlayer
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___headPlayer_13;
+	// System.Double TrackHandle::distanceHandleHeadRelease
+	double ___distanceHandleHeadRelease_14;
+	// System.Double TrackHandle::distanceHandleHeadCatch
+	double ___distanceHandleHeadCatch_15;
 	// System.Single TrackHandle::thresholdDirection
-	float ___thresholdDirection_13;
+	float ___thresholdDirection_16;
 	// System.Single TrackHandle::farthestBackZ
-	float ___farthestBackZ_14;
+	float ___farthestBackZ_17;
 	// System.Single TrackHandle::farthestFrontZ
-	float ___farthestFrontZ_15;
+	float ___farthestFrontZ_18;
 	// System.Single TrackHandle::currentZ
-	float ___currentZ_16;
+	float ___currentZ_19;
 	// System.Boolean TrackHandle::direction
-	bool ___direction_17;
+	bool ___direction_20;
 	// System.Int32 TrackHandle::strokeCounter
-	int32_t ___strokeCounter_18;
+	int32_t ___strokeCounter_21;
 	// System.Single TrackHandle::lastPointZ
-	float ___lastPointZ_19;
+	float ___lastPointZ_22;
 	// System.Single TrackHandle::lastLastPointZ
-	float ___lastLastPointZ_20;
+	float ___lastLastPointZ_23;
 	// System.Single TrackHandle::lastLastLastPointZ
-	float ___lastLastLastPointZ_21;
+	float ___lastLastLastPointZ_24;
 	// System.Single TrackHandle::lastLastLastLastPointZ
-	float ___lastLastLastLastPointZ_22;
+	float ___lastLastLastLastPointZ_25;
 	// System.Single TrackHandle::lastStrokeDuration
-	float ___lastStrokeDuration_23;
+	float ___lastStrokeDuration_26;
 	// System.Int32 TrackHandle::pointsCounter
-	int32_t ___pointsCounter_24;
+	int32_t ___pointsCounter_27;
 };
 
 // OculusSampleFramework.TrackSegment
@@ -32649,9 +32655,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9144[11] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9145[4] = 
 {
 	static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distance_4)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseOne_5)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseTwo_6)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distanceText_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9146[21] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9146[24] = 
 {
-	static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeRateText_4)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___intensityText_5)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokesText_6)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsText_7)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextOne_8)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTwo_9)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextThree_10)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFour_11)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___trackedObject_12)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___thresholdDirection_13)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestBackZ_14)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestFrontZ_15)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___currentZ_16)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___direction_17)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCounter_18)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastPointZ_19)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastPointZ_20)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastPointZ_21)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastLastPointZ_22)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastStrokeDuration_23)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsCounter_24)),};
+	static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeRateText_4)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___intensityText_5)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokesText_6)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsText_7)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextOne_8)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTwo_9)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextThree_10)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFour_11)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___trackedObject_12)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___headPlayer_13)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadRelease_14)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadCatch_15)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___thresholdDirection_16)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestBackZ_17)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestFrontZ_18)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___currentZ_19)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___direction_20)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCounter_21)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastPointZ_22)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastPointZ_23)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastPointZ_24)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastLastPointZ_25)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastStrokeDuration_26)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsCounter_27)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9147[9] = 
 {
 	static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___toFollow_4)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___offset_5)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotatedStartPosFollow_6)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotatedStartRotFollow_7)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___startPosdis_8)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___startRotdis_9)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotateToFollowPosition_10)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotateToFollowRotation_11)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___toquatRotDif_12)),};

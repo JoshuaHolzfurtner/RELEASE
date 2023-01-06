@@ -19,7 +19,13 @@ public class TrackHandle : MonoBehaviour
 
 
     public Transform trackedObject;
-    
+
+    public Transform headPlayer; //Head Player HMD
+
+    private double distanceHandleHeadRelease; //self explanatory
+    private double distanceHandleHeadCatch; //self explanatory
+
+
     public float thresholdDirection; //Distance to last point still acceptable so were still moving in the same direction
     private float farthestBackZ; //farthest Point back on the z-Axis on this Stroke
     private float farthestFrontZ;
@@ -57,6 +63,10 @@ public class TrackHandle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
+
+
         lastStrokeDuration += Time.deltaTime;
         currentZ = transform.position.z;
         if ((currentZ < farthestBackZ) && (direction == true))
@@ -67,6 +77,11 @@ public class TrackHandle : MonoBehaviour
 
         else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
         {
+            //Track Distance betwean Handle and Head at Beginning of the Release-Phase
+            distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
+            DebugTextFour.text = distanceHandleHeadRelease.ToString();
+            /////////////////////////////////////////////////////////////
+
             direction = false;
             strokeCounter++;
             strokesText.text = strokeCounter.ToString();
@@ -110,6 +125,21 @@ public class TrackHandle : MonoBehaviour
         }
         else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ))
         {
+            //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
+            distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
+            DebugTextFour.text = distanceHandleHeadCatch.ToString();
+
+            if ((distanceHandleHeadCatch - distanceHandleHeadRelease < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadRelease > -0.1))
+            {
+                DebugTextThree.text = "TRUE";
+
+            }
+            else
+            {
+                DebugTextThree.text = "FALSE";
+
+            }
+            /////////////////////////////////////////////////////////////
             direction = true;
             farthestBackZ = lastPointZ;
         }
