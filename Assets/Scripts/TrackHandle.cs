@@ -75,7 +75,7 @@ public class TrackHandle : MonoBehaviour
             intensityText.text = farthestBackZ.ToString();
         }
 
-        else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
+        else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
         {
             //Track Distance betwean Handle and Head at Beginning of the Release-Phase
             distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
@@ -123,7 +123,7 @@ public class TrackHandle : MonoBehaviour
 
             }
         }
-        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ))
+        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ))
         {
             //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
             distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
@@ -148,10 +148,7 @@ public class TrackHandle : MonoBehaviour
         lastLastLastPointZ = lastLastPointZ;
         lastLastPointZ = lastPointZ;
         lastPointZ = currentZ;
-        if((lastPointZ <= currentZ) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ) && (lastLastLastLastPointZ <= currentZ))
-        {
-            DebugTextTwo.text = "TRUE";
-        }
+        
 
         DebugTextOne.text = lastPointZ.ToString();
         
