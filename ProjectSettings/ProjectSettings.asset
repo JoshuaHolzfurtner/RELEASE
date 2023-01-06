@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Joshua Holzfurtner
-  productName: CDFR-Rowing
+  productName: Catch, Drive, Finish Release
   defaultCursor: {fileID: 2800000, guid: 0a56ec38e652d42898f785d696357b5e, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.5849056, g: 0.58214664, b: 0.5828364, a: 1}
@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.JoshuaHolzfurtner.CDFRRowing
+    Android: com.JoshuaHolzfurtner.CatchDriveFinishRelease
     Standalone: com.DefaultCompany.base
   buildNumber:
     Standalone: 0

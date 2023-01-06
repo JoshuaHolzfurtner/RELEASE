@@ -13,6 +13,12 @@ public class TrackHandle : MonoBehaviour
     public TextMeshProUGUI DebugTextTwo;
     public TextMeshProUGUI DebugTextThree;
     public TextMeshProUGUI DebugTextFour;
+    public TextMeshProUGUI DebugTextFive;
+    public TextMeshProUGUI DebugTextSix;
+    public TextMeshProUGUI DebugTextSeven;
+    public TextMeshProUGUI DebugTextEight;
+    public TextMeshProUGUI DebugTextNine;
+    public TextMeshProUGUI DebugTextTen;
 
 
 
@@ -63,10 +69,10 @@ public class TrackHandle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
-
-
+        DebugTextEight.text = headPlayer.rotation.x.ToString(); //Neigung nach oben Unten
+        DebugTextNine.text = headPlayer.rotation.y.ToString(); //Neigung Blickfeld Links nach Rechts
+        DebugTextTen.text = headPlayer.rotation.z.ToString();  //NEigung Kopf nach Links rechts \|/
         lastStrokeDuration += Time.deltaTime;
         currentZ = transform.position.z;
         if ((currentZ < farthestBackZ) && (direction == true))
@@ -75,7 +81,7 @@ public class TrackHandle : MonoBehaviour
             intensityText.text = farthestBackZ.ToString();
         }
 
-        else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
+        else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ) && (lastLastLastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
         {
             //Track Distance betwean Handle and Head at Beginning of the Release-Phase
             distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
@@ -123,7 +129,7 @@ public class TrackHandle : MonoBehaviour
 
             }
         }
-        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ))
+        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
         {
             //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
             distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
