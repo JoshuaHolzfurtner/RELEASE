@@ -574,6 +574,8 @@ struct MovePlayerLeftOrRight_t4A4F158B632167D21E8E93E9720470F1616A703F;
 struct MovePlayerOnZAxisBackNForth_t5AC4DE638C317820485F34405C748A064F26AF3D;
 // MoveUpandDown
 struct MoveUpandDown_t82BF42147915483A7A1369FFBAD950C737330F24;
+// NormalOrTutorial
+struct NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9;
 // System.NotSupportedException
 struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 // OVRBoneCapsule
@@ -4309,6 +4311,17 @@ struct MovePlayerOnZAxisBackNForth_t5AC4DE638C317820485F34405C748A064F26AF3D  : 
 // MoveUpandDown
 struct MoveUpandDown_t82BF42147915483A7A1369FFBAD950C737330F24  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+
+// NormalOrTutorial
+struct NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Boolean NormalOrTutorial::tutorial
+	bool ___tutorial_4;
+	// UnityEngine.GameObject NormalOrTutorial::tutorialElements
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tutorialElements_5;
+	// UnityEngine.GameObject NormalOrTutorial::normalElements
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___normalElements_6;
 };
 
 // OVRCameraRig
@@ -13097,6 +13110,81 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveUpandDown_moveDown_mB5532C4928D1F1FC
 }
 // System.Void MoveUpandDown::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveUpandDown__ctor_m709D4108DEE09DB4933CF93C895218FEFEFBC8BE (MoveUpandDown_t82BF42147915483A7A1369FFBAD950C737330F24* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void NormalOrTutorial::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NormalOrTutorial_Start_mFEA6EA9BB204AB54DED34DA0E9EE26B3D2184C46 (NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9* __this, const RuntimeMethod* method) 
+{
+	{
+		// tutorial = false;
+		__this->___tutorial_4 = (bool)0;
+		// }
+		return;
+	}
+}
+// System.Void NormalOrTutorial::MakeItTutorial()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NormalOrTutorial_MakeItTutorial_mF606D233BC4C0066F3B87316D2F1A1EFBFEA502E (NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9* __this, const RuntimeMethod* method) 
+{
+	{
+		// tutorial = true;
+		__this->___tutorial_4 = (bool)1;
+		// }
+		return;
+	}
+}
+// System.Void NormalOrTutorial::MakeItNormal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NormalOrTutorial_MakeItNormal_mC7E99214054C02C6592559A7995956FCBF87BF62 (NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9* __this, const RuntimeMethod* method) 
+{
+	{
+		// tutorial = false;
+		__this->___tutorial_4 = (bool)0;
+		// }
+		return;
+	}
+}
+// System.Void NormalOrTutorial::SpawnGameModeElements()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NormalOrTutorial_SpawnGameModeElements_m3458C71D8B0062597132E0D844A3F2A9A580FBDA (NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9* __this, const RuntimeMethod* method) 
+{
+	{
+		// if(tutorial)
+		bool L_0 = __this->___tutorial_4;
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		// tutorialElements.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___tutorialElements_5;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		return;
+	}
+
+IL_0015:
+	{
+		// normalElements.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___normalElements_6;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void NormalOrTutorial::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9 (NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
