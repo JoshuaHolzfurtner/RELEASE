@@ -233,6 +233,8 @@ struct TrackSegment_t564FB15D19598A8A893D0EB2ACBF5EA66BCF5680;
 struct TrainCar_t6DCDD84A769A7A356BCBCEAF536718032D8C625D;
 // OculusSampleFramework.TrainCarBase
 struct TrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616;
+// OculusSampleFramework.TrainCrossingController
+struct TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75;
 // OculusSampleFramework.TrainLocomotive
 struct TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E;
 // OculusSampleFramework.TrainTrack
@@ -269,6 +271,8 @@ struct U3CWaitforOVROverlayU3Ed__30_t25C38D56AC2CF1BD6CBB208C219C7767D98716AA;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 // UnityEngine.UI.Toggle/ToggleEvent
 struct ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02;
+// OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15
+struct U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235;
 // OculusSampleFramework.TrainLocomotive/<StartStopTrain>d__34
 struct U3CStartStopTrainU3Ed__34_t56DD6C2FB4AB2588CC63AC7602A532856243DEB9;
 // OculusSampleFramework.WindmillBladesController/<LerpToSpeed>d__17
@@ -365,6 +369,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_2_m9DCDFE
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TouchController_OnInputFocusAcquired_m4CE35E8F9CA5C7E611193F2859EF5D72E4C6A106_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TouchController_OnInputFocusLost_m6317EA5E49BEFAB15C37741C92DE17CC0056DE15_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateCrossingU3Ed__15_System_Collections_IEnumerator_Reset_mBCD5E96BE8CE94DD20BE98DF247524CD06FECCCA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CLerpToSpeedU3Ed__17_System_Collections_IEnumerator_Reset_mE335D544A3E213AA1C592DD7794424E3787FA2BE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CPlaySoundDelayedU3Ed__18_System_Collections_IEnumerator_Reset_m8DAD6960C34AAE47BB8F758A3739AFCA20B79F8C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartStopTrainU3Ed__34_System_Collections_IEnumerator_Reset_mEBAF005BA8E10A1EF29605BE77EDE739EB2EF984_RuntimeMethod_var;
@@ -1327,6 +1332,35 @@ struct TextureRectMatrixf_t389BA8981D39B99E120A6C70AF140911993215C5_StaticFields
 	TextureRectMatrixf_t389BA8981D39B99E120A6C70AF140911993215C5 ___zero_4;
 };
 
+// OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15
+struct U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235  : public RuntimeObject
+{
+	// System.Int32 OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// OculusSampleFramework.TrainCrossingController OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<>4__this
+	TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* ___U3CU3E4__this_2;
+	// System.Single OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::animationLength
+	float ___animationLength_3;
+	// System.Single OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<animationEndTime>5__2
+	float ___U3CanimationEndTimeU3E5__2_4;
+	// System.Single OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<lightBlinkDuration>5__3
+	float ___U3ClightBlinkDurationU3E5__3_5;
+	// System.Single OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<lightBlinkStartTime>5__4
+	float ___U3ClightBlinkStartTimeU3E5__4_6;
+	// System.Single OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<lightBlinkEndTime>5__5
+	float ___U3ClightBlinkEndTimeU3E5__5_7;
+	// UnityEngine.Material OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<lightToBlinkOn>5__6
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___U3ClightToBlinkOnU3E5__6_8;
+	// UnityEngine.Material OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<lightToBlinkOff>5__7
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___U3ClightToBlinkOffU3E5__7_9;
+	// UnityEngine.Color OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<onColor>5__8
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___U3ConColorU3E5__8_10;
+	// UnityEngine.Color OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::<offColor>5__9
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___U3CoffColorU3E5__9_11;
+};
+
 // UnityEngine.AudioClip
 struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
@@ -1343,6 +1377,11 @@ struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12
 
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// UnityEngine.Material
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
 
@@ -1956,6 +1995,31 @@ struct TrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616_StaticFields
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___OFFSET_4;
 };
 
+// OculusSampleFramework.TrainCrossingController
+struct TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.AudioSource OculusSampleFramework.TrainCrossingController::_audioSource
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____audioSource_4;
+	// UnityEngine.AudioClip[] OculusSampleFramework.TrainCrossingController::_crossingSounds
+	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ____crossingSounds_5;
+	// UnityEngine.MeshRenderer OculusSampleFramework.TrainCrossingController::_lightSide1Renderer
+	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ____lightSide1Renderer_6;
+	// UnityEngine.MeshRenderer OculusSampleFramework.TrainCrossingController::_lightSide2Renderer
+	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ____lightSide2Renderer_7;
+	// OculusSampleFramework.SelectionCylinder OculusSampleFramework.TrainCrossingController::_selectionCylinder
+	SelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E* ____selectionCylinder_8;
+	// UnityEngine.Material OculusSampleFramework.TrainCrossingController::_lightsSide1Mat
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ____lightsSide1Mat_9;
+	// UnityEngine.Material OculusSampleFramework.TrainCrossingController::_lightsSide2Mat
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ____lightsSide2Mat_10;
+	// System.Int32 OculusSampleFramework.TrainCrossingController::_colorId
+	int32_t ____colorId_11;
+	// UnityEngine.Coroutine OculusSampleFramework.TrainCrossingController::_xingAnimationCr
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ____xingAnimationCr_12;
+	// OculusSampleFramework.InteractableTool OculusSampleFramework.TrainCrossingController::_toolInteractingWithMe
+	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ____toolInteractingWithMe_13;
+};
+
 // OculusSampleFramework.TrainTrack
 struct TrainTrack_t327DBFA324D407E9D3EF3533C4AD8399B8DBDB09  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -2459,6 +2523,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObj
 // TSource[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Enumerable_ToArray_TisRuntimeObject_mA54265C2C8A0864929ECD300B75E4952D553D17D_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
 
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.TrainCrossingController::ToggleLightObjects(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainCrossingController_ToggleLightObjects_mAFC81037C7641441E6375A6558FCF8FEFD33D574 (TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* __this, bool ___enableState0, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Time::get_time()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) ;
+// UnityEngine.Color UnityEngine.Color::Lerp(UnityEngine.Color,UnityEngine.Color,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___a0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___b1, float ___t2, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetColor_m573C88F2FB1B5A978C53A197B414F9E9C6AC5B9A (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___value1, const RuntimeMethod* method) ;
+// System.Void System.NotSupportedException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // UnityEngine.ParticleSystem/EmissionModule UnityEngine.ParticleSystem::get_emission()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EmissionModule_t0F469FA4A08003F6D9C610D2F716A9DFDB9A3678 ParticleSystem_get_emission_mD9402CE632A3607DA0B0486F9F58F7FB2B44CF08 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.ParticleSystem/EmissionModule::get_rateOverTimeMultiplier()
@@ -2527,14 +2605,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_set_time_mD7AF2E34304DBF8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
 // System.Void OculusSampleFramework.TrainCarBase::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainCarBase__ctor_mAB1702EA386CA6F2156F8E03595B2D0E4C57FC4E (TrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616* __this, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_loop_m834A590939D8456008C0F897FD80B0ECFFB7FE56 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, bool ___value0, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Time::get_time()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
-// System.Void System.NotSupportedException::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Void OculusSampleFramework.TrainTrack::Regenerate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrainTrack_Regenerate_mF5741B178A8DA4D1C8C5F327028D4E146EFF37F6 (TrainTrack_t327DBFA324D407E9D3EF3533C4AD8399B8DBDB09* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Transform::get_childCount()
@@ -2936,6 +3008,233 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_m66D4475341F53949471E6870FB5C5E4A5E9BA93E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___euler0, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateCrossingU3Ed__15__ctor_m663FB6CE1AADE77FC6FF0BBCE339F7D0D01496C3 (U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateCrossingU3Ed__15_System_IDisposable_Dispose_mCC3A087461B7951EF48617743BAA241902FE9B37 (U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateCrossingU3Ed__15_MoveNext_m8D2DAAD03D77C6DFF61643A28BE1F0A47F0D9D89 (U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* V_1 = NULL;
+	float V_2 = 0.0f;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* V_3 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0172;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_001a:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// ToggleLightObjects(true);
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_4 = V_1;
+		NullCheck(L_4);
+		TrainCrossingController_ToggleLightObjects_mAFC81037C7641441E6375A6558FCF8FEFD33D574(L_4, (bool)1, NULL);
+		// float animationEndTime = Time.time + animationLength;
+		float L_5;
+		L_5 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_6 = __this->___animationLength_3;
+		__this->___U3CanimationEndTimeU3E5__2_4 = ((float)il2cpp_codegen_add(L_5, L_6));
+		// float lightBlinkDuration = animationLength * 0.1f;
+		float L_7 = __this->___animationLength_3;
+		__this->___U3ClightBlinkDurationU3E5__3_5 = ((float)il2cpp_codegen_multiply(L_7, (0.100000001f)));
+		// float lightBlinkStartTime = Time.time;
+		float L_8;
+		L_8 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->___U3ClightBlinkStartTimeU3E5__4_6 = L_8;
+		// float lightBlinkEndTime = Time.time + lightBlinkDuration;
+		float L_9;
+		L_9 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_10 = __this->___U3ClightBlinkDurationU3E5__3_5;
+		__this->___U3ClightBlinkEndTimeU3E5__5_7 = ((float)il2cpp_codegen_add(L_9, L_10));
+		// Material lightToBlinkOn = _lightsSide1Mat;
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_11 = V_1;
+		NullCheck(L_11);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_12 = L_11->____lightsSide1Mat_9;
+		__this->___U3ClightToBlinkOnU3E5__6_8 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3ClightToBlinkOnU3E5__6_8), (void*)L_12);
+		// Material lightToBlinkOff = _lightsSide2Mat;
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_13 = V_1;
+		NullCheck(L_13);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_14 = L_13->____lightsSide2Mat_10;
+		__this->___U3ClightToBlinkOffU3E5__7_9 = L_14;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3ClightToBlinkOffU3E5__7_9), (void*)L_14);
+		// Color onColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_15;
+		memset((&L_15), 0, sizeof(L_15));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_15), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->___U3ConColorU3E5__8_10 = L_15;
+		// Color offColor = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_16;
+		memset((&L_16), 0, sizeof(L_16));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_16), (1.0f), (1.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
+		__this->___U3CoffColorU3E5__9_11 = L_16;
+		goto IL_0179;
+	}
+
+IL_00c4:
+	{
+		// float t = (Time.time - lightBlinkStartTime) / lightBlinkDuration;
+		float L_17;
+		L_17 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_18 = __this->___U3ClightBlinkStartTimeU3E5__4_6;
+		float L_19 = __this->___U3ClightBlinkDurationU3E5__3_5;
+		V_2 = ((float)(((float)il2cpp_codegen_subtract(L_17, L_18))/L_19));
+		// lightToBlinkOn.SetColor(_colorId, Color.Lerp(offColor, onColor, t));
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_20 = __this->___U3ClightToBlinkOnU3E5__6_8;
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_21 = V_1;
+		NullCheck(L_21);
+		int32_t L_22 = L_21->____colorId_11;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23 = __this->___U3CoffColorU3E5__9_11;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24 = __this->___U3ConColorU3E5__8_10;
+		float L_25 = V_2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_26;
+		L_26 = Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline(L_23, L_24, L_25, NULL);
+		NullCheck(L_20);
+		Material_SetColor_m573C88F2FB1B5A978C53A197B414F9E9C6AC5B9A(L_20, L_22, L_26, NULL);
+		// lightToBlinkOff.SetColor(_colorId, Color.Lerp(onColor, offColor, t));
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_27 = __this->___U3ClightToBlinkOffU3E5__7_9;
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_28 = V_1;
+		NullCheck(L_28);
+		int32_t L_29 = L_28->____colorId_11;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_30 = __this->___U3ConColorU3E5__8_10;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_31 = __this->___U3CoffColorU3E5__9_11;
+		float L_32 = V_2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_33;
+		L_33 = Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline(L_30, L_31, L_32, NULL);
+		NullCheck(L_27);
+		Material_SetColor_m573C88F2FB1B5A978C53A197B414F9E9C6AC5B9A(L_27, L_29, L_33, NULL);
+		// if (Time.time > lightBlinkEndTime)
+		float L_34;
+		L_34 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_35 = __this->___U3ClightBlinkEndTimeU3E5__5_7;
+		if ((!(((float)L_34) > ((float)L_35))))
+		{
+			goto IL_0162;
+		}
+	}
+	{
+		// Material temp = lightToBlinkOn;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_36 = __this->___U3ClightToBlinkOnU3E5__6_8;
+		V_3 = L_36;
+		// lightToBlinkOn = lightToBlinkOff;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_37 = __this->___U3ClightToBlinkOffU3E5__7_9;
+		__this->___U3ClightToBlinkOnU3E5__6_8 = L_37;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3ClightToBlinkOnU3E5__6_8), (void*)L_37);
+		// lightToBlinkOff = temp;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_38 = V_3;
+		__this->___U3ClightToBlinkOffU3E5__7_9 = L_38;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3ClightToBlinkOffU3E5__7_9), (void*)L_38);
+		// lightBlinkStartTime = Time.time;
+		float L_39;
+		L_39 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->___U3ClightBlinkStartTimeU3E5__4_6 = L_39;
+		// lightBlinkEndTime = Time.time + lightBlinkDuration;
+		float L_40;
+		L_40 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_41 = __this->___U3ClightBlinkDurationU3E5__3_5;
+		__this->___U3ClightBlinkEndTimeU3E5__5_7 = ((float)il2cpp_codegen_add(L_40, L_41));
+	}
+
+IL_0162:
+	{
+		// yield return null;
+		__this->___U3CU3E2__current_1 = NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)NULL);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0172:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+	}
+
+IL_0179:
+	{
+		// while (Time.time < animationEndTime)
+		float L_42;
+		L_42 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_43 = __this->___U3CanimationEndTimeU3E5__2_4;
+		if ((((float)L_42) < ((float)L_43)))
+		{
+			goto IL_00c4;
+		}
+	}
+	{
+		// ToggleLightObjects(false);
+		TrainCrossingController_t9E464193B59140D54E9B9AA92AB8B7C34788BA75* L_44 = V_1;
+		NullCheck(L_44);
+		TrainCrossingController_ToggleLightObjects_mAFC81037C7641441E6375A6558FCF8FEFD33D574(L_44, (bool)0, NULL);
+		// }
+		return (bool)0;
+	}
+}
+// System.Object OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateCrossingU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA37F1E0AEB7639C9D4100D1C99B657A398CEA879 (U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateCrossingU3Ed__15_System_Collections_IEnumerator_Reset_mBCD5E96BE8CE94DD20BE98DF247524CD06FECCCA (U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateCrossingU3Ed__15_System_Collections_IEnumerator_Reset_mBCD5E96BE8CE94DD20BE98DF247524CD06FECCCA_RuntimeMethod_var)));
+	}
+}
+// System.Object OculusSampleFramework.TrainCrossingController/<AnimateCrossing>d__15::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateCrossingU3Ed__15_System_Collections_IEnumerator_get_Current_m17A72D7597BA7E484D44BD2CF2FDAF15E727116F (U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -7664,6 +7963,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TouchController__ctor_mFEC6542E29C9A7062
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___r0;
+		__this->___r_0 = L_0;
+		float L_1 = ___g1;
+		__this->___g_1 = L_1;
+		float L_2 = ___b2;
+		__this->___b_2 = L_2;
+		float L_3 = ___a3;
+		__this->___a_3 = L_3;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___a0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___b1, float ___t2, const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		float L_0 = ___t2;
+		float L_1;
+		L_1 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_0, NULL);
+		___t2 = L_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___a0;
+		float L_3 = L_2.___r_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___b1;
+		float L_5 = L_4.___r_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6 = ___a0;
+		float L_7 = L_6.___r_0;
+		float L_8 = ___t2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ___a0;
+		float L_10 = L_9.___g_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ___b1;
+		float L_12 = L_11.___g_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13 = ___a0;
+		float L_14 = L_13.___g_1;
+		float L_15 = ___t2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_16 = ___a0;
+		float L_17 = L_16.___b_2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_18 = ___b1;
+		float L_19 = L_18.___b_2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_20 = ___a0;
+		float L_21 = L_20.___b_2;
+		float L_22 = ___t2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23 = ___a0;
+		float L_24 = L_23.___a_3;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25 = ___b1;
+		float L_26 = L_25.___a_3;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27 = ___a0;
+		float L_28 = L_27.___a_3;
+		float L_29 = ___t2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_30;
+		memset((&L_30), 0, sizeof(L_30));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_30), ((float)il2cpp_codegen_add(L_3, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_5, L_7)), L_8)))), ((float)il2cpp_codegen_add(L_10, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_12, L_14)), L_15)))), ((float)il2cpp_codegen_add(L_17, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_19, L_21)), L_22)))), ((float)il2cpp_codegen_add(L_24, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_26, L_28)), L_29)))), /*hidden argument*/NULL);
+		V_0 = L_30;
+		goto IL_0069;
+	}
+
+IL_0069:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_31 = V_0;
+		return L_31;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TrainCarBase_set_Distance_mF9D78037A307E9060BC95667FA44CF820A0F13DD_inline (TrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616* __this, float ___value0, const RuntimeMethod* method) 
 {
 	{
