@@ -30,9 +30,11 @@ public class TrackHandle : MonoBehaviour
 
     private double distanceHandleHeadRelease; //self explanatory
     private double distanceHandleHeadCatch; //self explanatory
+    private double distanceHandleHeadNow;
 
     private double heightHeadRelease;
     private double heightHeadCatch;
+    private double heightHeadNow;
 
     public float thresholdDirection; //Distance to last point still acceptable so were still moving in the same direction
     private float farthestBackZ; //farthest Point back on the z-Axis on this Stroke
@@ -48,6 +50,13 @@ public class TrackHandle : MonoBehaviour
 
 
     private float lastStrokeDuration;
+    private float timepointCatch;
+    //->duration starting at beginning of stroke
+    // till distance between Head and Handle stays the
+    //same and height of head also hasnt changed yet.
+    private float timepointDrive;
+    private float timepointFinish;
+
     private int strokeCounter;
     private int pointsCounter;
 
@@ -58,8 +67,10 @@ public class TrackHandle : MonoBehaviour
     {
         distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
         distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
+        distanceHandleHeadNow = Vector3.Distance(trackedObject.position, headPlayer.position);
         heightHeadRelease = headPlayer.position.y;
         heightHeadCatch = headPlayer.position.y;
+        heightHeadNow = headPlayer.position.y;
         thresholdDirection = 0f;
         farthestBackZ = trackedObject.position.z;
         farthestFrontZ = trackedObject.position.z;
@@ -72,10 +83,14 @@ public class TrackHandle : MonoBehaviour
         lastLastPointZ = trackedObject.position.z;
 
         lastStrokeDuration = 0f;
+        timepointCatch = 0f;
+        timepointDrive = 0f;
+        timepointFinish = 0f;
+
         strokeCounter = 0;
         pointsCounter = 0;
 
-        lastStrokeDuration = 0f;
+        
         
 
     }
@@ -83,17 +98,31 @@ public class TrackHandle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //heightheadRelease = headPlayer.position.y;
-        //DebugTextSeven.text = heightheadRelease.ToString();
-        DebugTextEight.text = headPlayer.rotation.x.ToString(); //Neigung nach oben Unten
+
+        /*DebugTextEight.text = headPlayer.rotation.x.ToString(); //Neigung nach oben Unten
         DebugTextNine.text = headPlayer.rotation.y.ToString(); //Neigung Blickfeld Links nach Rechts
         DebugTextTen.text = headPlayer.rotation.z.ToString();  //Neigung Kopf nach Links rechts \|/
+        */
+        
+        heightHeadNow = headPlayer.position.y;
+        DebugTextNine.text = (heightHeadNow - heightHeadCatch).ToString();
         lastStrokeDuration += Time.deltaTime;
+        //DebugTextNine.text = (heightHeadRelease - heightHeadNow).ToString();
         currentZ = transform.position.z;
         if ((currentZ < farthestBackZ) && (direction == true))
         {
             farthestBackZ = currentZ;
             intensityText.text = farthestBackZ.ToString();
+            /*if ((heightHeadNow - heightHeadCatch < 0.1) && (currentZ < timepointDrive))
+            {
+
+                DebugTextNine.text = timepointDrive.ToString();
+                distanceHandleHeadNow = Vector3.Distance(trackedObject.position, headPlayer.position);
+
+            }*/
+            
+
+
         }
 
         else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ) && (lastLastLastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
@@ -130,6 +159,8 @@ public class TrackHandle : MonoBehaviour
             strokeCounter++;
             strokesText.text = strokeCounter.ToString();
 
+            //////////// to show full stroke duration
+            DebugTextTen.text = lastStrokeDuration.ToString();
 
             //Determine Intesity of stroke
             if (farthestBackZ >= -0.5f)
