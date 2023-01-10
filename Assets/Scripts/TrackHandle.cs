@@ -19,6 +19,16 @@ public class TrackHandle : MonoBehaviour
     public TextMeshProUGUI DebugTextEight;
     public TextMeshProUGUI DebugTextNine;
     public TextMeshProUGUI DebugTextTen;
+    public TextMeshProUGUI DebugTextEleven;
+    public TextMeshProUGUI DebugTextTwelve;
+    public TextMeshProUGUI DebugTextThirteen;
+    public TextMeshProUGUI DebugTextFourteen;
+    public TextMeshProUGUI DebugTextFifteen;
+    public TextMeshProUGUI DebugTextSixteen;
+    public TextMeshProUGUI DebugTextSeventeen;
+
+
+
 
 
 
@@ -36,6 +46,7 @@ public class TrackHandle : MonoBehaviour
     private double heightHeadCatch;
     private double heightHeadNow;
 
+    private double zDifferencesHeadHandle;
     public float thresholdDirection; //Distance to last point still acceptable so were still moving in the same direction
     private float farthestBackZ; //farthest Point back on the z-Axis on this Stroke
     private float farthestFrontZ;
@@ -71,6 +82,8 @@ public class TrackHandle : MonoBehaviour
         heightHeadRelease = headPlayer.position.y;
         heightHeadCatch = headPlayer.position.y;
         heightHeadNow = headPlayer.position.y;
+        zDifferencesHeadHandle = 0;
+
         thresholdDirection = 0f;
         farthestBackZ = trackedObject.position.z;
         farthestFrontZ = trackedObject.position.z;
@@ -153,8 +166,19 @@ public class TrackHandle : MonoBehaviour
 
             }*/
 
-
-
+            /////Check if Handle is fully pulled to Chest at the end of the Stroke
+            ///
+            zDifferencesHeadHandle = currentZ - headPlayer.position.z;
+            DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
+            if(zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
+            {
+                DebugTextSeventeen.text = "armsBack";
+            }
+            else
+            {
+                DebugTextSeventeen.text = "armsAway";
+            }
+            ////////////////////
             direction = false;
             strokeCounter++;
             strokesText.text = strokeCounter.ToString();
@@ -214,11 +238,13 @@ public class TrackHandle : MonoBehaviour
                 DebugTextThree.text = "FALSE";
 
             }
+
+            
             /////////////////////////////////////////////////////////////
             ///
             heightHeadCatch = headPlayer.position.y;
             DebugTextSeven.text = (heightHeadRelease-heightHeadCatch).ToString();
-
+            ///////////////////////////////////////////////////////
             direction = true;
             farthestBackZ = lastPointZ;
         }
