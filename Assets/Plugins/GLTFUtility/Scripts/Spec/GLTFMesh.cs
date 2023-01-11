@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
-using Object = UnityEngine.Object;
 
 namespace Siccity.GLTFUtility {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#mesh
@@ -66,7 +65,7 @@ namespace Siccity.GLTFUtility {
 					} else {
 						for (int i = 0; i < gltfMesh.primitives.Count; i++) {
 							GLTFPrimitive primitive = gltfMesh.primitives[i];
-
+		
 							int vertStartIndex = verts.Count;
 							submeshVertexStart.Add(vertStartIndex);
 
@@ -281,11 +280,6 @@ namespace Siccity.GLTFUtility {
 							newMesh.AddBlendShapeFrame(name, weight, deltaVertices, zero, deltaTangents);
 						}
 					}
-#if UNITY_EDITOR
-					Object.DestroyImmediate(selected);
-#else
-					Object.Destroy(selected);
-#endif
 
 					return newMesh;
 				}
@@ -337,10 +331,10 @@ namespace Siccity.GLTFUtility {
 				});
 			}
 
-			public override IEnumerator OnCoroutine(Action<float, ImportType> onProgress = null) {
+			public override IEnumerator OnCoroutine(Action<float> onProgress = null) {
 				// No mesh
 				if (meshData == null) {
-					if (onProgress != null) onProgress.Invoke(1f, ImportType.MESH);
+					if (onProgress != null) onProgress.Invoke(1f);
 					IsCompleted = true;
 					yield break;
 				}
@@ -369,7 +363,7 @@ namespace Siccity.GLTFUtility {
 						}
 					}
 					if (string.IsNullOrEmpty(Result[i].mesh.name)) Result[i].mesh.name = "mesh" + i;
-					if (onProgress != null) onProgress.Invoke((float) (i + 1) / (float) meshData.Length, ImportType.MESH);
+					if (onProgress != null) onProgress.Invoke((float) (i + 1) / (float) meshData.Length);
 					yield return null;
 				}
 				IsCompleted = true;
