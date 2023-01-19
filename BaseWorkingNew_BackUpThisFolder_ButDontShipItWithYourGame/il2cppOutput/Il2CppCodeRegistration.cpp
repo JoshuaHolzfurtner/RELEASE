@@ -27,7 +27,6 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Wit_TTS_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Wit_TTS_Samples_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_LitJson_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Newtonsoft_Json_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_AudioManager_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_AvatarSDK2_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_AvatarSDK2_Example_CodeGenModule;
@@ -38,16 +37,11 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Platform_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Spatializer_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_VR_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Voice_Demo_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_ReadyPlayerMe_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Siccity_GLTFUtility_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Core_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Data_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Numerics_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Runtime_Serialization_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_Linq_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule;
@@ -79,15 +73,10 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UI_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAudioModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Animation_Rigging_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Burst_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Burst_Unsafe_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_011_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_ARKitFaceCapture_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_CompanionApp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_Networking_CodeGenModule;
@@ -99,11 +88,10 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_Management_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_Oculus_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_VoiceSDK_Dictation_Runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_VoiceSDK_Runtime_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_WebView_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[84] = 
+const Il2CppCodeGenModule* g_CodeGenModules[72] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_AssistantCoreSDKRuntime_CodeGenModule),
@@ -114,7 +102,6 @@ const Il2CppCodeGenModule* g_CodeGenModules[84] =
 	(&g_Facebook_Wit_TTS_Samples_CodeGenModule),
 	(&g_LitJson_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
-	(&g_Newtonsoft_Json_CodeGenModule),
 	(&g_Oculus_AudioManager_CodeGenModule),
 	(&g_Oculus_AvatarSDK2_CodeGenModule),
 	(&g_Oculus_AvatarSDK2_Example_CodeGenModule),
@@ -125,16 +112,11 @@ const Il2CppCodeGenModule* g_CodeGenModules[84] =
 	(&g_Oculus_Spatializer_CodeGenModule),
 	(&g_Oculus_VR_CodeGenModule),
 	(&g_Oculus_Voice_Demo_CodeGenModule),
-	(&g_ReadyPlayerMe_CodeGenModule),
-	(&g_Siccity_GLTFUtility_CodeGenModule),
 	(&g_System_CodeGenModule),
 	(&g_System_Configuration_CodeGenModule),
 	(&g_System_Core_CodeGenModule),
-	(&g_System_Data_CodeGenModule),
 	(&g_System_Numerics_CodeGenModule),
-	(&g_System_Runtime_Serialization_CodeGenModule),
 	(&g_System_Xml_CodeGenModule),
-	(&g_System_Xml_Linq_CodeGenModule),
 	(&g_UnityEngine_AIModule_CodeGenModule),
 	(&g_UnityEngine_AndroidJNIModule_CodeGenModule),
 	(&g_UnityEngine_AnimationModule_CodeGenModule),
@@ -166,15 +148,10 @@ const Il2CppCodeGenModule* g_CodeGenModules[84] =
 	(&g_UnityEngine_UI_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestAudioModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
-	(&g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule),
 	(&g_UnityEngine_VRModule_CodeGenModule),
 	(&g_UnityEngine_VideoModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
-	(&g_Unity_Animation_Rigging_CodeGenModule),
-	(&g_Unity_Burst_CodeGenModule),
-	(&g_Unity_Burst_Unsafe_CodeGenModule),
 	(&g_Unity_InternalAPIEngineBridge_011_CodeGenModule),
-	(&g_Unity_LiveCapture_ARKitFaceCapture_CodeGenModule),
 	(&g_Unity_LiveCapture_CodeGenModule),
 	(&g_Unity_LiveCapture_CompanionApp_CodeGenModule),
 	(&g_Unity_LiveCapture_Networking_CodeGenModule),
@@ -186,27 +163,26 @@ const Il2CppCodeGenModule* g_CodeGenModules[84] =
 	(&g_Unity_XR_Oculus_CodeGenModule),
 	(&g_VoiceSDK_Dictation_Runtime_CodeGenModule),
 	(&g_VoiceSDK_Runtime_CodeGenModule),
-	(&g_WebView_CodeGenModule),
 	(&g___Generated_CodeGenModule),
 	(&g_mscorlib_CodeGenModule),
 };
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	24,
+	23,
 	g_ReversePInvokeWrapperPointers,
-	60722,
+	49887,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	13272,
+	10983,
 	g_Il2CppInvokerPointers,
-	2290,
+	1897,
 	g_UnresolvedVirtualMethodPointers,
-	1045,
+	944,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	84,
+	72,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

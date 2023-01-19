@@ -20,42 +20,38 @@ extern void ImageConversion_EncodeToJPG_mD0307B5DFF32A3FF39488E97B467F11AFE501F6
 extern void ImageConversion_EncodeToJPG_mD3B358B8645CF85EBAD979554FFDE05A54A99804 (void);
 // 0x00000004 System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)
 extern void ImageConversion_LoadImage_m292ADCEED268A0A0AAD532BAB8D1710CF0FC8AEF (void);
-// 0x00000005 System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[])
-extern void ImageConversion_LoadImage_m1797365F78319B68638DE8BB02836F8D60760041 (void);
-// 0x00000006 Unity.Collections.NativeArray`1<System.Byte> UnityEngine.ImageConversion::EncodeNativeArrayToPNG(Unity.Collections.NativeArray`1<T>,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32)
-// 0x00000007 Unity.Collections.NativeArray`1<System.Byte> UnityEngine.ImageConversion::EncodeNativeArrayToJPG(Unity.Collections.NativeArray`1<T>,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32,System.Int32)
-// 0x00000008 System.Void* UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToPNG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32)
+// 0x00000005 Unity.Collections.NativeArray`1<System.Byte> UnityEngine.ImageConversion::EncodeNativeArrayToPNG(Unity.Collections.NativeArray`1<T>,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32)
+// 0x00000006 Unity.Collections.NativeArray`1<System.Byte> UnityEngine.ImageConversion::EncodeNativeArrayToJPG(Unity.Collections.NativeArray`1<T>,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32,System.Int32)
+// 0x00000007 System.Void* UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToPNG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32)
 extern void ImageConversion_UnsafeEncodeNativeArrayToPNG_m5ADDC56B7A9E423C4D99EBC74803A352DF263537 (void);
-// 0x00000009 System.Void* UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToJPG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32,System.Int32)
+// 0x00000008 System.Void* UnityEngine.ImageConversion::UnsafeEncodeNativeArrayToJPG(System.Void*,System.Int32&,UnityEngine.Experimental.Rendering.GraphicsFormat,System.UInt32,System.UInt32,System.UInt32,System.Int32)
 extern void ImageConversion_UnsafeEncodeNativeArrayToJPG_m19AB03A1F3E5019BEDA20CC0D3A15A760932E53D (void);
-static Il2CppMethodPointer s_methodPointers[9] = 
+static Il2CppMethodPointer s_methodPointers[8] = 
 {
 	ImageConversion_EncodeToPNG_m0804AD31B83C653AEBB234F6CC31A02D4FA7C945,
 	ImageConversion_EncodeToJPG_mD0307B5DFF32A3FF39488E97B467F11AFE501F6F,
 	ImageConversion_EncodeToJPG_mD3B358B8645CF85EBAD979554FFDE05A54A99804,
 	ImageConversion_LoadImage_m292ADCEED268A0A0AAD532BAB8D1710CF0FC8AEF,
-	ImageConversion_LoadImage_m1797365F78319B68638DE8BB02836F8D60760041,
 	NULL,
 	NULL,
 	ImageConversion_UnsafeEncodeNativeArrayToPNG_m5ADDC56B7A9E423C4D99EBC74803A352DF263537,
 	ImageConversion_UnsafeEncodeNativeArrayToJPG_m19AB03A1F3E5019BEDA20CC0D3A15A760932E53D,
 };
-static const int32_t s_InvokerIndices[9] = 
+static const int32_t s_InvokerIndices[8] = 
 {
-	12677,
-	11635,
-	12677,
-	10369,
-	11318,
+	10546,
+	9738,
+	10546,
+	8699,
 	0,
 	0,
-	8951,
-	8856,
+	7535,
+	7457,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
-	{ 0x06000006, { 0, 2 } },
-	{ 0x06000007, { 2, 2 } },
+	{ 0x06000005, { 0, 2 } },
+	{ 0x06000006, { 2, 2 } },
 };
 extern const uint32_t g_rgctx_UnsafeUtility_SizeOf_TisT_tF7CF13651E05C9339869093B9BAE0AD94733F672_m56059F351AE81A8002B3ED836B6756E549ADA3CD;
 extern const uint32_t g_rgctx_NativeArrayUnsafeUtility_GetUnsafeBufferPointerWithoutChecks_TisT_tF7CF13651E05C9339869093B9BAE0AD94733F672_mD0AD97C99F9F67FF9EC299B43B3B34CA8CA36DEF;
@@ -72,7 +68,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_ImageConversionModule_Co
 const Il2CppCodeGenModule g_UnityEngine_ImageConversionModule_CodeGenModule = 
 {
 	"UnityEngine.ImageConversionModule.dll",
-	9,
+	8,
 	s_methodPointers,
 	0,
 	NULL,

@@ -158,9 +158,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Burst.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Oculus.VR.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/VoiceSDK.Dictation.Runtime.dll
---root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/ReadyPlayerMe.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.dll
---root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Siccity.GLTFUtility.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/VoiceSDK.Runtime.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Facebook.WitAI.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.LiveCapture.CompanionApp.dll
@@ -183,7 +181,6 @@ Library: lib_burst_generated
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.LiveCapture.ARKitFaceCapture.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.LiveCapture.Ltc.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Recorder.dll
---root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/WebView.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Facebook.Wit.Conduit.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll
