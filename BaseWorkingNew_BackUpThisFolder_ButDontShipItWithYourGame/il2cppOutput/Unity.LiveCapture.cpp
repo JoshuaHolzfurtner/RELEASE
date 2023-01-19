@@ -8721,7 +8721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0_U3CGetAllTypesU
 		Assembly_t* L_0 = ___assembly0;
 		NullCheck(L_0);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_1;
-		L_1 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(14 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_0);
+		L_1 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(16 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_0);
 		V_0 = L_1;
 		// }
 		goto IL_0011;
@@ -9491,7 +9491,7 @@ IL_000e_1:
 				Connection_tC1C0F4A942FCF4DAA70AE4D8F9A9DFACD44F5352* L_4 = V_1;
 				NullCheck(L_3);
 				bool L_5;
-				L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(114 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_3, L_4);
+				L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_3, L_4);
 				if (!L_5)
 				{
 					goto IL_0023_1;
@@ -10300,7 +10300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass23_0_U3CCreateConne
 		Connection_tC1C0F4A942FCF4DAA70AE4D8F9A9DFACD44F5352* L_1 = ___c0;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(114 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }

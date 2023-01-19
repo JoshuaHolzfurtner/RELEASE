@@ -12457,7 +12457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimelineDisableUndoScopeLegacy__cctor_m0
 		// s_EnableUndo = disableUndoGuardType.GetField(s_FieldStr, BindingFlags.NonPublic | BindingFlags.Static);
 		NullCheck(L_7);
 		FieldInfo_t* L_8;
-		L_8 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_7, _stringLiteralBA17409CBCE3E44055BD7D3A6D5B9F4B6A7FD09C, ((int32_t)40));
+		L_8 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(88 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_7, _stringLiteralBA17409CBCE3E44055BD7D3A6D5B9F4B6A7FD09C, ((int32_t)40));
 		((TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_StaticFields*)il2cpp_codegen_static_fields_for(TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_il2cpp_TypeInfo_var))->___s_EnableUndo_2 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&((TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_StaticFields*)il2cpp_codegen_static_fields_for(TimelineDisableUndoScopeLegacy_tAF2F2ACFDB1FCFD6C35A5AD6C5ECD0282E53FFE9_il2cpp_TypeInfo_var))->___s_EnableUndo_2), (void*)L_8);
 		// }
@@ -12584,7 +12584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec_U3C_cctorU3Eb__4_0_m12
 		Assembly_t* L_0 = ___a0;
 		NullCheck(L_0);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_1;
-		L_1 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(14 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_0);
+		L_1 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(16 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_0);
 		return (RuntimeObject*)L_1;
 	}
 }
@@ -12602,7 +12602,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3C_cctorU3Eb__4_1_mF89673C0E402
 		Type_t* L_0 = ___t0;
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_0);
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_0);
 		NullCheck(L_1);
 		bool L_2;
 		L_2 = String_Equals_mCD5F35DEDCAFE51ACD4E033726FC2EF8DF7E9B4D(L_1, _stringLiteral4E5F0959B7D281604D8A17436A9AE4B4DF2A7D9D, NULL);

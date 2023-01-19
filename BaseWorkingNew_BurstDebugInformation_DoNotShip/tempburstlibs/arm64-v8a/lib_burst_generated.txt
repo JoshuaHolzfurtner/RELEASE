@@ -197,6 +197,8 @@ Library: lib_burst_generated
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Subsystem.Registration.dll
 --root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Unity.Recorder.Base.dll
+--root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Siccity.GLTFUtility.dll
+--root-assembly=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/Wolf3D.ReadyPlayerMe.dll
 --assembly-folder=/Users/joshua/Documents/GitHub/RELEASE/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=UnityEngine.Animations.ProcessAnimationJobStruct`1[[UnityEngine.Animations.Rigging.OverrideTransformJob, Unity.Animation.Rigging, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Animations.Rigging.OverrideTransformJob&, Unity.Animation.Rigging, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--0c6ccfd2bba93d68e31208c014c56d05

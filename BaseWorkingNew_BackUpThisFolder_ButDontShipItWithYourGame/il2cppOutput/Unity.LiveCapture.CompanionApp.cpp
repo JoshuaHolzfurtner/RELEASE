@@ -6107,7 +6107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompanionAppClient__ctor_mC5554FF4D6631B
 		L_9 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_9);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_9);
+		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_9);
 		String_t* L_11;
 		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_10, _stringLiteral0245EA650AFA9056C60B129AB7014B7524D1863F, NULL);
 		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_12;
@@ -10599,7 +10599,7 @@ IL_0049:
 		Type_t* L_16 = V_2;
 		NullCheck(L_15);
 		bool L_17;
-		L_17 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(21 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_15, L_16);
+		L_17 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(22 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_15, L_16);
 		if (L_17)
 		{
 			goto IL_0086;
@@ -10610,7 +10610,7 @@ IL_0049:
 		Type_t* L_18 = V_2;
 		NullCheck(L_18);
 		String_t* L_19;
-		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_18);
+		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_18);
 		String_t* L_20;
 		L_20 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_19, _stringLiteralA3268F1625AE0A452A8803BE8A961F0F0C2851A7, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
@@ -11206,7 +11206,7 @@ IL_000d_2:
 					// var json = streamReader.ReadToEnd();
 					NullCheck(L_6);
 					String_t* L_7;
-					L_7 = VirtualFuncInvoker0< String_t* >::Invoke(11 /* System.String System.IO.TextReader::ReadToEnd() */, L_6);
+					L_7 = VirtualFuncInvoker0< String_t* >::Invoke(13 /* System.String System.IO.TextReader::ReadToEnd() */, L_6);
 					V_0 = L_7;
 					// var data = default(ClientInitialization);
 					V_1 = (ClientInitialization_t0849DB03F625A61D9BBFAD52C09D53C40AA550CF*)NULL;
