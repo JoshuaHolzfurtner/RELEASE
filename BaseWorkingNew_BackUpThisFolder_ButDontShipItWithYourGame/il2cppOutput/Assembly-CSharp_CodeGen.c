@@ -1519,198 +1519,198 @@ extern void UiVectorInspector_SetName_m8867C500C992DADD65C004F15E357A2E764AC6FE 
 extern void UiVectorInspector_SetValue_m1D5E1B8A353C6EB4821525702EEA2DFBE03A2D1A (void);
 // 0x000002F9 System.Void UiVectorInspector::.ctor()
 extern void UiVectorInspector__ctor_m521102321E1031263DDF028DF02ACBBB07D645CD (void);
-// 0x000002FA System.Void PlayerSounds::Start()
-extern void PlayerSounds_Start_mD2602E0DC89CC92A0BCBCBF9DDA642284D0376AE (void);
-// 0x000002FB System.Void PlayerSounds::footStep(System.Int32)
-extern void PlayerSounds_footStep_mD0B63CFE352FDF68B0453C9A6C52A506E9FDF669 (void);
-// 0x000002FC System.Void PlayerSounds::openTutorial()
-extern void PlayerSounds_openTutorial_mCA08F7613F74C1FCDAB4F13BF736E208F07457C4 (void);
-// 0x000002FD System.Void PlayerSounds::openQuickStart()
-extern void PlayerSounds_openQuickStart_mD079A1F9C7EBC65A8B47F4BB47FD0C0C607F3599 (void);
-// 0x000002FE System.Void PlayerSounds::.ctor()
-extern void PlayerSounds__ctor_m3B2AABC06ADAD0328ECAD165B360C976ADEF6BBD (void);
-// 0x000002FF System.Void AudioLoudnessDetection::Start()
+// 0x000002FA System.Void AudioLoudnessDetection::Start()
 extern void AudioLoudnessDetection_Start_mF76ADFC99EF0E3F876AF8DBFF8DD18B51A915889 (void);
-// 0x00000300 System.Void AudioLoudnessDetection::Update()
+// 0x000002FB System.Void AudioLoudnessDetection::Update()
 extern void AudioLoudnessDetection_Update_m01BCAC7EFF10DC91A30BDBE8B1A41FA66C3C817B (void);
-// 0x00000301 System.Void AudioLoudnessDetection::MicrophoneToAudioClip()
+// 0x000002FC System.Void AudioLoudnessDetection::MicrophoneToAudioClip()
 extern void AudioLoudnessDetection_MicrophoneToAudioClip_m252FC5B9808BB6D5E39752C38BF1E11D0F93FC7F (void);
-// 0x00000302 System.Single AudioLoudnessDetection::GetLoudnessFromMicrophone()
+// 0x000002FD System.Single AudioLoudnessDetection::GetLoudnessFromMicrophone()
 extern void AudioLoudnessDetection_GetLoudnessFromMicrophone_m9FD19D83808936295C4E5CD1B68ACBF8A31A1C36 (void);
-// 0x00000303 System.Single AudioLoudnessDetection::GetLoudnessFromAudioClip(System.Int32,UnityEngine.AudioClip)
+// 0x000002FE System.Single AudioLoudnessDetection::GetLoudnessFromAudioClip(System.Int32,UnityEngine.AudioClip)
 extern void AudioLoudnessDetection_GetLoudnessFromAudioClip_mD104006EAFE79C34893634E7A54349F94862895E (void);
-// 0x00000304 System.Void AudioLoudnessDetection::.ctor()
+// 0x000002FF System.Void AudioLoudnessDetection::.ctor()
 extern void AudioLoudnessDetection__ctor_m7AE1F64FF439F1D65656ED0A578C35F12F00546E (void);
-// 0x00000305 System.Void Maptranforms::VrMapping()
-extern void Maptranforms_VrMapping_m8A4C7C84CA9DEA511050159C205BE1573BF7EFCD (void);
-// 0x00000306 System.Void Maptranforms::.ctor()
-extern void Maptranforms__ctor_m5BA1A66E4D4B61547BB2A282399032D9851940F4 (void);
-// 0x00000307 System.Void AvatarController::Start()
-extern void AvatarController_Start_m9FBAF9CED8B124C94EB4AD6716CAAA703C55CDA4 (void);
-// 0x00000308 System.Void AvatarController::LateUpdate()
-extern void AvatarController_LateUpdate_m5F09482CFE436368109F0DCDF2F9D6121244B831 (void);
-// 0x00000309 System.Void AvatarController::.ctor()
-extern void AvatarController__ctor_m68C14ECE7F9855E5C399DF6E2EAFE191385A24E0 (void);
-// 0x0000030A System.Void ColorVoiceResponds::SetColor(System.String[])
-extern void ColorVoiceResponds_SetColor_mE551F656643B6C22BA76C9975B5790D732C59223 (void);
-// 0x0000030B System.Void ColorVoiceResponds::.ctor()
-extern void ColorVoiceResponds__ctor_m23BE5460F22C1B153EBD81E9D657CB0C386011AD (void);
-// 0x0000030C System.Void ColorVoiceResponds/<>c__DisplayClass1_0::.ctor()
-extern void U3CU3Ec__DisplayClass1_0__ctor_m4827A4BBA0C818D2311DBA445E92EDB9F4FA9E2D (void);
-// 0x0000030D System.Boolean ColorVoiceResponds/<>c__DisplayClass1_0::<SetColor>b__0(UnityEngine.GameObject)
-extern void U3CU3Ec__DisplayClass1_0_U3CSetColorU3Eb__0_mDEF83F31E89DFCE994B48920D0760AA7FDF89EF4 (void);
-// 0x0000030E System.Void DrwLn::Start()
-extern void DrwLn_Start_mE7E88377F86B5AEADCEFB422C19220EB6C9066DB (void);
-// 0x0000030F System.Void DrwLn::Update()
-extern void DrwLn_Update_mB4181F8EEACF49F793B61B0D6071293E77FE19E8 (void);
-// 0x00000310 System.Void DrwLn::.ctor()
-extern void DrwLn__ctor_m42492CD6612439414D65C75AC9117D4132878E4F (void);
-// 0x00000311 System.Void HandleLineConnector::Start()
-extern void HandleLineConnector_Start_mA5EA8150C50CE19F0325779F8F1715507828A2C8 (void);
-// 0x00000312 System.Void HandleLineConnector::Update()
-extern void HandleLineConnector_Update_mC05D2E71D50932801FDB8D7DA2459E7B43E2C167 (void);
-// 0x00000313 System.Void HandleLineConnector::.ctor()
-extern void HandleLineConnector__ctor_m135B0B6E70F67367BA11A303515EEB1A060A9CE9 (void);
-// 0x00000314 System.Void midPointRightLeft::Start()
-extern void midPointRightLeft_Start_mC453E87452B6436E657FA375FE56B1EF05257584 (void);
-// 0x00000315 System.Void midPointRightLeft::Update()
-extern void midPointRightLeft_Update_m065A887BF54ECAC74CD19F4FDD68B9472D24C371 (void);
-// 0x00000316 System.Void midPointRightLeft::.ctor()
-extern void midPointRightLeft__ctor_mFE79AE7CD118FAA107D2136B7232E8C6E144E0FF (void);
-// 0x00000317 System.Void MoveDirectionCheck::Start()
-extern void MoveDirectionCheck_Start_m5BFFE08E2D98D1972C570460DADEFF9D0664DF6A (void);
-// 0x00000318 System.Void MoveDirectionCheck::Update()
-extern void MoveDirectionCheck_Update_mA2B996B2FEE739C0DECD864B665C29AD0893448A (void);
-// 0x00000319 System.Void MoveDirectionCheck::.ctor()
-extern void MoveDirectionCheck__ctor_mAE2B5D6C5FB8EDD7AC2AE976BD06964B4D6D448D (void);
-// 0x0000031A System.Void MoveHandle::Start()
-extern void MoveHandle_Start_mB1E5388ED8A48AB4C7B4CCC7F87235C4433E603B (void);
-// 0x0000031B System.Void MoveHandle::Update()
-extern void MoveHandle_Update_mF9024B5880D5046E0A1B3D7C834D43AA7C0220BD (void);
-// 0x0000031C System.Void MoveHandle::resetCounters()
-extern void MoveHandle_resetCounters_mD104E66EF6AE2FBCBC4DFB152FA10FBBA1254F64 (void);
-// 0x0000031D System.Void MoveHandle::.ctor()
-extern void MoveHandle__ctor_mCDE938B69FB6C9B038B5ADF07F5EC40CC96BF46A (void);
-// 0x0000031E System.Void MovePlayerLeftOrRight::Start()
-extern void MovePlayerLeftOrRight_Start_m75F6B5D6A474F757EDFB5F04ABA0E22725F15783 (void);
-// 0x0000031F System.Void MovePlayerLeftOrRight::Update()
-extern void MovePlayerLeftOrRight_Update_mF2EB095038C4F54F1D154AD4D004CFA85533B7B8 (void);
-// 0x00000320 System.Void MovePlayerLeftOrRight::moveLeft()
-extern void MovePlayerLeftOrRight_moveLeft_mBCF5DBE71D821B17CA5C2FC54E9F4C427B1478C2 (void);
-// 0x00000321 System.Void MovePlayerLeftOrRight::moveRight()
-extern void MovePlayerLeftOrRight_moveRight_mE361BC95FFDB0202E4284809608FDD298E275740 (void);
-// 0x00000322 System.Void MovePlayerLeftOrRight::.ctor()
-extern void MovePlayerLeftOrRight__ctor_mBE68742D50504168FC0124978C8410C7325A5FA8 (void);
-// 0x00000323 System.Void MovePlayerOnZAxisBackNForth::Start()
-extern void MovePlayerOnZAxisBackNForth_Start_m1FDF935A49EDE54F9BC1E854727DA9D39728E709 (void);
-// 0x00000324 System.Void MovePlayerOnZAxisBackNForth::Update()
-extern void MovePlayerOnZAxisBackNForth_Update_m67DCF7226BC86F642AB53546BE73853F26B4E100 (void);
-// 0x00000325 System.Void MovePlayerOnZAxisBackNForth::moveForward()
-extern void MovePlayerOnZAxisBackNForth_moveForward_m716FAFD12E3C8F3B9CED3734CA6A1C1BC4ADF9F8 (void);
-// 0x00000326 System.Void MovePlayerOnZAxisBackNForth::moveBackward()
-extern void MovePlayerOnZAxisBackNForth_moveBackward_mD0C2B81F537FAEF5838EA4E73859024C99B81164 (void);
-// 0x00000327 System.Void MovePlayerOnZAxisBackNForth::.ctor()
-extern void MovePlayerOnZAxisBackNForth__ctor_m2208ADDF826AE9933C9874B88E4BAB6ECBB0CB53 (void);
-// 0x00000328 System.Void MoveUpandDown::Start()
-extern void MoveUpandDown_Start_mCAE6294B47B3AA24BCEE84E6C926B980119090FA (void);
-// 0x00000329 System.Void MoveUpandDown::Update()
-extern void MoveUpandDown_Update_mCB68152D83DCD3E7F8716230AA1CF0DE0870B949 (void);
-// 0x0000032A System.Void MoveUpandDown::moveUp()
-extern void MoveUpandDown_moveUp_mF13766A38813B256060AC1F42753D378F36075D7 (void);
-// 0x0000032B System.Void MoveUpandDown::moveDown()
-extern void MoveUpandDown_moveDown_mB5532C4928D1F1FCA7EC70EC527770CBD7B193DB (void);
-// 0x0000032C System.Void MoveUpandDown::.ctor()
-extern void MoveUpandDown__ctor_m709D4108DEE09DB4933CF93C895218FEFEFBC8BE (void);
-// 0x0000032D System.Void NormalOrTutorial::Start()
-extern void NormalOrTutorial_Start_mFEA6EA9BB204AB54DED34DA0E9EE26B3D2184C46 (void);
-// 0x0000032E System.Void NormalOrTutorial::MakeItTutorial()
-extern void NormalOrTutorial_MakeItTutorial_mF606D233BC4C0066F3B87316D2F1A1EFBFEA502E (void);
-// 0x0000032F System.Void NormalOrTutorial::MakeItNormal()
-extern void NormalOrTutorial_MakeItNormal_mC7E99214054C02C6592559A7995956FCBF87BF62 (void);
-// 0x00000330 System.Void NormalOrTutorial::SpawnGameModeElements()
-extern void NormalOrTutorial_SpawnGameModeElements_m3458C71D8B0062597132E0D844A3F2A9A580FBDA (void);
-// 0x00000331 System.Void NormalOrTutorial::.ctor()
-extern void NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9 (void);
-// 0x00000332 System.Void rotateOnYAxis::Start()
-extern void rotateOnYAxis_Start_mF10EA5C71F383BDD672AE36AB9E652411CD8D0CF (void);
-// 0x00000333 System.Void rotateOnYAxis::Update()
-extern void rotateOnYAxis_Update_m76BAEE73F5E10D564F0CF37851074DFEF9ABAC10 (void);
-// 0x00000334 System.Void rotateOnYAxis::turnLeft()
-extern void rotateOnYAxis_turnLeft_m869BB510C1CEFE32DCBDA9CDF739BC37F9D68ED8 (void);
-// 0x00000335 System.Void rotateOnYAxis::turnRight()
-extern void rotateOnYAxis_turnRight_mB860536577296752392C5C713203DC352A7D36F8 (void);
-// 0x00000336 System.Void rotateOnYAxis::.ctor()
-extern void rotateOnYAxis__ctor_m93D4D59050DD6332E8E023A2832FD2583C414829 (void);
-// 0x00000337 System.Void RowerPicked::Start()
-extern void RowerPicked_Start_mB3F4DD95E2E454263711C06AEA585B8F5C896F79 (void);
-// 0x00000338 System.Void RowerPicked::WRPicked()
-extern void RowerPicked_WRPicked_m929C9CA809187C6437C17CE4EF1D671F1F402AD7 (void);
-// 0x00000339 System.Void RowerPicked::C2Picked()
-extern void RowerPicked_C2Picked_mEA47E390D39B240151F590ED87C5257D79131530 (void);
-// 0x0000033A System.Void RowerPicked::spawnRowingMachine()
-extern void RowerPicked_spawnRowingMachine_mA325F53E0EB5D3B996ED664957A841636830EDE5 (void);
-// 0x0000033B System.Void RowerPicked::.ctor()
-extern void RowerPicked__ctor_mB95F3748DB6B26ECD56672DE26A37A52226CA38C (void);
-// 0x0000033C System.Void ScaleFromAudioClip::Start()
-extern void ScaleFromAudioClip_Start_m7F27F224DCBB4F5382A5C1E4A4246DB4F5F8A142 (void);
-// 0x0000033D System.Void ScaleFromAudioClip::Update()
-extern void ScaleFromAudioClip_Update_m3794299FB8AF48D63D295B2B797B31F019A2C5C4 (void);
-// 0x0000033E System.Void ScaleFromAudioClip::.ctor()
-extern void ScaleFromAudioClip__ctor_m1B283E9F946907898899A2C956F7513864575CBD (void);
-// 0x0000033F System.Void ScaleFromMicrophone::Start()
-extern void ScaleFromMicrophone_Start_mA689871716210F439482FFAAE51110DCFFDFD855 (void);
-// 0x00000340 System.Void ScaleFromMicrophone::Update()
-extern void ScaleFromMicrophone_Update_m5AB24DC9D336EEBD0E47A94BC1D4740A517740AD (void);
-// 0x00000341 System.Void ScaleFromMicrophone::.ctor()
-extern void ScaleFromMicrophone__ctor_mE73BF75BA9D0E8A84027BAFB1279D9417A3E7C7C (void);
-// 0x00000342 System.Void TeleportToOther::Start()
-extern void TeleportToOther_Start_mB0ADD5D257BAE34D4230CB2BA0E9639FEA5292ED (void);
-// 0x00000343 System.Void TeleportToOther::Update()
-extern void TeleportToOther_Update_m1052ECC228D9F758D3EE30F4D7116E14B2D9D21E (void);
-// 0x00000344 System.Void TeleportToOther::startTeleportation()
-extern void TeleportToOther_startTeleportation_m8CA378A29AEB06CCEFA5F492764004292F15A95C (void);
-// 0x00000345 System.Void TeleportToOther::stopTeleportation()
-extern void TeleportToOther_stopTeleportation_m432B5D43FA24D5C4D58AC31D083DB217D1F66122 (void);
-// 0x00000346 System.Void TeleportToOther::.ctor()
-extern void TeleportToOther__ctor_m5A62314F81EE1EDDE804AECE0DF05CA57F03BA00 (void);
-// 0x00000347 System.Void Timer::Start()
-extern void Timer_Start_m6820D211A06B2E5E24795D7EBE67EE865F39BC43 (void);
-// 0x00000348 System.Void Timer::Update()
-extern void Timer_Update_m3AC30EFD54E8E1010F6E601AE179212E71E6B2CD (void);
-// 0x00000349 System.Void Timer::SetTimerText()
-extern void Timer_SetTimerText_m56A6D032D7D3135F52927C1F8DAEB0EA9420A73F (void);
-// 0x0000034A System.String Timer::TimeDisplay(System.Single)
-extern void Timer_TimeDisplay_m4B67773B831506C0124844BFAD85C341659F49F7 (void);
-// 0x0000034B System.Void Timer::stopTimer()
-extern void Timer_stopTimer_mA0EAC4FE86E5A89134644140BD039ACF45B89655 (void);
-// 0x0000034C System.Void Timer::startTimer()
-extern void Timer_startTimer_mED570665F53405328CE3075824676D4CB9D803DF (void);
-// 0x0000034D System.Void Timer::ResetTimer()
-extern void Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA12765772FD58624827 (void);
-// 0x0000034E System.Void Timer::.ctor()
-extern void Timer__ctor_m5FF13F1DAD0527F97E229A1904A8AD662731C4B5 (void);
-// 0x0000034F System.Void TrackDistance::Start()
-extern void TrackDistance_Start_m1A52EB8D31123C661E70751F98D60C224DFB1381 (void);
-// 0x00000350 System.Void TrackDistance::Update()
-extern void TrackDistance_Update_m1500D7DFADE2CA7371A17461DA9BF32E42C23555 (void);
-// 0x00000351 System.Void TrackDistance::.ctor()
-extern void TrackDistance__ctor_m9E54E59C3FDBC0A4B0F99C988468CFA6592B64C4 (void);
-// 0x00000352 System.Void TrackHandle::Start()
-extern void TrackHandle_Start_m5D0CC34770310F8B38CA81398EB85408B574862A (void);
-// 0x00000353 System.Void TrackHandle::Update()
-extern void TrackHandle_Update_m03FFCF16F4BC8FEBBDB0629D1D4ACB99C7794AE5 (void);
-// 0x00000354 System.Void TrackHandle::.ctor()
-extern void TrackHandle__ctor_m325CB7D8E3776998EAC0531B12CECAF88F54496F (void);
-// 0x00000355 System.Void UpdtMv::Start()
-extern void UpdtMv_Start_m072BC9823C068F75C29CFBDBAFF476CE00B8504A (void);
-// 0x00000356 System.Void UpdtMv::Update()
-extern void UpdtMv_Update_mB4B5015F900A5FD277276327B1C3C4872898F0D4 (void);
-// 0x00000357 System.Void UpdtMv::.ctor()
-extern void UpdtMv__ctor_mEBD682C695261BD9FC098BB7DA7D2144E41A08FC (void);
-// 0x00000358 System.Void AudioManager::Awake()
+// 0x00000300 System.Void AudioManager::Awake()
 extern void AudioManager_Awake_m8138BCED4D692C83C95626A1A09AB46EA5205569 (void);
-// 0x00000359 System.Void AudioManager::.ctor()
+// 0x00000301 System.Void AudioManager::.ctor()
 extern void AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6 (void);
+// 0x00000302 System.Void Maptranforms::VrMapping()
+extern void Maptranforms_VrMapping_m8A4C7C84CA9DEA511050159C205BE1573BF7EFCD (void);
+// 0x00000303 System.Void Maptranforms::.ctor()
+extern void Maptranforms__ctor_m5BA1A66E4D4B61547BB2A282399032D9851940F4 (void);
+// 0x00000304 System.Void AvatarController::Start()
+extern void AvatarController_Start_m9FBAF9CED8B124C94EB4AD6716CAAA703C55CDA4 (void);
+// 0x00000305 System.Void AvatarController::LateUpdate()
+extern void AvatarController_LateUpdate_m5F09482CFE436368109F0DCDF2F9D6121244B831 (void);
+// 0x00000306 System.Void AvatarController::.ctor()
+extern void AvatarController__ctor_m68C14ECE7F9855E5C399DF6E2EAFE191385A24E0 (void);
+// 0x00000307 System.Void ColorVoiceResponds::SetColor(System.String[])
+extern void ColorVoiceResponds_SetColor_mE551F656643B6C22BA76C9975B5790D732C59223 (void);
+// 0x00000308 System.Void ColorVoiceResponds::.ctor()
+extern void ColorVoiceResponds__ctor_m23BE5460F22C1B153EBD81E9D657CB0C386011AD (void);
+// 0x00000309 System.Void ColorVoiceResponds/<>c__DisplayClass1_0::.ctor()
+extern void U3CU3Ec__DisplayClass1_0__ctor_m4827A4BBA0C818D2311DBA445E92EDB9F4FA9E2D (void);
+// 0x0000030A System.Boolean ColorVoiceResponds/<>c__DisplayClass1_0::<SetColor>b__0(UnityEngine.GameObject)
+extern void U3CU3Ec__DisplayClass1_0_U3CSetColorU3Eb__0_mDEF83F31E89DFCE994B48920D0760AA7FDF89EF4 (void);
+// 0x0000030B System.Void DrwLn::Start()
+extern void DrwLn_Start_mE7E88377F86B5AEADCEFB422C19220EB6C9066DB (void);
+// 0x0000030C System.Void DrwLn::Update()
+extern void DrwLn_Update_mB4181F8EEACF49F793B61B0D6071293E77FE19E8 (void);
+// 0x0000030D System.Void DrwLn::.ctor()
+extern void DrwLn__ctor_m42492CD6612439414D65C75AC9117D4132878E4F (void);
+// 0x0000030E System.Void HandleLineConnector::Start()
+extern void HandleLineConnector_Start_mA5EA8150C50CE19F0325779F8F1715507828A2C8 (void);
+// 0x0000030F System.Void HandleLineConnector::Update()
+extern void HandleLineConnector_Update_mC05D2E71D50932801FDB8D7DA2459E7B43E2C167 (void);
+// 0x00000310 System.Void HandleLineConnector::.ctor()
+extern void HandleLineConnector__ctor_m135B0B6E70F67367BA11A303515EEB1A060A9CE9 (void);
+// 0x00000311 System.Void midPointRightLeft::Start()
+extern void midPointRightLeft_Start_mC453E87452B6436E657FA375FE56B1EF05257584 (void);
+// 0x00000312 System.Void midPointRightLeft::Update()
+extern void midPointRightLeft_Update_m065A887BF54ECAC74CD19F4FDD68B9472D24C371 (void);
+// 0x00000313 System.Void midPointRightLeft::.ctor()
+extern void midPointRightLeft__ctor_mFE79AE7CD118FAA107D2136B7232E8C6E144E0FF (void);
+// 0x00000314 System.Void MoveDirectionCheck::Start()
+extern void MoveDirectionCheck_Start_m5BFFE08E2D98D1972C570460DADEFF9D0664DF6A (void);
+// 0x00000315 System.Void MoveDirectionCheck::Update()
+extern void MoveDirectionCheck_Update_mA2B996B2FEE739C0DECD864B665C29AD0893448A (void);
+// 0x00000316 System.Void MoveDirectionCheck::.ctor()
+extern void MoveDirectionCheck__ctor_mAE2B5D6C5FB8EDD7AC2AE976BD06964B4D6D448D (void);
+// 0x00000317 System.Void MoveHandle::Start()
+extern void MoveHandle_Start_mB1E5388ED8A48AB4C7B4CCC7F87235C4433E603B (void);
+// 0x00000318 System.Void MoveHandle::Update()
+extern void MoveHandle_Update_mF9024B5880D5046E0A1B3D7C834D43AA7C0220BD (void);
+// 0x00000319 System.Void MoveHandle::resetCounters()
+extern void MoveHandle_resetCounters_mD104E66EF6AE2FBCBC4DFB152FA10FBBA1254F64 (void);
+// 0x0000031A System.Void MoveHandle::.ctor()
+extern void MoveHandle__ctor_mCDE938B69FB6C9B038B5ADF07F5EC40CC96BF46A (void);
+// 0x0000031B System.Void MovePlayerLeftOrRight::Start()
+extern void MovePlayerLeftOrRight_Start_m75F6B5D6A474F757EDFB5F04ABA0E22725F15783 (void);
+// 0x0000031C System.Void MovePlayerLeftOrRight::Update()
+extern void MovePlayerLeftOrRight_Update_mF2EB095038C4F54F1D154AD4D004CFA85533B7B8 (void);
+// 0x0000031D System.Void MovePlayerLeftOrRight::moveLeft()
+extern void MovePlayerLeftOrRight_moveLeft_mBCF5DBE71D821B17CA5C2FC54E9F4C427B1478C2 (void);
+// 0x0000031E System.Void MovePlayerLeftOrRight::moveRight()
+extern void MovePlayerLeftOrRight_moveRight_mE361BC95FFDB0202E4284809608FDD298E275740 (void);
+// 0x0000031F System.Void MovePlayerLeftOrRight::.ctor()
+extern void MovePlayerLeftOrRight__ctor_mBE68742D50504168FC0124978C8410C7325A5FA8 (void);
+// 0x00000320 System.Void MovePlayerOnZAxisBackNForth::Start()
+extern void MovePlayerOnZAxisBackNForth_Start_m1FDF935A49EDE54F9BC1E854727DA9D39728E709 (void);
+// 0x00000321 System.Void MovePlayerOnZAxisBackNForth::Update()
+extern void MovePlayerOnZAxisBackNForth_Update_m67DCF7226BC86F642AB53546BE73853F26B4E100 (void);
+// 0x00000322 System.Void MovePlayerOnZAxisBackNForth::moveForward()
+extern void MovePlayerOnZAxisBackNForth_moveForward_m716FAFD12E3C8F3B9CED3734CA6A1C1BC4ADF9F8 (void);
+// 0x00000323 System.Void MovePlayerOnZAxisBackNForth::moveBackward()
+extern void MovePlayerOnZAxisBackNForth_moveBackward_mD0C2B81F537FAEF5838EA4E73859024C99B81164 (void);
+// 0x00000324 System.Void MovePlayerOnZAxisBackNForth::.ctor()
+extern void MovePlayerOnZAxisBackNForth__ctor_m2208ADDF826AE9933C9874B88E4BAB6ECBB0CB53 (void);
+// 0x00000325 System.Void MoveUpandDown::Start()
+extern void MoveUpandDown_Start_mCAE6294B47B3AA24BCEE84E6C926B980119090FA (void);
+// 0x00000326 System.Void MoveUpandDown::Update()
+extern void MoveUpandDown_Update_mCB68152D83DCD3E7F8716230AA1CF0DE0870B949 (void);
+// 0x00000327 System.Void MoveUpandDown::moveUp()
+extern void MoveUpandDown_moveUp_mF13766A38813B256060AC1F42753D378F36075D7 (void);
+// 0x00000328 System.Void MoveUpandDown::moveDown()
+extern void MoveUpandDown_moveDown_mB5532C4928D1F1FCA7EC70EC527770CBD7B193DB (void);
+// 0x00000329 System.Void MoveUpandDown::.ctor()
+extern void MoveUpandDown__ctor_m709D4108DEE09DB4933CF93C895218FEFEFBC8BE (void);
+// 0x0000032A System.Void NormalOrTutorial::Start()
+extern void NormalOrTutorial_Start_mFEA6EA9BB204AB54DED34DA0E9EE26B3D2184C46 (void);
+// 0x0000032B System.Void NormalOrTutorial::MakeItTutorial()
+extern void NormalOrTutorial_MakeItTutorial_mF606D233BC4C0066F3B87316D2F1A1EFBFEA502E (void);
+// 0x0000032C System.Void NormalOrTutorial::MakeItNormal()
+extern void NormalOrTutorial_MakeItNormal_mC7E99214054C02C6592559A7995956FCBF87BF62 (void);
+// 0x0000032D System.Void NormalOrTutorial::SpawnGameModeElements()
+extern void NormalOrTutorial_SpawnGameModeElements_m3458C71D8B0062597132E0D844A3F2A9A580FBDA (void);
+// 0x0000032E System.Void NormalOrTutorial::.ctor()
+extern void NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9 (void);
+// 0x0000032F System.Void PlayerSounds::Start()
+extern void PlayerSounds_Start_mD2602E0DC89CC92A0BCBCBF9DDA642284D0376AE (void);
+// 0x00000330 System.Void PlayerSounds::footStep(System.Int32)
+extern void PlayerSounds_footStep_mD0B63CFE352FDF68B0453C9A6C52A506E9FDF669 (void);
+// 0x00000331 System.Void PlayerSounds::openTutorial()
+extern void PlayerSounds_openTutorial_mCA08F7613F74C1FCDAB4F13BF736E208F07457C4 (void);
+// 0x00000332 System.Void PlayerSounds::openQuickStart()
+extern void PlayerSounds_openQuickStart_mD079A1F9C7EBC65A8B47F4BB47FD0C0C607F3599 (void);
+// 0x00000333 System.Void PlayerSounds::.ctor()
+extern void PlayerSounds__ctor_m3B2AABC06ADAD0328ECAD165B360C976ADEF6BBD (void);
+// 0x00000334 System.Void rotateOnYAxis::Start()
+extern void rotateOnYAxis_Start_mF10EA5C71F383BDD672AE36AB9E652411CD8D0CF (void);
+// 0x00000335 System.Void rotateOnYAxis::Update()
+extern void rotateOnYAxis_Update_m76BAEE73F5E10D564F0CF37851074DFEF9ABAC10 (void);
+// 0x00000336 System.Void rotateOnYAxis::turnLeft()
+extern void rotateOnYAxis_turnLeft_m869BB510C1CEFE32DCBDA9CDF739BC37F9D68ED8 (void);
+// 0x00000337 System.Void rotateOnYAxis::turnRight()
+extern void rotateOnYAxis_turnRight_mB860536577296752392C5C713203DC352A7D36F8 (void);
+// 0x00000338 System.Void rotateOnYAxis::.ctor()
+extern void rotateOnYAxis__ctor_m93D4D59050DD6332E8E023A2832FD2583C414829 (void);
+// 0x00000339 System.Void RowerPicked::Start()
+extern void RowerPicked_Start_mB3F4DD95E2E454263711C06AEA585B8F5C896F79 (void);
+// 0x0000033A System.Void RowerPicked::WRPicked()
+extern void RowerPicked_WRPicked_m929C9CA809187C6437C17CE4EF1D671F1F402AD7 (void);
+// 0x0000033B System.Void RowerPicked::C2Picked()
+extern void RowerPicked_C2Picked_mEA47E390D39B240151F590ED87C5257D79131530 (void);
+// 0x0000033C System.Void RowerPicked::spawnRowingMachine()
+extern void RowerPicked_spawnRowingMachine_mA325F53E0EB5D3B996ED664957A841636830EDE5 (void);
+// 0x0000033D System.Void RowerPicked::.ctor()
+extern void RowerPicked__ctor_mB95F3748DB6B26ECD56672DE26A37A52226CA38C (void);
+// 0x0000033E System.Void ScaleFromAudioClip::Start()
+extern void ScaleFromAudioClip_Start_m7F27F224DCBB4F5382A5C1E4A4246DB4F5F8A142 (void);
+// 0x0000033F System.Void ScaleFromAudioClip::Update()
+extern void ScaleFromAudioClip_Update_m3794299FB8AF48D63D295B2B797B31F019A2C5C4 (void);
+// 0x00000340 System.Void ScaleFromAudioClip::.ctor()
+extern void ScaleFromAudioClip__ctor_m1B283E9F946907898899A2C956F7513864575CBD (void);
+// 0x00000341 System.Void ScaleFromMicrophone::Start()
+extern void ScaleFromMicrophone_Start_mA689871716210F439482FFAAE51110DCFFDFD855 (void);
+// 0x00000342 System.Void ScaleFromMicrophone::Update()
+extern void ScaleFromMicrophone_Update_m5AB24DC9D336EEBD0E47A94BC1D4740A517740AD (void);
+// 0x00000343 System.Void ScaleFromMicrophone::.ctor()
+extern void ScaleFromMicrophone__ctor_mE73BF75BA9D0E8A84027BAFB1279D9417A3E7C7C (void);
+// 0x00000344 System.Void TeleportToOther::Start()
+extern void TeleportToOther_Start_mB0ADD5D257BAE34D4230CB2BA0E9639FEA5292ED (void);
+// 0x00000345 System.Void TeleportToOther::Update()
+extern void TeleportToOther_Update_m1052ECC228D9F758D3EE30F4D7116E14B2D9D21E (void);
+// 0x00000346 System.Void TeleportToOther::startTeleportation()
+extern void TeleportToOther_startTeleportation_m8CA378A29AEB06CCEFA5F492764004292F15A95C (void);
+// 0x00000347 System.Void TeleportToOther::stopTeleportation()
+extern void TeleportToOther_stopTeleportation_m432B5D43FA24D5C4D58AC31D083DB217D1F66122 (void);
+// 0x00000348 System.Void TeleportToOther::.ctor()
+extern void TeleportToOther__ctor_m5A62314F81EE1EDDE804AECE0DF05CA57F03BA00 (void);
+// 0x00000349 System.Void Timer::Start()
+extern void Timer_Start_m6820D211A06B2E5E24795D7EBE67EE865F39BC43 (void);
+// 0x0000034A System.Void Timer::Update()
+extern void Timer_Update_m3AC30EFD54E8E1010F6E601AE179212E71E6B2CD (void);
+// 0x0000034B System.Void Timer::SetTimerText()
+extern void Timer_SetTimerText_m56A6D032D7D3135F52927C1F8DAEB0EA9420A73F (void);
+// 0x0000034C System.String Timer::TimeDisplay(System.Single)
+extern void Timer_TimeDisplay_m4B67773B831506C0124844BFAD85C341659F49F7 (void);
+// 0x0000034D System.Void Timer::stopTimer()
+extern void Timer_stopTimer_mA0EAC4FE86E5A89134644140BD039ACF45B89655 (void);
+// 0x0000034E System.Void Timer::startTimer()
+extern void Timer_startTimer_mED570665F53405328CE3075824676D4CB9D803DF (void);
+// 0x0000034F System.Void Timer::ResetTimer()
+extern void Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA12765772FD58624827 (void);
+// 0x00000350 System.Void Timer::.ctor()
+extern void Timer__ctor_m5FF13F1DAD0527F97E229A1904A8AD662731C4B5 (void);
+// 0x00000351 System.Void TrackDistance::Start()
+extern void TrackDistance_Start_m1A52EB8D31123C661E70751F98D60C224DFB1381 (void);
+// 0x00000352 System.Void TrackDistance::Update()
+extern void TrackDistance_Update_m1500D7DFADE2CA7371A17461DA9BF32E42C23555 (void);
+// 0x00000353 System.Void TrackDistance::.ctor()
+extern void TrackDistance__ctor_m9E54E59C3FDBC0A4B0F99C988468CFA6592B64C4 (void);
+// 0x00000354 System.Void TrackHandle::Start()
+extern void TrackHandle_Start_m5D0CC34770310F8B38CA81398EB85408B574862A (void);
+// 0x00000355 System.Void TrackHandle::Update()
+extern void TrackHandle_Update_m03FFCF16F4BC8FEBBDB0629D1D4ACB99C7794AE5 (void);
+// 0x00000356 System.Void TrackHandle::.ctor()
+extern void TrackHandle__ctor_m325CB7D8E3776998EAC0531B12CECAF88F54496F (void);
+// 0x00000357 System.Void UpdtMv::Start()
+extern void UpdtMv_Start_m072BC9823C068F75C29CFBDBAFF476CE00B8504A (void);
+// 0x00000358 System.Void UpdtMv::Update()
+extern void UpdtMv_Update_mB4B5015F900A5FD277276327B1C3C4872898F0D4 (void);
+// 0x00000359 System.Void UpdtMv::.ctor()
+extern void UpdtMv__ctor_mEBD682C695261BD9FC098BB7DA7D2144E41A08FC (void);
 // 0x0000035A System.Boolean OculusSampleFramework.ColorGrabbable::get_Highlight()
 extern void ColorGrabbable_get_Highlight_m4F58065C790D757D19E29FBFBE43E5CD777C87E0 (void);
 // 0x0000035B System.Void OculusSampleFramework.ColorGrabbable::set_Highlight(System.Boolean)
@@ -3350,17 +3350,14 @@ static Il2CppMethodPointer s_methodPointers[1305] =
 	UiVectorInspector_SetName_m8867C500C992DADD65C004F15E357A2E764AC6FE,
 	UiVectorInspector_SetValue_m1D5E1B8A353C6EB4821525702EEA2DFBE03A2D1A,
 	UiVectorInspector__ctor_m521102321E1031263DDF028DF02ACBBB07D645CD,
-	PlayerSounds_Start_mD2602E0DC89CC92A0BCBCBF9DDA642284D0376AE,
-	PlayerSounds_footStep_mD0B63CFE352FDF68B0453C9A6C52A506E9FDF669,
-	PlayerSounds_openTutorial_mCA08F7613F74C1FCDAB4F13BF736E208F07457C4,
-	PlayerSounds_openQuickStart_mD079A1F9C7EBC65A8B47F4BB47FD0C0C607F3599,
-	PlayerSounds__ctor_m3B2AABC06ADAD0328ECAD165B360C976ADEF6BBD,
 	AudioLoudnessDetection_Start_mF76ADFC99EF0E3F876AF8DBFF8DD18B51A915889,
 	AudioLoudnessDetection_Update_m01BCAC7EFF10DC91A30BDBE8B1A41FA66C3C817B,
 	AudioLoudnessDetection_MicrophoneToAudioClip_m252FC5B9808BB6D5E39752C38BF1E11D0F93FC7F,
 	AudioLoudnessDetection_GetLoudnessFromMicrophone_m9FD19D83808936295C4E5CD1B68ACBF8A31A1C36,
 	AudioLoudnessDetection_GetLoudnessFromAudioClip_mD104006EAFE79C34893634E7A54349F94862895E,
 	AudioLoudnessDetection__ctor_m7AE1F64FF439F1D65656ED0A578C35F12F00546E,
+	AudioManager_Awake_m8138BCED4D692C83C95626A1A09AB46EA5205569,
+	AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6,
 	Maptranforms_VrMapping_m8A4C7C84CA9DEA511050159C205BE1573BF7EFCD,
 	Maptranforms__ctor_m5BA1A66E4D4B61547BB2A282399032D9851940F4,
 	AvatarController_Start_m9FBAF9CED8B124C94EB4AD6716CAAA703C55CDA4,
@@ -3406,6 +3403,11 @@ static Il2CppMethodPointer s_methodPointers[1305] =
 	NormalOrTutorial_MakeItNormal_mC7E99214054C02C6592559A7995956FCBF87BF62,
 	NormalOrTutorial_SpawnGameModeElements_m3458C71D8B0062597132E0D844A3F2A9A580FBDA,
 	NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9,
+	PlayerSounds_Start_mD2602E0DC89CC92A0BCBCBF9DDA642284D0376AE,
+	PlayerSounds_footStep_mD0B63CFE352FDF68B0453C9A6C52A506E9FDF669,
+	PlayerSounds_openTutorial_mCA08F7613F74C1FCDAB4F13BF736E208F07457C4,
+	PlayerSounds_openQuickStart_mD079A1F9C7EBC65A8B47F4BB47FD0C0C607F3599,
+	PlayerSounds__ctor_m3B2AABC06ADAD0328ECAD165B360C976ADEF6BBD,
 	rotateOnYAxis_Start_mF10EA5C71F383BDD672AE36AB9E652411CD8D0CF,
 	rotateOnYAxis_Update_m76BAEE73F5E10D564F0CF37851074DFEF9ABAC10,
 	rotateOnYAxis_turnLeft_m869BB510C1CEFE32DCBDA9CDF739BC37F9D68ED8,
@@ -3444,8 +3446,6 @@ static Il2CppMethodPointer s_methodPointers[1305] =
 	UpdtMv_Start_m072BC9823C068F75C29CFBDBAFF476CE00B8504A,
 	UpdtMv_Update_mB4B5015F900A5FD277276327B1C3C4872898F0D4,
 	UpdtMv__ctor_mEBD682C695261BD9FC098BB7DA7D2144E41A08FC,
-	AudioManager_Awake_m8138BCED4D692C83C95626A1A09AB46EA5205569,
-	AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6,
 	ColorGrabbable_get_Highlight_m4F58065C790D757D19E29FBFBE43E5CD777C87E0,
 	ColorGrabbable_set_Highlight_m8B7FE88DF23A163B4B49CEF2969F883E477498E7,
 	ColorGrabbable_UpdateColor_mCE9D7D0D07EFD5755541BA9DAB7E6CB8AA29DE2F,
@@ -4659,15 +4659,12 @@ static const int32_t s_InvokerIndices[1305] =
 	6443,
 	8171,
 	8171,
-	6534,
-	8171,
-	8171,
-	8171,
-	8171,
 	8171,
 	8171,
 	8082,
 	3051,
+	8171,
+	8171,
 	8171,
 	8171,
 	8171,
@@ -4715,6 +4712,11 @@ static const int32_t s_InvokerIndices[1305] =
 	8171,
 	8171,
 	8171,
+	6534,
+	8171,
+	8171,
+	8171,
+	8171,
 	8171,
 	8171,
 	8171,
@@ -4739,8 +4741,6 @@ static const int32_t s_InvokerIndices[1305] =
 	8171,
 	8171,
 	5900,
-	8171,
-	8171,
 	8171,
 	8171,
 	8171,
