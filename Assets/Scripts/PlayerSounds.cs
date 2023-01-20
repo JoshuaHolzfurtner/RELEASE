@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerSounds : MonoBehaviour
 {
     [SerializeField] AudioClip[] footstepSound = default;
-    //public Animator animFace;
-    //private int counterAnim;
+    public Animator animFace;
+    private int counterAnim;
 
     public void Start()
     {
@@ -17,24 +17,24 @@ public class PlayerSounds : MonoBehaviour
     void footStep(int speechIndex)
     {
         Debug.Log("halllapalooza");  //works handing speechindex further
-        //Debug.Log(speechIndex);
+        Debug.Log(speechIndex);
         AudioManager.instance.source.PlayOneShot(footstepSound[speechIndex]);
-        //animFace.SetTrigger("Trigger");
-        //counterAnim = animFace.GetInteger("CurrentAnimation") + 1;
-        //animFace.SetInteger("CurrentAnimation", counterAnim);
+        
+        counterAnim = animFace.GetInteger("CurrentAnimation") + 1;
+        animFace.SetInteger("CurrentAnimation", counterAnim);
 
     }
 
     public void openTutorial()
     {
-        //Debug.Log("halllapalooza");  //works handing speechindex further
-        //animFace.SetBool("Tutorial", true);
+        Debug.Log("halllapalooza");  //works handing speechindex further
+        animFace.SetBool("Tutorial", true);
 
     }
     public void openQuickStart()
     {
-        //Debug.Log("halllapalooza");  //works handing speechindex further
-        //animFace.SetBool("Quickstart", true);
+        Debug.Log("halllapalooza");  //works handing speechindex further
+        animFace.SetBool("Quickstart", true);
 
     }
 }
