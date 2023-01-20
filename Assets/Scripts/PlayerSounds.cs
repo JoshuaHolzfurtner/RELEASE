@@ -16,7 +16,7 @@ public class PlayerSounds : MonoBehaviour
 
     void footStep(int speechIndex)
     {
-        //Debug.Log("halllapalooza");  //works handing speechindex further
+        Debug.Log("halllapalooza");  //works handing speechindex further
         //Debug.Log(speechIndex);
         AudioManager.instance.source.PlayOneShot(footstepSound[speechIndex]);
         //animFace.SetTrigger("Trigger");
