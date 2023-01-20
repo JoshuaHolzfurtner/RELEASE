@@ -83,6 +83,9 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureMo
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Animation_Rigging_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Burst_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Burst_Unsafe_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_011_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_ARKitFaceCapture_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_LiveCapture_CodeGenModule;
@@ -100,7 +103,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wolf3D_ReadyPlayerMe_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[81] = 
+const Il2CppCodeGenModule* g_CodeGenModules[84] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_AssistantCoreSDKRuntime_CodeGenModule),
@@ -167,6 +170,9 @@ const Il2CppCodeGenModule* g_CodeGenModules[81] =
 	(&g_UnityEngine_VRModule_CodeGenModule),
 	(&g_UnityEngine_VideoModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
+	(&g_Unity_Animation_Rigging_CodeGenModule),
+	(&g_Unity_Burst_CodeGenModule),
+	(&g_Unity_Burst_Unsafe_CodeGenModule),
 	(&g_Unity_InternalAPIEngineBridge_011_CodeGenModule),
 	(&g_Unity_LiveCapture_ARKitFaceCapture_CodeGenModule),
 	(&g_Unity_LiveCapture_CodeGenModule),
@@ -187,20 +193,20 @@ const Il2CppCodeGenModule* g_CodeGenModules[81] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	23,
+	24,
 	g_ReversePInvokeWrapperPointers,
-	58419,
+	60266,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	12451,
+	13212,
 	g_Il2CppInvokerPointers,
-	2206,
+	2279,
 	g_UnresolvedVirtualMethodPointers,
-	1011,
+	1038,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	81,
+	84,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
