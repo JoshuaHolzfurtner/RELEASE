@@ -27,8 +27,12 @@ public class TrackHandle : MonoBehaviour
     public TextMeshProUGUI DebugTextSixteen;
     public TextMeshProUGUI DebugTextSeventeen;
 
-
-
+    public GameObject greenLightCatch;
+    public GameObject redLightCatch;
+    public GameObject greenLightDrive;
+    public GameObject redLightDrive;
+    public GameObject greenLightFinish;
+    public GameObject redLightFinish;
 
 
 
@@ -107,7 +111,7 @@ public class TrackHandle : MonoBehaviour
         
 
     }
-
+    //Hello
     // Update is called once per frame
     void Update()
     {
@@ -145,12 +149,18 @@ public class TrackHandle : MonoBehaviour
             if (heightHeadRelease- heightHeadCatch < -0.1)
             {
                 DebugTextSix.text = "DRIVE-TRUE";
+                greenLightDrive.SetActive(true);
+                redLightDrive.SetActive(false);
+
             }
             else
             {
-                {
-                    DebugTextSix.text = "DRIVE-FALSE";
-            }
+                
+                DebugTextSix.text = "DRIVE-FALSE";
+                greenLightDrive.SetActive(false);
+                redLightDrive.SetActive(true);
+
+
             }
             //Track Distance betwean Handle and Head at Beginning of the Release-Phase
             distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
@@ -173,10 +183,14 @@ public class TrackHandle : MonoBehaviour
             if(zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
             {
                 DebugTextSeventeen.text = "armsBack";
+                greenLightFinish.SetActive(true);
+                redLightFinish.SetActive(false);
             }
             else
             {
                 DebugTextSeventeen.text = "armsAway";
+                greenLightFinish.SetActive(false);
+                redLightFinish.SetActive(true);
             }
             ////////////////////
             direction = false;
@@ -231,11 +245,15 @@ public class TrackHandle : MonoBehaviour
             if ((distanceHandleHeadCatch - distanceHandleHeadRelease < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadRelease > -0.1))
             {
                 DebugTextThree.text = "TRUE";
+                greenLightCatch.SetActive(true);
+                redLightCatch.SetActive(false);
 
             }
             else
             {
                 DebugTextThree.text = "FALSE";
+                greenLightCatch.SetActive(false);
+                redLightCatch.SetActive(true);
 
             }
 
