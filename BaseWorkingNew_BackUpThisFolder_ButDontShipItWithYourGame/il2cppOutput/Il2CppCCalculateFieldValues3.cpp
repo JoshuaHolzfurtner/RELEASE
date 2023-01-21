@@ -30187,8 +30187,14 @@ struct SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA  : public
 {
 	// UnityEngine.GameObject[] SwitchDIfferentVideos::videos
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___videos_4;
+	// UnityEngine.GameObject SwitchDIfferentVideos::videoMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___videoMenu_5;
+	// UnityEngine.GameObject SwitchDIfferentVideos::nextMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nextMenu_6;
 	// System.Int32 SwitchDIfferentVideos::currentVideo
-	int32_t ___currentVideo_5;
+	int32_t ___currentVideo_7;
+	// System.Int32 SwitchDIfferentVideos::videosLength
+	int32_t ___videosLength_8;
 };
 
 // Unity.LiveCapture.SynchronizerComponent
@@ -32799,9 +32805,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9156[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9157[6] = 
 {
 	static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___source_4)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___minScale_5)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___maxScale_6)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___detector_7)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___loudnessSensibility_8)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___threshhold_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9158[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9158[5] = 
 {
-	static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videos_4)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___currentVideo_5)),};
+	static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videos_4)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videoMenu_5)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___nextMenu_6)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___currentVideo_7)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videosLength_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9159[4] = 
 {
 	static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___beingTeleported_4)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___teleportationGoal_5)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___teleportationOn_6)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___offset_7)),};
