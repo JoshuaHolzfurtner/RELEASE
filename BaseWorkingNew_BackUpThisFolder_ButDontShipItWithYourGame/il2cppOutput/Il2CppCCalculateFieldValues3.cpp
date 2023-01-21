@@ -30182,6 +30182,15 @@ struct StylusTip_t9DF318D1A2BA192CB4A521938CE7554C5E123E09  : public MonoBehavio
 	int32_t ___m_controller_14;
 };
 
+// SwitchDIfferentVideos
+struct SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject[] SwitchDIfferentVideos::videos
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___videos_4;
+	// System.Int32 SwitchDIfferentVideos::currentVideo
+	int32_t ___currentVideo_5;
+};
+
 // Unity.LiveCapture.SynchronizerComponent
 struct SynchronizerComponent_t49CAF0578C11ABD203B5A0487870A9566C8A03F0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -32790,6 +32799,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9156[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9157[6] = 
 {
 	static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___source_4)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___minScale_5)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___maxScale_6)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___detector_7)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___loudnessSensibility_8)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___threshhold_9)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9158[2] = 
+{
+	static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videos_4)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___currentVideo_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9159[4] = 
 {
 	static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___beingTeleported_4)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___teleportationGoal_5)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___teleportationOn_6)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___offset_7)),};
