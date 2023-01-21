@@ -670,6 +670,8 @@ struct StartMenu_t75C686A394618522E32AD30C819F308E68E45818;
 struct String_t;
 // StylusTip
 struct StylusTip_t9DF318D1A2BA192CB4A521938CE7554C5E123E09;
+// SwitchDIfferentVideos
+struct SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA;
 // TMPro.TMP_Character
 struct TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35;
 // TMPro.TMP_ColorGradient
@@ -5053,6 +5055,11 @@ struct StylusTip_t9DF318D1A2BA192CB4A521938CE7554C5E123E09  : public MonoBehavio
 	int32_t ___m_breadCrumbIndexCurr_13;
 	// OVRInput/Controller StylusTip::m_controller
 	int32_t ___m_controller_14;
+};
+
+// SwitchDIfferentVideos
+struct SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
 };
 
 // TeleportToOther
@@ -13733,6 +13740,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScaleFromMicrophone__ctor_mE73BF75BA9D0E
 		__this->___loudnessSensibility_8 = (100.0f);
 		// public float threshhold = 0.1f; //f markiert Float nicht vergessen
 		__this->___threshhold_9 = (0.100000001f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SwitchDIfferentVideos::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchDIfferentVideos_Start_m6487220AED304EB1D3ADAA144A4AF182486148E5 (SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void SwitchDIfferentVideos::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchDIfferentVideos_Update_m8F389D55111F0054C76887D5BE2FB11E5A77D0E6 (SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void SwitchDIfferentVideos::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchDIfferentVideos__ctor_mC04B82E4F89FE870F00286E535F46EAFAF394337 (SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA* __this, const RuntimeMethod* method) 
+{
+	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
