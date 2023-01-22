@@ -4982,8 +4982,16 @@ struct PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1  : public M
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___videoElements_8;
 	// UnityEngine.GameObject PickTutorialVariant::ergeticElements
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ergeticElements_9;
+	// UnityEngine.GameObject PickTutorialVariant::thisMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___thisMenu_10;
+	// UnityEngine.GameObject PickTutorialVariant::diagrammMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammMenu_11;
+	// UnityEngine.GameObject PickTutorialVariant::videoMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___videoMenu_12;
+	// UnityEngine.GameObject PickTutorialVariant::ergeticMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ergeticMenu_13;
 	// UnityEngine.Animator PickTutorialVariant::speaker
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___speaker_10;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___speaker_14;
 };
 
 // PlayerSounds
@@ -11912,6 +11920,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItDiagramm_m2D5A
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___diagrammElements_7;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// diagrammMenu.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___diagrammMenu_11;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// thisMenu.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
 		// }
 		return;
 	}
@@ -11926,6 +11942,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItVideo_m0DB8000
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___videoElements_8;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// videoMenu.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___videoMenu_12;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// thisMenu.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
 		// }
 		return;
 	}
@@ -11940,6 +11964,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItErgetic_m6E8B7
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ergeticElements_9;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// ergeticMenu.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___ergeticMenu_13;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// thisMenu.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
 		// }
 		return;
 	}

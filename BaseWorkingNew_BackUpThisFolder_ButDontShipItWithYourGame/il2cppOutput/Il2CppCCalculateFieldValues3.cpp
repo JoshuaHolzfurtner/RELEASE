@@ -29617,8 +29617,16 @@ struct PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1  : public M
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___videoElements_8;
 	// UnityEngine.GameObject PickTutorialVariant::ergeticElements
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ergeticElements_9;
+	// UnityEngine.GameObject PickTutorialVariant::thisMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___thisMenu_10;
+	// UnityEngine.GameObject PickTutorialVariant::diagrammMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammMenu_11;
+	// UnityEngine.GameObject PickTutorialVariant::videoMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___videoMenu_12;
+	// UnityEngine.GameObject PickTutorialVariant::ergeticMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ergeticMenu_13;
 	// UnityEngine.Animator PickTutorialVariant::speaker
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___speaker_10;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___speaker_14;
 };
 
 // PlayerSounds
@@ -32737,9 +32745,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9136[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9137[2] = 
 {
 	static_cast<int32_t>(offsetof(UiVectorInspector_t2E23A6C1CB0190012A5F128C671ADA21ABECF913, ___m_nameLabel_4)),static_cast<int32_t>(offsetof(UiVectorInspector_t2E23A6C1CB0190012A5F128C671ADA21ABECF913, ___m_valueLabel_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9138[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9138[11] = 
 {
-	static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___tutorialDiagramm_4)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___tutorialVideo_5)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___tutorialErgetic_6)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___diagrammElements_7)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___videoElements_8)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___ergeticElements_9)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___speaker_10)),};
+	static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___tutorialDiagramm_4)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___tutorialVideo_5)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___tutorialErgetic_6)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___diagrammElements_7)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___videoElements_8)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___ergeticElements_9)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___thisMenu_10)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___diagrammMenu_11)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___videoMenu_12)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___ergeticMenu_13)),static_cast<int32_t>(offsetof(PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1, ___speaker_14)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9139[2] = 
 {
 	static_cast<int32_t>(offsetof(AudioLoudnessDetection_t079C13FFD7AE0C453447D22829D98E176FB8B04E, ___sampleWindow_4)),static_cast<int32_t>(offsetof(AudioLoudnessDetection_t079C13FFD7AE0C453447D22829D98E176FB8B04E, ___microphoneClip_5)),};
