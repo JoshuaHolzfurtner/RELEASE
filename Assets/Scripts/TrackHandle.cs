@@ -276,4 +276,15 @@ public class TrackHandle : MonoBehaviour
         DebugTextOne.text = lastPointZ.ToString();
         
     }
+
+    public void ResetAll()
+    {
+        strokeCounter = 0;
+        pointsCounter = 0;
+
+        strokeRateText.text = "00";
+        intensityText.text = "NONE";
+        strokesText.text = "0";
+        pointsText.text = "0";
+    }
 }
