@@ -752,6 +752,8 @@ struct VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // midPointRightLeft
 struct midPointRightLeft_t20827EEAB49459C2488E2218ABDCBB0CB710F2B4;
+// remoteRowerManipulation
+struct remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC;
 // rotateOnYAxis
 struct rotateOnYAxis_t99AC961ED5B969B4E5278286B296F901EA4CC18B;
 // AnchorUIManager/PrimaryPressDelegate
@@ -5579,6 +5581,11 @@ struct midPointRightLeft_t20827EEAB49459C2488E2218ABDCBB0CB710F2B4  : public Mon
 	float ___newY_8;
 	// System.Single midPointRightLeft::startY
 	float ___startY_9;
+};
+
+// remoteRowerManipulation
+struct remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
 };
 
 // rotateOnYAxis
@@ -11888,6 +11895,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiVectorInspector_SetValue_m1D5E1B8A353C
 }
 // System.Void UiVectorInspector::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiVectorInspector__ctor_m521102321E1031263DDF028DF02ACBBB07D645CD (UiVectorInspector_t2E23A6C1CB0190012A5F128C671ADA21ABECF913* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void remoteRowerManipulation::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_Start_m777AA46BFFE0EEA24892F0145867F99B8DF16E1E (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void remoteRowerManipulation::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_Update_m1B598A2C9D6AE41BC7194C072F3C374C4C2F17EE (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void remoteRowerManipulation::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation__ctor_m80656B79BB6AA93A7474EA0174F0B09A5DC072FA (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
