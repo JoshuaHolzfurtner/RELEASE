@@ -11902,96 +11902,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiVectorInspector__ctor_m521102321E10312
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void PickTutorialVariant::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_Start_m542F1DFC892B4C68835F6E0A82D4DAEEF84757CD (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
-{
-	{
-		// }
-		return;
-	}
-}
-// System.Void PickTutorialVariant::MakeItDiagramm()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItDiagramm_m2D5AC44D8EC4E11D8B0212CFD72D50A5EDD2CFB2 (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
-{
-	{
-		// tutorialDiagramm = true;
-		__this->___tutorialDiagramm_4 = (bool)1;
-		// diagrammElements.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___diagrammElements_7;
-		NullCheck(L_0);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
-		// diagrammMenu.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___diagrammMenu_11;
-		NullCheck(L_1);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
-		// thisMenu.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
-		NullCheck(L_2);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		// }
-		return;
-	}
-}
-// System.Void PickTutorialVariant::MakeItVideo()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItVideo_m0DB8000162C09A234DE630FAC55DEF66E465654B (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
-{
-	{
-		// tutorialVideo = false;
-		__this->___tutorialVideo_5 = (bool)0;
-		// videoElements.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___videoElements_8;
-		NullCheck(L_0);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
-		// videoMenu.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___videoMenu_12;
-		NullCheck(L_1);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
-		// thisMenu.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
-		NullCheck(L_2);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		// }
-		return;
-	}
-}
-// System.Void PickTutorialVariant::MakeItErgetic()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItErgetic_m6E8B7CA864366B7C0D130F980358234CE62E4631 (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
-{
-	{
-		// tutorialErgetic = false;
-		__this->___tutorialErgetic_6 = (bool)0;
-		// ergeticElements.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ergeticElements_9;
-		NullCheck(L_0);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
-		// ergeticMenu.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___ergeticMenu_13;
-		NullCheck(L_1);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
-		// thisMenu.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
-		NullCheck(L_2);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		// }
-		return;
-	}
-}
-// System.Void PickTutorialVariant::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant__ctor_m9D3B287B48B7574A647D6773E66903869CC7984B (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
-{
-	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Void AudioLoudnessDetection::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioLoudnessDetection_Start_mF76ADFC99EF0E3F876AF8DBFF8DD18B51A915889 (AudioLoudnessDetection_t079C13FFD7AE0C453447D22829D98E176FB8B04E* __this, const RuntimeMethod* method) 
 {
@@ -13777,6 +13687,96 @@ IL_0015:
 }
 // System.Void NormalOrTutorial::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9 (NormalOrTutorial_t1FFAB25D9690CFC7F4C5E8FA9B853576003E0ED9* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PickTutorialVariant::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_Start_m542F1DFC892B4C68835F6E0A82D4DAEEF84757CD (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void PickTutorialVariant::MakeItDiagramm()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItDiagramm_m2D5AC44D8EC4E11D8B0212CFD72D50A5EDD2CFB2 (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
+{
+	{
+		// tutorialDiagramm = true;
+		__this->___tutorialDiagramm_4 = (bool)1;
+		// diagrammElements.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___diagrammElements_7;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// diagrammMenu.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___diagrammMenu_11;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// thisMenu.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void PickTutorialVariant::MakeItVideo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItVideo_m0DB8000162C09A234DE630FAC55DEF66E465654B (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
+{
+	{
+		// tutorialVideo = false;
+		__this->___tutorialVideo_5 = (bool)0;
+		// videoElements.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___videoElements_8;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// videoMenu.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___videoMenu_12;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// thisMenu.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void PickTutorialVariant::MakeItErgetic()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant_MakeItErgetic_m6E8B7CA864366B7C0D130F980358234CE62E4631 (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
+{
+	{
+		// tutorialErgetic = false;
+		__this->___tutorialErgetic_6 = (bool)0;
+		// ergeticElements.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ergeticElements_9;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// ergeticMenu.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___ergeticMenu_13;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// thisMenu.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___thisMenu_10;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void PickTutorialVariant::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickTutorialVariant__ctor_m9D3B287B48B7574A647D6773E66903869CC7984B (PickTutorialVariant_tE5321AF3E96CAF5EE8971EBC59EA28EC82CC24E1* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);

@@ -1519,136 +1519,136 @@ extern void UiVectorInspector_SetName_m8867C500C992DADD65C004F15E357A2E764AC6FE 
 extern void UiVectorInspector_SetValue_m1D5E1B8A353C6EB4821525702EEA2DFBE03A2D1A (void);
 // 0x000002F9 System.Void UiVectorInspector::.ctor()
 extern void UiVectorInspector__ctor_m521102321E1031263DDF028DF02ACBBB07D645CD (void);
-// 0x000002FA System.Void PickTutorialVariant::Start()
-extern void PickTutorialVariant_Start_m542F1DFC892B4C68835F6E0A82D4DAEEF84757CD (void);
-// 0x000002FB System.Void PickTutorialVariant::MakeItDiagramm()
-extern void PickTutorialVariant_MakeItDiagramm_m2D5AC44D8EC4E11D8B0212CFD72D50A5EDD2CFB2 (void);
-// 0x000002FC System.Void PickTutorialVariant::MakeItVideo()
-extern void PickTutorialVariant_MakeItVideo_m0DB8000162C09A234DE630FAC55DEF66E465654B (void);
-// 0x000002FD System.Void PickTutorialVariant::MakeItErgetic()
-extern void PickTutorialVariant_MakeItErgetic_m6E8B7CA864366B7C0D130F980358234CE62E4631 (void);
-// 0x000002FE System.Void PickTutorialVariant::.ctor()
-extern void PickTutorialVariant__ctor_m9D3B287B48B7574A647D6773E66903869CC7984B (void);
-// 0x000002FF System.Void AudioLoudnessDetection::Start()
+// 0x000002FA System.Void AudioLoudnessDetection::Start()
 extern void AudioLoudnessDetection_Start_mF76ADFC99EF0E3F876AF8DBFF8DD18B51A915889 (void);
-// 0x00000300 System.Void AudioLoudnessDetection::Update()
+// 0x000002FB System.Void AudioLoudnessDetection::Update()
 extern void AudioLoudnessDetection_Update_m01BCAC7EFF10DC91A30BDBE8B1A41FA66C3C817B (void);
-// 0x00000301 System.Void AudioLoudnessDetection::MicrophoneToAudioClip()
+// 0x000002FC System.Void AudioLoudnessDetection::MicrophoneToAudioClip()
 extern void AudioLoudnessDetection_MicrophoneToAudioClip_m252FC5B9808BB6D5E39752C38BF1E11D0F93FC7F (void);
-// 0x00000302 System.Single AudioLoudnessDetection::GetLoudnessFromMicrophone()
+// 0x000002FD System.Single AudioLoudnessDetection::GetLoudnessFromMicrophone()
 extern void AudioLoudnessDetection_GetLoudnessFromMicrophone_m9FD19D83808936295C4E5CD1B68ACBF8A31A1C36 (void);
-// 0x00000303 System.Single AudioLoudnessDetection::GetLoudnessFromAudioClip(System.Int32,UnityEngine.AudioClip)
+// 0x000002FE System.Single AudioLoudnessDetection::GetLoudnessFromAudioClip(System.Int32,UnityEngine.AudioClip)
 extern void AudioLoudnessDetection_GetLoudnessFromAudioClip_mD104006EAFE79C34893634E7A54349F94862895E (void);
-// 0x00000304 System.Void AudioLoudnessDetection::.ctor()
+// 0x000002FF System.Void AudioLoudnessDetection::.ctor()
 extern void AudioLoudnessDetection__ctor_m7AE1F64FF439F1D65656ED0A578C35F12F00546E (void);
-// 0x00000305 System.Void AudioManager::Awake()
+// 0x00000300 System.Void AudioManager::Awake()
 extern void AudioManager_Awake_m8138BCED4D692C83C95626A1A09AB46EA5205569 (void);
-// 0x00000306 System.Void AudioManager::.ctor()
+// 0x00000301 System.Void AudioManager::.ctor()
 extern void AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6 (void);
-// 0x00000307 System.Void Maptranforms::VrMapping()
+// 0x00000302 System.Void Maptranforms::VrMapping()
 extern void Maptranforms_VrMapping_m8A4C7C84CA9DEA511050159C205BE1573BF7EFCD (void);
-// 0x00000308 System.Void Maptranforms::.ctor()
+// 0x00000303 System.Void Maptranforms::.ctor()
 extern void Maptranforms__ctor_m5BA1A66E4D4B61547BB2A282399032D9851940F4 (void);
-// 0x00000309 System.Void AvatarController::Start()
+// 0x00000304 System.Void AvatarController::Start()
 extern void AvatarController_Start_m9FBAF9CED8B124C94EB4AD6716CAAA703C55CDA4 (void);
-// 0x0000030A System.Void AvatarController::LateUpdate()
+// 0x00000305 System.Void AvatarController::LateUpdate()
 extern void AvatarController_LateUpdate_m5F09482CFE436368109F0DCDF2F9D6121244B831 (void);
-// 0x0000030B System.Void AvatarController::.ctor()
+// 0x00000306 System.Void AvatarController::.ctor()
 extern void AvatarController__ctor_m68C14ECE7F9855E5C399DF6E2EAFE191385A24E0 (void);
-// 0x0000030C System.Void AvatarFootController::OnAnimatorIK(System.Int32)
+// 0x00000307 System.Void AvatarFootController::OnAnimatorIK(System.Int32)
 extern void AvatarFootController_OnAnimatorIK_m1E6E50E2577A0EC709CA953DE6B254EABF97DFF3 (void);
-// 0x0000030D System.Void AvatarFootController::.ctor()
+// 0x00000308 System.Void AvatarFootController::.ctor()
 extern void AvatarFootController__ctor_m11BCE454A9391EDC72F32D793BB69E5FD9623D61 (void);
-// 0x0000030E System.Void ColorVoiceResponds::SetColor(System.String[])
+// 0x00000309 System.Void ColorVoiceResponds::SetColor(System.String[])
 extern void ColorVoiceResponds_SetColor_mE551F656643B6C22BA76C9975B5790D732C59223 (void);
-// 0x0000030F System.Void ColorVoiceResponds::.ctor()
+// 0x0000030A System.Void ColorVoiceResponds::.ctor()
 extern void ColorVoiceResponds__ctor_m23BE5460F22C1B153EBD81E9D657CB0C386011AD (void);
-// 0x00000310 System.Void ColorVoiceResponds/<>c__DisplayClass1_0::.ctor()
+// 0x0000030B System.Void ColorVoiceResponds/<>c__DisplayClass1_0::.ctor()
 extern void U3CU3Ec__DisplayClass1_0__ctor_m4827A4BBA0C818D2311DBA445E92EDB9F4FA9E2D (void);
-// 0x00000311 System.Boolean ColorVoiceResponds/<>c__DisplayClass1_0::<SetColor>b__0(UnityEngine.GameObject)
+// 0x0000030C System.Boolean ColorVoiceResponds/<>c__DisplayClass1_0::<SetColor>b__0(UnityEngine.GameObject)
 extern void U3CU3Ec__DisplayClass1_0_U3CSetColorU3Eb__0_mDEF83F31E89DFCE994B48920D0760AA7FDF89EF4 (void);
-// 0x00000312 System.Void DiagrammAndTextControll::Start()
+// 0x0000030D System.Void DiagrammAndTextControll::Start()
 extern void DiagrammAndTextControll_Start_mA66C02B03CDB2E4648D798B6685E21E12661FD1C (void);
-// 0x00000313 System.Void DiagrammAndTextControll::NextText()
+// 0x0000030E System.Void DiagrammAndTextControll::NextText()
 extern void DiagrammAndTextControll_NextText_m9D7CDF720A523A7BE498389F20BD43D9F4DBA2ED (void);
-// 0x00000314 System.Void DiagrammAndTextControll::LastText()
+// 0x0000030F System.Void DiagrammAndTextControll::LastText()
 extern void DiagrammAndTextControll_LastText_m7512AF72B2ECBE7093F88B20D3E0D08D3282DA17 (void);
-// 0x00000315 System.Void DiagrammAndTextControll::ChangePicMan()
+// 0x00000310 System.Void DiagrammAndTextControll::ChangePicMan()
 extern void DiagrammAndTextControll_ChangePicMan_mD435BACD19BAD792815FB39B92C62D78862328C9 (void);
-// 0x00000316 System.Void DiagrammAndTextControll::.ctor()
+// 0x00000311 System.Void DiagrammAndTextControll::.ctor()
 extern void DiagrammAndTextControll__ctor_m16F9BDAF79DAFA5D4F4F5A7A734E16AAF1EA4BB4 (void);
-// 0x00000317 System.Void DrwLn::Start()
+// 0x00000312 System.Void DrwLn::Start()
 extern void DrwLn_Start_mE7E88377F86B5AEADCEFB422C19220EB6C9066DB (void);
-// 0x00000318 System.Void DrwLn::Update()
+// 0x00000313 System.Void DrwLn::Update()
 extern void DrwLn_Update_mB4181F8EEACF49F793B61B0D6071293E77FE19E8 (void);
-// 0x00000319 System.Void DrwLn::.ctor()
+// 0x00000314 System.Void DrwLn::.ctor()
 extern void DrwLn__ctor_m42492CD6612439414D65C75AC9117D4132878E4F (void);
-// 0x0000031A System.Void HandleLineConnector::Start()
+// 0x00000315 System.Void HandleLineConnector::Start()
 extern void HandleLineConnector_Start_mA5EA8150C50CE19F0325779F8F1715507828A2C8 (void);
-// 0x0000031B System.Void HandleLineConnector::Update()
+// 0x00000316 System.Void HandleLineConnector::Update()
 extern void HandleLineConnector_Update_mC05D2E71D50932801FDB8D7DA2459E7B43E2C167 (void);
-// 0x0000031C System.Void HandleLineConnector::.ctor()
+// 0x00000317 System.Void HandleLineConnector::.ctor()
 extern void HandleLineConnector__ctor_m135B0B6E70F67367BA11A303515EEB1A060A9CE9 (void);
-// 0x0000031D System.Void midPointRightLeft::Start()
+// 0x00000318 System.Void midPointRightLeft::Start()
 extern void midPointRightLeft_Start_mC453E87452B6436E657FA375FE56B1EF05257584 (void);
-// 0x0000031E System.Void midPointRightLeft::Update()
+// 0x00000319 System.Void midPointRightLeft::Update()
 extern void midPointRightLeft_Update_m065A887BF54ECAC74CD19F4FDD68B9472D24C371 (void);
-// 0x0000031F System.Void midPointRightLeft::.ctor()
+// 0x0000031A System.Void midPointRightLeft::.ctor()
 extern void midPointRightLeft__ctor_mFE79AE7CD118FAA107D2136B7232E8C6E144E0FF (void);
-// 0x00000320 System.Void MoveDirectionCheck::Start()
+// 0x0000031B System.Void MoveDirectionCheck::Start()
 extern void MoveDirectionCheck_Start_m5BFFE08E2D98D1972C570460DADEFF9D0664DF6A (void);
-// 0x00000321 System.Void MoveDirectionCheck::Update()
+// 0x0000031C System.Void MoveDirectionCheck::Update()
 extern void MoveDirectionCheck_Update_mA2B996B2FEE739C0DECD864B665C29AD0893448A (void);
-// 0x00000322 System.Void MoveDirectionCheck::.ctor()
+// 0x0000031D System.Void MoveDirectionCheck::.ctor()
 extern void MoveDirectionCheck__ctor_mAE2B5D6C5FB8EDD7AC2AE976BD06964B4D6D448D (void);
-// 0x00000323 System.Void MoveHandle::Start()
+// 0x0000031E System.Void MoveHandle::Start()
 extern void MoveHandle_Start_mB1E5388ED8A48AB4C7B4CCC7F87235C4433E603B (void);
-// 0x00000324 System.Void MoveHandle::Update()
+// 0x0000031F System.Void MoveHandle::Update()
 extern void MoveHandle_Update_mF9024B5880D5046E0A1B3D7C834D43AA7C0220BD (void);
-// 0x00000325 System.Void MoveHandle::resetCounters()
+// 0x00000320 System.Void MoveHandle::resetCounters()
 extern void MoveHandle_resetCounters_mD104E66EF6AE2FBCBC4DFB152FA10FBBA1254F64 (void);
-// 0x00000326 System.Void MoveHandle::.ctor()
+// 0x00000321 System.Void MoveHandle::.ctor()
 extern void MoveHandle__ctor_mCDE938B69FB6C9B038B5ADF07F5EC40CC96BF46A (void);
-// 0x00000327 System.Void MovePlayerLeftOrRight::Start()
+// 0x00000322 System.Void MovePlayerLeftOrRight::Start()
 extern void MovePlayerLeftOrRight_Start_m75F6B5D6A474F757EDFB5F04ABA0E22725F15783 (void);
-// 0x00000328 System.Void MovePlayerLeftOrRight::Update()
+// 0x00000323 System.Void MovePlayerLeftOrRight::Update()
 extern void MovePlayerLeftOrRight_Update_mF2EB095038C4F54F1D154AD4D004CFA85533B7B8 (void);
-// 0x00000329 System.Void MovePlayerLeftOrRight::moveLeft()
+// 0x00000324 System.Void MovePlayerLeftOrRight::moveLeft()
 extern void MovePlayerLeftOrRight_moveLeft_mBCF5DBE71D821B17CA5C2FC54E9F4C427B1478C2 (void);
-// 0x0000032A System.Void MovePlayerLeftOrRight::moveRight()
+// 0x00000325 System.Void MovePlayerLeftOrRight::moveRight()
 extern void MovePlayerLeftOrRight_moveRight_mE361BC95FFDB0202E4284809608FDD298E275740 (void);
-// 0x0000032B System.Void MovePlayerLeftOrRight::.ctor()
+// 0x00000326 System.Void MovePlayerLeftOrRight::.ctor()
 extern void MovePlayerLeftOrRight__ctor_mBE68742D50504168FC0124978C8410C7325A5FA8 (void);
-// 0x0000032C System.Void MovePlayerOnZAxisBackNForth::Start()
+// 0x00000327 System.Void MovePlayerOnZAxisBackNForth::Start()
 extern void MovePlayerOnZAxisBackNForth_Start_m1FDF935A49EDE54F9BC1E854727DA9D39728E709 (void);
-// 0x0000032D System.Void MovePlayerOnZAxisBackNForth::Update()
+// 0x00000328 System.Void MovePlayerOnZAxisBackNForth::Update()
 extern void MovePlayerOnZAxisBackNForth_Update_m67DCF7226BC86F642AB53546BE73853F26B4E100 (void);
-// 0x0000032E System.Void MovePlayerOnZAxisBackNForth::moveForward()
+// 0x00000329 System.Void MovePlayerOnZAxisBackNForth::moveForward()
 extern void MovePlayerOnZAxisBackNForth_moveForward_m716FAFD12E3C8F3B9CED3734CA6A1C1BC4ADF9F8 (void);
-// 0x0000032F System.Void MovePlayerOnZAxisBackNForth::moveBackward()
+// 0x0000032A System.Void MovePlayerOnZAxisBackNForth::moveBackward()
 extern void MovePlayerOnZAxisBackNForth_moveBackward_mD0C2B81F537FAEF5838EA4E73859024C99B81164 (void);
-// 0x00000330 System.Void MovePlayerOnZAxisBackNForth::.ctor()
+// 0x0000032B System.Void MovePlayerOnZAxisBackNForth::.ctor()
 extern void MovePlayerOnZAxisBackNForth__ctor_m2208ADDF826AE9933C9874B88E4BAB6ECBB0CB53 (void);
-// 0x00000331 System.Void MoveUpandDown::Start()
+// 0x0000032C System.Void MoveUpandDown::Start()
 extern void MoveUpandDown_Start_mCAE6294B47B3AA24BCEE84E6C926B980119090FA (void);
-// 0x00000332 System.Void MoveUpandDown::Update()
+// 0x0000032D System.Void MoveUpandDown::Update()
 extern void MoveUpandDown_Update_mCB68152D83DCD3E7F8716230AA1CF0DE0870B949 (void);
-// 0x00000333 System.Void MoveUpandDown::moveUp()
+// 0x0000032E System.Void MoveUpandDown::moveUp()
 extern void MoveUpandDown_moveUp_mF13766A38813B256060AC1F42753D378F36075D7 (void);
-// 0x00000334 System.Void MoveUpandDown::moveDown()
+// 0x0000032F System.Void MoveUpandDown::moveDown()
 extern void MoveUpandDown_moveDown_mB5532C4928D1F1FCA7EC70EC527770CBD7B193DB (void);
-// 0x00000335 System.Void MoveUpandDown::.ctor()
+// 0x00000330 System.Void MoveUpandDown::.ctor()
 extern void MoveUpandDown__ctor_m709D4108DEE09DB4933CF93C895218FEFEFBC8BE (void);
-// 0x00000336 System.Void NormalOrTutorial::Start()
+// 0x00000331 System.Void NormalOrTutorial::Start()
 extern void NormalOrTutorial_Start_mFEA6EA9BB204AB54DED34DA0E9EE26B3D2184C46 (void);
-// 0x00000337 System.Void NormalOrTutorial::MakeItTutorial()
+// 0x00000332 System.Void NormalOrTutorial::MakeItTutorial()
 extern void NormalOrTutorial_MakeItTutorial_mF606D233BC4C0066F3B87316D2F1A1EFBFEA502E (void);
-// 0x00000338 System.Void NormalOrTutorial::MakeItNormal()
+// 0x00000333 System.Void NormalOrTutorial::MakeItNormal()
 extern void NormalOrTutorial_MakeItNormal_mC7E99214054C02C6592559A7995956FCBF87BF62 (void);
-// 0x00000339 System.Void NormalOrTutorial::SpawnGameModeElements()
+// 0x00000334 System.Void NormalOrTutorial::SpawnGameModeElements()
 extern void NormalOrTutorial_SpawnGameModeElements_m3458C71D8B0062597132E0D844A3F2A9A580FBDA (void);
-// 0x0000033A System.Void NormalOrTutorial::.ctor()
+// 0x00000335 System.Void NormalOrTutorial::.ctor()
 extern void NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9 (void);
+// 0x00000336 System.Void PickTutorialVariant::Start()
+extern void PickTutorialVariant_Start_m542F1DFC892B4C68835F6E0A82D4DAEEF84757CD (void);
+// 0x00000337 System.Void PickTutorialVariant::MakeItDiagramm()
+extern void PickTutorialVariant_MakeItDiagramm_m2D5AC44D8EC4E11D8B0212CFD72D50A5EDD2CFB2 (void);
+// 0x00000338 System.Void PickTutorialVariant::MakeItVideo()
+extern void PickTutorialVariant_MakeItVideo_m0DB8000162C09A234DE630FAC55DEF66E465654B (void);
+// 0x00000339 System.Void PickTutorialVariant::MakeItErgetic()
+extern void PickTutorialVariant_MakeItErgetic_m6E8B7CA864366B7C0D130F980358234CE62E4631 (void);
+// 0x0000033A System.Void PickTutorialVariant::.ctor()
+extern void PickTutorialVariant__ctor_m9D3B287B48B7574A647D6773E66903869CC7984B (void);
 // 0x0000033B System.Void PlayerSounds::Start()
 extern void PlayerSounds_Start_mD2602E0DC89CC92A0BCBCBF9DDA642284D0376AE (void);
 // 0x0000033C System.Void PlayerSounds::footStep(System.Int32)
@@ -3384,11 +3384,6 @@ static Il2CppMethodPointer s_methodPointers[1322] =
 	UiVectorInspector_SetName_m8867C500C992DADD65C004F15E357A2E764AC6FE,
 	UiVectorInspector_SetValue_m1D5E1B8A353C6EB4821525702EEA2DFBE03A2D1A,
 	UiVectorInspector__ctor_m521102321E1031263DDF028DF02ACBBB07D645CD,
-	PickTutorialVariant_Start_m542F1DFC892B4C68835F6E0A82D4DAEEF84757CD,
-	PickTutorialVariant_MakeItDiagramm_m2D5AC44D8EC4E11D8B0212CFD72D50A5EDD2CFB2,
-	PickTutorialVariant_MakeItVideo_m0DB8000162C09A234DE630FAC55DEF66E465654B,
-	PickTutorialVariant_MakeItErgetic_m6E8B7CA864366B7C0D130F980358234CE62E4631,
-	PickTutorialVariant__ctor_m9D3B287B48B7574A647D6773E66903869CC7984B,
 	AudioLoudnessDetection_Start_mF76ADFC99EF0E3F876AF8DBFF8DD18B51A915889,
 	AudioLoudnessDetection_Update_m01BCAC7EFF10DC91A30BDBE8B1A41FA66C3C817B,
 	AudioLoudnessDetection_MicrophoneToAudioClip_m252FC5B9808BB6D5E39752C38BF1E11D0F93FC7F,
@@ -3449,6 +3444,11 @@ static Il2CppMethodPointer s_methodPointers[1322] =
 	NormalOrTutorial_MakeItNormal_mC7E99214054C02C6592559A7995956FCBF87BF62,
 	NormalOrTutorial_SpawnGameModeElements_m3458C71D8B0062597132E0D844A3F2A9A580FBDA,
 	NormalOrTutorial__ctor_m0FCC85779A84F568FAD5E51C0BE7BC4FF14190C9,
+	PickTutorialVariant_Start_m542F1DFC892B4C68835F6E0A82D4DAEEF84757CD,
+	PickTutorialVariant_MakeItDiagramm_m2D5AC44D8EC4E11D8B0212CFD72D50A5EDD2CFB2,
+	PickTutorialVariant_MakeItVideo_m0DB8000162C09A234DE630FAC55DEF66E465654B,
+	PickTutorialVariant_MakeItErgetic_m6E8B7CA864366B7C0D130F980358234CE62E4631,
+	PickTutorialVariant__ctor_m9D3B287B48B7574A647D6773E66903869CC7984B,
 	PlayerSounds_Start_mD2602E0DC89CC92A0BCBCBF9DDA642284D0376AE,
 	PlayerSounds_footStep_mD0B63CFE352FDF68B0453C9A6C52A506E9FDF669,
 	PlayerSounds_openTutorial_mCA08F7613F74C1FCDAB4F13BF736E208F07457C4,
@@ -4712,11 +4712,6 @@ static const int32_t s_InvokerIndices[1322] =
 	8447,
 	8447,
 	8447,
-	8447,
-	8447,
-	8447,
-	8447,
-	8447,
 	8355,
 	3125,
 	8447,
@@ -4733,6 +4728,11 @@ static const int32_t s_InvokerIndices[1322] =
 	8447,
 	8447,
 	4945,
+	8447,
+	8447,
+	8447,
+	8447,
+	8447,
 	8447,
 	8447,
 	8447,
