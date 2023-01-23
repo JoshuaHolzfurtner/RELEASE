@@ -36312,10 +36312,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepSound:
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 229f46af248b4c74facf863a061f856b, type: 3}
+  - {fileID: 8300000, guid: 82fd6ab639c494f999cc823917f07557, type: 3}
+  - {fileID: 8300000, guid: 0c97c552aaa4b4156883f0d64dfcfd41, type: 3}
+  - {fileID: 8300000, guid: d61312297f5df414597390c3e76038a5, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
@@ -89081,6 +89081,10 @@ PrefabInstance:
       propertyPath: m_Mapper
       value: 
       objectReference: {fileID: 11400000, guid: 369a3390e27504ac58e06b2526f70512, type: 2}
+    - target: {fileID: 2115683181173826645, guid: da5040d052a534eed9a01507d163bc8b, type: 3}
+      propertyPath: m_EnabledChannels
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4207100754210922224, guid: da5040d052a534eed9a01507d163bc8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.000000033527623
