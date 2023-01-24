@@ -8938,7 +8938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_CheckDryExercise_m
 		}
 	}
 	{
-		// dryExerciseController.ShowNone();
+		// dryExerciseController.ShowNone();//jsbkjsb
 		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_2 = __this->___dryExerciseController_17;
 		NullCheck(L_2);
 		DisplayDryExercises_ShowNone_m3EAA276C09C95EB6F420B540B4E03AD846458BDF(L_2, NULL);
@@ -8983,9 +8983,9 @@ IL_002a:
 
 IL_003f:
 	{
-		// else if (index == startDriveDry)
+		// else if (index == startFinishDry)
 		int32_t L_9 = ___index0;
-		int32_t L_10 = __this->___startDriveDry_20;
+		int32_t L_10 = __this->___startFinishDry_21;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
 			goto IL_0054;

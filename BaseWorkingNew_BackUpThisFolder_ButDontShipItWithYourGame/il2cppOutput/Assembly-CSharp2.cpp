@@ -14260,9 +14260,9 @@ IL_002a:
 
 IL_003f:
 	{
-		// else if (index == startDriveDry)
+		// else if (index == startFinishDry)
 		int32_t L_9 = ___index0;
-		int32_t L_10 = __this->___startDriveDry_11;
+		int32_t L_10 = __this->___startFinishDry_12;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
 			goto IL_0054;
@@ -16010,9 +16010,9 @@ IL_002a:
 
 IL_003f:
 	{
-		// else if (index == startDriveDry)
+		// else if (index == startFinishDry)
 		int32_t L_9 = ___index0;
-		int32_t L_10 = __this->___startDriveDry_12;
+		int32_t L_10 = __this->___startFinishDry_13;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
 			goto IL_0054;

@@ -126,7 +126,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     {
         if (index == startNoDry)
         {
-            dryExerciseController.ShowNone();
+            dryExerciseController.ShowNone();//jsbkjsb
         }
         else if (index == startCatchDry)
         {
