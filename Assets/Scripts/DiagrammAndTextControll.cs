@@ -110,7 +110,7 @@ public class DiagrammAndTextControll : MonoBehaviour
         {
             dryExerciseController.ShowDrive();
         }
-        else if (index == startDriveDry)
+        else if (index == startFinishDry)
         {
             dryExerciseController.ShowFinish();
         }

@@ -11,18 +11,25 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public GameObject ergeticElements;
     public GameObject ergeticMenu;
     public GameObject continueMenu;
-    public GameObject dryExercises;
     
 
 
     private int scriptCounterAnim;
-    
+
+
     public int indexNothing;
     public int indexCatch;
     public int indexDrive;
     public int indexFinish;
     public int indexFullStroke;
     public int lastIndexSpeeches;
+
+    public DisplayDryExercises dryExerciseController;
+    public int startNoDry;
+    public int startCatchDry;
+    public int startDriveDry;
+    public int startFinishDry;
+    public int startEndDry;
 
 
 
@@ -37,7 +44,9 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     {
         scriptCounterAnim++;
         animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
-        if(scriptCounterAnim==indexCatch)
+        CheckDryExercise(scriptCounterAnim);
+
+        if (scriptCounterAnim==indexCatch)
         {
             animRower.AnimateCatch();
             phaseText.text = "CATCH";
@@ -81,6 +90,8 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public void backAnim()
     {
         scriptCounterAnim--;
+        CheckDryExercise(scriptCounterAnim);
+
         animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
         if (scriptCounterAnim == indexCatch)
         {
@@ -108,6 +119,30 @@ public class ErgeticChangeSpeeches : MonoBehaviour
             scriptCounterAnim = 0;
             continueMenu.SetActive(true);
             ergeticElements.SetActive(false);
+        }
+    }
+
+    public void CheckDryExercise(int index)
+    {
+        if (index == startNoDry)
+        {
+            dryExerciseController.ShowNone();
+        }
+        else if (index == startCatchDry)
+        {
+            dryExerciseController.ShowCatch();
+        }
+        else if (index == startDriveDry)
+        {
+            dryExerciseController.ShowDrive();
+        }
+        else if (index == startFinishDry)
+        {
+            dryExerciseController.ShowFinish();
+        }
+        else if (index == startEndDry)
+        {
+            dryExerciseController.ShowNone();
         }
     }
 }

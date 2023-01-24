@@ -1130,6 +1130,8 @@ struct DebugInfo_t03C716886CE7E99C1662D1C236CCC2CC6F18A167;
 struct DefaultExpression_t68E278AD7534F283D174570B240C596979B26533;
 // Oculus.Platform.Models.Destination
 struct Destination_tE541D5C08D84E0FA6451C8822F3771B141D528BE;
+// DisplayDryExercises
+struct DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89;
 // Oculus.Interaction.HandGrab.DistanceHandGrabInteractable
 struct DistanceHandGrabInteractable_tD846EDB4B3992FE87777DAF624569765E2D177CF;
 // Oculus.Interaction.HandGrab.DistantPointDetector
@@ -26117,22 +26119,32 @@ struct ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C  : public
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ergeticMenu_8;
 	// UnityEngine.GameObject ErgeticChangeSpeeches::continueMenu
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___continueMenu_9;
-	// UnityEngine.GameObject ErgeticChangeSpeeches::dryExercises
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___dryExercises_10;
 	// System.Int32 ErgeticChangeSpeeches::scriptCounterAnim
-	int32_t ___scriptCounterAnim_11;
+	int32_t ___scriptCounterAnim_10;
 	// System.Int32 ErgeticChangeSpeeches::indexNothing
-	int32_t ___indexNothing_12;
+	int32_t ___indexNothing_11;
 	// System.Int32 ErgeticChangeSpeeches::indexCatch
-	int32_t ___indexCatch_13;
+	int32_t ___indexCatch_12;
 	// System.Int32 ErgeticChangeSpeeches::indexDrive
-	int32_t ___indexDrive_14;
+	int32_t ___indexDrive_13;
 	// System.Int32 ErgeticChangeSpeeches::indexFinish
-	int32_t ___indexFinish_15;
+	int32_t ___indexFinish_14;
 	// System.Int32 ErgeticChangeSpeeches::indexFullStroke
-	int32_t ___indexFullStroke_16;
+	int32_t ___indexFullStroke_15;
 	// System.Int32 ErgeticChangeSpeeches::lastIndexSpeeches
-	int32_t ___lastIndexSpeeches_17;
+	int32_t ___lastIndexSpeeches_16;
+	// DisplayDryExercises ErgeticChangeSpeeches::dryExerciseController
+	DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* ___dryExerciseController_17;
+	// System.Int32 ErgeticChangeSpeeches::startNoDry
+	int32_t ___startNoDry_18;
+	// System.Int32 ErgeticChangeSpeeches::startCatchDry
+	int32_t ___startCatchDry_19;
+	// System.Int32 ErgeticChangeSpeeches::startDriveDry
+	int32_t ___startDriveDry_20;
+	// System.Int32 ErgeticChangeSpeeches::startFinishDry
+	int32_t ___startFinishDry_21;
+	// System.Int32 ErgeticChangeSpeeches::startEndDry
+	int32_t ___startEndDry_22;
 };
 
 // UnityEngine.EventSystems.EventTrigger
@@ -36631,9 +36643,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8990[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8992[3] = 
 {
 	static_cast<int32_t>(offsetof(DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89, ___dryCatch_4)),static_cast<int32_t>(offsetof(DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89, ___dryDrive_5)),static_cast<int32_t>(offsetof(DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89, ___dryFinish_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8993[14] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8993[19] = 
 {
-	static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___animTrainer_4)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___animRower_5)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___phaseText_6)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___ergeticElements_7)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___ergeticMenu_8)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___continueMenu_9)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___dryExercises_10)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___scriptCounterAnim_11)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexNothing_12)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexCatch_13)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexDrive_14)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexFinish_15)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexFullStroke_16)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___lastIndexSpeeches_17)),};
+	static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___animTrainer_4)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___animRower_5)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___phaseText_6)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___ergeticElements_7)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___ergeticMenu_8)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___continueMenu_9)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___scriptCounterAnim_10)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexNothing_11)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexCatch_12)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexDrive_13)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexFinish_14)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexFullStroke_15)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___lastIndexSpeeches_16)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___dryExerciseController_17)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___startNoDry_18)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___startCatchDry_19)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___startDriveDry_20)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___startFinishDry_21)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___startEndDry_22)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8998[1] = 
 {
 	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass41_0_tD03998B72130E379210125F837D005B365C1708B, ___handler_0)),};

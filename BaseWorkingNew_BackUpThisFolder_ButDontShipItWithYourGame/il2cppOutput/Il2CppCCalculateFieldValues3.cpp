@@ -30298,6 +30298,18 @@ struct SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA  : public
 	int32_t ___currentVideo_7;
 	// System.Int32 SwitchDIfferentVideos::videosLength
 	int32_t ___videosLength_8;
+	// DisplayDryExercises SwitchDIfferentVideos::dryExerciseController
+	DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* ___dryExerciseController_9;
+	// System.Int32 SwitchDIfferentVideos::startNoDry
+	int32_t ___startNoDry_10;
+	// System.Int32 SwitchDIfferentVideos::startCatchDry
+	int32_t ___startCatchDry_11;
+	// System.Int32 SwitchDIfferentVideos::startDriveDry
+	int32_t ___startDriveDry_12;
+	// System.Int32 SwitchDIfferentVideos::startFinishDry
+	int32_t ___startFinishDry_13;
+	// System.Int32 SwitchDIfferentVideos::startEndDry
+	int32_t ___startEndDry_14;
 };
 
 // Unity.LiveCapture.SynchronizerComponent
@@ -32854,9 +32866,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9163[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9164[6] = 
 {
 	static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___source_4)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___minScale_5)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___maxScale_6)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___detector_7)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___loudnessSensibility_8)),static_cast<int32_t>(offsetof(ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129, ___threshhold_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9165[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9165[11] = 
 {
-	static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videos_4)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videoMenu_5)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___nextMenu_6)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___currentVideo_7)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videosLength_8)),};
+	static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videos_4)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videoMenu_5)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___nextMenu_6)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___currentVideo_7)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___videosLength_8)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___dryExerciseController_9)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___startNoDry_10)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___startCatchDry_11)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___startDriveDry_12)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___startFinishDry_13)),static_cast<int32_t>(offsetof(SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA, ___startEndDry_14)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9166[4] = 
 {
 	static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___beingTeleported_4)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___teleportationGoal_5)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___teleportationOn_6)),static_cast<int32_t>(offsetof(TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0, ___offset_7)),};
