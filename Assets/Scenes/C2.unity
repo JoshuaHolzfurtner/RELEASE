@@ -41390,6 +41390,7 @@ MonoBehaviour:
   timerStopped: 0
   timeHasBeenReset: 0
   resetSeconds: 30
+  handleForReset: {fileID: 0}
 --- !u!4 &1152204773
 Transform:
   m_ObjectHideFlags: 0
@@ -56574,22 +56575,22 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0.05056152
-      BrowDownRight: 0.048869014
+      BrowDownLeft: 0.016696688
+      BrowDownRight: 0.016564094
       BrowInnerUp: 0
       BrowOuterUpLeft: 0
       BrowOuterUpRight: 0
-      CheekPuff: 0.007964766
+      CheekPuff: 0
       CheekSquintLeft: 0
       CheekSquintRight: 0
-      EyeBlinkLeft: 0.13309851
-      EyeBlinkRight: 0.13291198
-      EyeLookDownLeft: 0.20033891
-      EyeLookDownRight: 0.20115465
-      EyeLookInLeft: 0.094497286
+      EyeBlinkLeft: 0.052143224
+      EyeBlinkRight: 0.052148372
+      EyeLookDownLeft: 0.13042966
+      EyeLookDownRight: 0.13055094
+      EyeLookInLeft: 0.027965508
       EyeLookInRight: 0
       EyeLookOutLeft: 0
-      EyeLookOutRight: 0.01665961
+      EyeLookOutRight: 0
       EyeLookUpLeft: 0
       EyeLookUpRight: 0
       EyeSquintLeft: 0
@@ -56599,37 +56600,37 @@ MonoBehaviour:
       JawForward: 0
       JawLeft: 0
       JawOpen: 0
-      JawRight: 0.025281003
+      JawRight: 0
       MouthClose: 0
       MouthDimpleLeft: 0
       MouthDimpleRight: 0
       MouthFrownLeft: 0
       MouthFrownRight: 0
       MouthFunnel: 0
-      MouthLeft: 0.0081698205
+      MouthLeft: 0.0012203765
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
-      MouthPressLeft: 0.047109563
-      MouthPressRight: 0.033616573
+      MouthPressLeft: 0
+      MouthPressRight: 0
       MouthPucker: 0
       MouthRight: 0
       MouthRollLower: 0
       MouthRollUpper: 0
-      MouthShrugLower: 0.03473363
-      MouthShrugUpper: 0.019860808
-      MouthSmileLeft: 0.011242226
-      MouthSmileRight: 0
+      MouthShrugLower: 0
+      MouthShrugUpper: 0
+      MouthSmileLeft: 0.009304805
+      MouthSmileRight: 0.009626748
       MouthStretchLeft: 0
       MouthStretchRight: 0
-      MouthUpperUpLeft: 0.0062366277
-      MouthUpperUpRight: 0.006207724
-      NoseSneerLeft: 0.019789193
-      NoseSneerRight: 0.053909443
+      MouthUpperUpLeft: 0
+      MouthUpperUpRight: 0
+      NoseSneerLeft: 0.0022456162
+      NoseSneerRight: 0.0019944077
       TongueOut: 0
-    HeadPosition: {x: -0.039928246, y: -0.27097827, z: -0.509693}
-    HeadOrientation: {x: -0.277324, y: -0.061294563, z: -0.07607108, w: 0.9557968}
-    LeftEyeOrientation: {x: -0.0721983, y: -0.0050750882, z: -0.00036737625, w: -0.9973774}
-    RightEyeOrientation: {x: -0.07189373, y: -0.04049475, z: -0.002921293, w: -0.99658567}
+    HeadPosition: {x: -0.023105461, y: -0.14517137, z: -0.3923354}
+    HeadOrientation: {x: -0.18552426, y: -0.00048786367, z: -0.07135722, w: 0.9800453}
+    LeftEyeOrientation: {x: -0.051624686, y: 0.01563124, z: 0.0008081346, w: -0.9985439}
+    RightEyeOrientation: {x: -0.05157465, y: -0.021123657, z: -0.0010911417, w: -0.99844515}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
@@ -68256,9 +68257,9 @@ MonoBehaviour:
     m_Directory: Assets/Takes
     m_SceneNumber: 1
     m_ShotName: New Shot
-    m_TakeNumber: 4
+    m_TakeNumber: 10
     m_Description: 
-    m_Take: {fileID: 11400000, guid: ef8b28bee3488452ea5f9fb81f0586a9, type: 2}
+    m_Take: {fileID: 11400000, guid: 8da0fd5f780934d27a78f8255d6aa26e, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 1895606765}
   m_FrameRate:
@@ -68278,14 +68279,14 @@ PlayableDirector:
   m_GameObject: {fileID: 1895606763}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: -30666802288707001, guid: ef8b28bee3488452ea5f9fb81f0586a9, type: 2}
+  m_PlayableAsset: {fileID: -6287975516666658702, guid: 8da0fd5f780934d27a78f8255d6aa26e, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -966091861584881172, guid: ef8b28bee3488452ea5f9fb81f0586a9, type: 2}
-    value: {fileID: 1930340670}
+  - key: {fileID: -7053909932030145947, guid: 8da0fd5f780934d27a78f8255d6aa26e, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - HeadTeacher: {fileID: 1930340670}
@@ -69213,8 +69214,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d61312297f5df414597390c3e76038a5, type: 3}
   - {fileID: 8300000, guid: f4a23be7bc947438186e4ca79585a537, type: 3}
   - {fileID: 8300000, guid: 6fadd12def8ea4bf796dff5cefc3568f, type: 3}
-  - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
-  - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
+  - {fileID: 8300000, guid: 81f37b3cc3262411fae4508a013c8290, type: 3}
+  - {fileID: 8300000, guid: 7e291fcde62ba453a816f5183d0629a6, type: 3}
   - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
   - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
   - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
