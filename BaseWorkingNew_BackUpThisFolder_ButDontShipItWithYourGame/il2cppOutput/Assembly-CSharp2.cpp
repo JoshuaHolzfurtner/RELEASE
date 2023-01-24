@@ -12848,6 +12848,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiagrammAndTextControll_Start_mA66C02B03
 		return;
 	}
 }
+// System.Void DiagrammAndTextControll::ResetDiagrammAndText()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiagrammAndTextControll_ResetDiagrammAndText_m8F4EE11EDF2C997B86968EB243BAEDC494CF2674 (DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82* __this, const RuntimeMethod* method) 
+{
+	{
+		// counterText = 1;
+		__this->___counterText_11 = 1;
+		// tutorialText.text = textsExplainRow[1];
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___tutorialText_9;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = __this->___textsExplainRow_8;
+		NullCheck(L_1);
+		int32_t L_2 = 1;
+		String_t* L_3 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_0, L_3);
+		// charPics[0].SetActive(true);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_4 = __this->___charPics_10;
+		NullCheck(L_4);
+		int32_t L_5 = 0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
+		// ChangePicMan();
+		DiagrammAndTextControll_ChangePicMan_mD435BACD19BAD792815FB39B92C62D78862328C9(__this, NULL);
+		// }
+		return;
+	}
+}
 // System.Void DiagrammAndTextControll::NextText()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiagrammAndTextControll_NextText_m9D7CDF720A523A7BE498389F20BD43D9F4DBA2ED (DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82* __this, const RuntimeMethod* method) 
 {

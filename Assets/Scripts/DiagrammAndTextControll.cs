@@ -31,6 +31,17 @@ public class DiagrammAndTextControll : MonoBehaviour
         //counterText++;
     }
 
+    public void ResetDiagrammAndText()
+    {
+        counterText = 1;
+        tutorialText.text = textsExplainRow[1];
+        charPics[0].SetActive(true);
+        ChangePicMan();
+
+        //counterText++;
+    }
+
+
     public void NextText()
     {
         ChangePicMan();

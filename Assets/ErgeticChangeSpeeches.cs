@@ -11,6 +11,10 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public GameObject ergeticElements;
     public GameObject ergeticMenu;
     public GameObject continueMenu;
+    public GameObject dryExercises;
+    
+
+
     private int scriptCounterAnim;
     
     public int indexNothing;

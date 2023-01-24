@@ -4612,20 +4612,22 @@ struct ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C  : public
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ergeticMenu_8;
 	// UnityEngine.GameObject ErgeticChangeSpeeches::continueMenu
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___continueMenu_9;
+	// UnityEngine.GameObject ErgeticChangeSpeeches::dryExercises
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___dryExercises_10;
 	// System.Int32 ErgeticChangeSpeeches::scriptCounterAnim
-	int32_t ___scriptCounterAnim_10;
+	int32_t ___scriptCounterAnim_11;
 	// System.Int32 ErgeticChangeSpeeches::indexNothing
-	int32_t ___indexNothing_11;
+	int32_t ___indexNothing_12;
 	// System.Int32 ErgeticChangeSpeeches::indexCatch
-	int32_t ___indexCatch_12;
+	int32_t ___indexCatch_13;
 	// System.Int32 ErgeticChangeSpeeches::indexDrive
-	int32_t ___indexDrive_13;
+	int32_t ___indexDrive_14;
 	// System.Int32 ErgeticChangeSpeeches::indexFinish
-	int32_t ___indexFinish_14;
+	int32_t ___indexFinish_15;
 	// System.Int32 ErgeticChangeSpeeches::indexFullStroke
-	int32_t ___indexFullStroke_15;
+	int32_t ___indexFullStroke_16;
 	// System.Int32 ErgeticChangeSpeeches::lastIndexSpeeches
-	int32_t ___lastIndexSpeeches_16;
+	int32_t ___lastIndexSpeeches_17;
 };
 
 // HandedInputSelector
@@ -8636,7 +8638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_Start_mA9A80C1F362
 {
 	{
 		// scriptCounterAnim = 0;
-		__this->___scriptCounterAnim_10 = 0;
+		__this->___scriptCounterAnim_11 = 0;
 		// }
 		return;
 	}
@@ -8658,16 +8660,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_nextAnim_m055F54D6
 	}
 	{
 		// scriptCounterAnim++;
-		int32_t L_0 = __this->___scriptCounterAnim_10;
-		__this->___scriptCounterAnim_10 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		int32_t L_0 = __this->___scriptCounterAnim_11;
+		__this->___scriptCounterAnim_11 = ((int32_t)il2cpp_codegen_add(L_0, 1));
 		// animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
 		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->___animTrainer_4;
-		int32_t L_2 = __this->___scriptCounterAnim_10;
+		int32_t L_2 = __this->___scriptCounterAnim_11;
 		NullCheck(L_1);
 		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_1, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_2, NULL);
 		// if(scriptCounterAnim==indexCatch)
-		int32_t L_3 = __this->___scriptCounterAnim_10;
-		int32_t L_4 = __this->___indexCatch_12;
+		int32_t L_3 = __this->___scriptCounterAnim_11;
+		int32_t L_4 = __this->___indexCatch_13;
 		if ((!(((uint32_t)L_3) == ((uint32_t)L_4))))
 		{
 			goto IL_004e;
@@ -8688,8 +8690,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_nextAnim_m055F54D6
 IL_004e:
 	{
 		// else if (scriptCounterAnim == indexNothing)
-		int32_t L_7 = __this->___scriptCounterAnim_10;
-		int32_t L_8 = __this->___indexNothing_11;
+		int32_t L_7 = __this->___scriptCounterAnim_11;
+		int32_t L_8 = __this->___indexNothing_12;
 		if ((!(((uint32_t)L_7) == ((uint32_t)L_8))))
 		{
 			goto IL_0078;
@@ -8710,8 +8712,8 @@ IL_004e:
 IL_0078:
 	{
 		// else if (scriptCounterAnim == indexDrive)
-		int32_t L_11 = __this->___scriptCounterAnim_10;
-		int32_t L_12 = __this->___indexDrive_13;
+		int32_t L_11 = __this->___scriptCounterAnim_11;
+		int32_t L_12 = __this->___indexDrive_14;
 		if ((!(((uint32_t)L_11) == ((uint32_t)L_12))))
 		{
 			goto IL_00a2;
@@ -8732,8 +8734,8 @@ IL_0078:
 IL_00a2:
 	{
 		// else if (scriptCounterAnim == indexFinish)
-		int32_t L_15 = __this->___scriptCounterAnim_10;
-		int32_t L_16 = __this->___indexFinish_14;
+		int32_t L_15 = __this->___scriptCounterAnim_11;
+		int32_t L_16 = __this->___indexFinish_15;
 		if ((!(((uint32_t)L_15) == ((uint32_t)L_16))))
 		{
 			goto IL_00cc;
@@ -8754,8 +8756,8 @@ IL_00a2:
 IL_00cc:
 	{
 		// else if (scriptCounterAnim == indexFullStroke)
-		int32_t L_19 = __this->___scriptCounterAnim_10;
-		int32_t L_20 = __this->___indexFullStroke_15;
+		int32_t L_19 = __this->___scriptCounterAnim_11;
+		int32_t L_20 = __this->___indexFullStroke_16;
 		if ((!(((uint32_t)L_19) == ((uint32_t)L_20))))
 		{
 			goto IL_00f6;
@@ -8776,8 +8778,8 @@ IL_00cc:
 IL_00f6:
 	{
 		// else if (scriptCounterAnim == lastIndexSpeeches)
-		int32_t L_23 = __this->___scriptCounterAnim_10;
-		int32_t L_24 = __this->___lastIndexSpeeches_16;
+		int32_t L_23 = __this->___scriptCounterAnim_11;
+		int32_t L_24 = __this->___lastIndexSpeeches_17;
 		if ((!(((uint32_t)L_23) == ((uint32_t)L_24))))
 		{
 			goto IL_013f;
@@ -8789,7 +8791,7 @@ IL_00f6:
 		NullCheck(L_25);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_25, (bool)0, NULL);
 		// scriptCounterAnim = 0;
-		__this->___scriptCounterAnim_10 = 0;
+		__this->___scriptCounterAnim_11 = 0;
 		// phaseText.text = "How to row";
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_26 = __this->___phaseText_6;
 		NullCheck(L_26);
@@ -8821,16 +8823,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_backAnim_m412DCD3C
 	}
 	{
 		// scriptCounterAnim--;
-		int32_t L_0 = __this->___scriptCounterAnim_10;
-		__this->___scriptCounterAnim_10 = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
+		int32_t L_0 = __this->___scriptCounterAnim_11;
+		__this->___scriptCounterAnim_11 = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
 		// animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
 		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->___animTrainer_4;
-		int32_t L_2 = __this->___scriptCounterAnim_10;
+		int32_t L_2 = __this->___scriptCounterAnim_11;
 		NullCheck(L_1);
 		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_1, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_2, NULL);
 		// if (scriptCounterAnim == indexCatch)
-		int32_t L_3 = __this->___scriptCounterAnim_10;
-		int32_t L_4 = __this->___indexCatch_12;
+		int32_t L_3 = __this->___scriptCounterAnim_11;
+		int32_t L_4 = __this->___indexCatch_13;
 		if ((!(((uint32_t)L_3) == ((uint32_t)L_4))))
 		{
 			goto IL_003e;
@@ -8847,8 +8849,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_backAnim_m412DCD3C
 IL_003e:
 	{
 		// else if (scriptCounterAnim == indexNothing)
-		int32_t L_6 = __this->___scriptCounterAnim_10;
-		int32_t L_7 = __this->___indexNothing_11;
+		int32_t L_6 = __this->___scriptCounterAnim_11;
+		int32_t L_7 = __this->___indexNothing_12;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
 		{
 			goto IL_0058;
@@ -8865,8 +8867,8 @@ IL_003e:
 IL_0058:
 	{
 		// else if (scriptCounterAnim == indexDrive)
-		int32_t L_9 = __this->___scriptCounterAnim_10;
-		int32_t L_10 = __this->___indexDrive_13;
+		int32_t L_9 = __this->___scriptCounterAnim_11;
+		int32_t L_10 = __this->___indexDrive_14;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
 			goto IL_0072;
@@ -8883,8 +8885,8 @@ IL_0058:
 IL_0072:
 	{
 		// else if (scriptCounterAnim == indexFinish)
-		int32_t L_12 = __this->___scriptCounterAnim_10;
-		int32_t L_13 = __this->___indexFinish_14;
+		int32_t L_12 = __this->___scriptCounterAnim_11;
+		int32_t L_13 = __this->___indexFinish_15;
 		if ((!(((uint32_t)L_12) == ((uint32_t)L_13))))
 		{
 			goto IL_008c;
@@ -8901,8 +8903,8 @@ IL_0072:
 IL_008c:
 	{
 		// else if (scriptCounterAnim == indexFullStroke)
-		int32_t L_15 = __this->___scriptCounterAnim_10;
-		int32_t L_16 = __this->___indexFullStroke_15;
+		int32_t L_15 = __this->___scriptCounterAnim_11;
+		int32_t L_16 = __this->___indexFullStroke_16;
 		if ((!(((uint32_t)L_15) == ((uint32_t)L_16))))
 		{
 			goto IL_00a6;
@@ -8919,8 +8921,8 @@ IL_008c:
 IL_00a6:
 	{
 		// else if (scriptCounterAnim == lastIndexSpeeches)
-		int32_t L_18 = __this->___scriptCounterAnim_10;
-		int32_t L_19 = __this->___lastIndexSpeeches_16;
+		int32_t L_18 = __this->___scriptCounterAnim_11;
+		int32_t L_19 = __this->___lastIndexSpeeches_17;
 		if ((!(((uint32_t)L_18) == ((uint32_t)L_19))))
 		{
 			goto IL_00df;
@@ -8932,7 +8934,7 @@ IL_00a6:
 		NullCheck(L_20);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
 		// scriptCounterAnim = 0;
-		__this->___scriptCounterAnim_10 = 0;
+		__this->___scriptCounterAnim_11 = 0;
 		// continueMenu.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___continueMenu_9;
 		NullCheck(L_21);
