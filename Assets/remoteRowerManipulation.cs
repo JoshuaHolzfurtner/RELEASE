@@ -16,7 +16,16 @@ public class remoteRowerManipulation : MonoBehaviour
         yRot = remoteRower.eulerAngles.y + 15f;//- 100f;
         //zRot = teleportationGoal.transform.eulerAngles.z;
         transform.eulerAngles = new Vector3(0f, yRot, 0f);
-        AnimateCatch();
+        //AnimateCatch();
+    }
+
+    public void AnimateNothing()
+    {
+        anim.SetBool("catch", false);
+        anim.SetBool("drive", false);
+        anim.SetBool("finish", false);
+        anim.SetBool("fullstroke", false);
+
     }
 
     public void AnimateCatch()

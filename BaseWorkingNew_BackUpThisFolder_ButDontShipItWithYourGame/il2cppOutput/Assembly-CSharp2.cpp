@@ -7934,8 +7934,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m9BDD7B7476714B2D791
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_eulerAngles_mCAAF48EFCF628F1ED91C2FFE75A4FD19C039DD6A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
-// System.Void remoteRowerManipulation::AnimateCatch()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_AnimateCatch_m4D960F2137D6CFC0DB96DA4732074935D3C7FD23 (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___name0, bool ___value1, const RuntimeMethod* method) ;
 // System.Void AudioLoudnessDetection::MicrophoneToAudioClip()
@@ -11828,8 +11826,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_turn_m4019CD8255
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_5), (0.0f), L_4, (0.0f), /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004(L_3, L_5, NULL);
-		// AnimateCatch();
-		remoteRowerManipulation_AnimateCatch_m4D960F2137D6CFC0DB96DA4732074935D3C7FD23(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void remoteRowerManipulation::AnimateNothing()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779 (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A68917AE66E803A67C7806AD530A59B0D6BB5DC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral38D3008511B528A5F192D58360168CA7329DE2AB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5AC9E039324DDB82B6801B1846C1987DF1F4AFCC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF6088B6C598636010475E9FDB2D740810A10F114);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// anim.SetBool("catch", false);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_0 = __this->___anim_6;
+		NullCheck(L_0);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_0, _stringLiteral38D3008511B528A5F192D58360168CA7329DE2AB, (bool)0, NULL);
+		// anim.SetBool("drive", false);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->___anim_6;
+		NullCheck(L_1);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_1, _stringLiteral1A68917AE66E803A67C7806AD530A59B0D6BB5DC, (bool)0, NULL);
+		// anim.SetBool("finish", false);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_2 = __this->___anim_6;
+		NullCheck(L_2);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_2, _stringLiteral5AC9E039324DDB82B6801B1846C1987DF1F4AFCC, (bool)0, NULL);
+		// anim.SetBool("fullstroke", false);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_3 = __this->___anim_6;
+		NullCheck(L_3);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_3, _stringLiteralF6088B6C598636010475E9FDB2D740810A10F114, (bool)0, NULL);
 		// }
 		return;
 	}
