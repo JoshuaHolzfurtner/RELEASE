@@ -5323,6 +5323,8 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	bool ___timeHasBeenReset_13;
 	// System.Single Timer::resetSeconds
 	float ___resetSeconds_14;
+	// TrackHandle Timer::handleForReset
+	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_15;
 };
 
 // TrackDistance
@@ -8282,6 +8284,10 @@ inline void Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332 (Dictiona
 {
 	((  void (*) (Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B*, int32_t, String_t*, const RuntimeMethod*))Dictionary_2_Add_mC515884C0546021A29DC0A00DBCABD89B1B65872_gshared)(__this, ___key0, ___value1, method);
 }
+// System.Void Timer::ResetTimer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA12765772FD58624827 (Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20* __this, const RuntimeMethod* method) ;
+// System.Void TrackHandle::ResetAll()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackHandle_ResetAll_m630B3AACAF41DE41A100620D504D9A212B8E588C (TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* __this, const RuntimeMethod* method) ;
 // System.Void Timer::SetTimerText()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_SetTimerText_m56A6D032D7D3135F52927C1F8DAEB0EA9420A73F (Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
@@ -16218,6 +16224,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Start_m6820D211A06B2E5E24795D7EBE6
 		__this->___timeHasBeenReset_13 = (bool)0;
 		// resetSeconds = 5f;
 		__this->___resetSeconds_14 = (5.0f);
+		// ResetTimer();//to start whenever it opens
+		Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA12765772FD58624827(__this, NULL);
+		// handleForReset.ResetAll();
+		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_3 = __this->___handleForReset_15;
+		NullCheck(L_3);
+		TrackHandle_ResetAll_m630B3AACAF41DE41A100620D504D9A212B8E588C(L_3, NULL);
 		// }
 		return;
 	}
@@ -16506,6 +16518,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA
 		__this->___timerStopped_12 = (bool)1;
 		// timeHasBeenReset = true;
 		__this->___timeHasBeenReset_13 = (bool)1;
+		// handleForReset.ResetAll();
+		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_0 = __this->___handleForReset_15;
+		NullCheck(L_0);
+		TrackHandle_ResetAll_m630B3AACAF41DE41A100620D504D9A212B8E588C(L_0, NULL);
 		// }
 		return;
 	}
