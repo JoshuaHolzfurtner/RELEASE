@@ -18601,11 +18601,21 @@ MonoBehaviour:
   thisMenu: {fileID: 590024081}
   thisTutorialVariant: {fileID: 1781561177}
   nextMenu: {fileID: 1423345456}
+  dryExerciseController: {fileID: 1665580053}
+  startNoDry: 1
+  startCatchDry: 2
+  startDriveDry: 3
+  startFinishDry: 4
+  startEndDry: 5
   textsExplainRow:
   - Press Left again to exit the tutorial.
   - Hallo ich bin der Erste Text
-  - Hallo ich bin der Zweite Text
-  - Hallo ich bin der Dritte Text
+  - 'Catch: Hallo ich bin der Zweite Text'
+  - 'Drive: Hallo ich bin der Dritte Text'
+  - 'Finish: Hallo ich bin der Dritte Text'
+  - Release
+  - FullStroke
+  - In Summary
   - LastText
   tutorialText: {fileID: 1706866781}
   charPics:
@@ -58265,6 +58275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c668f87cffaaa4123b1842d239c49da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dryCatch: {fileID: 449074950}
+  dryDrive: {fileID: 1763832986}
+  dryFinish: {fileID: 5773919}
 --- !u!1 &1669400537
 GameObject:
   m_ObjectHideFlags: 0
@@ -71553,7 +71566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023612940}
   m_Layer: 0
-  m_Name: RoomTutorial
+  m_Name: TutorialRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

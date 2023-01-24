@@ -9,6 +9,15 @@ public class DiagrammAndTextControll : MonoBehaviour
     public GameObject thisMenu;
     public GameObject thisTutorialVariant;
     public GameObject nextMenu;
+    public DisplayDryExercises dryExerciseController;
+    public int startNoDry;
+    public int startCatchDry;
+    public int startDriveDry;
+    public int startFinishDry;
+    public int startEndDry;
+
+
+
 
     public string[] textsExplainRow;
 
@@ -46,6 +55,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     {
         ChangePicMan();
         counterText++;
+        CheckDryExercise(counterText);
         tutorialText.text = textsExplainRow[counterText];
         if (counterText == (textsExplainRow.Length-1))
         {
@@ -62,6 +72,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     {
         ChangePicMan();
         counterText--;
+        CheckDryExercise(counterText);
         tutorialText.text = textsExplainRow[counterText];
         if (counterText == 0)
         {
@@ -83,5 +94,29 @@ public class DiagrammAndTextControll : MonoBehaviour
             charCounter = 0;
         }
         charPics[charCounter].SetActive(true);
+    }
+
+    public void CheckDryExercise(int index)
+    {
+        if(index == startNoDry)
+        {
+            dryExerciseController.ShowNone();
+        }
+        else if(index == startCatchDry)
+        {
+            dryExerciseController.ShowCatch();
+        }
+        else if (index == startDriveDry)
+        {
+            dryExerciseController.ShowDrive();
+        }
+        else if (index == startDriveDry)
+        {
+            dryExerciseController.ShowFinish();
+        }
+        else if (index == startEndDry)
+        {
+            dryExerciseController.ShowNone();
+        }
     }
 }

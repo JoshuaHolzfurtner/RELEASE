@@ -1806,8 +1806,6 @@ struct DebugInfoComparer_tF6521053ED3200284BB605E744AF65A0482F861A;
 struct OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A;
 // DebugUIBuilder/OnSlider
 struct OnSlider_t0D96B212C4F64F40984BF471CF31E5B4F2449567;
-// DebugUIBuilder/OnToggleValueChange
-struct OnToggleValueChange_tD8DB8B3514D20938EF5BC2B343F5B5824217DBDF;
 // UnityEngine.UI.DefaultControls/IFactoryControls
 struct IFactoryControls_t3F634F92112F204D8CBFB11F4FDCE971606818BC;
 // UnityEngine.Display/DisplaysUpdatedDelegate
@@ -6236,15 +6234,6 @@ struct U3CU3Ec__DisplayClass43_0_t1A6E0C36E95417DD8EAD1EA78F659CC51CA71E4B  : pu
 {
 	// DebugUIBuilder/OnSlider DebugUIBuilder/<>c__DisplayClass43_0::onValueChanged
 	OnSlider_t0D96B212C4F64F40984BF471CF31E5B4F2449567* ___onValueChanged_0;
-};
-
-// DebugUIBuilder/<>c__DisplayClass45_0
-struct U3CU3Ec__DisplayClass45_0_tE9B46B21D30756816A889C8CC201E0269CCE9C50  : public RuntimeObject
-{
-	// DebugUIBuilder/OnToggleValueChange DebugUIBuilder/<>c__DisplayClass45_0::onValueChanged
-	OnToggleValueChange_tD8DB8B3514D20938EF5BC2B343F5B5824217DBDF* ___onValueChanged_0;
-	// UnityEngine.UI.Toggle DebugUIBuilder/<>c__DisplayClass45_0::t
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___t_1;
 };
 
 // UnityEngine.UI.DefaultControls/DefaultRuntimeFactory
@@ -26060,6 +26049,17 @@ struct DetectBasket_tF154610D12163F3FB003B9E03F1FAF9A9E25B045  : public MonoBeha
 	Player_tCCA93288D258E225DD8C604DCC59E755FAE79044* ___m_owningPlayer_5;
 };
 
+// DisplayDryExercises
+struct DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject DisplayDryExercises::dryCatch
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___dryCatch_4;
+	// UnityEngine.GameObject DisplayDryExercises::dryDrive
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___dryDrive_5;
+	// UnityEngine.GameObject DisplayDryExercises::dryFinish
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___dryFinish_6;
+};
+
 // Oculus.Interaction.DistanceReticles.DistantInteractionLineVisual
 struct DistantInteractionLineVisual_t7D10F56403604672DC3885A2A3022F8BE25C6B93  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -36628,15 +36628,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8987[11] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8990[1] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3A51899FBAA581553000230A6A0F92898553245F_StaticFields, ___1C3635C112D556F4C11A4FE6BDE6ED3F126C4B2B546811BDB64DE7BDED3A05CB_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8992[14] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8992[3] = 
+{
+	static_cast<int32_t>(offsetof(DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89, ___dryCatch_4)),static_cast<int32_t>(offsetof(DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89, ___dryDrive_5)),static_cast<int32_t>(offsetof(DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89, ___dryFinish_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8993[14] = 
 {
 	static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___animTrainer_4)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___animRower_5)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___phaseText_6)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___ergeticElements_7)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___ergeticMenu_8)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___continueMenu_9)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___dryExercises_10)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___scriptCounterAnim_11)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexNothing_12)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexCatch_13)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexDrive_14)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexFinish_15)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___indexFullStroke_16)),static_cast<int32_t>(offsetof(ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C, ___lastIndexSpeeches_17)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8997[1] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass41_0_tD03998B72130E379210125F837D005B365C1708B, ___handler_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8998[1] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass43_0_t1A6E0C36E95417DD8EAD1EA78F659CC51CA71E4B, ___onValueChanged_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8999[2] = 
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass41_0_tD03998B72130E379210125F837D005B365C1708B, ___handler_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8999[1] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass45_0_tE9B46B21D30756816A889C8CC201E0269CCE9C50, ___onValueChanged_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass45_0_tE9B46B21D30756816A889C8CC201E0269CCE9C50, ___t_1)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass43_0_t1A6E0C36E95417DD8EAD1EA78F659CC51CA71E4B, ___onValueChanged_0)),};
