@@ -9283,6 +9283,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1930340672}
+        m_TargetAssemblyTypeName: PlayerSounds, Assembly-CSharp
+        m_MethodName: openAllign
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -25415,7 +25427,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -25483,7 +25495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: openTutorial
+      value: openDiagramm
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -25519,6 +25531,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
@@ -33166,7 +33182,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -33234,7 +33250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: openTutorial
+      value: openVideo
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -33270,6 +33286,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
@@ -41390,7 +41410,7 @@ MonoBehaviour:
   timerStopped: 0
   timeHasBeenReset: 0
   resetSeconds: 30
-  handleForReset: {fileID: 0}
+  handleForReset: {fileID: 259715477}
 --- !u!4 &1152204773
 Transform:
   m_ObjectHideFlags: 0
@@ -43677,7 +43697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -43714,7 +43734,7 @@ PrefabInstance:
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1930340672}
+      objectReference: {fileID: 57436613}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
@@ -43745,11 +43765,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: openTutorial
+      value: openErgetic
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: openTutorial
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
@@ -43784,6 +43804,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -43797,7 +43825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1438875814, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -56575,19 +56603,19 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0.016696688
-      BrowDownRight: 0.016564094
+      BrowDownLeft: 0.20069191
+      BrowDownRight: 0.20038305
       BrowInnerUp: 0
       BrowOuterUpLeft: 0
       BrowOuterUpRight: 0
       CheekPuff: 0
       CheekSquintLeft: 0
       CheekSquintRight: 0
-      EyeBlinkLeft: 0.052143224
-      EyeBlinkRight: 0.052148372
-      EyeLookDownLeft: 0.13042966
-      EyeLookDownRight: 0.13055094
-      EyeLookInLeft: 0.027965508
+      EyeBlinkLeft: 0.19640832
+      EyeBlinkRight: 0.19648577
+      EyeLookDownLeft: 0.47797805
+      EyeLookDownRight: 0.47770187
+      EyeLookInLeft: 0
       EyeLookInRight: 0
       EyeLookOutLeft: 0
       EyeLookOutRight: 0
@@ -56600,14 +56628,14 @@ MonoBehaviour:
       JawForward: 0
       JawLeft: 0
       JawOpen: 0
-      JawRight: 0
+      JawRight: 0.0032999415
       MouthClose: 0
       MouthDimpleLeft: 0
       MouthDimpleRight: 0
       MouthFrownLeft: 0
       MouthFrownRight: 0
       MouthFunnel: 0
-      MouthLeft: 0.0012203765
+      MouthLeft: 0
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
       MouthPressLeft: 0
@@ -56618,19 +56646,19 @@ MonoBehaviour:
       MouthRollUpper: 0
       MouthShrugLower: 0
       MouthShrugUpper: 0
-      MouthSmileLeft: 0.009304805
-      MouthSmileRight: 0.009626748
+      MouthSmileLeft: 0.19418208
+      MouthSmileRight: 0.17022155
       MouthStretchLeft: 0
       MouthStretchRight: 0
-      MouthUpperUpLeft: 0
-      MouthUpperUpRight: 0
-      NoseSneerLeft: 0.0022456162
-      NoseSneerRight: 0.0019944077
+      MouthUpperUpLeft: 0.0028004192
+      MouthUpperUpRight: 0.0032789677
+      NoseSneerLeft: 0.025297567
+      NoseSneerRight: 0.018994523
       TongueOut: 0
-    HeadPosition: {x: -0.023105461, y: -0.14517137, z: -0.3923354}
-    HeadOrientation: {x: -0.18552426, y: -0.00048786367, z: -0.07135722, w: 0.9800453}
-    LeftEyeOrientation: {x: -0.051624686, y: 0.01563124, z: 0.0008081346, w: -0.9985439}
-    RightEyeOrientation: {x: -0.05157465, y: -0.021123657, z: -0.0010911417, w: -0.99844515}
+    HeadPosition: {x: -0.03795055, y: -0.124247536, z: -0.41071072}
+    HeadOrientation: {x: -0.24618183, y: 0.036383737, z: 0.0024399948, w: 0.9685374}
+    LeftEyeOrientation: {x: -0.15233901, y: 0.024519952, z: 0.003780649, w: -0.98801684}
+    RightEyeOrientation: {x: -0.15244788, y: -0.012440658, z: -0.0019191377, w: -0.98823136}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
@@ -68257,9 +68285,9 @@ MonoBehaviour:
     m_Directory: Assets/Takes
     m_SceneNumber: 1
     m_ShotName: New Shot
-    m_TakeNumber: 10
+    m_TakeNumber: 18
     m_Description: 
-    m_Take: {fileID: 11400000, guid: 8da0fd5f780934d27a78f8255d6aa26e, type: 2}
+    m_Take: {fileID: 11400000, guid: d4a39b56dd8204f01aa0ec3f18b96763, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 1895606765}
   m_FrameRate:
@@ -68279,14 +68307,14 @@ PlayableDirector:
   m_GameObject: {fileID: 1895606763}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: -6287975516666658702, guid: 8da0fd5f780934d27a78f8255d6aa26e, type: 2}
+  m_PlayableAsset: {fileID: 7915815548672709334, guid: d4a39b56dd8204f01aa0ec3f18b96763, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -7053909932030145947, guid: 8da0fd5f780934d27a78f8255d6aa26e, type: 2}
-    value: {fileID: 0}
+  - key: {fileID: 6497103505878290017, guid: d4a39b56dd8204f01aa0ec3f18b96763, type: 2}
+    value: {fileID: 1930340670}
   m_ExposedReferences:
     m_References:
     - HeadTeacher: {fileID: 1930340670}
@@ -69216,9 +69244,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6fadd12def8ea4bf796dff5cefc3568f, type: 3}
   - {fileID: 8300000, guid: 81f37b3cc3262411fae4508a013c8290, type: 3}
   - {fileID: 8300000, guid: 7e291fcde62ba453a816f5183d0629a6, type: 3}
-  - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
-  - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
-  - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
+  - {fileID: 8300000, guid: 8306cd6f1d1bd480a909036a3d549ba9, type: 3}
+  - {fileID: 8300000, guid: 3da66bfb8c21b4b03a05c77d802287ae, type: 3}
+  - {fileID: 8300000, guid: 65831e04a62df4c96af53d0c180dee28, type: 3}
+  - {fileID: 8300000, guid: a37912f66d8564f60b0970da76cf773b, type: 3}
+  - {fileID: 8300000, guid: 85bbd3501d7d44c378c97b12a2ad3356, type: 3}
   - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
   - {fileID: 8300000, guid: 98e759dfda69aa7468d95f5a2c88e366, type: 3}
   animFace: {fileID: 1930340670}
