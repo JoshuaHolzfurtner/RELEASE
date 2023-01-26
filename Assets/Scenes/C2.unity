@@ -19151,8 +19151,10 @@ MonoBehaviour:
   startEndDry: 5
   textsExplainRow:
   - Press Left again to exit the tutorial.
-  - Hallo ich bin der Erste Text
-  - 'Catch: Hallo ich bin der Zweite Text'
+  - 'Catch: The Catch phase consist of pushing yourself away from the board only
+    using your legs while keeping your arms stretched out.'
+  - 'Catch: As a dry exercise push yourself away only using your legs while keeping
+    the arms stretched out.'
   - 'Drive: Hallo ich bin der Dritte Text'
   - 'Finish: Hallo ich bin der Dritte Text'
   - Release
@@ -25321,6 +25323,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748751768}
   m_CullTransparentMesh: 1
+--- !u!1 &751290270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751290271}
+  - component: {fileID: 751290275}
+  - component: {fileID: 751290274}
+  - component: {fileID: 751290273}
+  - component: {fileID: 751290272}
+  m_Layer: 0
+  m_Name: Drive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &751290271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751290270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.24107416, y: -0.29218364, z: -0.19464445}
+  m_LocalScale: {x: -5.76, y: -3.24, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1107007158}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &751290272
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751290270}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 3ce4cbc3adc6c458b891d0b69ab4d42d, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!65 &751290273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751290270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &751290274
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751290270}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &751290275
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751290270}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &752701011
 GameObject:
   m_ObjectHideFlags: 0
@@ -37467,7 +37602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepSound:
-  - {fileID: 8300000, guid: 229f46af248b4c74facf863a061f856b, type: 3}
+  - {fileID: 8300000, guid: 1f657e5e2f7d34ccf8ad9a2a19f0c7fd, type: 3}
   - {fileID: 8300000, guid: 82fd6ab639c494f999cc823917f07557, type: 3}
   - {fileID: 8300000, guid: 0c97c552aaa4b4156883f0d64dfcfd41, type: 3}
   - {fileID: 8300000, guid: d61312297f5df414597390c3e76038a5, type: 3}
@@ -38844,6 +38979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107007158}
   - component: {fileID: 1107007157}
+  - component: {fileID: 1107007159}
   m_Layer: 0
   m_Name: VideoTutorial
   m_TagString: Untagged
@@ -38866,9 +39002,9 @@ MonoBehaviour:
   videos:
   - {fileID: 1815489767}
   - {fileID: 1918064017}
-  - {fileID: 2101883939}
-  - {fileID: 1918064017}
-  - {fileID: 2101883939}
+  - {fileID: 751290270}
+  - {fileID: 751290270}
+  - {fileID: 1585908235}
   - {fileID: 1918064017}
   - {fileID: 2101883939}
   - {fileID: 1918064017}
@@ -38878,8 +39014,8 @@ MonoBehaviour:
   videoMenu: {fileID: 1541906767}
   nextMenu: {fileID: 975352513}
   dryExerciseController: {fileID: 1665580053}
-  startNoDry: 2
-  startCatchDry: 3
+  startNoDry: 1
+  startCatchDry: 7
   startDriveDry: 4
   startFinishDry: 5
   startEndDry: 6
@@ -38899,9 +39035,46 @@ Transform:
   - {fileID: 1918064021}
   - {fileID: 2101883944}
   - {fileID: 1893456132}
+  - {fileID: 751290271}
+  - {fileID: 1585908236}
   m_Father: {fileID: 1363042311}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &1107007159
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107007156}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 3ce4cbc3adc6c458b891d0b69ab4d42d, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1107518448
 GameObject:
   m_ObjectHideFlags: 0
@@ -56282,6 +56455,139 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1585908235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585908236}
+  - component: {fileID: 1585908240}
+  - component: {fileID: 1585908239}
+  - component: {fileID: 1585908238}
+  - component: {fileID: 1585908237}
+  m_Layer: 0
+  m_Name: DriveDry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1585908236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585908235}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.24107416, y: -0.29218364, z: -0.19464445}
+  m_LocalScale: {x: -5.76, y: -3.24, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1107007158}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &1585908237
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585908235}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: b66cc9d6014c0411a92760eaf24ac32e, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!65 &1585908238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585908235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1585908239
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585908235}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1585908240
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585908235}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1586986851
 GameObject:
   m_ObjectHideFlags: 0
@@ -56603,18 +56909,18 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0.20069191
-      BrowDownRight: 0.20038305
+      BrowDownLeft: 0
+      BrowDownRight: 0
       BrowInnerUp: 0
-      BrowOuterUpLeft: 0
-      BrowOuterUpRight: 0
+      BrowOuterUpLeft: 0.021869114
+      BrowOuterUpRight: 0.020169515
       CheekPuff: 0
       CheekSquintLeft: 0
       CheekSquintRight: 0
-      EyeBlinkLeft: 0.19640832
-      EyeBlinkRight: 0.19648577
-      EyeLookDownLeft: 0.47797805
-      EyeLookDownRight: 0.47770187
+      EyeBlinkLeft: 0.15266714
+      EyeBlinkRight: 0.15250231
+      EyeLookDownLeft: 0.34483317
+      EyeLookDownRight: 0.3445612
       EyeLookInLeft: 0
       EyeLookInRight: 0
       EyeLookOutLeft: 0
@@ -56628,14 +56934,14 @@ MonoBehaviour:
       JawForward: 0
       JawLeft: 0
       JawOpen: 0
-      JawRight: 0.0032999415
+      JawRight: 0.023942962
       MouthClose: 0
       MouthDimpleLeft: 0
       MouthDimpleRight: 0
       MouthFrownLeft: 0
       MouthFrownRight: 0
       MouthFunnel: 0
-      MouthLeft: 0
+      MouthLeft: 0.012864954
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
       MouthPressLeft: 0
@@ -56646,19 +56952,19 @@ MonoBehaviour:
       MouthRollUpper: 0
       MouthShrugLower: 0
       MouthShrugUpper: 0
-      MouthSmileLeft: 0.19418208
-      MouthSmileRight: 0.17022155
+      MouthSmileLeft: 0.12236913
+      MouthSmileRight: 0.07932282
       MouthStretchLeft: 0
       MouthStretchRight: 0
-      MouthUpperUpLeft: 0.0028004192
-      MouthUpperUpRight: 0.0032789677
-      NoseSneerLeft: 0.025297567
-      NoseSneerRight: 0.018994523
+      MouthUpperUpLeft: 0.0033492676
+      MouthUpperUpRight: 0.002607359
+      NoseSneerLeft: 0.036167543
+      NoseSneerRight: 0.027106257
       TongueOut: 0
-    HeadPosition: {x: -0.03795055, y: -0.124247536, z: -0.41071072}
-    HeadOrientation: {x: -0.24618183, y: 0.036383737, z: 0.0024399948, w: 0.9685374}
-    LeftEyeOrientation: {x: -0.15233901, y: 0.024519952, z: 0.003780649, w: -0.98801684}
-    RightEyeOrientation: {x: -0.15244788, y: -0.012440658, z: -0.0019191377, w: -0.98823136}
+    HeadPosition: {x: 0.04280771, y: -0.18484356, z: -0.3885233}
+    HeadOrientation: {x: -0.24393286, y: -0.05224073, z: -0.050516464, w: 0.9670656}
+    LeftEyeOrientation: {x: -0.113830924, y: 0.026908783, z: 0.003084238, w: -0.99313086}
+    RightEyeOrientation: {x: -0.11393751, y: -0.010976788, z: -0.0012589437, w: -0.9934265}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
@@ -68285,9 +68591,9 @@ MonoBehaviour:
     m_Directory: Assets/Takes
     m_SceneNumber: 1
     m_ShotName: New Shot
-    m_TakeNumber: 18
+    m_TakeNumber: 19
     m_Description: 
-    m_Take: {fileID: 11400000, guid: d4a39b56dd8204f01aa0ec3f18b96763, type: 2}
+    m_Take: {fileID: 11400000, guid: b0cafaf805c6547d29dd51ecb35cb32f, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 1895606765}
   m_FrameRate:
@@ -68307,13 +68613,13 @@ PlayableDirector:
   m_GameObject: {fileID: 1895606763}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 7915815548672709334, guid: d4a39b56dd8204f01aa0ec3f18b96763, type: 2}
+  m_PlayableAsset: {fileID: 494678587561165062, guid: b0cafaf805c6547d29dd51ecb35cb32f, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 6497103505878290017, guid: d4a39b56dd8204f01aa0ec3f18b96763, type: 2}
+  - key: {fileID: -4637418455538747738, guid: b0cafaf805c6547d29dd51ecb35cb32f, type: 2}
     value: {fileID: 1930340670}
   m_ExposedReferences:
     m_References:
