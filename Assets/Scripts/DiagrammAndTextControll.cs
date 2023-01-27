@@ -10,11 +10,25 @@ public class DiagrammAndTextControll : MonoBehaviour
     public GameObject thisTutorialVariant;
     public GameObject nextMenu;
     public DisplayDryExercises dryExerciseController;
-    public int startNoDry;
+
     public int startCatchDry;
     public int startDriveDry;
     public int startFinishDry;
-    public int startEndDry;
+
+    public int startGeneral;
+    public int startHandle;
+    public int startCatch;
+    public int startDrive;
+    public int startFinish;
+    public int startRelease;
+
+    public GameObject diagrammsBeginning;
+    public GameObject diagrammsHandle;
+    public GameObject diagrammsCatch;
+    public GameObject diagrammsDrive;
+    public GameObject diagrammsFinish;
+    public GameObject diagrammsRelease;
+
 
 
 
@@ -56,6 +70,7 @@ public class DiagrammAndTextControll : MonoBehaviour
         ChangePicMan();
         counterText++;
         CheckDryExercise(counterText);
+        CheckDiagramms(counterText);
         tutorialText.text = textsExplainRow[counterText];
         if (counterText == (textsExplainRow.Length-1))
         {
@@ -73,13 +88,14 @@ public class DiagrammAndTextControll : MonoBehaviour
         ChangePicMan();
         counterText--;
         CheckDryExercise(counterText);
+        CheckDiagramms(counterText);
         tutorialText.text = textsExplainRow[counterText];
         if (counterText == 0)
         {
-            lastMenu.SetActive(true);
+            //lastMenu.SetActive(true);
             counterText = 1;
-            thisTutorialVariant.SetActive(false);
-            thisMenu.SetActive(false);
+            //thisTutorialVariant.SetActive(false);
+            //thisMenu.SetActive(false);
 
         }
 
@@ -98,11 +114,7 @@ public class DiagrammAndTextControll : MonoBehaviour
 
     public void CheckDryExercise(int index)
     {
-        if(index == startNoDry)
-        {
-            dryExerciseController.ShowNone();
-        }
-        else if(index == startCatchDry)
+        if(index == startCatchDry)
         {
             dryExerciseController.ShowCatch();
         }
@@ -114,9 +126,68 @@ public class DiagrammAndTextControll : MonoBehaviour
         {
             dryExerciseController.ShowFinish();
         }
-        else if (index == startEndDry)
+        else 
         {
             dryExerciseController.ShowNone();
+        }
+    }
+
+    public void CheckDiagramms(int index)
+    {
+        if (index == startGeneral)
+        {
+            diagrammsBeginning.SetActive(true);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+
+        }
+        else if (index == startHandle)
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(true);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == startCatch)
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(true);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == startDrive)
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(true);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == startFinish)
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(true);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == startRelease)
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(true);
         }
     }
 }

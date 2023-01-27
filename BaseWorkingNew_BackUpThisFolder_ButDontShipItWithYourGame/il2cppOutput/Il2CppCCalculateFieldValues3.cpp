@@ -27645,26 +27645,46 @@ struct DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82  : publ
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nextMenu_7;
 	// DisplayDryExercises DiagrammAndTextControll::dryExerciseController
 	DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* ___dryExerciseController_8;
-	// System.Int32 DiagrammAndTextControll::startNoDry
-	int32_t ___startNoDry_9;
 	// System.Int32 DiagrammAndTextControll::startCatchDry
-	int32_t ___startCatchDry_10;
+	int32_t ___startCatchDry_9;
 	// System.Int32 DiagrammAndTextControll::startDriveDry
-	int32_t ___startDriveDry_11;
+	int32_t ___startDriveDry_10;
 	// System.Int32 DiagrammAndTextControll::startFinishDry
-	int32_t ___startFinishDry_12;
-	// System.Int32 DiagrammAndTextControll::startEndDry
-	int32_t ___startEndDry_13;
+	int32_t ___startFinishDry_11;
+	// System.Int32 DiagrammAndTextControll::startGeneral
+	int32_t ___startGeneral_12;
+	// System.Int32 DiagrammAndTextControll::startHandle
+	int32_t ___startHandle_13;
+	// System.Int32 DiagrammAndTextControll::startCatch
+	int32_t ___startCatch_14;
+	// System.Int32 DiagrammAndTextControll::startDrive
+	int32_t ___startDrive_15;
+	// System.Int32 DiagrammAndTextControll::startFinish
+	int32_t ___startFinish_16;
+	// System.Int32 DiagrammAndTextControll::startRelease
+	int32_t ___startRelease_17;
+	// UnityEngine.GameObject DiagrammAndTextControll::diagrammsBeginning
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammsBeginning_18;
+	// UnityEngine.GameObject DiagrammAndTextControll::diagrammsHandle
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammsHandle_19;
+	// UnityEngine.GameObject DiagrammAndTextControll::diagrammsCatch
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammsCatch_20;
+	// UnityEngine.GameObject DiagrammAndTextControll::diagrammsDrive
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammsDrive_21;
+	// UnityEngine.GameObject DiagrammAndTextControll::diagrammsFinish
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammsFinish_22;
+	// UnityEngine.GameObject DiagrammAndTextControll::diagrammsRelease
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___diagrammsRelease_23;
 	// System.String[] DiagrammAndTextControll::textsExplainRow
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___textsExplainRow_14;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___textsExplainRow_24;
 	// TMPro.TextMeshProUGUI DiagrammAndTextControll::tutorialText
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___tutorialText_15;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___tutorialText_25;
 	// UnityEngine.GameObject[] DiagrammAndTextControll::charPics
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___charPics_16;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___charPics_26;
 	// System.Int32 DiagrammAndTextControll::counterText
-	int32_t ___counterText_17;
+	int32_t ___counterText_27;
 	// System.Int32 DiagrammAndTextControll::charCounter
-	int32_t ___charCounter_18;
+	int32_t ___charCounter_28;
 };
 
 // Facebook.WitAi.Dictation.DictationService
@@ -32834,9 +32854,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9147[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9148[1] = 
 {
 	static_cast<int32_t>(offsetof(ColorVoiceResponds_t72DADD371DC4CD0317551E61B8B53779336B0695, ___shapes_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9149[15] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9149[25] = 
 {
-	static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___lastMenu_4)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___thisMenu_5)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___thisTutorialVariant_6)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___nextMenu_7)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___dryExerciseController_8)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startNoDry_9)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startCatchDry_10)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startDriveDry_11)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startFinishDry_12)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startEndDry_13)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___textsExplainRow_14)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___tutorialText_15)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___charPics_16)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___counterText_17)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___charCounter_18)),};
+	static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___lastMenu_4)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___thisMenu_5)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___thisTutorialVariant_6)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___nextMenu_7)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___dryExerciseController_8)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startCatchDry_9)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startDriveDry_10)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startFinishDry_11)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startGeneral_12)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startHandle_13)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startCatch_14)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startDrive_15)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startFinish_16)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___startRelease_17)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___diagrammsBeginning_18)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___diagrammsHandle_19)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___diagrammsCatch_20)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___diagrammsDrive_21)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___diagrammsFinish_22)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___diagrammsRelease_23)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___textsExplainRow_24)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___tutorialText_25)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___charPics_26)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___counterText_27)),static_cast<int32_t>(offsetof(DiagrammAndTextControll_t58D152D438EC3B2527DC3ACB9A469755B9314B82, ___charCounter_28)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9150[3] = 
 {
 	static_cast<int32_t>(offsetof(DrwLn_t9D4C8CC6C172BCC8D6C26890C970E0C27E2507A2, ___line_4)),static_cast<int32_t>(offsetof(DrwLn_t9D4C8CC6C172BCC8D6C26890C970E0C27E2507A2, ___Pos1_5)),static_cast<int32_t>(offsetof(DrwLn_t9D4C8CC6C172BCC8D6C26890C970E0C27E2507A2, ___Pos2_6)),};
