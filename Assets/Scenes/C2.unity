@@ -14711,7 +14711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &435987736
 Transform:
   m_ObjectHideFlags: 0
@@ -17922,7 +17922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &557944232
 Transform:
   m_ObjectHideFlags: 0
@@ -18720,7 +18720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &580570864
 Transform:
   m_ObjectHideFlags: 0
@@ -19360,7 +19360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &590024083
 Transform:
   m_ObjectHideFlags: 0
@@ -64791,7 +64791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1781561178
 Transform:
   m_ObjectHideFlags: 0
@@ -94998,22 +94998,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animTrainer: {fileID: 833096062}
   animRower: {fileID: 1871097058}
+  handleGrip: {fileID: 557944231}
   phaseText: {fileID: 234963194}
   ergeticElements: {fileID: 435987735}
   ergeticMenu: {fileID: 580570863}
   continueMenu: {fileID: 732717311}
-  indexNothing: 2
+  indexNothing: 0
+  indexHandle: 1
+  indexNothingTwo: 2
   indexCatch: 3
-  indexDrive: 4
-  indexFinish: 5
-  indexFullStroke: 6
-  lastIndexSpeeches: 7
+  indexDrive: 5
+  indexFinish: 7
+  indexFullStroke: 9
+  lastIndexSpeeches: 10
   dryExerciseController: {fileID: 1665580053}
-  startNoDry: 1
-  startCatchDry: 3
-  startDriveDry: 4
-  startFinishDry: 5
-  startEndDry: 6
+  startCatchDry: 4
+  startDriveDry: 6
+  startFinishDry: 8
 --- !u!33 &4218587765288292684
 MeshFilter:
   m_ObjectHideFlags: 0

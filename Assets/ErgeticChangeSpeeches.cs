@@ -7,8 +7,11 @@ public class ErgeticChangeSpeeches : MonoBehaviour
 {
     public Animator animTrainer;
     public remoteRowerManipulation animRower;
+
+    public GameObject handleGrip;
     public TextMeshProUGUI phaseText;
     public GameObject ergeticElements;
+    
     public GameObject ergeticMenu;
     public GameObject continueMenu;
     
@@ -18,6 +21,8 @@ public class ErgeticChangeSpeeches : MonoBehaviour
 
 
     public int indexNothing;
+    public int indexHandle;
+    public int indexNothingTwo;
     public int indexCatch;
     public int indexDrive;
     public int indexFinish;
@@ -25,11 +30,9 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public int lastIndexSpeeches;
 
     public DisplayDryExercises dryExerciseController;
-    public int startNoDry;
     public int startCatchDry;
     public int startDriveDry;
     public int startFinishDry;
-    public int startEndDry;
 
 
 
@@ -45,17 +48,33 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         scriptCounterAnim++;
         animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
         CheckDryExercise(scriptCounterAnim);
-
-        if (scriptCounterAnim==indexCatch)
-        {
-            animRower.AnimateCatch();
-            phaseText.text = "CATCH";
-        }
-        else if (scriptCounterAnim == indexNothing)
+        if (scriptCounterAnim == indexNothing)
         {
             animRower.AnimateNothing();
             phaseText.text = "How to Row";
 
+
+        }
+        else if (scriptCounterAnim == indexHandle)
+        {
+            animRower.AnimateNothing();
+            phaseText.text = "Grab Handle";
+            handleGrip.SetActive(true);
+
+        }
+        else if (scriptCounterAnim == indexNothingTwo)
+        {
+            animRower.AnimateFullStroke();
+            phaseText.text = "What are the Phases?";
+            handleGrip.SetActive(false);
+
+
+
+        }
+        else if (scriptCounterAnim==indexCatch)
+        {
+            animRower.AnimateCatch();
+            phaseText.text = "CATCH";
         }
         else if (scriptCounterAnim == indexDrive)
         {
@@ -93,42 +112,54 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         CheckDryExercise(scriptCounterAnim);
 
         animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
-        if (scriptCounterAnim == indexCatch)
+        if (scriptCounterAnim == (indexCatch-1))
         {
-            animRower.AnimateCatch();
+            animRower.AnimateNothing();
+            handleGrip.SetActive(false);
+            phaseText.text = "Grab Handle";
+
         }
-        else if (scriptCounterAnim == indexNothing)
+        else if (scriptCounterAnim == (indexNothing-1))
         {
             animRower.AnimateNothing();
         }
-        else if (scriptCounterAnim == indexDrive)
+        else if (scriptCounterAnim == (indexHandle - 1))
+        {
+            animRower.AnimateNothing();
+            handleGrip.SetActive(false);
+            phaseText.text = "How to row";
+
+        }
+        else if (scriptCounterAnim == (indexDrive-1))
+        {
+            animRower.AnimateCatch();
+            phaseText.text = "Catch";
+
+        }
+        else if (scriptCounterAnim == (indexFinish-1))
         {
             animRower.AnimateDrive();
+            phaseText.text = "Drive";
+
         }
-        else if (scriptCounterAnim == indexFinish)
+        else if (scriptCounterAnim == (indexFullStroke-1))
         {
             animRower.AnimateFinish();
+            phaseText.text = "Finish";
+
         }
-        else if (scriptCounterAnim == indexFullStroke)
+        else if (scriptCounterAnim == 0)
         {
-            animRower.AnimateFullStroke();
-        }
-        else if (scriptCounterAnim == lastIndexSpeeches)
-        {
-            ergeticMenu.SetActive(false);
-            scriptCounterAnim = 0;
-            continueMenu.SetActive(true);
-            ergeticElements.SetActive(false);
+            //ergeticMenu.SetActive(false);
+            scriptCounterAnim = 1;
+            //continueMenu.SetActive(true);
+            //ergeticElements.SetActive(false);
         }
     }
 
     public void CheckDryExercise(int index)
     {
-        if (index == startNoDry)
-        {
-            dryExerciseController.ShowNone();//jsbkjsb
-        }
-        else if (index == startCatchDry)
+        if (index == startCatchDry)
         {
             dryExerciseController.ShowCatch();
         }
@@ -140,7 +171,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         {
             dryExerciseController.ShowFinish();
         }
-        else if (index == startEndDry)
+        else 
         {
             dryExerciseController.ShowNone();
         }
