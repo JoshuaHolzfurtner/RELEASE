@@ -4057,6 +4057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa7f1255eb41f43c9bef242b0599b7c0, type: 3}
+--- !u!4 &140878125 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+  m_PrefabInstance: {fileID: 376819262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &147186485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,7 +4404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633987595}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &154832417
 MeshRenderer:
@@ -13552,6 +13557,131 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376349916}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &376819262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 557944243}
+    m_Modifications:
+    - target: {fileID: 100048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_Name
+      value: OculusHand_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8317336
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3374385
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.44044968
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.018933995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -62.729
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -23.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 47.4857
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 39.629402
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3922403
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3334783
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.6223073
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.3870298
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a12c873a809a53a4d905e8a723d2bf9e, type: 2}
+    - target: {fileID: 13700000, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -2400404728525148765, guid: e45029b3bd0954fb39ed9b05595f4992, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
 --- !u!1 &379004096
 GameObject:
   m_ObjectHideFlags: 0
@@ -14599,6 +14729,7 @@ Transform:
   - {fileID: 4207100755054521612}
   - {fileID: 1871097057}
   - {fileID: 94835577}
+  - {fileID: 557944243}
   m_Father: {fileID: 1363042311}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16338,7 +16469,6 @@ Transform:
   m_Children:
   - {fileID: 657871522}
   - {fileID: 53863380}
-  - {fileID: 520375517}
   - {fileID: 1108572408}
   - {fileID: 1669547707}
   m_Father: {fileID: 1910551998}
@@ -16826,7 +16956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &520375517
 Transform:
   m_ObjectHideFlags: 0
@@ -16835,12 +16965,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520375516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6110587, y: 1.0073956, z: -4.7929}
+  m_LocalPosition: {x: -1.98, y: 1.0073956, z: -4.7929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 479659523}
-  m_RootOrder: 2
+  m_Father: {fileID: 633987595}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &520375518
 MeshRenderer:
@@ -17787,7 +17917,7 @@ GameObject:
   - component: {fileID: 557944237}
   - component: {fileID: 557944236}
   m_Layer: 0
-  m_Name: HandleTraining
+  m_Name: HandleGrip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17954,7 +18084,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557944231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
   m_Name: 
@@ -17995,7 +18125,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557944231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
@@ -18055,7 +18185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e54acc4a2fd4e444fbbaa200304eff8f, type: 2}
+  - {fileID: 2100000, guid: d4b438dc8ad501b49a2690e746518b8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18092,9 +18222,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557944231}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0714, y: 0.413, z: 0.3144}
-  m_LocalScale: {x: 0.41801822, y: 0.021058973, z: 0.025233785}
+  m_LocalRotation: {x: 0.44414666, y: 0.24857078, z: -0.12973978, w: 0.85094887}
+  m_LocalPosition: {x: 2.273, y: 0.15816, z: 4.0606003}
+  m_LocalScale: {x: 1.6221554, y: 0.081721134, z: 0.09792185}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 233801019}
@@ -18103,9 +18233,11 @@ Transform:
   - {fileID: 1087536442}
   - {fileID: 2140663561}
   - {fileID: 273026721}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  - {fileID: 661274639}
+  - {fileID: 140878125}
+  m_Father: {fileID: 435987736}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 55.124, y: 32.567, z: 0}
 --- !u!1 &563371419
 GameObject:
   m_ObjectHideFlags: 0
@@ -19265,15 +19397,16 @@ MonoBehaviour:
   thisTutorialVariant: {fileID: 1781561177}
   nextMenu: {fileID: 1423345456}
   dryExerciseController: {fileID: 1665580053}
-  startCatchDry: 4
-  startDriveDry: 6
-  startFinishDry: 8
-  startGeneral: 0
+  startCatchDry: 12
+  startDriveDry: 15
+  startFinishDry: 18
+  startGeneral: 1
   startHandle: 2
-  startCatch: 3
-  startDrive: 5
-  startFinish: 7
-  startRelease: 9
+  startGeneralTwo: 5
+  startCatch: 8
+  startDrive: 13
+  startFinish: 16
+  startRelease: 19
   diagrammsBeginning: {fileID: 1939419979}
   diagrammsHandle: {fileID: 62467013}
   diagrammsCatch: {fileID: 2117816944}
@@ -19282,35 +19415,63 @@ MonoBehaviour:
   diagrammsRelease: {fileID: 65284393}
   textsExplainRow:
   - Press Left again to exit the tutorial.
-  - 1. Welcome to the Diagramm Variant for the catch drive finish and Release Tutorial.
+  - Welcome to the Diagramm Variant for the catch drive finish and Release Tutorial.
     In it you will learn how to perform a correct rowing Stroke on a rowing machine
-    (also known as an  erg)
-  - "2. But first let\u2019s talk about how you grab the Handle. To move the handle
-    you need to grab it with one hand on each of its ends simultaneously in order
-    to move it around (just like the real handle). It will not move If you only grab
-    it with one hand. "
-  - 3. For simplicity we have turned off the sync Mode where your digital and real
+    (also known as an ergometer)
+  - "But first let\u2019s talk about how you grab the Handle. To move the handle
+    you need to grab it with one hand on each of its ends  in order to move it around
+    (just like the real handle). It will not move If you only grab it with one hand.  "
+  - 'For simplicity we have turned off the sync Mode where your digital and real
     handle are synced by Force. In this tutorial you will only grab a virtual rowing
-    handle independent of the real one. That way you can focus completely on the
-    form of the stroke.
-  - "4. Now let\u2019s get to the meat of this tutorial: how to perform a correct
-    rowing stroke. A correct rowing stroke consists of 4 phases which we will iteratively
-    discuss and test by dry exercises that will let you try out the different phases
-    as isolated movements."
-  - 5. The first Phase is called Catch. In it you keep your arms stretched out, and
+    handle independent of the real one.  '
+  - 'Try it out and move it around. You can let it loose and grab it again anytime!  '
+  - "Now let\u2019s get to the meat of this tutorial: how to perform a correct rowing
+    stroke. "
+  - A correct rowing stroke consists of 4 phases which we will iteratively discuss
+    and test by dry exercises (Drills) that will let you try out the different phases
+    as isolated movements.
+  - 'But before that lets quickly look at the starting position for a successful
+    stroke. The legs are drawn in and the arms are stretched out holding the handle.
+    Your Upper Body and back should be straight. '
+  - 'The first Phase is called Catch. In it you keep your arms stretched out, and
     your upper body and back straight, while you push yourself away only using your
-    legs.
-  - 6. As a dry Exercise try the ctach movement in isolation. On the right you can
-    see if you performed the movement correctly. continue When you feel you have
-    gotten the hang of it een, otherwise it will be shown in red.
-  - 'Drive: Hallo ich bin der Dritte Text'
-  - Drive Dry
-  - 'Finish: Hallo ich bin der Dritte Text'
-  - FinishDry
-  - Release
-  - FullStroke
-  - In Summary
-  - LastText
+    legs. '
+  - 'The legs movement should make up about 60% of the power used to perform a rowing
+    stroke, so make sure to extend the legs completely. '
+  - 'You will now try this out in the first of three dry exercises for the individual
+    phases. If you perform the movement correctly it will be displayed on the right
+    in green, otherwise it will be shown in red. '
+  - 'When you feel like you have gotten the hang of the movement just continue the
+    tu '
+  - 'As a dry Exercise try the Catch movement in isolation. SO keep your arms Stretched
+    out, your back straight and push yourself fully away only using your legs. '
+  - 'Now onward to the next Phase called Drive. After extending your legs, draw your
+    upper body Back while still keeping your arms fully stretched. '
+  - 'The core actually makes up for roughly 20% Percent of the total Power we are
+    using to row .So its just as important as when we draw in the arms in the final
+    Step. So make sure to really draw back your back! '
+  - 'As a dry Exercise try the Drive movement in isolation. So keep your arms Stretched
+    out, and your legs fully extended (and straight) while drawing your upper body
+    back. '
+  - 'Now to the last Phase of the Draw, the Finish. In it we now finally draw in
+    the arms. '
+  - ' It ist important to draw in the arms completely to maximise the pulling force.
+    Also try to pull to the height of your belly and not higher. '
+  - 'As a dry Exercise try the Finish movement in isolation. As a Starting Position
+    your legs should be extended (straight) and your Upper Body drawn back. Then
+    draw in your Arms. '
+  - 'Great! Now you now how to correctly draw in the Handle! Now you just need to
+    learn how to get back to the starting position and you can finally start rowing. '
+  - 'Getting back to the starting position is the fourth phase called Release (or
+    alternatively sometimes  called Recover) '
+  - 'In it we inversely perform the same Movestructure we used to draw in the Handle.
+    So first we extend the arms, then move our back forward again and at last draw
+    in the legs. '
+  - 'Be careful to extend the arms first otherwise they might collide with the drawn
+    in knee of a leg (especially in VR where we cannot see our real legs). '
+  - 'Alright! Now you know the basics of how to perform a correct rowing stroke!
+    Try making a few rowing strokes to make sure you understood the instruction.  '
+  - 'If you feel ready press right again and continue to the Main Game.  '
   tutorialText: {fileID: 1706866781}
   charPics:
   - {fileID: 801429597}
@@ -21066,11 +21227,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 520375517}
   - {fileID: 732361071}
   - {fileID: 154832416}
   - {fileID: 2078582721}
   - {fileID: 1000445165}
   - {fileID: 1592689081}
+  - {fileID: 1944322909}
   m_Father: {fileID: 1910551998}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21959,6 +22122,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 659448797}
   m_maskType: 0
+--- !u!4 &661274639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+  m_PrefabInstance: {fileID: 1417890025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &672841311
 GameObject:
   m_ObjectHideFlags: 0
@@ -24019,7 +24187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &732361071
 Transform:
   m_ObjectHideFlags: 0
@@ -24033,7 +24201,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633987595}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &732361072
 SpriteRenderer:
@@ -36284,12 +36452,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000445164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.98, y: 1.0073956, z: -4.7929}
+  m_LocalPosition: {x: -1.98, y: 1.0073956, z: -4.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633987595}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1000445166
 SpriteRenderer:
@@ -39513,7 +39681,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479659523}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1108572409
 SpriteRenderer:
@@ -50911,6 +51079,139 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410036737}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1417890025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 557944243}
+    m_Modifications:
+    - target: {fileID: 100158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_Name
+      value: OculusHand_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.999968
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000025098636
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0072081243
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0034818812
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.826
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.399
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7034383
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.018382384
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.71028537
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.018205179
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 400070, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 47.4857
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 39.629414
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3922403
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.37701708
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.9072213
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.3473997
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 17cc85983dec7534ab8d35297a9f9f05, type: 2}
+    - target: {fileID: 13700000, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -2400404728525148765, guid: e45029b3bd0954fb39ed9b05595f4992, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
 --- !u!1 &1418126731
 GameObject:
   m_ObjectHideFlags: 0
@@ -56565,7 +56866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582910188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.93, y: 1.0073956, z: -4.7929}
+  m_LocalPosition: {x: -1.93, y: 1.0073956, z: -4.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56941,7 +57242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1592689081
 Transform:
   m_ObjectHideFlags: 0
@@ -56955,7 +57256,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633987595}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1592689082
 SpriteRenderer:
@@ -60007,7 +60308,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479659523}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1669547708
 SpriteRenderer:
@@ -71067,6 +71368,90 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1944322908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944322909}
+  - component: {fileID: 1944322910}
+  m_Layer: 0
+  m_Name: DriveBlack (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944322909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944322908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.69, y: 1.0073956, z: -4.7929}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 633987595}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1944322910
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944322908}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ccb56d4127dc84aff845af0a65e799f5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6, y: 3.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &1959302438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4472272101810335999, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
@@ -74792,7 +75177,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633987595}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2078582722
 MeshRenderer:

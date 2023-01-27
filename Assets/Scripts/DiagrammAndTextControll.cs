@@ -17,6 +17,7 @@ public class DiagrammAndTextControll : MonoBehaviour
 
     public int startGeneral;
     public int startHandle;
+    public int startGeneralTwo;
     public int startCatch;
     public int startDrive;
     public int startFinish;
@@ -50,6 +51,8 @@ public class DiagrammAndTextControll : MonoBehaviour
         tutorialText.text = textsExplainRow[1];
         charPics[0].SetActive(true);
         ChangePicMan();
+        CheckDiagramms(counterText);
+
 
         //counterText++;
     }
@@ -88,12 +91,12 @@ public class DiagrammAndTextControll : MonoBehaviour
         ChangePicMan();
         counterText--;
         CheckDryExercise(counterText);
-        CheckDiagramms(counterText);
+        CheckDiagrammsBackwards(counterText);
         tutorialText.text = textsExplainRow[counterText];
-        if (counterText == 0)
+        if (counterText == 1)
         {
             //lastMenu.SetActive(true);
-            counterText = 1;
+            counterText = 2;
             //thisTutorialVariant.SetActive(false);
             //thisMenu.SetActive(false);
 
@@ -134,7 +137,7 @@ public class DiagrammAndTextControll : MonoBehaviour
 
     public void CheckDiagramms(int index)
     {
-        if (index == startGeneral)
+        if (index == startGeneral || index == startGeneralTwo)
         {
             diagrammsBeginning.SetActive(true);
             diagrammsHandle.SetActive(false);
@@ -188,6 +191,65 @@ public class DiagrammAndTextControll : MonoBehaviour
             diagrammsDrive.SetActive(false);
             diagrammsFinish.SetActive(false);
             diagrammsRelease.SetActive(true);
+        }
+    }
+
+    public void CheckDiagrammsBackwards(int index)
+    {
+        if (index == (startGeneralTwo -1))
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(true);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+
+        }
+        else if (index == (startHandle-1))
+        {
+            diagrammsBeginning.SetActive(true);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == (startCatch-1))
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(true);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == (startDrive-1))
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(true);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == (startFinish-1))
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(true);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+        }
+        else if (index == (startRelease-1))
+        {
+            diagrammsBeginning.SetActive(false);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(true);
+            diagrammsRelease.SetActive(false);
         }
     }
 }
