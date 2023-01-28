@@ -18,8 +18,9 @@ public class PlayerSounds : MonoBehaviour
     {
         Debug.Log("halllapalooza");  //works handing speechindex further
         Debug.Log(speechIndex);
+        AudioManager.instance.source.Stop();
         AudioManager.instance.source.PlayOneShot(footstepSound[speechIndex]);
-
+        //AudioManager.instance.source.Stop();
         counterAnim = speechIndex;// animFace.GetInteger("CurrentAnimation") + 1;
         animFace.SetInteger("CurrentAnimation", counterAnim);
 

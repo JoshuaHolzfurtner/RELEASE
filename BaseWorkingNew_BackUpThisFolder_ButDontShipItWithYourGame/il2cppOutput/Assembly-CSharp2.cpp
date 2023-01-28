@@ -8001,6 +8001,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A311
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___value0, const RuntimeMethod* method) ;
 // System.String System.Single::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AudioSource::Stop()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Stop_m318F17F17A147C77FF6E0A5A7A6BE057DB90F537 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clip0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Animator::SetInteger(System.String,System.Int32)
@@ -15421,25 +15423,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerSounds_footStep_mD0B63CFE352FDF68B
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_1);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
-		// AudioManager.instance.source.PlayOneShot(footstepSound[speechIndex]);
+		// AudioManager.instance.source.Stop();
 		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_3 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_4;
 		NullCheck(L_3);
 		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_4 = L_3->___source_5;
-		AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* L_5 = __this->___footstepSound_4;
-		int32_t L_6 = ___speechIndex0;
-		NullCheck(L_5);
-		int32_t L_7 = L_6;
-		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		NullCheck(L_4);
-		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_4, L_8, NULL);
+		AudioSource_Stop_m318F17F17A147C77FF6E0A5A7A6BE057DB90F537(L_4, NULL);
+		// AudioManager.instance.source.PlayOneShot(footstepSound[speechIndex]);
+		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_5 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_4;
+		NullCheck(L_5);
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_6 = L_5->___source_5;
+		AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* L_7 = __this->___footstepSound_4;
+		int32_t L_8 = ___speechIndex0;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_6);
+		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_6, L_10, NULL);
 		// counterAnim = speechIndex;// animFace.GetInteger("CurrentAnimation") + 1;
-		int32_t L_9 = ___speechIndex0;
-		__this->___counterAnim_6 = L_9;
+		int32_t L_11 = ___speechIndex0;
+		__this->___counterAnim_6 = L_11;
 		// animFace.SetInteger("CurrentAnimation", counterAnim);
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_10 = __this->___animFace_5;
-		int32_t L_11 = __this->___counterAnim_6;
-		NullCheck(L_10);
-		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_10, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_11, NULL);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_12 = __this->___animFace_5;
+		int32_t L_13 = __this->___counterAnim_6;
+		NullCheck(L_12);
+		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_12, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_13, NULL);
 		// }
 		return;
 	}

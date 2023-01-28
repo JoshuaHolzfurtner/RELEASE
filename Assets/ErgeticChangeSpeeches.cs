@@ -102,6 +102,8 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         {
             ergeticMenu.SetActive(false);
             scriptCounterAnim = 0;
+            scriptCounterSpeech = 0;
+
             phaseText.text = "How to row";
 
             continueMenu.SetActive(true);
@@ -156,6 +158,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         {
             //ergeticMenu.SetActive(false);
             scriptCounterAnim = 1;
+            scriptCounterSpeech = 1;
             //continueMenu.SetActive(true);
             //ergeticElements.SetActive(false);
         }
@@ -189,6 +192,10 @@ public class ErgeticChangeSpeeches : MonoBehaviour
 
     public void Clickingleft()
     {
+        if(scriptCounterSpeech==0)
+        {
+            return;
+        }
         scriptCounterSpeech--;
         animTrainer.SetInteger("index", scriptCounterSpeech);
     }
