@@ -17,6 +17,8 @@ public class SwitchDIfferentVideos : MonoBehaviour
     public int startFinishDry;
     public int startEndDry;
 
+    
+
     public void Start()
     {
         videosLength = videos.Length;
@@ -64,11 +66,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
 
     public void CheckDryExercise(int index)
     {
-        if (index == startNoDry)
-        {
-            dryExerciseController.ShowNone();
-        }
-        else if (index == startCatchDry)
+        if (index == startCatchDry)
         {
             dryExerciseController.ShowCatch();
         }
@@ -80,7 +78,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
         {
             dryExerciseController.ShowFinish();
         }
-        else if (index == startEndDry)
+        else 
         {
             dryExerciseController.ShowNone();
         }
