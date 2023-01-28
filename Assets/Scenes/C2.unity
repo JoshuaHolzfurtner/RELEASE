@@ -38004,10 +38004,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepSound:
-  - {fileID: 8300000, guid: 1f657e5e2f7d34ccf8ad9a2a19f0c7fd, type: 3}
-  - {fileID: 8300000, guid: 82fd6ab639c494f999cc823917f07557, type: 3}
-  - {fileID: 8300000, guid: 0c97c552aaa4b4156883f0d64dfcfd41, type: 3}
-  - {fileID: 8300000, guid: d61312297f5df414597390c3e76038a5, type: 3}
+  - {fileID: 8300000, guid: 9a752d3328516a44384df0f171c8a5ca, type: 3}
+  - {fileID: 8300000, guid: 1aed692def1914b90877e81e4a33e7ad, type: 3}
+  - {fileID: 8300000, guid: da21e5ab17e8c47f39af69fb480ea7da, type: 3}
+  - {fileID: 8300000, guid: 75455ec2cd366451490eea543edb494a, type: 3}
+  - {fileID: 8300000, guid: 5ab4745e0155b42879aeea2455395c8a, type: 3}
+  - {fileID: 8300000, guid: 521c43f02fc9e432d8e7cdb66e966695, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
@@ -57426,7 +57445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1599919204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57444,21 +57463,21 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0
-      BrowDownRight: 0
+      BrowDownLeft: 0.089629754
+      BrowDownRight: 0.094210945
       BrowInnerUp: 0
-      BrowOuterUpLeft: 0.021869114
-      BrowOuterUpRight: 0.020169515
+      BrowOuterUpLeft: 0
+      BrowOuterUpRight: 0
       CheekPuff: 0
       CheekSquintLeft: 0
       CheekSquintRight: 0
-      EyeBlinkLeft: 0.15266714
-      EyeBlinkRight: 0.15250231
-      EyeLookDownLeft: 0.34483317
-      EyeLookDownRight: 0.3445612
+      EyeBlinkLeft: 0.09730138
+      EyeBlinkRight: 0.11230698
+      EyeLookDownLeft: 0.19051777
+      EyeLookDownRight: 0.18764272
       EyeLookInLeft: 0
-      EyeLookInRight: 0
-      EyeLookOutLeft: 0
+      EyeLookInRight: 0.2793722
+      EyeLookOutLeft: 0.22243692
       EyeLookOutRight: 0
       EyeLookUpLeft: 0
       EyeLookUpRight: 0
@@ -57467,16 +57486,16 @@ MonoBehaviour:
       EyeWideLeft: 0
       EyeWideRight: 0
       JawForward: 0
-      JawLeft: 0
+      JawLeft: 0.03151226
       JawOpen: 0
-      JawRight: 0.023942962
+      JawRight: 0
       MouthClose: 0
       MouthDimpleLeft: 0
       MouthDimpleRight: 0
       MouthFrownLeft: 0
       MouthFrownRight: 0
       MouthFunnel: 0
-      MouthLeft: 0.012864954
+      MouthLeft: 0.029373167
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
       MouthPressLeft: 0
@@ -57487,19 +57506,19 @@ MonoBehaviour:
       MouthRollUpper: 0
       MouthShrugLower: 0
       MouthShrugUpper: 0
-      MouthSmileLeft: 0.12236913
-      MouthSmileRight: 0.07932282
+      MouthSmileLeft: 0.010354109
+      MouthSmileRight: 0.008770935
       MouthStretchLeft: 0
       MouthStretchRight: 0
-      MouthUpperUpLeft: 0.0033492676
-      MouthUpperUpRight: 0.002607359
-      NoseSneerLeft: 0.036167543
-      NoseSneerRight: 0.027106257
+      MouthUpperUpLeft: 0.0043065255
+      MouthUpperUpRight: 0.0014559351
+      NoseSneerLeft: 0.04835927
+      NoseSneerRight: 0.015901187
       TongueOut: 0
-    HeadPosition: {x: 0.04280771, y: -0.18484356, z: -0.3885233}
-    HeadOrientation: {x: -0.24393286, y: -0.05224073, z: -0.050516464, w: 0.9670656}
-    LeftEyeOrientation: {x: -0.113830924, y: 0.026908783, z: 0.003084238, w: -0.99313086}
-    RightEyeOrientation: {x: -0.11393751, y: -0.010976788, z: -0.0012589437, w: -0.9934265}
+    HeadPosition: {x: 0.22576584, y: -0.22974464, z: -0.5235974}
+    HeadOrientation: {x: -0.19870695, y: 0.006073721, z: -0.18022498, w: 0.9633262}
+    LeftEyeOrientation: {x: -0.067889445, y: 0.10451385, z: 0.0071513266, w: -0.9921778}
+    RightEyeOrientation: {x: -0.06893406, y: 0.06772501, z: 0.0046905642, w: -0.99530876}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
@@ -61617,7 +61636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1693605100
 Transform:
   m_ObjectHideFlags: 0
@@ -69463,9 +69482,9 @@ MonoBehaviour:
     m_Directory: Assets/Takes
     m_SceneNumber: 1
     m_ShotName: New Shot
-    m_TakeNumber: 19
+    m_TakeNumber: 33
     m_Description: 
-    m_Take: {fileID: 11400000, guid: b0cafaf805c6547d29dd51ecb35cb32f, type: 2}
+    m_Take: {fileID: 11400000, guid: 362bcc903875e47c9a3d36aeb3e8fa63, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 1895606765}
   m_FrameRate:
@@ -69485,13 +69504,13 @@ PlayableDirector:
   m_GameObject: {fileID: 1895606763}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 494678587561165062, guid: b0cafaf805c6547d29dd51ecb35cb32f, type: 2}
+  m_PlayableAsset: {fileID: 5440947038105024744, guid: 362bcc903875e47c9a3d36aeb3e8fa63, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -4637418455538747738, guid: b0cafaf805c6547d29dd51ecb35cb32f, type: 2}
+  - key: {fileID: -6941803574183995675, guid: 362bcc903875e47c9a3d36aeb3e8fa63, type: 2}
     value: {fileID: 1930340670}
   m_ExposedReferences:
     m_References:
@@ -70454,7 +70473,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57436613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -92848,7 +92867,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 369a3390e27504ac58e06b2526f70512, type: 2}
     - target: {fileID: 2115683181173826645, guid: da5040d052a534eed9a01507d163bc8b, type: 3}
       propertyPath: m_EnabledChannels
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4207100754210922224, guid: da5040d052a534eed9a01507d163bc8b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95971,7 +95990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146566, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4472272102288895155, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalRotation.w
