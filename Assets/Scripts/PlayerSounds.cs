@@ -14,7 +14,7 @@ public class PlayerSounds : MonoBehaviour
         //animFace = GetComponent<Animator>();
     }
 
-    void footStep(int speechIndex)
+    public void footStep(int speechIndex)
     {
         Debug.Log("halllapalooza");  //works handing speechindex further
         Debug.Log(speechIndex);

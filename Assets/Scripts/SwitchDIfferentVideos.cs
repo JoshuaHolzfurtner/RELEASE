@@ -7,17 +7,20 @@ public class SwitchDIfferentVideos : MonoBehaviour
     public GameObject[] videos = default;
     public GameObject videoMenu;
     public GameObject nextMenu;
+    public PlayerSounds speechesSounds;
     private int currentVideo = 0;
     private int videosLength;
 
     public DisplayDryExercises dryExerciseController;
-    public int startNoDry;
     public int startCatchDry;
     public int startDriveDry;
     public int startFinishDry;
-    public int startEndDry;
 
-    
+    public GameObject[] charPics;
+    private int charCounter = 0;
+
+
+
 
     public void Start()
     {
@@ -32,6 +35,9 @@ public class SwitchDIfferentVideos : MonoBehaviour
             currentVideo++;
             videos[currentVideo].SetActive(true);
             CheckDryExercise(currentVideo);
+            playSoundCurrentIndex(currentVideo);
+            ChangePicMan();
+
 
         }
         else
@@ -49,17 +55,21 @@ public class SwitchDIfferentVideos : MonoBehaviour
     {
         videos[currentVideo].SetActive(false);
         videos[currentVideo].SetActive(true);
+        playSoundCurrentIndex(currentVideo);
 
     }
     public void GoBackToLastVideo()
     {
         videos[currentVideo].SetActive(false);
+        //CheckDryExercise(currentVideo);
         if (currentVideo != 0)
         {
             currentVideo--;
         }
         
         videos[currentVideo].SetActive(true);
+        playSoundCurrentIndex(currentVideo);
+        ChangePicMan();
         CheckDryExercise(currentVideo);
 
     }
@@ -82,5 +92,23 @@ public class SwitchDIfferentVideos : MonoBehaviour
         {
             dryExerciseController.ShowNone();
         }
+    }
+    
+
+    public void playSoundCurrentIndex(int index)
+    {
+        speechesSounds.footStep(index);
+    }
+
+
+    public void ChangePicMan()
+    {
+        charPics[charCounter].SetActive(false);
+        charCounter++;
+        if (charCounter == 4)
+        {
+            charCounter = 0;
+        }
+        charPics[charCounter].SetActive(true);
     }
 }
