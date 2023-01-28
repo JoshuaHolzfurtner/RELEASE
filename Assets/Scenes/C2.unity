@@ -38010,25 +38010,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 75455ec2cd366451490eea543edb494a, type: 3}
   - {fileID: 8300000, guid: 5ab4745e0155b42879aeea2455395c8a, type: 3}
   - {fileID: 8300000, guid: 521c43f02fc9e432d8e7cdb66e966695, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  - {fileID: 8300000, guid: 3be34aa5d31e0494a94de90e22aa2142, type: 3}
+  - {fileID: 8300000, guid: 2a0da92b7bf2341b3ab8f0a2e3157bf0, type: 3}
+  - {fileID: 8300000, guid: e273bec07df6c4b4db50c6513f7edb9c, type: 3}
+  - {fileID: 8300000, guid: cfe1088bdea9b457d807fb1d74820087, type: 3}
+  - {fileID: 8300000, guid: ff43d469366804b7bb70a542db603c17, type: 3}
+  - {fileID: 8300000, guid: b1ef2cddb00f640d594a72ea512ee256, type: 3}
+  - {fileID: 8300000, guid: d203a21e25a23451e9b25ab3c2296e61, type: 3}
+  - {fileID: 8300000, guid: 1bafd72a23b104a1890cee05c1bf2a0c, type: 3}
+  - {fileID: 8300000, guid: eee0e66f46c3a4b56b906c3e62491c29, type: 3}
+  - {fileID: 8300000, guid: 01fe0a6f4a5004a0fb4947d58e7c6730, type: 3}
+  - {fileID: 8300000, guid: d4210e736f9f4400d95d497b3f2c9eb7, type: 3}
+  - {fileID: 8300000, guid: f5d441fa1c3f64496a8927de6fc15d69, type: 3}
+  - {fileID: 8300000, guid: fde580df0b61043048a497dda5267367, type: 3}
+  - {fileID: 8300000, guid: ffde33c4974dd4c018d13af3f9ec810f, type: 3}
+  - {fileID: 8300000, guid: ed8979e0e336040fca444bfc50f2152f, type: 3}
+  - {fileID: 8300000, guid: 4d406d0d66d734025bd1447c97ecb2f5, type: 3}
+  - {fileID: 8300000, guid: 994cc183e194c4d6caada93edfa79640, type: 3}
+  - {fileID: 8300000, guid: 266986c0af74d435580a3fcc5f20a275, type: 3}
+  - {fileID: 8300000, guid: 4c196e2f0a3524115829b0f4ca47dd39, type: 3}
   - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   animFace: {fileID: 833096062}
 --- !u!1 &1065707037
@@ -57463,21 +57463,21 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0.089629754
-      BrowDownRight: 0.094210945
+      BrowDownLeft: 0.042985808
+      BrowDownRight: 0.04270074
       BrowInnerUp: 0
       BrowOuterUpLeft: 0
       BrowOuterUpRight: 0
       CheekPuff: 0
       CheekSquintLeft: 0
       CheekSquintRight: 0
-      EyeBlinkLeft: 0.09730138
-      EyeBlinkRight: 0.11230698
-      EyeLookDownLeft: 0.19051777
-      EyeLookDownRight: 0.18764272
-      EyeLookInLeft: 0
-      EyeLookInRight: 0.2793722
-      EyeLookOutLeft: 0.22243692
+      EyeBlinkLeft: 0
+      EyeBlinkRight: 0
+      EyeLookDownLeft: 0.09368124
+      EyeLookDownRight: 0.09408418
+      EyeLookInLeft: 0.061427567
+      EyeLookInRight: 0
+      EyeLookOutLeft: 0
       EyeLookOutRight: 0
       EyeLookUpLeft: 0
       EyeLookUpRight: 0
@@ -57486,39 +57486,39 @@ MonoBehaviour:
       EyeWideLeft: 0
       EyeWideRight: 0
       JawForward: 0
-      JawLeft: 0.03151226
+      JawLeft: 0
       JawOpen: 0
-      JawRight: 0
+      JawRight: 0.009227101
       MouthClose: 0
       MouthDimpleLeft: 0
       MouthDimpleRight: 0
       MouthFrownLeft: 0
       MouthFrownRight: 0
       MouthFunnel: 0
-      MouthLeft: 0.029373167
+      MouthLeft: 0
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
       MouthPressLeft: 0
       MouthPressRight: 0
       MouthPucker: 0
-      MouthRight: 0
+      MouthRight: 0.0014484527
       MouthRollLower: 0
       MouthRollUpper: 0
       MouthShrugLower: 0
       MouthShrugUpper: 0
-      MouthSmileLeft: 0.010354109
-      MouthSmileRight: 0.008770935
+      MouthSmileLeft: 0.11542354
+      MouthSmileRight: 0.13686755
       MouthStretchLeft: 0
       MouthStretchRight: 0
-      MouthUpperUpLeft: 0.0043065255
-      MouthUpperUpRight: 0.0014559351
-      NoseSneerLeft: 0.04835927
-      NoseSneerRight: 0.015901187
+      MouthUpperUpLeft: 0.003060215
+      MouthUpperUpRight: 0.0045664194
+      NoseSneerLeft: 0.022730637
+      NoseSneerRight: 0.026970303
       TongueOut: 0
-    HeadPosition: {x: 0.22576584, y: -0.22974464, z: -0.5235974}
-    HeadOrientation: {x: -0.19870695, y: 0.006073721, z: -0.18022498, w: 0.9633262}
-    LeftEyeOrientation: {x: -0.067889445, y: 0.10451385, z: 0.0071513266, w: -0.9921778}
-    RightEyeOrientation: {x: -0.06893406, y: 0.06772501, z: 0.0046905642, w: -0.99530876}
+    HeadPosition: {x: -0.05961067, y: -0.16878156, z: -0.4641961}
+    HeadOrientation: {x: -0.16612524, y: 0.027514528, z: -0.021765787, w: 0.98548037}
+    LeftEyeOrientation: {x: -0.040997453, y: 0.006817076, z: 0.00027972445, w: -0.999136}
+    RightEyeOrientation: {x: -0.04085146, y: -0.030908857, z: -0.0012643329, w: -0.99868625}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
@@ -69482,9 +69482,9 @@ MonoBehaviour:
     m_Directory: Assets/Takes
     m_SceneNumber: 1
     m_ShotName: New Shot
-    m_TakeNumber: 33
+    m_TakeNumber: 57
     m_Description: 
-    m_Take: {fileID: 11400000, guid: 362bcc903875e47c9a3d36aeb3e8fa63, type: 2}
+    m_Take: {fileID: 11400000, guid: 2b852aa866a98492895da407f317acc0, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 1895606765}
   m_FrameRate:
@@ -69504,13 +69504,13 @@ PlayableDirector:
   m_GameObject: {fileID: 1895606763}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 5440947038105024744, guid: 362bcc903875e47c9a3d36aeb3e8fa63, type: 2}
+  m_PlayableAsset: {fileID: -1968728977230668386, guid: 2b852aa866a98492895da407f317acc0, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -6941803574183995675, guid: 362bcc903875e47c9a3d36aeb3e8fa63, type: 2}
+  - key: {fileID: 2345982755776340732, guid: 2b852aa866a98492895da407f317acc0, type: 2}
     value: {fileID: 1930340670}
   m_ExposedReferences:
     m_References:
