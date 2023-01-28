@@ -18,6 +18,8 @@ public class ErgeticChangeSpeeches : MonoBehaviour
 
 
     private int scriptCounterAnim;
+    private int scriptCounterSpeech;
+
 
 
     public int indexNothing;
@@ -41,6 +43,8 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public void Start()
     {
         scriptCounterAnim = 0;
+        scriptCounterSpeech = 0;
+
     }
 
     public void nextAnim()
@@ -175,5 +179,17 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         {
             dryExerciseController.ShowNone();
         }
+    }
+
+    public void ClickingRight()
+    {
+        scriptCounterSpeech++;
+        animTrainer.SetInteger("index", scriptCounterSpeech);
+    }
+
+    public void Clickingleft()
+    {
+        scriptCounterSpeech--;
+        animTrainer.SetInteger("index", scriptCounterSpeech);
     }
 }

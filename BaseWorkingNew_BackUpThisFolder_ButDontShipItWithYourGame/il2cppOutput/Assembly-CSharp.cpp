@@ -854,6 +854,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral20825170D1B0DA2A733E78D5B035FF14697DA12B
 IL2CPP_EXTERN_C String_t* _stringLiteral21C54BF860BF41F6CB5FA90618AD96345DB385CD;
 IL2CPP_EXTERN_C String_t* _stringLiteral25508AFCE374521266718FDFEF47E69C35B9622F;
 IL2CPP_EXTERN_C String_t* _stringLiteral2622B3702FDA4D850E114991B3092DC70DF47738;
+IL2CPP_EXTERN_C String_t* _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1;
 IL2CPP_EXTERN_C String_t* _stringLiteral2D677AB4F1E4297F4CF5654EAD125EEBC50D20EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral2FF34539B9656AA0C197C1BE2DEECAE29FAC5573;
 IL2CPP_EXTERN_C String_t* _stringLiteral32CAC2E2954E65D2CBA0F3AC399E031AF6265EA2;
@@ -4559,30 +4560,32 @@ struct ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C  : public
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___continueMenu_10;
 	// System.Int32 ErgeticChangeSpeeches::scriptCounterAnim
 	int32_t ___scriptCounterAnim_11;
+	// System.Int32 ErgeticChangeSpeeches::scriptCounterSpeech
+	int32_t ___scriptCounterSpeech_12;
 	// System.Int32 ErgeticChangeSpeeches::indexNothing
-	int32_t ___indexNothing_12;
+	int32_t ___indexNothing_13;
 	// System.Int32 ErgeticChangeSpeeches::indexHandle
-	int32_t ___indexHandle_13;
+	int32_t ___indexHandle_14;
 	// System.Int32 ErgeticChangeSpeeches::indexNothingTwo
-	int32_t ___indexNothingTwo_14;
+	int32_t ___indexNothingTwo_15;
 	// System.Int32 ErgeticChangeSpeeches::indexCatch
-	int32_t ___indexCatch_15;
+	int32_t ___indexCatch_16;
 	// System.Int32 ErgeticChangeSpeeches::indexDrive
-	int32_t ___indexDrive_16;
+	int32_t ___indexDrive_17;
 	// System.Int32 ErgeticChangeSpeeches::indexFinish
-	int32_t ___indexFinish_17;
+	int32_t ___indexFinish_18;
 	// System.Int32 ErgeticChangeSpeeches::indexFullStroke
-	int32_t ___indexFullStroke_18;
+	int32_t ___indexFullStroke_19;
 	// System.Int32 ErgeticChangeSpeeches::lastIndexSpeeches
-	int32_t ___lastIndexSpeeches_19;
+	int32_t ___lastIndexSpeeches_20;
 	// DisplayDryExercises ErgeticChangeSpeeches::dryExerciseController
-	DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* ___dryExerciseController_20;
+	DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* ___dryExerciseController_21;
 	// System.Int32 ErgeticChangeSpeeches::startCatchDry
-	int32_t ___startCatchDry_21;
+	int32_t ___startCatchDry_22;
 	// System.Int32 ErgeticChangeSpeeches::startDriveDry
-	int32_t ___startDriveDry_22;
+	int32_t ___startDriveDry_23;
 	// System.Int32 ErgeticChangeSpeeches::startFinishDry
-	int32_t ___startFinishDry_23;
+	int32_t ___startFinishDry_24;
 };
 
 // HandedInputSelector
@@ -8611,6 +8614,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_Start_mA9A80C1F362
 	{
 		// scriptCounterAnim = 0;
 		__this->___scriptCounterAnim_11 = 0;
+		// scriptCounterSpeech = 0;
+		__this->___scriptCounterSpeech_12 = 0;
 		// }
 		return;
 	}
@@ -8646,7 +8651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_nextAnim_m055F54D6
 		ErgeticChangeSpeeches_CheckDryExercise_mC0371F290A9D3AB7BE6AF50B8B38B67B90A1028C(__this, L_3, NULL);
 		// if (scriptCounterAnim == indexNothing)
 		int32_t L_4 = __this->___scriptCounterAnim_11;
-		int32_t L_5 = __this->___indexNothing_12;
+		int32_t L_5 = __this->___indexNothing_13;
 		if ((!(((uint32_t)L_4) == ((uint32_t)L_5))))
 		{
 			goto IL_005a;
@@ -8668,7 +8673,7 @@ IL_005a:
 	{
 		// else if (scriptCounterAnim == indexHandle)
 		int32_t L_8 = __this->___scriptCounterAnim_11;
-		int32_t L_9 = __this->___indexHandle_13;
+		int32_t L_9 = __this->___indexHandle_14;
 		if ((!(((uint32_t)L_8) == ((uint32_t)L_9))))
 		{
 			goto IL_0090;
@@ -8694,7 +8699,7 @@ IL_0090:
 	{
 		// else if (scriptCounterAnim == indexNothingTwo)
 		int32_t L_13 = __this->___scriptCounterAnim_11;
-		int32_t L_14 = __this->___indexNothingTwo_14;
+		int32_t L_14 = __this->___indexNothingTwo_15;
 		if ((!(((uint32_t)L_13) == ((uint32_t)L_14))))
 		{
 			goto IL_00c6;
@@ -8720,7 +8725,7 @@ IL_00c6:
 	{
 		// else if (scriptCounterAnim==indexCatch)
 		int32_t L_18 = __this->___scriptCounterAnim_11;
-		int32_t L_19 = __this->___indexCatch_15;
+		int32_t L_19 = __this->___indexCatch_16;
 		if ((!(((uint32_t)L_18) == ((uint32_t)L_19))))
 		{
 			goto IL_00f0;
@@ -8742,7 +8747,7 @@ IL_00f0:
 	{
 		// else if (scriptCounterAnim == indexDrive)
 		int32_t L_22 = __this->___scriptCounterAnim_11;
-		int32_t L_23 = __this->___indexDrive_16;
+		int32_t L_23 = __this->___indexDrive_17;
 		if ((!(((uint32_t)L_22) == ((uint32_t)L_23))))
 		{
 			goto IL_011a;
@@ -8764,7 +8769,7 @@ IL_011a:
 	{
 		// else if (scriptCounterAnim == indexFinish)
 		int32_t L_26 = __this->___scriptCounterAnim_11;
-		int32_t L_27 = __this->___indexFinish_17;
+		int32_t L_27 = __this->___indexFinish_18;
 		if ((!(((uint32_t)L_26) == ((uint32_t)L_27))))
 		{
 			goto IL_0144;
@@ -8786,7 +8791,7 @@ IL_0144:
 	{
 		// else if (scriptCounterAnim == indexFullStroke)
 		int32_t L_30 = __this->___scriptCounterAnim_11;
-		int32_t L_31 = __this->___indexFullStroke_18;
+		int32_t L_31 = __this->___indexFullStroke_19;
 		if ((!(((uint32_t)L_30) == ((uint32_t)L_31))))
 		{
 			goto IL_016e;
@@ -8808,7 +8813,7 @@ IL_016e:
 	{
 		// else if (scriptCounterAnim == lastIndexSpeeches)
 		int32_t L_34 = __this->___scriptCounterAnim_11;
-		int32_t L_35 = __this->___lastIndexSpeeches_19;
+		int32_t L_35 = __this->___lastIndexSpeeches_20;
 		if ((!(((uint32_t)L_34) == ((uint32_t)L_35))))
 		{
 			goto IL_01b7;
@@ -8869,7 +8874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_backAnim_m412DCD3C
 		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_2, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_3, NULL);
 		// if (scriptCounterAnim == (indexCatch-1))
 		int32_t L_4 = __this->___scriptCounterAnim_11;
-		int32_t L_5 = __this->___indexCatch_15;
+		int32_t L_5 = __this->___indexCatch_16;
 		if ((!(((uint32_t)L_4) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_5, 1))))))
 		{
 			goto IL_0068;
@@ -8895,7 +8900,7 @@ IL_0068:
 	{
 		// else if (scriptCounterAnim == (indexNothing-1))
 		int32_t L_9 = __this->___scriptCounterAnim_11;
-		int32_t L_10 = __this->___indexNothing_12;
+		int32_t L_10 = __this->___indexNothing_13;
 		if ((!(((uint32_t)L_9) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_10, 1))))))
 		{
 			goto IL_0084;
@@ -8913,7 +8918,7 @@ IL_0084:
 	{
 		// else if (scriptCounterAnim == (indexHandle - 1))
 		int32_t L_12 = __this->___scriptCounterAnim_11;
-		int32_t L_13 = __this->___indexHandle_13;
+		int32_t L_13 = __this->___indexHandle_14;
 		if ((!(((uint32_t)L_12) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_13, 1))))))
 		{
 			goto IL_00bc;
@@ -8939,7 +8944,7 @@ IL_00bc:
 	{
 		// else if (scriptCounterAnim == (indexDrive-1))
 		int32_t L_17 = __this->___scriptCounterAnim_11;
-		int32_t L_18 = __this->___indexDrive_16;
+		int32_t L_18 = __this->___indexDrive_17;
 		if ((!(((uint32_t)L_17) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_18, 1))))))
 		{
 			goto IL_00e8;
@@ -8961,7 +8966,7 @@ IL_00e8:
 	{
 		// else if (scriptCounterAnim == (indexFinish-1))
 		int32_t L_21 = __this->___scriptCounterAnim_11;
-		int32_t L_22 = __this->___indexFinish_17;
+		int32_t L_22 = __this->___indexFinish_18;
 		if ((!(((uint32_t)L_21) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_22, 1))))))
 		{
 			goto IL_0114;
@@ -8983,7 +8988,7 @@ IL_0114:
 	{
 		// else if (scriptCounterAnim == (indexFullStroke-1))
 		int32_t L_25 = __this->___scriptCounterAnim_11;
-		int32_t L_26 = __this->___indexFullStroke_18;
+		int32_t L_26 = __this->___indexFullStroke_19;
 		if ((!(((uint32_t)L_25) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_26, 1))))))
 		{
 			goto IL_0140;
@@ -9027,7 +9032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_CheckDryExercise_m
 	{
 		// if (index == startCatchDry)
 		int32_t L_0 = ___index0;
-		int32_t L_1 = __this->___startCatchDry_21;
+		int32_t L_1 = __this->___startCatchDry_22;
 		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
 		{
 			goto IL_0015;
@@ -9035,7 +9040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_CheckDryExercise_m
 	}
 	{
 		// dryExerciseController.ShowCatch();
-		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_2 = __this->___dryExerciseController_20;
+		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_2 = __this->___dryExerciseController_21;
 		NullCheck(L_2);
 		DisplayDryExercises_ShowCatch_mAAB4D8AC8297D3098422B66BB1F513454E8D9686(L_2, NULL);
 		return;
@@ -9045,7 +9050,7 @@ IL_0015:
 	{
 		// else if (index == startDriveDry)
 		int32_t L_3 = ___index0;
-		int32_t L_4 = __this->___startDriveDry_22;
+		int32_t L_4 = __this->___startDriveDry_23;
 		if ((!(((uint32_t)L_3) == ((uint32_t)L_4))))
 		{
 			goto IL_002a;
@@ -9053,7 +9058,7 @@ IL_0015:
 	}
 	{
 		// dryExerciseController.ShowDrive();
-		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_5 = __this->___dryExerciseController_20;
+		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_5 = __this->___dryExerciseController_21;
 		NullCheck(L_5);
 		DisplayDryExercises_ShowDrive_mECF4AC2CF21A5237E021C4783392EC6DCC1E387D(L_5, NULL);
 		return;
@@ -9063,7 +9068,7 @@ IL_002a:
 	{
 		// else if (index == startFinishDry)
 		int32_t L_6 = ___index0;
-		int32_t L_7 = __this->___startFinishDry_23;
+		int32_t L_7 = __this->___startFinishDry_24;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
 		{
 			goto IL_003f;
@@ -9071,7 +9076,7 @@ IL_002a:
 	}
 	{
 		// dryExerciseController.ShowFinish();
-		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_8 = __this->___dryExerciseController_20;
+		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_8 = __this->___dryExerciseController_21;
 		NullCheck(L_8);
 		DisplayDryExercises_ShowFinish_m1CAA38977B9878B4519ED48ABC939AC9A9C0DADD(L_8, NULL);
 		return;
@@ -9080,9 +9085,53 @@ IL_002a:
 IL_003f:
 	{
 		// dryExerciseController.ShowNone();
-		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_9 = __this->___dryExerciseController_20;
+		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_9 = __this->___dryExerciseController_21;
 		NullCheck(L_9);
 		DisplayDryExercises_ShowNone_m3EAA276C09C95EB6F420B540B4E03AD846458BDF(L_9, NULL);
+		// }
+		return;
+	}
+}
+// System.Void ErgeticChangeSpeeches::ClickingRight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_ClickingRight_mEDDCC3D8F19785A2CF6110C736E9599F9BE5F44A (ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// scriptCounterSpeech++;
+		int32_t L_0 = __this->___scriptCounterSpeech_12;
+		__this->___scriptCounterSpeech_12 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		// animTrainer.SetInteger("index", scriptCounterSpeech);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->___animTrainer_4;
+		int32_t L_2 = __this->___scriptCounterSpeech_12;
+		NullCheck(L_1);
+		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_1, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void ErgeticChangeSpeeches::Clickingleft()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_Clickingleft_m9AF5E70437A818A42DB1A46C3E0148E710C0754D (ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// scriptCounterSpeech--;
+		int32_t L_0 = __this->___scriptCounterSpeech_12;
+		__this->___scriptCounterSpeech_12 = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
+		// animTrainer.SetInteger("index", scriptCounterSpeech);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->___animTrainer_4;
+		int32_t L_2 = __this->___scriptCounterSpeech_12;
+		NullCheck(L_1);
+		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_1, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_2, NULL);
 		// }
 		return;
 	}

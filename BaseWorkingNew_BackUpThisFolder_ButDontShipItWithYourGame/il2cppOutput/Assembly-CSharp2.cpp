@@ -16297,95 +16297,64 @@ IL_0029:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchDIfferentVideos_CheckDryExercise_m61D1FED502AFE4D176BE2F78FE023EF0DB7E3C68 (SwitchDIfferentVideos_tF9D55CC7857841316C49B7807CB1FD83CD7F16DA* __this, int32_t ___index0, const RuntimeMethod* method) 
 {
 	{
-		// if (index == startNoDry)
+		// if (index == startCatchDry)
 		int32_t L_0 = ___index0;
-		int32_t L_1 = __this->___startNoDry_10;
+		int32_t L_1 = __this->___startCatchDry_11;
 		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
 		{
 			goto IL_0015;
 		}
 	}
 	{
-		// dryExerciseController.ShowNone();
+		// dryExerciseController.ShowCatch();
 		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_2 = __this->___dryExerciseController_9;
 		NullCheck(L_2);
-		DisplayDryExercises_ShowNone_m3EAA276C09C95EB6F420B540B4E03AD846458BDF(L_2, NULL);
+		DisplayDryExercises_ShowCatch_mAAB4D8AC8297D3098422B66BB1F513454E8D9686(L_2, NULL);
 		return;
 	}
 
 IL_0015:
 	{
-		// else if (index == startCatchDry)
+		// else if (index == startDriveDry)
 		int32_t L_3 = ___index0;
-		int32_t L_4 = __this->___startCatchDry_11;
+		int32_t L_4 = __this->___startDriveDry_12;
 		if ((!(((uint32_t)L_3) == ((uint32_t)L_4))))
 		{
 			goto IL_002a;
 		}
 	}
 	{
-		// dryExerciseController.ShowCatch();
+		// dryExerciseController.ShowDrive();
 		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_5 = __this->___dryExerciseController_9;
 		NullCheck(L_5);
-		DisplayDryExercises_ShowCatch_mAAB4D8AC8297D3098422B66BB1F513454E8D9686(L_5, NULL);
+		DisplayDryExercises_ShowDrive_mECF4AC2CF21A5237E021C4783392EC6DCC1E387D(L_5, NULL);
 		return;
 	}
 
 IL_002a:
 	{
-		// else if (index == startDriveDry)
+		// else if (index == startFinishDry)
 		int32_t L_6 = ___index0;
-		int32_t L_7 = __this->___startDriveDry_12;
+		int32_t L_7 = __this->___startFinishDry_13;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
 		{
 			goto IL_003f;
 		}
 	}
 	{
-		// dryExerciseController.ShowDrive();
+		// dryExerciseController.ShowFinish();
 		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_8 = __this->___dryExerciseController_9;
 		NullCheck(L_8);
-		DisplayDryExercises_ShowDrive_mECF4AC2CF21A5237E021C4783392EC6DCC1E387D(L_8, NULL);
+		DisplayDryExercises_ShowFinish_m1CAA38977B9878B4519ED48ABC939AC9A9C0DADD(L_8, NULL);
 		return;
 	}
 
 IL_003f:
 	{
-		// else if (index == startFinishDry)
-		int32_t L_9 = ___index0;
-		int32_t L_10 = __this->___startFinishDry_13;
-		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		// dryExerciseController.ShowFinish();
-		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_11 = __this->___dryExerciseController_9;
-		NullCheck(L_11);
-		DisplayDryExercises_ShowFinish_m1CAA38977B9878B4519ED48ABC939AC9A9C0DADD(L_11, NULL);
-		return;
-	}
-
-IL_0054:
-	{
-		// else if (index == startEndDry)
-		int32_t L_12 = ___index0;
-		int32_t L_13 = __this->___startEndDry_14;
-		if ((!(((uint32_t)L_12) == ((uint32_t)L_13))))
-		{
-			goto IL_0068;
-		}
-	}
-	{
 		// dryExerciseController.ShowNone();
-		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_14 = __this->___dryExerciseController_9;
-		NullCheck(L_14);
-		DisplayDryExercises_ShowNone_m3EAA276C09C95EB6F420B540B4E03AD846458BDF(L_14, NULL);
-	}
-
-IL_0068:
-	{
+		DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* L_9 = __this->___dryExerciseController_9;
+		NullCheck(L_9);
+		DisplayDryExercises_ShowNone_m3EAA276C09C95EB6F420B540B4E03AD846458BDF(L_9, NULL);
 		// }
 		return;
 	}
