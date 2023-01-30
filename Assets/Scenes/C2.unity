@@ -2631,7 +2631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &85023034
 GameObject:
   m_ObjectHideFlags: 0
@@ -19555,6 +19555,7 @@ MonoBehaviour:
     in knee of a leg (especially in VR where we cannot see our real legs). '
   - 'Alright! Now you know the basics of how to perform a correct rowing stroke!
     Try making a few rowing strokes to make sure you understood the instruction.  '
+  - 'If you feel ready press right again and continue to the Main Game.  '
   - 'If you feel ready press right again and continue to the Main Game.  '
   tutorialText: {fileID: 1706866781}
   charPics:
@@ -39697,7 +39698,6 @@ MonoBehaviour:
   - {fileID: 2101883939}
   - {fileID: 2101883939}
   - {fileID: 2101883939}
-  - {fileID: 2101883939}
   videoMenu: {fileID: 1541906767}
   nextMenu: {fileID: 975352513}
   speechesSounds: {fileID: 1541906769}
@@ -56011,7 +56011,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 994cc183e194c4d6caada93edfa79640, type: 3}
   - {fileID: 8300000, guid: 266986c0af74d435580a3fcc5f20a275, type: 3}
   - {fileID: 8300000, guid: 4c196e2f0a3524115829b0f4ca47dd39, type: 3}
-  - {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
   animFace: {fileID: 833096062}
 --- !u!1 &1543696202
 GameObject:
@@ -95629,7 +95628,7 @@ MonoBehaviour:
   indexDrive: 13
   indexFinish: 16
   indexFullStroke: 19
-  lastIndexSpeeches: 24
+  lastIndexSpeeches: 25
   dryExerciseController: {fileID: 1665580053}
   startCatchDry: 12
   startDriveDry: 15
@@ -96558,19 +96557,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146561, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.44781053
+      value: 0.44804788
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146561, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.029095288
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146561, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.893536
+      value: 0.8940096
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146561, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.014581592
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146561, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -96582,7 +96581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146561, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -3.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472272101773146566, guid: 1aa698f9ab89f4f468a4b3f4dfebbff8, type: 3}
       propertyPath: m_Name
