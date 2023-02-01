@@ -558,6 +558,8 @@ struct SimpleCapsuleWithStickMovement_t920D8E87DA5F0C4A80703D194A390183D5A68F2C;
 struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+// StartCrashlytics
+struct StartCrashlytics_t3AB0A84EF76B351E4E7220F3E041F7772E545E29;
 // System.String
 struct String_t;
 // TMPro.TMP_Character
@@ -891,7 +893,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral87AB432A3E4309526D1D395209CC96C58BA13F2D
 IL2CPP_EXTERN_C String_t* _stringLiteral8EA8B20EDD69893CF1CEBDDBAF0C6049C9F2D64E;
 IL2CPP_EXTERN_C String_t* _stringLiteral97B32B0F8F3C747D08C033F87B49A035D544D89F;
 IL2CPP_EXTERN_C String_t* _stringLiteral99172736F16958769E75A3BCD7F0872C0734C896;
-IL2CPP_EXTERN_C String_t* _stringLiteral995157C78CC17FA8956E387960565BEC10312F83;
 IL2CPP_EXTERN_C String_t* _stringLiteral9B3B0354130FD7523622A520E8C297602D7F6E59;
 IL2CPP_EXTERN_C String_t* _stringLiteral9DCEFD441B4B3397F8BA8D130DB8A8A22E8F9256;
 IL2CPP_EXTERN_C String_t* _stringLiteral9FDC420B3E3C6CF86F50BE76A53065F8295C6955;
@@ -905,6 +906,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAE0E2D66D9BF36C388DEC01E65D1A398965AE74A
 IL2CPP_EXTERN_C String_t* _stringLiteralB00BB45121807BCF0EF94A6239799099324DA522;
 IL2CPP_EXTERN_C String_t* _stringLiteralB81BA2487A1392EB3940DAED4DDA9AB0C8F7F8F4;
 IL2CPP_EXTERN_C String_t* _stringLiteralC141E3E49B09432DE6995F93C09165D932D81629;
+IL2CPP_EXTERN_C String_t* _stringLiteralC6506D8F751A169315F7EB737B963DF2B9DB6C6A;
 IL2CPP_EXTERN_C String_t* _stringLiteralCA1C38650B88B2F7CF61DA8541B72E6E8C250D3B;
 IL2CPP_EXTERN_C String_t* _stringLiteralCA757EEEB5C4EF47B48825209818E7E928FF7F86;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBC59E001755D6920BD8A2C6420D11291A5ECC36;
@@ -5255,6 +5257,11 @@ struct SimpleCapsuleWithStickMovement_t920D8E87DA5F0C4A80703D194A390183D5A68F2C 
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___PreCharacterMove_14;
 };
 
+// StartCrashlytics
+struct StartCrashlytics_t3AB0A84EF76B351E4E7220F3E041F7772E545E29  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // TeleportDestination
 struct TeleportDestination_t0E4A197756CFA0C14366ED74F65F78A418AEC767  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -7289,8 +7296,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Animator::SetInteger(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___name0, int32_t ___value1, const RuntimeMethod* method) ;
 // System.Void ErgeticChangeSpeeches::CheckDryExercise(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_CheckDryExercise_mC0371F290A9D3AB7BE6AF50B8B38B67B90A1028C (ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // System.Void remoteRowerManipulation::AnimateNothing()
@@ -7303,6 +7308,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_AnimateCatch_m4D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_AnimateDrive_mDBD13558409A2E1BF6CF4DA16F7D2C37AC137181 (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) ;
 // System.Void remoteRowerManipulation::AnimateFinish()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void remoteRowerManipulation_AnimateFinish_m0363803613688CF4E6AE872C3F415D49382CDC64 (remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Animator::SetInteger(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___name0, int32_t ___value1, const RuntimeMethod* method) ;
 // System.Void DisplayDryExercises::ShowCatch()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisplayDryExercises_ShowCatch_mAAB4D8AC8297D3098422B66BB1F513454E8D9686 (DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* __this, const RuntimeMethod* method) ;
 // System.Void DisplayDryExercises::ShowDrive()
@@ -7311,6 +7318,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisplayDryExercises_ShowDrive_mECF4AC2CF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisplayDryExercises_ShowFinish_m1CAA38977B9878B4519ED48ABC939AC9A9C0DADD (DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* __this, const RuntimeMethod* method) ;
 // System.Void DisplayDryExercises::ShowNone()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisplayDryExercises_ShowNone_m3EAA276C09C95EB6F420B540B4E03AD846458BDF (DisplayDryExercises_t6FD800276A482B3B4343F3FAC62F764B16CAFA89* __this, const RuntimeMethod* method) ;
+// System.Void ErgeticChangeSpeeches::nextAnim()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_nextAnim_m055F54D6125D8863E9839C817F112FEEDF01603C (ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C* __this, const RuntimeMethod* method) ;
+// System.Void ErgeticChangeSpeeches::backAnim()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_backAnim_m412DCD3C1F71E0FF7D63257F51FBC61C2C4631AA (ErgeticChangeSpeeches_t143E29CF259F3B5468402EB42BCC0DA8F3EA9C6C* __this, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.Component::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
@@ -8584,13 +8595,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_nextAnim_m055F54D6
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1D7336827FF1AA1EE297E56CB402A3D357148E21);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral32CAC2E2954E65D2CBA0F3AC399E031AF6265EA2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral379984D722DF0476800232F5D30E571CA7CF8D1A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral553118AB05D4FC4185DCE6D30BCB80573D64B96A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D828DF909DFFFA536734B7F78520A29AF2F81AD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F6730FC4FCF7A03DBC1663FD5A34BEBCB1FBB9D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral995157C78CC17FA8956E387960565BEC10312F83);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9FDC420B3E3C6CF86F50BE76A53065F8295C6955);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8598,193 +8609,193 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_nextAnim_m055F54D6
 		// scriptCounterAnim++;
 		int32_t L_0 = __this->___scriptCounterAnim_11;
 		__this->___scriptCounterAnim_11 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		// animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->___animTrainer_4;
-		int32_t L_2 = __this->___scriptCounterAnim_11;
-		NullCheck(L_1);
-		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_1, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_2, NULL);
 		// CheckDryExercise(scriptCounterAnim);
-		int32_t L_3 = __this->___scriptCounterAnim_11;
-		ErgeticChangeSpeeches_CheckDryExercise_mC0371F290A9D3AB7BE6AF50B8B38B67B90A1028C(__this, L_3, NULL);
+		int32_t L_1 = __this->___scriptCounterAnim_11;
+		ErgeticChangeSpeeches_CheckDryExercise_mC0371F290A9D3AB7BE6AF50B8B38B67B90A1028C(__this, L_1, NULL);
 		// if (scriptCounterAnim == indexNothing)
-		int32_t L_4 = __this->___scriptCounterAnim_11;
-		int32_t L_5 = __this->___indexNothing_13;
-		if ((!(((uint32_t)L_4) == ((uint32_t)L_5))))
+		int32_t L_2 = __this->___scriptCounterAnim_11;
+		int32_t L_3 = __this->___indexNothing_13;
+		if ((!(((uint32_t)L_2) == ((uint32_t)L_3))))
 		{
-			goto IL_005a;
+			goto IL_0044;
 		}
 	}
 	{
 		// animRower.AnimateNothing();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_6 = __this->___animRower_5;
-		NullCheck(L_6);
-		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_6, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_4 = __this->___animRower_5;
+		NullCheck(L_4);
+		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_4, NULL);
 		// phaseText.text = "How to Row";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___phaseText_7;
-		NullCheck(L_7);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_7, _stringLiteral379984D722DF0476800232F5D30E571CA7CF8D1A);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___phaseText_7;
+		NullCheck(L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral379984D722DF0476800232F5D30E571CA7CF8D1A);
 		return;
 	}
 
-IL_005a:
+IL_0044:
 	{
 		// else if (scriptCounterAnim == indexHandle)
-		int32_t L_8 = __this->___scriptCounterAnim_11;
-		int32_t L_9 = __this->___indexHandle_14;
-		if ((!(((uint32_t)L_8) == ((uint32_t)L_9))))
+		int32_t L_6 = __this->___scriptCounterAnim_11;
+		int32_t L_7 = __this->___indexHandle_14;
+		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
 		{
-			goto IL_0090;
+			goto IL_007a;
 		}
 	}
 	{
 		// animRower.AnimateNothing();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_10 = __this->___animRower_5;
-		NullCheck(L_10);
-		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_10, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_8 = __this->___animRower_5;
+		NullCheck(L_8);
+		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_8, NULL);
 		// phaseText.text = "Grab Handle";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_11 = __this->___phaseText_7;
-		NullCheck(L_11);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_11, _stringLiteral553118AB05D4FC4185DCE6D30BCB80573D64B96A);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_9 = __this->___phaseText_7;
+		NullCheck(L_9);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_9, _stringLiteral553118AB05D4FC4185DCE6D30BCB80573D64B96A);
 		// handleGrip.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___handleGrip_6;
-		NullCheck(L_12);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___handleGrip_6;
+		NullCheck(L_10);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
 		return;
 	}
 
-IL_0090:
+IL_007a:
 	{
 		// else if (scriptCounterAnim == indexNothingTwo)
-		int32_t L_13 = __this->___scriptCounterAnim_11;
-		int32_t L_14 = __this->___indexNothingTwo_15;
-		if ((!(((uint32_t)L_13) == ((uint32_t)L_14))))
+		int32_t L_11 = __this->___scriptCounterAnim_11;
+		int32_t L_12 = __this->___indexNothingTwo_15;
+		if ((!(((uint32_t)L_11) == ((uint32_t)L_12))))
 		{
-			goto IL_00c6;
+			goto IL_00b0;
 		}
 	}
 	{
 		// animRower.AnimateFullStroke();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_15 = __this->___animRower_5;
-		NullCheck(L_15);
-		remoteRowerManipulation_AnimateFullStroke_m205DCB666687E5D1FA2E311C375C078FFF4D8C87(L_15, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_13 = __this->___animRower_5;
+		NullCheck(L_13);
+		remoteRowerManipulation_AnimateFullStroke_m205DCB666687E5D1FA2E311C375C078FFF4D8C87(L_13, NULL);
 		// phaseText.text = "What are the Phases?";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_16 = __this->___phaseText_7;
-		NullCheck(L_16);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_16, _stringLiteral5D828DF909DFFFA536734B7F78520A29AF2F81AD);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___phaseText_7;
+		NullCheck(L_14);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_14, _stringLiteral5D828DF909DFFFA536734B7F78520A29AF2F81AD);
 		// handleGrip.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___handleGrip_6;
-		NullCheck(L_17);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___handleGrip_6;
+		NullCheck(L_15);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)0, NULL);
 		return;
 	}
 
-IL_00c6:
+IL_00b0:
 	{
 		// else if (scriptCounterAnim==indexCatch)
-		int32_t L_18 = __this->___scriptCounterAnim_11;
-		int32_t L_19 = __this->___indexCatch_16;
-		if ((!(((uint32_t)L_18) == ((uint32_t)L_19))))
+		int32_t L_16 = __this->___scriptCounterAnim_11;
+		int32_t L_17 = __this->___indexCatch_16;
+		if ((!(((uint32_t)L_16) == ((uint32_t)L_17))))
 		{
-			goto IL_00f0;
+			goto IL_00da;
 		}
 	}
 	{
 		// animRower.AnimateCatch();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_20 = __this->___animRower_5;
-		NullCheck(L_20);
-		remoteRowerManipulation_AnimateCatch_m4D960F2137D6CFC0DB96DA4732074935D3C7FD23(L_20, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_18 = __this->___animRower_5;
+		NullCheck(L_18);
+		remoteRowerManipulation_AnimateCatch_m4D960F2137D6CFC0DB96DA4732074935D3C7FD23(L_18, NULL);
 		// phaseText.text = "CATCH";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_21 = __this->___phaseText_7;
-		NullCheck(L_21);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_21, _stringLiteral9FDC420B3E3C6CF86F50BE76A53065F8295C6955);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_19 = __this->___phaseText_7;
+		NullCheck(L_19);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_19, _stringLiteral9FDC420B3E3C6CF86F50BE76A53065F8295C6955);
 		return;
 	}
 
-IL_00f0:
+IL_00da:
 	{
 		// else if (scriptCounterAnim == indexDrive)
-		int32_t L_22 = __this->___scriptCounterAnim_11;
-		int32_t L_23 = __this->___indexDrive_17;
-		if ((!(((uint32_t)L_22) == ((uint32_t)L_23))))
+		int32_t L_20 = __this->___scriptCounterAnim_11;
+		int32_t L_21 = __this->___indexDrive_17;
+		if ((!(((uint32_t)L_20) == ((uint32_t)L_21))))
 		{
-			goto IL_011a;
+			goto IL_0104;
 		}
 	}
 	{
 		// animRower.AnimateDrive();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_24 = __this->___animRower_5;
-		NullCheck(L_24);
-		remoteRowerManipulation_AnimateDrive_mDBD13558409A2E1BF6CF4DA16F7D2C37AC137181(L_24, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_22 = __this->___animRower_5;
+		NullCheck(L_22);
+		remoteRowerManipulation_AnimateDrive_mDBD13558409A2E1BF6CF4DA16F7D2C37AC137181(L_22, NULL);
 		// phaseText.text = "Drive";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_25 = __this->___phaseText_7;
-		NullCheck(L_25);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_25, _stringLiteral1D7336827FF1AA1EE297E56CB402A3D357148E21);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_23 = __this->___phaseText_7;
+		NullCheck(L_23);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_23, _stringLiteral1D7336827FF1AA1EE297E56CB402A3D357148E21);
 		return;
 	}
 
-IL_011a:
+IL_0104:
 	{
 		// else if (scriptCounterAnim == indexFinish)
-		int32_t L_26 = __this->___scriptCounterAnim_11;
-		int32_t L_27 = __this->___indexFinish_18;
-		if ((!(((uint32_t)L_26) == ((uint32_t)L_27))))
+		int32_t L_24 = __this->___scriptCounterAnim_11;
+		int32_t L_25 = __this->___indexFinish_18;
+		if ((!(((uint32_t)L_24) == ((uint32_t)L_25))))
 		{
-			goto IL_0144;
+			goto IL_012e;
 		}
 	}
 	{
 		// animRower.AnimateFinish();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_28 = __this->___animRower_5;
-		NullCheck(L_28);
-		remoteRowerManipulation_AnimateFinish_m0363803613688CF4E6AE872C3F415D49382CDC64(L_28, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_26 = __this->___animRower_5;
+		NullCheck(L_26);
+		remoteRowerManipulation_AnimateFinish_m0363803613688CF4E6AE872C3F415D49382CDC64(L_26, NULL);
 		// phaseText.text = "Finish";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_29 = __this->___phaseText_7;
-		NullCheck(L_29);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_29, _stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_27 = __this->___phaseText_7;
+		NullCheck(L_27);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_27, _stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
 		return;
 	}
 
-IL_0144:
+IL_012e:
 	{
 		// else if (scriptCounterAnim == indexFullStroke)
-		int32_t L_30 = __this->___scriptCounterAnim_11;
-		int32_t L_31 = __this->___indexFullStroke_19;
-		if ((!(((uint32_t)L_30) == ((uint32_t)L_31))))
+		int32_t L_28 = __this->___scriptCounterAnim_11;
+		int32_t L_29 = __this->___indexFullStroke_19;
+		if ((!(((uint32_t)L_28) == ((uint32_t)L_29))))
 		{
-			goto IL_016e;
+			goto IL_0158;
 		}
 	}
 	{
 		// animRower.AnimateFullStroke();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_32 = __this->___animRower_5;
-		NullCheck(L_32);
-		remoteRowerManipulation_AnimateFullStroke_m205DCB666687E5D1FA2E311C375C078FFF4D8C87(L_32, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_30 = __this->___animRower_5;
+		NullCheck(L_30);
+		remoteRowerManipulation_AnimateFullStroke_m205DCB666687E5D1FA2E311C375C078FFF4D8C87(L_30, NULL);
 		// phaseText.text = "Full Stroke";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_33 = __this->___phaseText_7;
-		NullCheck(L_33);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_33, _stringLiteral7F6730FC4FCF7A03DBC1663FD5A34BEBCB1FBB9D);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_31 = __this->___phaseText_7;
+		NullCheck(L_31);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_31, _stringLiteral7F6730FC4FCF7A03DBC1663FD5A34BEBCB1FBB9D);
 		return;
 	}
 
-IL_016e:
+IL_0158:
 	{
 		// else if (scriptCounterAnim == lastIndexSpeeches)
-		int32_t L_34 = __this->___scriptCounterAnim_11;
-		int32_t L_35 = __this->___lastIndexSpeeches_20;
-		if ((!(((uint32_t)L_34) == ((uint32_t)L_35))))
+		int32_t L_32 = __this->___scriptCounterAnim_11;
+		int32_t L_33 = __this->___lastIndexSpeeches_20;
+		if ((!(((uint32_t)L_32) == ((uint32_t)L_33))))
 		{
 			goto IL_01be;
 		}
 	}
 	{
 		// ergeticMenu.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = __this->___ergeticMenu_9;
-		NullCheck(L_36);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = __this->___ergeticMenu_9;
+		NullCheck(L_34);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_34, (bool)0, NULL);
 		// scriptCounterAnim = 0;
 		__this->___scriptCounterAnim_11 = 0;
 		// scriptCounterSpeech = 0;
 		__this->___scriptCounterSpeech_12 = 0;
+		// animTrainer.SetInteger("index", scriptCounterSpeech);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_35 = __this->___animTrainer_4;
+		int32_t L_36 = __this->___scriptCounterSpeech_12;
+		NullCheck(L_35);
+		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_35, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_36, NULL);
 		// phaseText.text = "How to row";
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_37 = __this->___phaseText_7;
 		NullCheck(L_37);
@@ -8815,7 +8826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_backAnim_m412DCD3C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral32CAC2E2954E65D2CBA0F3AC399E031AF6265EA2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral553118AB05D4FC4185DCE6D30BCB80573D64B96A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral995157C78CC17FA8956E387960565BEC10312F83);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC6506D8F751A169315F7EB737B963DF2B9DB6C6A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF0E74AE7D96BB1E58F4E96F2226E4FB7BF7B1B71);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8826,162 +8837,144 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_backAnim_m412DCD3C
 		// CheckDryExercise(scriptCounterAnim);
 		int32_t L_1 = __this->___scriptCounterAnim_11;
 		ErgeticChangeSpeeches_CheckDryExercise_mC0371F290A9D3AB7BE6AF50B8B38B67B90A1028C(__this, L_1, NULL);
-		// animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_2 = __this->___animTrainer_4;
-		int32_t L_3 = __this->___scriptCounterAnim_11;
-		NullCheck(L_2);
-		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_2, _stringLiteral995157C78CC17FA8956E387960565BEC10312F83, L_3, NULL);
-		// if (scriptCounterAnim == (indexCatch-1))
-		int32_t L_4 = __this->___scriptCounterAnim_11;
-		int32_t L_5 = __this->___indexCatch_16;
-		if ((!(((uint32_t)L_4) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_5, 1))))))
+		// if ((scriptCounterAnim+1) == indexHandle)
+		int32_t L_2 = __this->___scriptCounterAnim_11;
+		int32_t L_3 = __this->___indexHandle_14;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_add(L_2, 1))) == ((uint32_t)L_3))))
 		{
-			goto IL_0068;
+			goto IL_0052;
 		}
 	}
 	{
 		// animRower.AnimateNothing();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_6 = __this->___animRower_5;
-		NullCheck(L_6);
-		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_6, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_4 = __this->___animRower_5;
+		NullCheck(L_4);
+		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_4, NULL);
+		// phaseText.text = "How to row";
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___phaseText_7;
+		NullCheck(L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral32CAC2E2954E65D2CBA0F3AC399E031AF6265EA2);
 		// handleGrip.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___handleGrip_6;
-		NullCheck(L_7);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___handleGrip_6;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		return;
+	}
+
+IL_0052:
+	{
+		// else if ((scriptCounterAnim+1) == indexNothingTwo)
+		int32_t L_7 = __this->___scriptCounterAnim_11;
+		int32_t L_8 = __this->___indexNothingTwo_15;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_add(L_7, 1))) == ((uint32_t)L_8))))
+		{
+			goto IL_008a;
+		}
+	}
+	{
+		// animRower.AnimateNothing();
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_9 = __this->___animRower_5;
+		NullCheck(L_9);
+		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_9, NULL);
 		// phaseText.text = "Grab Handle";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___phaseText_7;
-		NullCheck(L_8);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_8, _stringLiteral553118AB05D4FC4185DCE6D30BCB80573D64B96A);
-		return;
-	}
-
-IL_0068:
-	{
-		// else if (scriptCounterAnim == (indexNothing-1))
-		int32_t L_9 = __this->___scriptCounterAnim_11;
-		int32_t L_10 = __this->___indexNothing_13;
-		if ((!(((uint32_t)L_9) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_10, 1))))))
-		{
-			goto IL_0084;
-		}
-	}
-	{
-		// animRower.AnimateNothing();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_11 = __this->___animRower_5;
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_10 = __this->___phaseText_7;
+		NullCheck(L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_10, _stringLiteral553118AB05D4FC4185DCE6D30BCB80573D64B96A);
+		// handleGrip.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___handleGrip_6;
 		NullCheck(L_11);
-		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_11, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
 		return;
 	}
 
-IL_0084:
+IL_008a:
 	{
-		// else if (scriptCounterAnim == (indexHandle - 1))
+		// else if ((scriptCounterAnim+1) == indexCatch)
 		int32_t L_12 = __this->___scriptCounterAnim_11;
-		int32_t L_13 = __this->___indexHandle_14;
-		if ((!(((uint32_t)L_12) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_13, 1))))))
+		int32_t L_13 = __this->___indexCatch_16;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_add(L_12, 1))) == ((uint32_t)L_13))))
 		{
-			goto IL_00bc;
+			goto IL_00b6;
 		}
 	}
 	{
-		// animRower.AnimateNothing();
+		// animRower.AnimateFullStroke();
 		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_14 = __this->___animRower_5;
 		NullCheck(L_14);
-		remoteRowerManipulation_AnimateNothing_m00F50A22C62F8BD7D0061968F5B4E179DD680779(L_14, NULL);
-		// handleGrip.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___handleGrip_6;
+		remoteRowerManipulation_AnimateFullStroke_m205DCB666687E5D1FA2E311C375C078FFF4D8C87(L_14, NULL);
+		// phaseText.text = "Rowing Phases";
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_15 = __this->___phaseText_7;
 		NullCheck(L_15);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)0, NULL);
-		// phaseText.text = "How to row";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_16 = __this->___phaseText_7;
-		NullCheck(L_16);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_16, _stringLiteral32CAC2E2954E65D2CBA0F3AC399E031AF6265EA2);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_15, _stringLiteralC6506D8F751A169315F7EB737B963DF2B9DB6C6A);
 		return;
 	}
 
-IL_00bc:
+IL_00b6:
 	{
-		// else if (scriptCounterAnim == (indexDrive-1))
-		int32_t L_17 = __this->___scriptCounterAnim_11;
-		int32_t L_18 = __this->___indexDrive_17;
-		if ((!(((uint32_t)L_17) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_18, 1))))))
+		// else if ((scriptCounterAnim+1) == indexDrive)
+		int32_t L_16 = __this->___scriptCounterAnim_11;
+		int32_t L_17 = __this->___indexDrive_17;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_add(L_16, 1))) == ((uint32_t)L_17))))
 		{
-			goto IL_00e8;
+			goto IL_00e2;
 		}
 	}
 	{
 		// animRower.AnimateCatch();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_19 = __this->___animRower_5;
-		NullCheck(L_19);
-		remoteRowerManipulation_AnimateCatch_m4D960F2137D6CFC0DB96DA4732074935D3C7FD23(L_19, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_18 = __this->___animRower_5;
+		NullCheck(L_18);
+		remoteRowerManipulation_AnimateCatch_m4D960F2137D6CFC0DB96DA4732074935D3C7FD23(L_18, NULL);
 		// phaseText.text = "Catch";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_20 = __this->___phaseText_7;
-		NullCheck(L_20);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_20, _stringLiteralF0E74AE7D96BB1E58F4E96F2226E4FB7BF7B1B71);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_19 = __this->___phaseText_7;
+		NullCheck(L_19);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_19, _stringLiteralF0E74AE7D96BB1E58F4E96F2226E4FB7BF7B1B71);
 		return;
 	}
 
-IL_00e8:
+IL_00e2:
 	{
-		// else if (scriptCounterAnim == (indexFinish-1))
-		int32_t L_21 = __this->___scriptCounterAnim_11;
-		int32_t L_22 = __this->___indexFinish_18;
-		if ((!(((uint32_t)L_21) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_22, 1))))))
+		// else if ((scriptCounterAnim+1) == indexFinish)
+		int32_t L_20 = __this->___scriptCounterAnim_11;
+		int32_t L_21 = __this->___indexFinish_18;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_add(L_20, 1))) == ((uint32_t)L_21))))
 		{
-			goto IL_0114;
+			goto IL_010e;
 		}
 	}
 	{
 		// animRower.AnimateDrive();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_23 = __this->___animRower_5;
-		NullCheck(L_23);
-		remoteRowerManipulation_AnimateDrive_mDBD13558409A2E1BF6CF4DA16F7D2C37AC137181(L_23, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_22 = __this->___animRower_5;
+		NullCheck(L_22);
+		remoteRowerManipulation_AnimateDrive_mDBD13558409A2E1BF6CF4DA16F7D2C37AC137181(L_22, NULL);
 		// phaseText.text = "Drive";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_24 = __this->___phaseText_7;
-		NullCheck(L_24);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_24, _stringLiteral1D7336827FF1AA1EE297E56CB402A3D357148E21);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_23 = __this->___phaseText_7;
+		NullCheck(L_23);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_23, _stringLiteral1D7336827FF1AA1EE297E56CB402A3D357148E21);
 		return;
 	}
 
-IL_0114:
+IL_010e:
 	{
-		// else if (scriptCounterAnim == (indexFullStroke-1))
-		int32_t L_25 = __this->___scriptCounterAnim_11;
-		int32_t L_26 = __this->___indexFullStroke_19;
-		if ((!(((uint32_t)L_25) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_26, 1))))))
+		// else if ((scriptCounterAnim+1) == indexFullStroke)
+		int32_t L_24 = __this->___scriptCounterAnim_11;
+		int32_t L_25 = __this->___indexFullStroke_19;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_add(L_24, 1))) == ((uint32_t)L_25))))
 		{
-			goto IL_0140;
+			goto IL_0139;
 		}
 	}
 	{
 		// animRower.AnimateFinish();
-		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_27 = __this->___animRower_5;
-		NullCheck(L_27);
-		remoteRowerManipulation_AnimateFinish_m0363803613688CF4E6AE872C3F415D49382CDC64(L_27, NULL);
+		remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC* L_26 = __this->___animRower_5;
+		NullCheck(L_26);
+		remoteRowerManipulation_AnimateFinish_m0363803613688CF4E6AE872C3F415D49382CDC64(L_26, NULL);
 		// phaseText.text = "Finish";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_28 = __this->___phaseText_7;
-		NullCheck(L_28);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_28, _stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
-		return;
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_27 = __this->___phaseText_7;
+		NullCheck(L_27);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_27, _stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
 	}
 
-IL_0140:
-	{
-		// else if (scriptCounterAnim == 0)
-		int32_t L_29 = __this->___scriptCounterAnim_11;
-		if (L_29)
-		{
-			goto IL_0156;
-		}
-	}
-	{
-		// scriptCounterAnim = 1;
-		__this->___scriptCounterAnim_11 = 1;
-		// scriptCounterSpeech = 1;
-		__this->___scriptCounterSpeech_12 = 1;
-	}
-
-IL_0156:
+IL_0139:
 	{
 		// }
 		return;
@@ -9071,6 +9064,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ErgeticChangeSpeeches_ClickingRight_mEDD
 		int32_t L_2 = __this->___scriptCounterSpeech_12;
 		NullCheck(L_1);
 		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_1, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_2, NULL);
+		// nextAnim();
+		ErgeticChangeSpeeches_nextAnim_m055F54D6125D8863E9839C817F112FEEDF01603C(__this, NULL);
 		// }
 		return;
 	}
@@ -9107,6 +9102,8 @@ IL_0009:
 		int32_t L_3 = __this->___scriptCounterSpeech_12;
 		NullCheck(L_2);
 		Animator_SetInteger_m7B4BB5FD5BD8DE3F713D8E9AD2870C1AAF8E19EF(L_2, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_3, NULL);
+		// backAnim();
+		ErgeticChangeSpeeches_backAnim_m412DCD3C1F71E0FF7D63257F51FBC61C2C4631AA(__this, NULL);
 		// }
 		return;
 	}
@@ -27697,6 +27694,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SampleUI_GetText_mA6AA758F1A71F2E02
 }
 // System.Void SampleUI::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleUI__ctor_mBD248DD07D0BA86140F1154F670DFFDE3FF55986 (SampleUI_tBB9B84AF580D5357F4523D7E501B1DDFAA18BA5F* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void StartCrashlytics::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StartCrashlytics__ctor_mE11CAD3ECB3D4C495960D33DE7F42D23A008BD1A (StartCrashlytics_t3AB0A84EF76B351E4E7220F3E041F7772E545E29* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);

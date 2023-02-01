@@ -5,12 +5,14 @@ using TMPro;
 
 public class SwitchDIfferentVideos : MonoBehaviour
 {
+    public GameObject alternateAvatar;
     public GameObject[] videos = default;
     public GameObject videoMenu;
     public GameObject nextMenu;
     public PlayerSounds speechesSounds;
     private int currentVideo = 0;
     private int videosLength;
+
 
     public DisplayDryExercises dryExerciseController;
     
@@ -24,6 +26,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
     public int startFinish;
     public int startFinishDry;
     public int startRelease;
+    public int tutorialOver;
 
     public TextMeshProUGUI chapterText;
     public TextMeshProUGUI pageNumber;
@@ -43,7 +46,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
     public void PlayNextVideo()
     {
         //videos[currentVideo].SetActive(false);
-        if(currentVideo != (videosLength - 1))
+        if(currentVideo != tutorialOver)
         {
             currentVideo++;
             //videos[currentVideo].SetActive(true);
@@ -65,6 +68,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
             nextMenu.SetActive(true);
             chapterText.text = "how to row";
             pageNumber.text = currentVideo.ToString();
+            alternateAvatar.SetActive(true);
 
         }
 
@@ -152,7 +156,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
         {
             videos[2].SetActive(false);
             videos[3].SetActive(true);
-            chapterText.text = "How to row";
+            chapterText.text = "Rowing Phases";
 
         }
         else if (currentVideo == startCatch)

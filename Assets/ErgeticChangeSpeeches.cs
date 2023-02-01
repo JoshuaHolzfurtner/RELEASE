@@ -50,7 +50,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public void nextAnim()
     {
         scriptCounterAnim++;
-        animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
+        //animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
         CheckDryExercise(scriptCounterAnim);
         if (scriptCounterAnim == indexNothing)
         {
@@ -103,7 +103,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
             ergeticMenu.SetActive(false);
             scriptCounterAnim = 0;
             scriptCounterSpeech = 0;
-
+            animTrainer.SetInteger("index", scriptCounterSpeech);//
             phaseText.text = "How to row";
 
             continueMenu.SetActive(true);
@@ -117,51 +117,47 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         scriptCounterAnim--;
         CheckDryExercise(scriptCounterAnim);
 
-        animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
-        if (scriptCounterAnim == (indexCatch-1))
+        //animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
+        
+        if ((scriptCounterAnim+1) == indexHandle)
         {
             animRower.AnimateNothing();
-            handleGrip.SetActive(false);
-            phaseText.text = "Grab Handle";
-
-        }
-        else if (scriptCounterAnim == (indexNothing-1))
-        {
-            animRower.AnimateNothing();
-        }
-        else if (scriptCounterAnim == (indexHandle - 1))
-        {
-            animRower.AnimateNothing();
-            handleGrip.SetActive(false);
             phaseText.text = "How to row";
+            handleGrip.SetActive(false);
 
         }
-        else if (scriptCounterAnim == (indexDrive-1))
+        else if ((scriptCounterAnim+1) == indexNothingTwo)
+        {
+            animRower.AnimateNothing();
+            phaseText.text = "Grab Handle";
+            handleGrip.SetActive(true);
+
+        }
+        else if ((scriptCounterAnim+1) == indexCatch)
+        {
+            animRower.AnimateFullStroke();
+            phaseText.text = "Rowing Phases";
+        }
+        else if ((scriptCounterAnim+1) == indexDrive)
         {
             animRower.AnimateCatch();
             phaseText.text = "Catch";
 
         }
-        else if (scriptCounterAnim == (indexFinish-1))
+        else if ((scriptCounterAnim+1) == indexFinish)
         {
             animRower.AnimateDrive();
             phaseText.text = "Drive";
 
         }
-        else if (scriptCounterAnim == (indexFullStroke-1))
+        else if ((scriptCounterAnim+1) == indexFullStroke)
         {
             animRower.AnimateFinish();
             phaseText.text = "Finish";
 
         }
-        else if (scriptCounterAnim == 0)
-        {
-            //ergeticMenu.SetActive(false);
-            scriptCounterAnim = 1;
-            scriptCounterSpeech = 1;
-            //continueMenu.SetActive(true);
-            //ergeticElements.SetActive(false);
-        }
+        
+
     }
 
     public void CheckDryExercise(int index)
@@ -188,6 +184,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     {
         scriptCounterSpeech++;
         animTrainer.SetInteger("index", scriptCounterSpeech);
+        nextAnim();
     }
 
     public void Clickingleft()
@@ -198,5 +195,6 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         }
         scriptCounterSpeech--;
         animTrainer.SetInteger("index", scriptCounterSpeech);
+        backAnim();
     }
 }
