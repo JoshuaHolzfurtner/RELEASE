@@ -33,7 +33,8 @@ public class TrackHandle : MonoBehaviour
     public GameObject redLightDrive;
     public GameObject greenLightFinish;
     public GameObject redLightFinish;
-
+    public GameObject greenLightFullStroke;
+    public GameObject redLightFullStroke;
 
 
 
@@ -76,8 +77,14 @@ public class TrackHandle : MonoBehaviour
     private int pointsCounter;
 
     private bool strokeCatchChecked;
+    private bool correctFormCatch;
+    private bool correctFormDrive;
+    private bool correctFormFinish;
+    private bool correctFormFullStroke;
 
-    
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +117,12 @@ public class TrackHandle : MonoBehaviour
         pointsCounter = 0;
 
         strokeCatchChecked = false;
+        correctFormCatch = false;
+        correctFormDrive = true;
+        correctFormFinish = true;
+        correctFormFullStroke = false;
+
+
 
 
 
@@ -126,10 +139,10 @@ public class TrackHandle : MonoBehaviour
         DebugTextTen.text = headPlayer.rotation.z.ToString();  //Neigung Kopf nach Links rechts \|/
         */
         
-        heightHeadNow = headPlayer.position.y;
-        DebugTextNine.text = (heightHeadNow - heightHeadCatch).ToString();
+        //heightHeadNow = headPlayer.position.y;
+        //DebugTextNine.text = (heightHeadNow - heightHeadCatch).ToString();
         lastStrokeDuration += Time.deltaTime;
-        if((lastStrokeDuration> 0.3) && (strokeCatchChecked == false))
+        if((lastStrokeDuration> 0.6) && (strokeCatchChecked == false))
         {
             DebugTextSixteen.text = lastStrokeDuration.ToString();
             strokeCatchChecked = true;
@@ -141,16 +154,15 @@ public class TrackHandle : MonoBehaviour
 
             if ((distanceHandleHeadCatch - distanceHandleHeadNow < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadNow > -0.1))
             {
-                DebugTextThirteen.text = "TRUE";
-                //greenLightCatch.SetActive(true);
-                //redLightCatch.SetActive(false);
+                //DebugTextThirteen.text = "0.3Catch";
+                correctFormCatch = true;
 
             }
             else
             {
-                DebugTextThirteen.text = "FALSE";
-                //greenLightCatch.SetActive(false);
-                //redLightCatch.SetActive(true);
+                //DebugTextThirteen.text = "0.3NOTCaTCH";
+                correctFormCatch = false;
+
 
             }
         }
@@ -181,6 +193,7 @@ public class TrackHandle : MonoBehaviour
                 DebugTextSix.text = "DRIVE-TRUE";
                 greenLightDrive.SetActive(true);
                 redLightDrive.SetActive(false);
+                
 
             }
             else
@@ -197,11 +210,17 @@ public class TrackHandle : MonoBehaviour
             
             zDifferencesHeadHandle = currentZ - headPlayer.position.z;
             DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
-            if(zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
+            DebugTextThirteen.text = "NOtBoTH";
+            if (zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
             {
                 DebugTextSeventeen.text = "armsBack";
                 greenLightFinish.SetActive(true);
                 redLightFinish.SetActive(false);
+                if(correctFormCatch)
+                {
+                    DebugTextThirteen.text = "BoTHFORM";
+                    
+                }
             }
             else
             {
@@ -215,7 +234,7 @@ public class TrackHandle : MonoBehaviour
             strokesText.text = strokeCounter.ToString();
 
             //////////// to show full stroke duration
-            DebugTextTen.text = lastStrokeDuration.ToString();
+            //DebugTextTen.text = lastStrokeDuration.ToString();
 
             //Determine Intesity of stroke
             if (farthestBackZ >= -0.5f)
@@ -251,7 +270,7 @@ public class TrackHandle : MonoBehaviour
             strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
 
             lastStrokeDuration = 0f;
-
+            correctFormCatch = false;
 
             //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
             distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
