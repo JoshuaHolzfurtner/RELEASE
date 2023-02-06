@@ -211,6 +211,8 @@ public class TrackHandle : MonoBehaviour
             zDifferencesHeadHandle = currentZ - headPlayer.position.z;
             DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
             DebugTextThirteen.text = "NOtBoTH";
+            greenLightFullStroke.SetActive(false);
+            redLightFullStroke.SetActive(true);
             if (zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
             {
                 DebugTextSeventeen.text = "armsBack";
@@ -219,7 +221,9 @@ public class TrackHandle : MonoBehaviour
                 if(correctFormCatch)
                 {
                     DebugTextThirteen.text = "BoTHFORM";
-                    
+                    greenLightFullStroke.SetActive(true);
+                    redLightFullStroke.SetActive(false);
+
                 }
             }
             else
