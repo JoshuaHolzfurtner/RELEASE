@@ -17401,9 +17401,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackHandle_Update_m03FFCF16F4BC8FEBBDB0
 		float L_8;
 		L_8 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___lastStrokeDuration_49 = ((float)il2cpp_codegen_add(L_7, L_8));
-		// if((lastStrokeDuration> 0.6) && (strokeCatchChecked == false))
+		// if((lastStrokeDuration> 0.3) && (strokeCatchChecked == false))
 		float L_9 = __this->___lastStrokeDuration_49;
-		if ((!(((double)((double)L_9)) > ((double)(0.59999999999999998)))))
+		if ((!(((double)((double)L_9)) > ((double)(0.29999999999999999)))))
 		{
 			goto IL_0126;
 		}
@@ -17519,7 +17519,7 @@ IL_0126:
 		L_40 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_39, NULL);
 		NullCheck(L_38);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_38, L_40);
-		goto IL_0610;
+		goto IL_05ae;
 	}
 
 IL_0179:
@@ -17529,14 +17529,14 @@ IL_0179:
 		float L_42 = __this->___currentZ_43;
 		if ((!(((float)L_41) < ((float)L_42))))
 		{
-			goto IL_04cc;
+			goto IL_0439;
 		}
 	}
 	{
 		bool L_43 = __this->___direction_44;
 		if (!L_43)
 		{
-			goto IL_04cc;
+			goto IL_0439;
 		}
 	}
 	{
@@ -17544,7 +17544,7 @@ IL_0179:
 		float L_45 = __this->___currentZ_43;
 		if ((!(((float)L_44) <= ((float)L_45))))
 		{
-			goto IL_04cc;
+			goto IL_0439;
 		}
 	}
 	{
@@ -17552,7 +17552,7 @@ IL_0179:
 		float L_47 = __this->___currentZ_43;
 		if ((!(((float)L_46) <= ((float)L_47))))
 		{
-			goto IL_04cc;
+			goto IL_0439;
 		}
 	}
 	{
@@ -17560,7 +17560,7 @@ IL_0179:
 		float L_49 = __this->___currentZ_43;
 		if ((!(((float)L_48) <= ((float)L_49))))
 		{
-			goto IL_04cc;
+			goto IL_0439;
 		}
 	}
 	{
@@ -17711,7 +17711,7 @@ IL_0313:
 		float L_88 = __this->___farthestBackZ_41;
 		if ((!(((float)L_88) >= ((float)(-0.5f)))))
 		{
-			goto IL_03cc;
+			goto IL_039b;
 		}
 	}
 	{
@@ -17719,263 +17719,241 @@ IL_0313:
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_89 = __this->___intensityText_5;
 		NullCheck(L_89);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_89, _stringLiteral51FF93BA31BC2E58A55D96D8BEBCCD0531451AF4);
-		// strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_90 = __this->___strokeRateText_4;
-		float L_91 = __this->___lastStrokeDuration_49;
-		float L_92 = ((float)((60.0f)/L_91));
-		RuntimeObject* L_93 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_92);
-		String_t* L_94;
-		L_94 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralCB0A78B035105B2CCEB9174377B59BDBD1095C96, L_93, NULL);
-		NullCheck(L_90);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_90, L_94);
-		// lastStrokeDuration = 0f;
-		__this->___lastStrokeDuration_49 = (0.0f);
 		// pointsCounter += 25;
-		int32_t L_95 = __this->___pointsCounter_54;
-		__this->___pointsCounter_54 = ((int32_t)il2cpp_codegen_add(L_95, ((int32_t)25)));
+		int32_t L_90 = __this->___pointsCounter_54;
+		__this->___pointsCounter_54 = ((int32_t)il2cpp_codegen_add(L_90, ((int32_t)25)));
 		// pointsText.text = pointsCounter.ToString();
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_96 = __this->___pointsText_7;
-		int32_t* L_97 = (&__this->___pointsCounter_54);
-		String_t* L_98;
-		L_98 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_97, NULL);
-		NullCheck(L_96);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_96, L_98);
-		goto IL_0610;
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_91 = __this->___pointsText_7;
+		int32_t* L_92 = (&__this->___pointsCounter_54);
+		String_t* L_93;
+		L_93 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_92, NULL);
+		NullCheck(L_91);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_91, L_93);
+		goto IL_05ae;
 	}
 
-IL_03cc:
+IL_039b:
 	{
 		// else if ((farthestBackZ > -0.75f) && (farthestBackZ < -0.5f))
-		float L_99 = __this->___farthestBackZ_41;
-		if ((!(((float)L_99) > ((float)(-0.75f)))))
+		float L_94 = __this->___farthestBackZ_41;
+		if ((!(((float)L_94) > ((float)(-0.75f)))))
 		{
-			goto IL_0451;
+			goto IL_03ef;
 		}
 	}
 	{
-		float L_100 = __this->___farthestBackZ_41;
-		if ((!(((float)L_100) < ((float)(-0.5f)))))
+		float L_95 = __this->___farthestBackZ_41;
+		if ((!(((float)L_95) < ((float)(-0.5f)))))
 		{
-			goto IL_0451;
+			goto IL_03ef;
 		}
 	}
 	{
 		// intensityText.text = "MID";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_101 = __this->___intensityText_5;
-		NullCheck(L_101);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_101, _stringLiteral422F8024D398A940989A92BC41FE750AF1B493E8);
-		// strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_102 = __this->___strokeRateText_4;
-		float L_103 = __this->___lastStrokeDuration_49;
-		float L_104 = ((float)((60.0f)/L_103));
-		RuntimeObject* L_105 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_104);
-		String_t* L_106;
-		L_106 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralCB0A78B035105B2CCEB9174377B59BDBD1095C96, L_105, NULL);
-		NullCheck(L_102);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_102, L_106);
-		// lastStrokeDuration = 0f;
-		__this->___lastStrokeDuration_49 = (0.0f);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_96 = __this->___intensityText_5;
+		NullCheck(L_96);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_96, _stringLiteral422F8024D398A940989A92BC41FE750AF1B493E8);
 		// pointsCounter += 50;
-		int32_t L_107 = __this->___pointsCounter_54;
-		__this->___pointsCounter_54 = ((int32_t)il2cpp_codegen_add(L_107, ((int32_t)50)));
+		int32_t L_97 = __this->___pointsCounter_54;
+		__this->___pointsCounter_54 = ((int32_t)il2cpp_codegen_add(L_97, ((int32_t)50)));
 		// pointsText.text = pointsCounter.ToString();
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_108 = __this->___pointsText_7;
-		int32_t* L_109 = (&__this->___pointsCounter_54);
-		String_t* L_110;
-		L_110 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_109, NULL);
-		NullCheck(L_108);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_108, L_110);
-		goto IL_0610;
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_98 = __this->___pointsText_7;
+		int32_t* L_99 = (&__this->___pointsCounter_54);
+		String_t* L_100;
+		L_100 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_99, NULL);
+		NullCheck(L_98);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_98, L_100);
+		goto IL_05ae;
 	}
 
-IL_0451:
+IL_03ef:
 	{
 		// else if (farthestBackZ <= -0.75f)
-		float L_111 = __this->___farthestBackZ_41;
-		if ((!(((float)L_111) <= ((float)(-0.75f)))))
+		float L_101 = __this->___farthestBackZ_41;
+		if ((!(((float)L_101) <= ((float)(-0.75f)))))
 		{
-			goto IL_0610;
+			goto IL_05ae;
 		}
 	}
 	{
 		// intensityText.text = "HIGH";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_112 = __this->___intensityText_5;
-		NullCheck(L_112);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_112, _stringLiteralAD9DFF7E05E30E988BDFB1AD91BDF4A8F8ECE058);
-		// strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_113 = __this->___strokeRateText_4;
-		float L_114 = __this->___lastStrokeDuration_49;
-		float L_115 = ((float)((60.0f)/L_114));
-		RuntimeObject* L_116 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_115);
-		String_t* L_117;
-		L_117 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralCB0A78B035105B2CCEB9174377B59BDBD1095C96, L_116, NULL);
-		NullCheck(L_113);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_113, L_117);
-		// lastStrokeDuration = 0f;
-		__this->___lastStrokeDuration_49 = (0.0f);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_102 = __this->___intensityText_5;
+		NullCheck(L_102);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_102, _stringLiteralAD9DFF7E05E30E988BDFB1AD91BDF4A8F8ECE058);
 		// pointsCounter += 75;
-		int32_t L_118 = __this->___pointsCounter_54;
-		__this->___pointsCounter_54 = ((int32_t)il2cpp_codegen_add(L_118, ((int32_t)75)));
+		int32_t L_103 = __this->___pointsCounter_54;
+		__this->___pointsCounter_54 = ((int32_t)il2cpp_codegen_add(L_103, ((int32_t)75)));
 		// pointsText.text = pointsCounter.ToString();
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_119 = __this->___pointsText_7;
-		int32_t* L_120 = (&__this->___pointsCounter_54);
-		String_t* L_121;
-		L_121 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_120, NULL);
-		NullCheck(L_119);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_119, L_121);
-		goto IL_0610;
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_104 = __this->___pointsText_7;
+		int32_t* L_105 = (&__this->___pointsCounter_54);
+		String_t* L_106;
+		L_106 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_105, NULL);
+		NullCheck(L_104);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_104, L_106);
+		goto IL_05ae;
 	}
 
-IL_04cc:
+IL_0439:
 	{
 		// else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
-		float L_122 = __this->___lastPointZ_45;
-		float L_123 = __this->___currentZ_43;
-		if ((!(((float)L_122) > ((float)L_123))))
+		float L_107 = __this->___lastPointZ_45;
+		float L_108 = __this->___currentZ_43;
+		if ((!(((float)L_107) > ((float)L_108))))
 		{
-			goto IL_0610;
+			goto IL_05ae;
 		}
 	}
 	{
-		bool L_124 = __this->___direction_44;
-		if (L_124)
+		bool L_109 = __this->___direction_44;
+		if (L_109)
 		{
-			goto IL_0610;
+			goto IL_05ae;
 		}
 	}
 	{
-		float L_125 = __this->___lastLastPointZ_46;
-		float L_126 = __this->___currentZ_43;
-		if ((!(((float)L_125) >= ((float)L_126))))
+		float L_110 = __this->___lastLastPointZ_46;
+		float L_111 = __this->___currentZ_43;
+		if ((!(((float)L_110) >= ((float)L_111))))
 		{
-			goto IL_0610;
+			goto IL_05ae;
 		}
 	}
 	{
-		float L_127 = __this->___lastLastLastPointZ_47;
-		float L_128 = __this->___currentZ_43;
-		if ((!(((float)L_127) >= ((float)L_128))))
+		float L_112 = __this->___lastLastLastPointZ_47;
+		float L_113 = __this->___currentZ_43;
+		if ((!(((float)L_112) >= ((float)L_113))))
 		{
-			goto IL_0610;
+			goto IL_05ae;
 		}
 	}
 	{
-		float L_129 = __this->___lastLastLastLastPointZ_48;
-		float L_130 = __this->___currentZ_43;
-		if ((!(((float)L_129) >= ((float)L_130))))
+		float L_114 = __this->___lastLastLastLastPointZ_48;
+		float L_115 = __this->___currentZ_43;
+		if ((!(((float)L_114) >= ((float)L_115))))
 		{
-			goto IL_0610;
+			goto IL_05ae;
 		}
 	}
 	{
 		// strokeCatchChecked = false;
 		__this->___strokeCatchChecked_55 = (bool)0;
+		// strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_116 = __this->___strokeRateText_4;
+		float L_117 = __this->___lastStrokeDuration_49;
+		float L_118 = ((float)((60.0f)/L_117));
+		RuntimeObject* L_119 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_118);
+		String_t* L_120;
+		L_120 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralCB0A78B035105B2CCEB9174377B59BDBD1095C96, L_119, NULL);
+		NullCheck(L_116);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_116, L_120);
+		// lastStrokeDuration = 0f;
+		__this->___lastStrokeDuration_49 = (0.0f);
 		// distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_131 = __this->___trackedObject_31;
-		NullCheck(L_131);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_132;
-		L_132 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_131, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_133 = __this->___headPlayer_32;
-		NullCheck(L_133);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_134;
-		L_134 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_133, NULL);
-		float L_135;
-		L_135 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_132, L_134, NULL);
-		__this->___distanceHandleHeadCatch_34 = ((double)L_135);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_121 = __this->___trackedObject_31;
+		NullCheck(L_121);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122;
+		L_122 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_121, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_123 = __this->___headPlayer_32;
+		NullCheck(L_123);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_124;
+		L_124 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_123, NULL);
+		float L_125;
+		L_125 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_122, L_124, NULL);
+		__this->___distanceHandleHeadCatch_34 = ((double)L_125);
 		// if ((distanceHandleHeadCatch - distanceHandleHeadRelease < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadRelease > -0.1))
-		double L_136 = __this->___distanceHandleHeadCatch_34;
-		double L_137 = __this->___distanceHandleHeadRelease_33;
-		if ((!(((double)((double)il2cpp_codegen_subtract(L_136, L_137))) < ((double)(0.10000000000000001)))))
+		double L_126 = __this->___distanceHandleHeadCatch_34;
+		double L_127 = __this->___distanceHandleHeadRelease_33;
+		if ((!(((double)((double)il2cpp_codegen_subtract(L_126, L_127))) < ((double)(0.10000000000000001)))))
 		{
-			goto IL_059e;
+			goto IL_053c;
 		}
 	}
 	{
-		double L_138 = __this->___distanceHandleHeadCatch_34;
-		double L_139 = __this->___distanceHandleHeadRelease_33;
-		if ((!(((double)((double)il2cpp_codegen_subtract(L_138, L_139))) > ((double)(-0.10000000000000001)))))
+		double L_128 = __this->___distanceHandleHeadCatch_34;
+		double L_129 = __this->___distanceHandleHeadRelease_33;
+		if ((!(((double)((double)il2cpp_codegen_subtract(L_128, L_129))) > ((double)(-0.10000000000000001)))))
 		{
-			goto IL_059e;
+			goto IL_053c;
 		}
 	}
 	{
 		// DebugTextThree.text = "TRUE";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_140 = __this->___DebugTextThree_10;
-		NullCheck(L_140);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_140, _stringLiteralDA88A2D964F57B37C63183F5236085B715F076B8);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_130 = __this->___DebugTextThree_10;
+		NullCheck(L_130);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_130, _stringLiteralDA88A2D964F57B37C63183F5236085B715F076B8);
 		// greenLightCatch.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_141 = __this->___greenLightCatch_25;
-		NullCheck(L_141);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_141, (bool)1, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_131 = __this->___greenLightCatch_25;
+		NullCheck(L_131);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_131, (bool)1, NULL);
 		// redLightCatch.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_142 = __this->___redLightCatch_26;
-		NullCheck(L_142);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_142, (bool)0, NULL);
-		goto IL_05c6;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_132 = __this->___redLightCatch_26;
+		NullCheck(L_132);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_132, (bool)0, NULL);
+		goto IL_0564;
 	}
 
-IL_059e:
+IL_053c:
 	{
 		// DebugTextThree.text = "FALSE";
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_143 = __this->___DebugTextThree_10;
-		NullCheck(L_143);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_143, _stringLiteralA539038315AABE91ABF55F3F1AEE619EEBFC183A);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_133 = __this->___DebugTextThree_10;
+		NullCheck(L_133);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_133, _stringLiteralA539038315AABE91ABF55F3F1AEE619EEBFC183A);
 		// greenLightCatch.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_144 = __this->___greenLightCatch_25;
-		NullCheck(L_144);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_144, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_134 = __this->___greenLightCatch_25;
+		NullCheck(L_134);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_134, (bool)0, NULL);
 		// redLightCatch.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_145 = __this->___redLightCatch_26;
-		NullCheck(L_145);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_145, (bool)1, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_135 = __this->___redLightCatch_26;
+		NullCheck(L_135);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_135, (bool)1, NULL);
 	}
 
-IL_05c6:
+IL_0564:
 	{
 		// heightHeadCatch = headPlayer.position.y;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_146 = __this->___headPlayer_32;
-		NullCheck(L_146);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_147;
-		L_147 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_146, NULL);
-		float L_148 = L_147.___y_3;
-		__this->___heightHeadCatch_37 = ((double)L_148);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_136 = __this->___headPlayer_32;
+		NullCheck(L_136);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_137;
+		L_137 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_136, NULL);
+		float L_138 = L_137.___y_3;
+		__this->___heightHeadCatch_37 = ((double)L_138);
 		// DebugTextSeven.text = (heightHeadRelease-heightHeadCatch).ToString();
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_149 = __this->___DebugTextSeven_14;
-		double L_150 = __this->___heightHeadRelease_36;
-		double L_151 = __this->___heightHeadCatch_37;
-		V_0 = ((double)il2cpp_codegen_subtract(L_150, L_151));
-		String_t* L_152;
-		L_152 = Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339((&V_0), NULL);
-		NullCheck(L_149);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_149, L_152);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_139 = __this->___DebugTextSeven_14;
+		double L_140 = __this->___heightHeadRelease_36;
+		double L_141 = __this->___heightHeadCatch_37;
+		V_0 = ((double)il2cpp_codegen_subtract(L_140, L_141));
+		String_t* L_142;
+		L_142 = Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339((&V_0), NULL);
+		NullCheck(L_139);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_139, L_142);
 		// direction = true;
 		__this->___direction_44 = (bool)1;
 		// farthestBackZ = lastPointZ;
-		float L_153 = __this->___lastPointZ_45;
-		__this->___farthestBackZ_41 = L_153;
+		float L_143 = __this->___lastPointZ_45;
+		__this->___farthestBackZ_41 = L_143;
 	}
 
-IL_0610:
+IL_05ae:
 	{
 		// lastLastLastLastPointZ = lastLastLastPointZ;
-		float L_154 = __this->___lastLastLastPointZ_47;
-		__this->___lastLastLastLastPointZ_48 = L_154;
+		float L_144 = __this->___lastLastLastPointZ_47;
+		__this->___lastLastLastLastPointZ_48 = L_144;
 		// lastLastLastPointZ = lastLastPointZ;
-		float L_155 = __this->___lastLastPointZ_46;
-		__this->___lastLastLastPointZ_47 = L_155;
+		float L_145 = __this->___lastLastPointZ_46;
+		__this->___lastLastLastPointZ_47 = L_145;
 		// lastLastPointZ = lastPointZ;
-		float L_156 = __this->___lastPointZ_45;
-		__this->___lastLastPointZ_46 = L_156;
+		float L_146 = __this->___lastPointZ_45;
+		__this->___lastLastPointZ_46 = L_146;
 		// lastPointZ = currentZ;
-		float L_157 = __this->___currentZ_43;
-		__this->___lastPointZ_45 = L_157;
+		float L_147 = __this->___currentZ_43;
+		__this->___lastPointZ_45 = L_147;
 		// DebugTextOne.text = lastPointZ.ToString();
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_158 = __this->___DebugTextOne_8;
-		float* L_159 = (&__this->___lastPointZ_45);
-		String_t* L_160;
-		L_160 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_159, NULL);
-		NullCheck(L_158);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_158, L_160);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_148 = __this->___DebugTextOne_8;
+		float* L_149 = (&__this->___lastPointZ_45);
+		String_t* L_150;
+		L_150 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_149, NULL);
+		NullCheck(L_148);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_148, L_150);
 		// }
 		return;
 	}

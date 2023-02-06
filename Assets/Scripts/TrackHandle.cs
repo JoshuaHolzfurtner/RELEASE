@@ -129,7 +129,7 @@ public class TrackHandle : MonoBehaviour
         heightHeadNow = headPlayer.position.y;
         DebugTextNine.text = (heightHeadNow - heightHeadCatch).ToString();
         lastStrokeDuration += Time.deltaTime;
-        if((lastStrokeDuration> 0.6) && (strokeCatchChecked == false))
+        if((lastStrokeDuration> 0.3) && (strokeCatchChecked == false))
         {
             DebugTextSixteen.text = lastStrokeDuration.ToString();
             strokeCatchChecked = true;
@@ -194,20 +194,7 @@ public class TrackHandle : MonoBehaviour
             }
             //Track Distance betwean Handle and Head at Beginning of the Release-Phase
             distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
-            //DebugTextFour.text = distanceHandleHeadRelease.ToString();
-            /////////////////////////////////////////////////////////////
-            /*if(headPlayer.rotation.x < 0.2)
-            {
-                DebugTextSeven.text = "DRAWNBACK";
-            }
-            else
-            {
-                DebugTextSeven.text = "NOTBACK";
-
-            }*/
-
-            /////Check if Handle is fully pulled to Chest at the end of the Stroke
-            ///
+            
             zDifferencesHeadHandle = currentZ - headPlayer.position.z;
             DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
             if(zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
@@ -234,10 +221,6 @@ public class TrackHandle : MonoBehaviour
             if (farthestBackZ >= -0.5f)
             {
                 intensityText.text = "LOW";
-                 
-                strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-
-                lastStrokeDuration = 0f;
 
                 pointsCounter += 25;
                 pointsText.text = pointsCounter.ToString();
@@ -246,9 +229,7 @@ public class TrackHandle : MonoBehaviour
             else if ((farthestBackZ > -0.75f) && (farthestBackZ < -0.5f))
             {
                 intensityText.text = "MID";
-                strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-
-                lastStrokeDuration = 0f;
+                
 
                 pointsCounter += 50;
                 pointsText.text = pointsCounter.ToString();
@@ -257,9 +238,7 @@ public class TrackHandle : MonoBehaviour
             else if (farthestBackZ <= -0.75f)
             {
                 intensityText.text = "HIGH";
-                strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-
-                lastStrokeDuration = 0f;
+                
 
                 pointsCounter += 75;
                 pointsText.text = pointsCounter.ToString();
@@ -269,7 +248,9 @@ public class TrackHandle : MonoBehaviour
         else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
         {
             strokeCatchChecked = false;
+            strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
 
+            lastStrokeDuration = 0f;
 
 
             //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
