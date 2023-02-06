@@ -20305,6 +20305,7 @@ MonoBehaviour:
   startCatchDry: 12
   startDriveDry: 15
   startFinishDry: 18
+  startFullStrokeDry: 23
   startGeneral: 1
   startHandle: 2
   startGeneralTwo: 5
@@ -40523,7 +40524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1072593387
 Transform:
   m_ObjectHideFlags: 0
@@ -41525,6 +41526,7 @@ MonoBehaviour:
   startFinish: 16
   startFinishDry: 18
   startRelease: 19
+  startFullStrokeDry: 23
   tutorialOver: 24
   chapterText: {fileID: 1116910653}
   pageNumber: {fileID: 699012355}
@@ -51981,7 +51983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1363042311
 Transform:
   m_ObjectHideFlags: 0
@@ -63728,6 +63730,7 @@ MonoBehaviour:
   dryCatch: {fileID: 449074950}
   dryDrive: {fileID: 1763832986}
   dryFinish: {fileID: 5773919}
+  dryFullStroke: {fileID: 1072593386}
 --- !u!1 &1669400537
 GameObject:
   m_ObjectHideFlags: 0
@@ -100559,6 +100562,7 @@ MonoBehaviour:
   startCatchDry: 12
   startDriveDry: 15
   startFinishDry: 18
+  startFullStrokeDry: 23
 --- !u!33 &4218587765288292684
 MeshFilter:
   m_ObjectHideFlags: 0

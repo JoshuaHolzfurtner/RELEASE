@@ -14,6 +14,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     public int startCatchDry;
     public int startDriveDry;
     public int startFinishDry;
+    public int startFullStrokeDry;
 
     public int startGeneral;
     public int startHandle;
@@ -128,6 +129,10 @@ public class DiagrammAndTextControll : MonoBehaviour
         else if (index == startFinishDry)
         {
             dryExerciseController.ShowFinish();
+        }
+        else if (index == startFullStrokeDry)
+        {
+            dryExerciseController.ShowFullStroke();
         }
         else 
         {

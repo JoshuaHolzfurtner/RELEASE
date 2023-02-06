@@ -7,6 +7,8 @@ public class DisplayDryExercises : MonoBehaviour
     public GameObject dryCatch;
     public GameObject dryDrive;
     public GameObject dryFinish;
+    public GameObject dryFullStroke;
+
 
 
     public void ShowNone()
@@ -14,6 +16,8 @@ public class DisplayDryExercises : MonoBehaviour
         dryCatch.SetActive(false);
         dryDrive.SetActive(false);
         dryFinish.SetActive(false);
+        dryFullStroke.SetActive(false);
+
 
     }
 
@@ -22,6 +26,8 @@ public class DisplayDryExercises : MonoBehaviour
         dryCatch.SetActive(true);
         dryDrive.SetActive(false);
         dryFinish.SetActive(false);
+        dryFullStroke.SetActive(false);
+
 
     }
 
@@ -30,6 +36,8 @@ public class DisplayDryExercises : MonoBehaviour
         dryCatch.SetActive(false);
         dryDrive.SetActive(true);
         dryFinish.SetActive(false);
+        dryFullStroke.SetActive(false);
+
 
     }
 
@@ -38,7 +46,18 @@ public class DisplayDryExercises : MonoBehaviour
         dryCatch.SetActive(false);
         dryDrive.SetActive(false);
         dryFinish.SetActive(true);
+        dryFullStroke.SetActive(false);
+
 
     }
 
+    public void ShowFullStroke()
+    {
+        dryCatch.SetActive(false);
+        dryDrive.SetActive(false);
+        dryFinish.SetActive(false);
+        dryFullStroke.SetActive(true);
+
+
+    }
 }

@@ -26,6 +26,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
     public int startFinish;
     public int startFinishDry;
     public int startRelease;
+    public int startFullStrokeDry;
     public int tutorialOver;
 
     public TextMeshProUGUI chapterText;
@@ -111,6 +112,10 @@ public class SwitchDIfferentVideos : MonoBehaviour
         else if (index == startFinishDry)
         {
             dryExerciseController.ShowFinish();
+        }
+        else if (index == startFullStrokeDry)
+        {
+            dryExerciseController.ShowFullStroke();
         }
         else 
         {

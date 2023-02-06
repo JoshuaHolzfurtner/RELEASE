@@ -35,6 +35,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public int startCatchDry;
     public int startDriveDry;
     public int startFinishDry;
+    public int startFullStrokeDry;
 
 
 
@@ -173,6 +174,10 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         else if (index == startFinishDry)
         {
             dryExerciseController.ShowFinish();
+        }
+        else if (index == startFullStrokeDry)
+        {
+            dryExerciseController.ShowFullStroke();
         }
         else 
         {
