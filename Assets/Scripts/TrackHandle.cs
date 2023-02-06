@@ -75,6 +75,8 @@ public class TrackHandle : MonoBehaviour
     private int strokeCounter;
     private int pointsCounter;
 
+    private bool strokeCatchChecked;
+
     
 
     // Start is called before the first frame update
@@ -107,8 +109,11 @@ public class TrackHandle : MonoBehaviour
         strokeCounter = 0;
         pointsCounter = 0;
 
-        
-        
+        strokeCatchChecked = false;
+
+
+
+
 
     }
     //Hello
@@ -124,6 +129,31 @@ public class TrackHandle : MonoBehaviour
         heightHeadNow = headPlayer.position.y;
         DebugTextNine.text = (heightHeadNow - heightHeadCatch).ToString();
         lastStrokeDuration += Time.deltaTime;
+        if((lastStrokeDuration> 0.6) && (strokeCatchChecked == false))
+        {
+            DebugTextSixteen.text = lastStrokeDuration.ToString();
+            strokeCatchChecked = true;
+            distanceHandleHeadNow = Vector3.Distance(trackedObject.position, headPlayer.position);
+            DebugTextTwelve.text = distanceHandleHeadNow.ToString();
+            DebugTextEleven.text = distanceHandleHeadCatch.ToString();
+
+            
+
+            if ((distanceHandleHeadCatch - distanceHandleHeadNow < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadNow > -0.1))
+            {
+                DebugTextThirteen.text = "TRUE";
+                //greenLightCatch.SetActive(true);
+                //redLightCatch.SetActive(false);
+
+            }
+            else
+            {
+                DebugTextThirteen.text = "FALSE";
+                //greenLightCatch.SetActive(false);
+                //redLightCatch.SetActive(true);
+
+            }
+        }
         //DebugTextNine.text = (heightHeadRelease - heightHeadNow).ToString();
         currentZ = transform.position.z;
         if ((currentZ < farthestBackZ) && (direction == true))
@@ -238,6 +268,10 @@ public class TrackHandle : MonoBehaviour
         }
         else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
         {
+            strokeCatchChecked = false;
+
+
+
             //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
             distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
             //DebugTextFour.text = distanceHandleHeadCatch.ToString();
