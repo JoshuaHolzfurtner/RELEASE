@@ -81,7 +81,7 @@ public class TrackHandle : MonoBehaviour
     private bool correctFormDrive;
     private bool correctFormFinish;
     private bool correctFormFullStroke;
-
+    private int formFactor;
 
 
 
@@ -121,6 +121,7 @@ public class TrackHandle : MonoBehaviour
         correctFormDrive = true;
         correctFormFinish = true;
         correctFormFullStroke = false;
+        formFactor = 0;
 
 
 
@@ -224,6 +225,7 @@ public class TrackHandle : MonoBehaviour
                     DebugTextThirteen.text = "BoTHFORM";
                     greenLightFullStroke.SetActive(true);
                     redLightFullStroke.SetActive(false);
+                    formFactor = 1;
 
                 }
             }
@@ -246,7 +248,7 @@ public class TrackHandle : MonoBehaviour
             {
                 intensityText.text = "LOW";
 
-                pointsCounter += 25;
+                pointsCounter += (25*formFactor);
                 pointsText.text = pointsCounter.ToString();
 
             }
@@ -255,7 +257,7 @@ public class TrackHandle : MonoBehaviour
                 intensityText.text = "MID";
                 
 
-                pointsCounter += 50;
+                pointsCounter += (50*formFactor);
                 pointsText.text = pointsCounter.ToString();
 
             }
@@ -264,16 +266,17 @@ public class TrackHandle : MonoBehaviour
                 intensityText.text = "HIGH";
                 
 
-                pointsCounter += 75;
+                pointsCounter += (formFactor *75);
                 pointsText.text = pointsCounter.ToString();
 
             }
+            formFactor = 0;
         }
         else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
         {
             strokeCatchChecked = false;
             strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-
+            
             lastStrokeDuration = 0f;
             correctFormCatch = false;
 

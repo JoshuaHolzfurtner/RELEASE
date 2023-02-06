@@ -75926,7 +75926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4873
+      value: 0.481
       objectReference: {fileID: 0}
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: m_LocalPosition.y
@@ -75970,7 +75970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3666093704642933931, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
@@ -80181,7 +80181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2089110259
 Transform:
   m_ObjectHideFlags: 0
