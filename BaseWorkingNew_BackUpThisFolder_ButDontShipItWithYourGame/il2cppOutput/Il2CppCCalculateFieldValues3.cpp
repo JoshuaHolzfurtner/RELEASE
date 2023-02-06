@@ -30823,64 +30823,66 @@ struct TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___greenLightFullStroke_31;
 	// UnityEngine.GameObject TrackHandle::redLightFullStroke
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___redLightFullStroke_32;
+	// PlayerSounds TrackHandle::feedbackSounds
+	PlayerSounds_tDA381A299938882ADBB577C7D052D0F15295A81D* ___feedbackSounds_33;
 	// UnityEngine.Transform TrackHandle::trackedObject
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___trackedObject_33;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___trackedObject_34;
 	// UnityEngine.Transform TrackHandle::headPlayer
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___headPlayer_34;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___headPlayer_35;
 	// System.Double TrackHandle::distanceHandleHeadRelease
-	double ___distanceHandleHeadRelease_35;
+	double ___distanceHandleHeadRelease_36;
 	// System.Double TrackHandle::distanceHandleHeadCatch
-	double ___distanceHandleHeadCatch_36;
+	double ___distanceHandleHeadCatch_37;
 	// System.Double TrackHandle::distanceHandleHeadNow
-	double ___distanceHandleHeadNow_37;
+	double ___distanceHandleHeadNow_38;
 	// System.Double TrackHandle::heightHeadRelease
-	double ___heightHeadRelease_38;
+	double ___heightHeadRelease_39;
 	// System.Double TrackHandle::heightHeadCatch
-	double ___heightHeadCatch_39;
+	double ___heightHeadCatch_40;
 	// System.Double TrackHandle::heightHeadNow
-	double ___heightHeadNow_40;
+	double ___heightHeadNow_41;
 	// System.Double TrackHandle::zDifferencesHeadHandle
-	double ___zDifferencesHeadHandle_41;
+	double ___zDifferencesHeadHandle_42;
 	// System.Single TrackHandle::thresholdDirection
-	float ___thresholdDirection_42;
+	float ___thresholdDirection_43;
 	// System.Single TrackHandle::farthestBackZ
-	float ___farthestBackZ_43;
+	float ___farthestBackZ_44;
 	// System.Single TrackHandle::farthestFrontZ
-	float ___farthestFrontZ_44;
+	float ___farthestFrontZ_45;
 	// System.Single TrackHandle::currentZ
-	float ___currentZ_45;
+	float ___currentZ_46;
 	// System.Boolean TrackHandle::direction
-	bool ___direction_46;
+	bool ___direction_47;
 	// System.Single TrackHandle::lastPointZ
-	float ___lastPointZ_47;
+	float ___lastPointZ_48;
 	// System.Single TrackHandle::lastLastPointZ
-	float ___lastLastPointZ_48;
+	float ___lastLastPointZ_49;
 	// System.Single TrackHandle::lastLastLastPointZ
-	float ___lastLastLastPointZ_49;
+	float ___lastLastLastPointZ_50;
 	// System.Single TrackHandle::lastLastLastLastPointZ
-	float ___lastLastLastLastPointZ_50;
+	float ___lastLastLastLastPointZ_51;
 	// System.Single TrackHandle::lastStrokeDuration
-	float ___lastStrokeDuration_51;
+	float ___lastStrokeDuration_52;
 	// System.Single TrackHandle::timepointCatch
-	float ___timepointCatch_52;
+	float ___timepointCatch_53;
 	// System.Single TrackHandle::timepointDrive
-	float ___timepointDrive_53;
+	float ___timepointDrive_54;
 	// System.Single TrackHandle::timepointFinish
-	float ___timepointFinish_54;
+	float ___timepointFinish_55;
 	// System.Int32 TrackHandle::strokeCounter
-	int32_t ___strokeCounter_55;
+	int32_t ___strokeCounter_56;
 	// System.Int32 TrackHandle::pointsCounter
-	int32_t ___pointsCounter_56;
+	int32_t ___pointsCounter_57;
 	// System.Boolean TrackHandle::strokeCatchChecked
-	bool ___strokeCatchChecked_57;
+	bool ___strokeCatchChecked_58;
 	// System.Boolean TrackHandle::correctFormCatch
-	bool ___correctFormCatch_58;
+	bool ___correctFormCatch_59;
 	// System.Boolean TrackHandle::correctFormDrive
-	bool ___correctFormDrive_59;
+	bool ___correctFormDrive_60;
 	// System.Boolean TrackHandle::correctFormFinish
-	bool ___correctFormFinish_60;
+	bool ___correctFormFinish_61;
 	// System.Boolean TrackHandle::correctFormFullStroke
-	bool ___correctFormFullStroke_61;
+	bool ___correctFormFullStroke_62;
 };
 
 // OculusSampleFramework.TrackSegment
@@ -33009,9 +33011,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9169[12] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9170[4] = 
 {
 	static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distance_4)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseOne_5)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseTwo_6)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distanceText_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9171[58] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9171[59] = 
 {
-	static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeRateText_4)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___intensityText_5)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokesText_6)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsText_7)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextOne_8)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTwo_9)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextThree_10)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFour_11)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFive_12)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSix_13)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSeven_14)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextEight_15)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextNine_16)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTen_17)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextEleven_18)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTwelve_19)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextThirteen_20)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFourteen_21)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFifteen_22)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSixteen_23)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSeventeen_24)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightCatch_25)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightCatch_26)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightDrive_27)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightDrive_28)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightFinish_29)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightFinish_30)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightFullStroke_31)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightFullStroke_32)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___trackedObject_33)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___headPlayer_34)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadRelease_35)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadCatch_36)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadNow_37)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___heightHeadRelease_38)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___heightHeadCatch_39)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___heightHeadNow_40)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___zDifferencesHeadHandle_41)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___thresholdDirection_42)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestBackZ_43)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestFrontZ_44)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___currentZ_45)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___direction_46)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastPointZ_47)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastPointZ_48)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastPointZ_49)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastLastPointZ_50)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastStrokeDuration_51)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___timepointCatch_52)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___timepointDrive_53)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___timepointFinish_54)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCounter_55)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsCounter_56)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCatchChecked_57)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormCatch_58)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormDrive_59)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormFinish_60)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormFullStroke_61)),};
+	static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeRateText_4)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___intensityText_5)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokesText_6)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsText_7)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextOne_8)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTwo_9)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextThree_10)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFour_11)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFive_12)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSix_13)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSeven_14)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextEight_15)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextNine_16)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTen_17)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextEleven_18)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextTwelve_19)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextThirteen_20)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFourteen_21)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextFifteen_22)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSixteen_23)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___DebugTextSeventeen_24)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightCatch_25)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightCatch_26)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightDrive_27)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightDrive_28)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightFinish_29)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightFinish_30)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___greenLightFullStroke_31)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___redLightFullStroke_32)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___feedbackSounds_33)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___trackedObject_34)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___headPlayer_35)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadRelease_36)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadCatch_37)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___distanceHandleHeadNow_38)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___heightHeadRelease_39)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___heightHeadCatch_40)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___heightHeadNow_41)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___zDifferencesHeadHandle_42)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___thresholdDirection_43)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestBackZ_44)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___farthestFrontZ_45)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___currentZ_46)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___direction_47)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastPointZ_48)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastPointZ_49)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastPointZ_50)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastLastLastLastPointZ_51)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___lastStrokeDuration_52)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___timepointCatch_53)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___timepointDrive_54)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___timepointFinish_55)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCounter_56)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___pointsCounter_57)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___strokeCatchChecked_58)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormCatch_59)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormDrive_60)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormFinish_61)),static_cast<int32_t>(offsetof(TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F, ___correctFormFullStroke_62)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9172[9] = 
 {
 	static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___toFollow_4)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___offset_5)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotatedStartPosFollow_6)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotatedStartRotFollow_7)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___startPosdis_8)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___startRotdis_9)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotateToFollowPosition_10)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___rotateToFollowRotation_11)),static_cast<int32_t>(offsetof(UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67, ___toquatRotDif_12)),};

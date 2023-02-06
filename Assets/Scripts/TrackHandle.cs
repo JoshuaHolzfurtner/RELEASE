@@ -36,7 +36,7 @@ public class TrackHandle : MonoBehaviour
     public GameObject greenLightFullStroke;
     public GameObject redLightFullStroke;
 
-
+    public PlayerSounds feedbackSounds;
 
 
     public Transform trackedObject;
@@ -156,13 +156,14 @@ public class TrackHandle : MonoBehaviour
             {
                 //DebugTextThirteen.text = "0.3Catch";
                 correctFormCatch = true;
+                //feedbackSounds.footStep(1);
 
             }
             else
             {
                 //DebugTextThirteen.text = "0.3NOTCaTCH";
                 correctFormCatch = false;
-
+                //feedbackSounds.footStep(2);
 
             }
         }
