@@ -7890,6 +7890,7 @@ GameObject:
   - component: {fileID: 259715476}
   - component: {fileID: 259715477}
   - component: {fileID: 259715478}
+  - component: {fileID: 259715479}
   m_Layer: 0
   m_Name: HandleWR
   m_TagString: Untagged
@@ -8250,7 +8251,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingTeleported: {fileID: 259715471}
   teleportationGoal: {fileID: 1985348476}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0.1, z: 0}
+--- !u!114 &259715479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259715463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214fad316adee442a9075dbac40cff07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 0
 --- !u!4 &262694513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4207100755081235126, guid: da5040d052a534eed9a01507d163bc8b, type: 3}
@@ -11078,7 +11094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -11117,6 +11133,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[9].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 697021969}
@@ -11153,6 +11173,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 57436613}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[9].m_Target
+      value: 
+      objectReference: {fileID: 259715479}
+    - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -11182,6 +11206,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[8].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[9].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
@@ -11221,6 +11249,10 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[9].m_MethodName
+      value: ToMoveToSeparateFromReal
+      objectReference: {fileID: 0}
+    - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -11255,6 +11287,10 @@ PrefabInstance:
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[8].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[9].m_TargetAssemblyTypeName
+      value: MoveToSeparateFromReal, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -11326,6 +11362,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[8].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 168775999034508303, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[9].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 168775999048152099, guid: 6cdae152c904f8a4db9f6da2328f153d, type: 3}
@@ -39773,7 +39813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1038470606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60768,22 +60808,22 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0.08481261
-      BrowDownRight: 0.07691453
+      BrowDownLeft: 0
+      BrowDownRight: 0
       BrowInnerUp: 0
       BrowOuterUpLeft: 0
       BrowOuterUpRight: 0
-      CheekPuff: 0
+      CheekPuff: 0.0019439933
       CheekSquintLeft: 0
       CheekSquintRight: 0
-      EyeBlinkLeft: 0.040811613
-      EyeBlinkRight: 0.03812552
-      EyeLookDownLeft: 0.07711032
-      EyeLookDownRight: 0.07851324
-      EyeLookInLeft: 0.25064972
+      EyeBlinkLeft: 0.17131022
+      EyeBlinkRight: 0.17116684
+      EyeLookDownLeft: 0.4240653
+      EyeLookDownRight: 0.42748937
+      EyeLookInLeft: 0.19330132
       EyeLookInRight: 0
       EyeLookOutLeft: 0
-      EyeLookOutRight: 0.15894294
+      EyeLookOutRight: 0.1095628
       EyeLookUpLeft: 0
       EyeLookUpRight: 0
       EyeSquintLeft: 0
@@ -60793,37 +60833,37 @@ MonoBehaviour:
       JawForward: 0
       JawLeft: 0
       JawOpen: 0
-      JawRight: 0.05168745
+      JawRight: 0.0018478703
       MouthClose: 0
-      MouthDimpleLeft: 0
-      MouthDimpleRight: 0
+      MouthDimpleLeft: 0.015087714
+      MouthDimpleRight: 0.01451012
       MouthFrownLeft: 0
       MouthFrownRight: 0
       MouthFunnel: 0
-      MouthLeft: 0.0064063063
+      MouthLeft: 0.001673115
       MouthLowerDownLeft: 0
       MouthLowerDownRight: 0
-      MouthPressLeft: 0
-      MouthPressRight: 0
+      MouthPressLeft: 0.07757331
+      MouthPressRight: 0.06997066
       MouthPucker: 0
       MouthRight: 0
       MouthRollLower: 0
       MouthRollUpper: 0
-      MouthShrugLower: 0
-      MouthShrugUpper: 0
-      MouthSmileLeft: 0.06933751
-      MouthSmileRight: 0.044091262
+      MouthShrugLower: 0.10669777
+      MouthShrugUpper: 0.05818641
+      MouthSmileLeft: 0
+      MouthSmileRight: 0
       MouthStretchLeft: 0
       MouthStretchRight: 0
-      MouthUpperUpLeft: 0.0048879054
-      MouthUpperUpRight: 0.0057342537
-      NoseSneerLeft: 0.007991526
-      NoseSneerRight: 0.024635307
-      TongueOut: 0
-    HeadPosition: {x: -0.057399035, y: -0.08171059, z: -0.35800716}
-    HeadOrientation: {x: -0.069138765, y: -0.09077878, z: 0.03308119, w: 0.99291724}
-    LeftEyeOrientation: {x: -0.036413953, y: -0.048495036, z: -0.0017691551, w: -0.9981579}
-    RightEyeOrientation: {x: -0.035903577, y: -0.086116195, z: -0.0031054404, w: -0.9956331}
+      MouthUpperUpLeft: 0.027158847
+      MouthUpperUpRight: 0.028428348
+      NoseSneerLeft: 0.1343349
+      NoseSneerRight: 0.16869918
+      TongueOut: 0.0000060296948
+    HeadPosition: {x: 0.007837609, y: -0.1442445, z: -0.39694506}
+    HeadOrientation: {x: -0.36698604, y: -0.07850975, z: 0.0011781114, w: 0.92690676}
+    LeftEyeOrientation: {x: -0.13780779, y: -0.03313823, z: -0.00461333, w: -0.98989373}
+    RightEyeOrientation: {x: -0.13655828, y: -0.06879744, z: -0.009507095, w: -0.9881945}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
@@ -73578,9 +73618,9 @@ MonoBehaviour:
     m_Directory: Assets/Takes
     m_SceneNumber: 1
     m_ShotName: New Shot
-    m_TakeNumber: 57
+    m_TakeNumber: 58
     m_Description: 
-    m_Take: {fileID: 11400000, guid: 2b852aa866a98492895da407f317acc0, type: 2}
+    m_Take: {fileID: 11400000, guid: 5e3a379dfc3d64d1e9361a39b4cb6a31, type: 2}
     m_IterationBase: {fileID: 0}
     m_Director: {fileID: 1895606765}
   m_FrameRate:
@@ -73600,13 +73640,13 @@ PlayableDirector:
   m_GameObject: {fileID: 1895606763}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: -1968728977230668386, guid: 2b852aa866a98492895da407f317acc0, type: 2}
+  m_PlayableAsset: {fileID: 4571218917694088086, guid: 5e3a379dfc3d64d1e9361a39b4cb6a31, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 2345982755776340732, guid: 2b852aa866a98492895da407f317acc0, type: 2}
+  - key: {fileID: 6888549908935636344, guid: 5e3a379dfc3d64d1e9361a39b4cb6a31, type: 2}
     value: {fileID: 1930340670}
   m_ExposedReferences:
     m_References:
