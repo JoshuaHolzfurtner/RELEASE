@@ -30,13 +30,8 @@ public class TeleportToOther : MonoBehaviour
         yRot = teleportationGoal.transform.eulerAngles.y;//- 100f;
         //zRot = teleportationGoal.transform.eulerAngles.z;
         beingTeleported.transform.eulerAngles = new Vector3(xRot, yRot, zRot);
-        teleportationOn = true;
-        if (teleportationOn)
-        {
-            
-            
-            beingTeleported.position = (new Vector3(teleportationGoal.position.x, teleportationGoal.position.y, teleportationGoal.position.z)) +  offset;
-        }
+        beingTeleported.position = (new Vector3(teleportationGoal.position.x, teleportationGoal.position.y, teleportationGoal.position.z)) + offset;
+
     }
     public void stopTeleportation()
     {
