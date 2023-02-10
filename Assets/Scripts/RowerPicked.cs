@@ -10,21 +10,30 @@ public class RowerPicked : MonoBehaviour
     public GameObject midPointC2;
     public GameObject referencePointWR;
     public GameObject referencePointC2;
+    public GameObject backportWR;
+    public GameObject backportC2;
     public GameObject handleWR;
     public GameObject handleC2;
     public GameObject menuWR;
     public GameObject menuC2;
-    public GameObject allignWR;
-    public GameObject allignC2;
-
+    public GameObject menuWRGeneral;
+    public GameObject menuC2General;
+    public GameObject menuWRCall;
+    public GameObject menuC2Call;
+    public GameObject menuWRAllign;
+    public GameObject menuC2Allign;
+    public GameObject menuWRTutorials;
+    public GameObject menuC2Tutorials;
     public GameObject thisMenu;
 
     private string rowerPicked;
-    // Start is called before the first frame update
+
     void Start()
     {
         rowerPicked = "NONE";
     }
+
+
     public void WRPicked()
     {
         rowerPicked = "WR";
@@ -46,7 +55,8 @@ public class RowerPicked : MonoBehaviour
             referencePointWR.SetActive(true);
             handleWR.SetActive(true);
             menuWR.SetActive(true);
-            allignWR.SetActive(true);
+            menuWRAllign.SetActive(true);
+            backportWR.SetActive(true);
 
             thisMenu.SetActive(false);
 
@@ -54,12 +64,38 @@ public class RowerPicked : MonoBehaviour
         }
         else if (rowerPicked == "C2")
         {
-            machineC2.SetActive(true);
+            /*machineC2.SetActive(true);
             midPointC2.SetActive(true);
             referencePointC2.SetActive(true);
             handleC2.SetActive(true);
             menuC2.SetActive(true);
             allignC2.SetActive(true);
+            thisMenu.SetActive(false);*/
+
+            midPointWR.transform.position = midPointWR.transform.position;
+            referencePointWR.transform.position = referencePointC2.transform.position;
+            handleWR.transform.position = handleC2.transform.position;
+            backportWR.transform.position = backportC2.transform.position;
+
+            machineC2.SetActive(true);
+            midPointWR.SetActive(true);
+            referencePointWR.SetActive(true);
+            handleWR.SetActive(true);
+            menuWR.SetActive(true);
+            menuWRAllign.SetActive(true);
+            backportWR.SetActive(true);
+
+
+            menuWRGeneral.transform.position = menuC2General.transform.position;
+            menuWRCall.transform.position = menuC2Call.transform.position;
+            menuWRAllign.transform.position = menuC2Allign.transform.position;
+            menuWRTutorials.transform.position = menuC2Tutorials.transform.position;
+
+
+
+
+
+
             thisMenu.SetActive(false);
 
         }
