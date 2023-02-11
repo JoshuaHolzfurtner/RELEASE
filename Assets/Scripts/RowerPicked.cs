@@ -14,6 +14,10 @@ public class RowerPicked : MonoBehaviour
     public GameObject backportC2;
     public GameObject handleWR;
     public GameObject handleC2;
+    public GameObject rowerFigureWR; //animated rower switches psoition with grip handle in ergetic
+    public GameObject rowerFigureC2;
+    public GameObject gripWR;
+    public GameObject gripC2;
     public GameObject menuWR;
     public GameObject menuC2;
     public GameObject menuWRGeneral;
@@ -91,7 +95,8 @@ public class RowerPicked : MonoBehaviour
             menuWRCall.transform.rotation = menuC2Call.transform.rotation;
             menuWRAllign.transform.position = menuC2Allign.transform.position;
             menuWRTutorials.transform.position = menuC2Tutorials.transform.position;
-
+            rowerFigureWR.transform.position = rowerFigureC2.transform.position;
+            gripWR.transform.position = gripC2.transform.position;
 
 
 
