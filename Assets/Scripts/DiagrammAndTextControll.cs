@@ -142,7 +142,7 @@ public class DiagrammAndTextControll : MonoBehaviour
 
     public void CheckDiagramms(int index)
     {
-        if (index == startGeneral || index == startGeneralTwo)
+        if (index == startGeneral)
         {
             diagrammsBeginning.SetActive(true);
             diagrammsHandle.SetActive(false);
@@ -160,6 +160,16 @@ public class DiagrammAndTextControll : MonoBehaviour
             diagrammsDrive.SetActive(false);
             diagrammsFinish.SetActive(false);
             diagrammsRelease.SetActive(false);
+        }
+        else if (index == startGeneralTwo)
+        {
+            diagrammsBeginning.SetActive(true);
+            diagrammsHandle.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            diagrammsRelease.SetActive(false);
+
         }
         else if (index == startCatch)
         {

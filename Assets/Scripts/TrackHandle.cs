@@ -140,9 +140,9 @@ public class TrackHandle : MonoBehaviour
         DebugTextTen.text = headPlayer.rotation.z.ToString();  //Neigung Kopf nach Links rechts \|/
         */
         
-        //heightHeadNow = headPlayer.position.y;
-        //DebugTextNine.text = (heightHeadNow - heightHeadCatch).ToString();
         lastStrokeDuration += Time.deltaTime;
+
+        //Catch Check for Main Game and Fullstroke
         if((lastStrokeDuration> 0.6) && (strokeCatchChecked == false))
         {
             DebugTextSixteen.text = lastStrokeDuration.ToString();
@@ -191,18 +191,20 @@ public class TrackHandle : MonoBehaviour
           
             if (heightHeadRelease- heightHeadCatch < -0.1)
             {
-                DebugTextSix.text = "DRIVE-TRUE";
+                //DebugTextSix.text = "DRIVE-TRUE";
                 greenLightDrive.SetActive(true);
                 redLightDrive.SetActive(false);
+                correctFormCatch = true;
                 
 
             }
             else
             {
                 
-                DebugTextSix.text = "DRIVE-FALSE";
+                //DebugTextSix.text = "DRIVE-FALSE";
                 greenLightDrive.SetActive(false);
                 redLightDrive.SetActive(true);
+                correctFormCatch = false;
 
 
             }
@@ -210,18 +212,18 @@ public class TrackHandle : MonoBehaviour
             distanceHandleHeadRelease = Vector3.Distance(trackedObject.position, headPlayer.position);
             
             zDifferencesHeadHandle = currentZ - headPlayer.position.z;
-            DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
-            DebugTextThirteen.text = "NOtBoTH";
+            //DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
+            //DebugTextThirteen.text = "NotBoTH";
             greenLightFullStroke.SetActive(false);
             redLightFullStroke.SetActive(true);
             if (zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
             {
-                DebugTextSeventeen.text = "armsBack";
+                //DebugTextSeventeen.text = "armsBack";
                 greenLightFinish.SetActive(true);
                 redLightFinish.SetActive(false);
                 if(correctFormCatch)
                 {
-                    DebugTextThirteen.text = "BoTHFORM";
+                    //DebugTextThirteen.text = "BoTHFORM";
                     greenLightFullStroke.SetActive(true);
                     redLightFullStroke.SetActive(false);
                     formFactor = 1;
@@ -230,7 +232,7 @@ public class TrackHandle : MonoBehaviour
             }
             else
             {
-                DebugTextSeventeen.text = "armsAway";
+                //DebugTextSeventeen.text = "armsAway";
                 greenLightFinish.SetActive(false);
                 redLightFinish.SetActive(true);
             }
@@ -270,19 +272,6 @@ public class TrackHandle : MonoBehaviour
 
             }
             formFactor = 0;
-        }
-        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
-        {
-            strokeCatchChecked = false;
-            strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
-            
-            lastStrokeDuration = 0f;
-            correctFormCatch = false;
-
-            //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
-            distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
-            //DebugTextFour.text = distanceHandleHeadCatch.ToString();
-
             if ((distanceHandleHeadCatch - distanceHandleHeadRelease < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadRelease > -0.1))
             {
                 DebugTextThree.text = "TRUE";
@@ -297,6 +286,20 @@ public class TrackHandle : MonoBehaviour
                 redLightCatch.SetActive(true);
 
             }
+        }
+        else if((lastPointZ > currentZ) && (direction == false) && (lastLastPointZ >= currentZ) && (lastLastLastPointZ >= currentZ) && (lastLastLastLastPointZ >= currentZ))
+        {
+            strokeCatchChecked = false;
+            strokeRateText.text = string.Format("{0:0}", (60 / lastStrokeDuration));
+            
+            lastStrokeDuration = 0f;
+            correctFormCatch = false;
+
+            //Track Distance betwean Handle and Head at Beginning of the Catch-Phase
+            distanceHandleHeadCatch = Vector3.Distance(trackedObject.position, headPlayer.position);
+            //DebugTextFour.text = distanceHandleHeadCatch.ToString();
+
+            
 
             
             /////////////////////////////////////////////////////////////
@@ -306,6 +309,15 @@ public class TrackHandle : MonoBehaviour
             ///////////////////////////////////////////////////////
             direction = true;
             farthestBackZ = lastPointZ;
+            /*greenLightCatch.SetActive(false);
+            redLightCatch.SetActive(false);
+            greenLightDrive.SetActive(false);
+            redLightDrive.SetActive(false);
+            greenLightFinish.SetActive(false);
+            redLightFinish.SetActive(false);
+            greenLightFullStroke.SetActive(false);
+            redLightFullStroke.SetActive(false);*/
+
         }
 
         lastLastLastLastPointZ = lastLastLastPointZ;

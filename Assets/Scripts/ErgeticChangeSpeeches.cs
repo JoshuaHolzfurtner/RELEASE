@@ -10,6 +10,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
 
     public GameObject handleGrip;
     public TextMeshProUGUI phaseText;
+    public TextMeshProUGUI pageIndexText;
     public GameObject ergeticElements;
     
     public GameObject ergeticMenu;
@@ -51,6 +52,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public void nextAnim()
     {
         scriptCounterAnim++;
+        pageIndexText.text = scriptCounterAnim.ToString();
         //animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
         CheckDryExercise(scriptCounterAnim);
         if (scriptCounterAnim == indexNothing)
@@ -116,6 +118,8 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public void backAnim()
     {
         scriptCounterAnim--;
+        pageIndexText.text = scriptCounterAnim.ToString();
+
         CheckDryExercise(scriptCounterAnim);
 
         //animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
