@@ -38,6 +38,8 @@ public class DiagrammAndTextControll : MonoBehaviour
     public string[] textsExplainRow;
 
     public TextMeshProUGUI tutorialText;
+    public TextMeshProUGUI pageIndexText;
+
 
     public GameObject[] charPics;
 
@@ -62,6 +64,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     {
         counterText = 1;
         tutorialText.text = textsExplainRow[1];
+        pageIndexText.text = counterText.ToString();
         charPics[0].SetActive(true);
         ChangePicMan();
 
@@ -76,12 +79,15 @@ public class DiagrammAndTextControll : MonoBehaviour
         CheckDryExercise(counterText);
         CheckDiagramms(counterText);
         tutorialText.text = textsExplainRow[counterText];
+        pageIndexText.text = counterText.ToString();
+
         if (counterText == (textsExplainRow.Length-1))
         {
             nextMenu.SetActive(true);
             counterText = 1;
             thisTutorialVariant.SetActive(false);
             thisMenu.SetActive(false);
+            pageIndexText.text = counterText.ToString();
 
         }
 
@@ -94,6 +100,8 @@ public class DiagrammAndTextControll : MonoBehaviour
         CheckDryExercise(counterText);
         CheckDiagrammsBackwards(counterText);
         tutorialText.text = textsExplainRow[counterText];
+        pageIndexText.text = counterText.ToString();
+
         if (counterText == 1)
         {
             //lastMenu.SetActive(true);

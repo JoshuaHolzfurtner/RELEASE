@@ -267,7 +267,7 @@ public class TrackHandle : MonoBehaviour
                 intensityText.text = "HIGH";
                 
 
-                pointsCounter += (formFactor *75);
+                pointsCounter += (formFactor * 75);
                 pointsText.text = pointsCounter.ToString();
 
             }
