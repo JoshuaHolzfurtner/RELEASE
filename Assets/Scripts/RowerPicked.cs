@@ -72,7 +72,7 @@ public class RowerPicked : MonoBehaviour
             allignC2.SetActive(true);
             thisMenu.SetActive(false);*/
 
-            midPointWR.transform.position = midPointWR.transform.position;
+            midPointWR.transform.position = midPointC2.transform.position;
             referencePointWR.transform.position = referencePointC2.transform.position;
             handleWR.transform.position = handleC2.transform.position;
             backportWR.transform.position = backportC2.transform.position;
@@ -88,6 +88,7 @@ public class RowerPicked : MonoBehaviour
 
             menuWRGeneral.transform.position = menuC2General.transform.position;
             menuWRCall.transform.position = menuC2Call.transform.position;
+            menuWRCall.transform.rotation = menuC2Call.transform.rotation;
             menuWRAllign.transform.position = menuC2Allign.transform.position;
             menuWRTutorials.transform.position = menuC2Tutorials.transform.position;
 
