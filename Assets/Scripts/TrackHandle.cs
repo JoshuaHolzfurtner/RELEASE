@@ -49,7 +49,7 @@ public class TrackHandle : MonoBehaviour
 
     private double heightHeadRelease;
     private double heightHeadCatch;
-    private double heightHeadNow;
+    private double heightHeadMaxDuringCatch;
 
     private double zDifferencesHeadHandle;
     public float thresholdDirection; //Distance to last point still acceptable so were still moving in the same direction
@@ -94,7 +94,7 @@ public class TrackHandle : MonoBehaviour
         distanceHandleHeadNow = Vector3.Distance(trackedObject.position, headPlayer.position);
         heightHeadRelease = headPlayer.position.y;
         heightHeadCatch = headPlayer.position.y;
-        heightHeadNow = headPlayer.position.y;
+        heightHeadMaxDuringCatch = headPlayer.position.y;
         zDifferencesHeadHandle = 0;
 
         thresholdDirection = 0f;
@@ -174,22 +174,21 @@ public class TrackHandle : MonoBehaviour
         {
             farthestBackZ = currentZ;
             intensityText.text = farthestBackZ.ToString();
-            /*if ((heightHeadNow - heightHeadCatch < 0.1) && (currentZ < timepointDrive))
+
+            //New
+            if(heightHeadCatch < headPlayer.position.y)
             {
-
-                DebugTextNine.text = timepointDrive.ToString();
-                distanceHandleHeadNow = Vector3.Distance(trackedObject.position, headPlayer.position);
-
-            }*/
-            
+                heightHeadCatch = headPlayer.position.y;
+            }
 
 
         }
 
         else if((lastPointZ < currentZ) && (direction == true) && (lastLastPointZ <= currentZ) && (lastLastLastPointZ <= currentZ) && (lastLastLastLastPointZ <= currentZ)) // we start moving forward on the z-axis again
         {
-            //supposed to check if Player draws shoulders back (-> lowers ead automaticly)
+            //supposed to check if Player draws shoulders back (-> lowers head automaticly)
             heightHeadRelease = headPlayer.position.y;
+          
             if (heightHeadRelease- heightHeadCatch < -0.1)
             {
                 DebugTextSix.text = "DRIVE-TRUE";
@@ -243,7 +242,7 @@ public class TrackHandle : MonoBehaviour
             //////////// to show full stroke duration
             //DebugTextTen.text = lastStrokeDuration.ToString();
 
-            //Determine Intesity of stroke
+            //Determine Intesity of stroke//
             if (farthestBackZ >= -0.5f)
             {
                 intensityText.text = "LOW";
