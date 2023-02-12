@@ -157,14 +157,12 @@ public class TrackHandle : MonoBehaviour
             {
                 //DebugTextThirteen.text = "0.3Catch";
                 correctFormCatch = true;
-                //feedbackSounds.footStep(1);
 
             }
             else
             {
                 //DebugTextThirteen.text = "0.3NOTCaTCH";
                 correctFormCatch = false;
-                //feedbackSounds.footStep(2);
 
             }
         }
@@ -188,12 +186,14 @@ public class TrackHandle : MonoBehaviour
         {
             //supposed to check if Player draws shoulders back (-> lowers head automaticly)
             heightHeadRelease = headPlayer.position.y;
-          
+            greenLightDrive.SetActive(false);
+            redLightDrive.SetActive(false);
+
             if (heightHeadRelease- heightHeadCatch < -0.1)
             {
                 //DebugTextSix.text = "DRIVE-TRUE";
+
                 greenLightDrive.SetActive(true);
-                redLightDrive.SetActive(false);
                 correctFormCatch = true;
                 
 
@@ -202,7 +202,6 @@ public class TrackHandle : MonoBehaviour
             {
                 
                 //DebugTextSix.text = "DRIVE-FALSE";
-                greenLightDrive.SetActive(false);
                 redLightDrive.SetActive(true);
                 correctFormCatch = false;
 
@@ -214,26 +213,30 @@ public class TrackHandle : MonoBehaviour
             zDifferencesHeadHandle = currentZ - headPlayer.position.z;
             //DebugTextFifteen.text = zDifferencesHeadHandle.ToString();
             //DebugTextThirteen.text = "NotBoTH";
+            greenLightFinish.SetActive(false);
+            redLightFinish.SetActive(false);
             greenLightFullStroke.SetActive(false);
-            redLightFullStroke.SetActive(true);
+            redLightFullStroke.SetActive(false);
+
             if (zDifferencesHeadHandle <0.3 && zDifferencesHeadHandle>-0.3)
             {
                 //DebugTextSeventeen.text = "armsBack";
                 greenLightFinish.SetActive(true);
-                redLightFinish.SetActive(false);
                 if(correctFormCatch)
                 {
                     //DebugTextThirteen.text = "BoTHFORM";
                     greenLightFullStroke.SetActive(true);
-                    redLightFullStroke.SetActive(false);
                     formFactor = 1;
 
+                }
+                else
+                {
+                    redLightFullStroke.SetActive(true);
                 }
             }
             else
             {
                 //DebugTextSeventeen.text = "armsAway";
-                greenLightFinish.SetActive(false);
                 redLightFinish.SetActive(true);
             }
             ////////////////////
@@ -272,18 +275,19 @@ public class TrackHandle : MonoBehaviour
 
             }
             formFactor = 0;
+            //Dry Catch Condition
+            greenLightCatch.SetActive(false);
+            redLightCatch.SetActive(false);
             if ((distanceHandleHeadCatch - distanceHandleHeadRelease < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadRelease > -0.1))
             {
-                DebugTextThree.text = "TRUE";
+                //DebugTextThree.text = "TRUE";
                 greenLightCatch.SetActive(true);
-                redLightCatch.SetActive(false);
 
             }
             else
             {
-                DebugTextThree.text = "FALSE";
+                //DebugTextThree.text = "FALSE";
                 greenLightCatch.SetActive(false);
-                redLightCatch.SetActive(true);
 
             }
         }
