@@ -69,7 +69,7 @@ public class SwitchDIfferentVideos : MonoBehaviour
             nextMenu.SetActive(true);
             chapterText.text = "how to row";
             pageNumber.text = currentVideo.ToString();
-            alternateAvatar.SetActive(true);
+            //alternateAvatar.SetActive(true);
 
         }
 

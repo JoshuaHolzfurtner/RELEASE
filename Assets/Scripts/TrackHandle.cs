@@ -238,6 +238,7 @@ public class TrackHandle : MonoBehaviour
             {
                 //DebugTextSeventeen.text = "armsAway";
                 redLightFinish.SetActive(true);
+                redLightFullStroke.SetActive(true);
             }
             ////////////////////
             direction = false;
@@ -287,7 +288,7 @@ public class TrackHandle : MonoBehaviour
             else
             {
                 //DebugTextThree.text = "FALSE";
-                greenLightCatch.SetActive(false);
+                redLightCatch.SetActive(true);
 
             }
         }
@@ -313,14 +314,7 @@ public class TrackHandle : MonoBehaviour
             ///////////////////////////////////////////////////////
             direction = true;
             farthestBackZ = lastPointZ;
-            /*greenLightCatch.SetActive(false);
-            redLightCatch.SetActive(false);
-            greenLightDrive.SetActive(false);
-            redLightDrive.SetActive(false);
-            greenLightFinish.SetActive(false);
-            redLightFinish.SetActive(false);
-            greenLightFullStroke.SetActive(false);
-            redLightFullStroke.SetActive(false);*/
+
 
         }
 
