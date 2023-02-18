@@ -150,13 +150,14 @@ public class TrackHandle : MonoBehaviour
             distanceHandleHeadNow = Vector3.Distance(trackedObject.position, headPlayer.position);
             DebugTextTwelve.text = distanceHandleHeadNow.ToString();
             DebugTextEleven.text = distanceHandleHeadCatch.ToString();
+            strokeCounter++; //now only counts strokes that last at least 0.6 seconds
 
-            
 
             if ((distanceHandleHeadCatch - distanceHandleHeadNow < 0.1) && (distanceHandleHeadCatch - distanceHandleHeadNow > -0.1))
             {
                 //DebugTextThirteen.text = "0.3Catch";
                 correctFormCatch = true;
+                
 
             }
             else
@@ -189,7 +190,7 @@ public class TrackHandle : MonoBehaviour
             greenLightDrive.SetActive(false);
             redLightDrive.SetActive(false);
 
-            if (heightHeadRelease- heightHeadCatch < -0.1)
+            if (heightHeadRelease- heightHeadCatch < -0.05)
             {
                 //DebugTextSix.text = "DRIVE-TRUE";
 
@@ -242,7 +243,7 @@ public class TrackHandle : MonoBehaviour
             }
             ////////////////////
             direction = false;
-            strokeCounter++;
+            //strokeCounter++;
             strokesText.text = strokeCounter.ToString();
 
             //////////// to show full stroke duration

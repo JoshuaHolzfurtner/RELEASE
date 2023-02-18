@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
     public bool timeHasBeenReset;
     public float resetSeconds;
     public TrackHandle handleForReset;
+    
     void Start()
     {
         timeformats.Add(TimerFormats.Whole, "0");
@@ -29,7 +30,7 @@ public class Timer : MonoBehaviour
         timeformats.Add(TimerFormats.HundrethsDecimal, "0.00");
         timerStopped = true;
         timeHasBeenReset = false;
-        resetSeconds = 5f;
+        resetSeconds = 1f;
         ResetTimer();//to start whenever it opens
         handleForReset.ResetAll();
         
@@ -67,6 +68,7 @@ public class Timer : MonoBehaviour
             SetTimerText();
             timerText.color = Color.red;
             enabled = false;
+            handleForReset.enabled = false;
         }
         SetTimerText();
     }
@@ -103,10 +105,13 @@ public class Timer : MonoBehaviour
     }
     public void ResetTimer()
     {
+        enabled = true;
         currentTime = 0;
         SetTimerText();
+        timerText.color = Color.green;
         timerStopped = true;
         timeHasBeenReset = true;
+        handleForReset.enabled = true;
         handleForReset.ResetAll();
     }
 }
