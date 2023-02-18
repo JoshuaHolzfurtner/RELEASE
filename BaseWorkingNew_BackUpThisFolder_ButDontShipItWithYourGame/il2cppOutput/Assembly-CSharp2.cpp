@@ -4755,28 +4755,30 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 {
 	// TMPro.TextMeshProUGUI Timer::timerText
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText_4;
+	// TMPro.TextMeshProUGUI Timer::colorReferenceText
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___colorReferenceText_5;
 	// System.Single Timer::currentTime
-	float ___currentTime_5;
+	float ___currentTime_6;
 	// System.Boolean Timer::countDown
-	bool ___countDown_6;
+	bool ___countDown_7;
 	// System.Boolean Timer::hasLimit
-	bool ___hasLimit_7;
+	bool ___hasLimit_8;
 	// System.Single Timer::timerLimit
-	float ___timerLimit_8;
+	float ___timerLimit_9;
 	// System.Boolean Timer::hasFormat
-	bool ___hasFormat_9;
+	bool ___hasFormat_10;
 	// Timer/TimerFormats Timer::format
-	int32_t ___format_10;
+	int32_t ___format_11;
 	// System.Collections.Generic.Dictionary`2<Timer/TimerFormats,System.String> Timer::timeformats
-	Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* ___timeformats_11;
+	Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* ___timeformats_12;
 	// System.Boolean Timer::timerStopped
-	bool ___timerStopped_12;
+	bool ___timerStopped_13;
 	// System.Boolean Timer::timeHasBeenReset
-	bool ___timeHasBeenReset_13;
+	bool ___timeHasBeenReset_14;
 	// System.Single Timer::resetSeconds
-	float ___resetSeconds_14;
+	float ___resetSeconds_15;
 	// TrackHandle Timer::handleForReset
-	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_15;
+	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_16;
 };
 
 // TrackDistance
@@ -7471,8 +7473,6 @@ inline String_t* Dictionary_2_get_Item_m176207973466438B618FD75A9BEBF47F996892BD
 }
 // System.Int32 UnityEngine.Mathf::FloorToInt(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___f0, const RuntimeMethod* method) ;
-// UnityEngine.Color UnityEngine.Color::get_green()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<Timer/TimerFormats,System.String>::.ctor()
 inline void Dictionary_2__ctor_mC1B17B735B25D9813B06A0115B766EED15B2FD35 (Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* __this, const RuntimeMethod* method)
 {
@@ -16680,27 +16680,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Start_m6820D211A06B2E5E24795D7EBE6
 	}
 	{
 		// timeformats.Add(TimerFormats.Whole, "0");
-		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_0 = __this->___timeformats_11;
+		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_0 = __this->___timeformats_12;
 		NullCheck(L_0);
 		Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332(L_0, 0, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024, Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332_RuntimeMethod_var);
 		// timeformats.Add(TimerFormats.TenthDecimal, "0.00");
-		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_1 = __this->___timeformats_11;
+		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_1 = __this->___timeformats_12;
 		NullCheck(L_1);
 		Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332(L_1, 1, _stringLiteral86B02B47B04CB284EE80BAD91A6C009CF408644D, Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332_RuntimeMethod_var);
 		// timeformats.Add(TimerFormats.HundrethsDecimal, "0.00");
-		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_2 = __this->___timeformats_11;
+		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_2 = __this->___timeformats_12;
 		NullCheck(L_2);
 		Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332(L_2, 2, _stringLiteral86B02B47B04CB284EE80BAD91A6C009CF408644D, Dictionary_2_Add_mF7DB8888AAF18DB837B0FF031B42893D98319332_RuntimeMethod_var);
 		// timerStopped = true;
-		__this->___timerStopped_12 = (bool)1;
+		__this->___timerStopped_13 = (bool)1;
 		// timeHasBeenReset = false;
-		__this->___timeHasBeenReset_13 = (bool)0;
+		__this->___timeHasBeenReset_14 = (bool)0;
 		// resetSeconds = 1f;
-		__this->___resetSeconds_14 = (1.0f);
+		__this->___resetSeconds_15 = (1.0f);
 		// ResetTimer();//to start whenever it opens
 		Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA12765772FD58624827(__this, NULL);
 		// handleForReset.ResetAll();
-		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_3 = __this->___handleForReset_15;
+		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_3 = __this->___handleForReset_16;
 		NullCheck(L_3);
 		TrackHandle_ResetAll_m630B3AACAF41DE41A100620D504D9A212B8E588C(L_3, NULL);
 		// }
@@ -16717,7 +16717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Update_m3AC30EFD54E8E1010F6E601AE1
 	Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20* G_B4_1 = NULL;
 	{
 		// if(!timerStopped)
-		bool L_0 = __this->___timerStopped_12;
+		bool L_0 = __this->___timerStopped_13;
 		if (L_0)
 		{
 			goto IL_0042;
@@ -16725,7 +16725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Update_m3AC30EFD54E8E1010F6E601AE1
 	}
 	{
 		// currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
-		bool L_1 = __this->___countDown_6;
+		bool L_1 = __this->___countDown_7;
 		G_B2_0 = __this;
 		if (L_1)
 		{
@@ -16734,12 +16734,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Update_m3AC30EFD54E8E1010F6E601AE1
 		}
 	}
 	{
-		float L_2 = __this->___currentTime_5;
+		float L_2 = __this->___currentTime_6;
 		float L_3;
 		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_4 = ((float)il2cpp_codegen_add(L_2, L_3));
 		V_0 = L_4;
-		__this->___currentTime_5 = L_4;
+		__this->___currentTime_6 = L_4;
 		float L_5 = V_0;
 		G_B4_0 = L_5;
 		G_B4_1 = G_B2_0;
@@ -16748,12 +16748,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Update_m3AC30EFD54E8E1010F6E601AE1
 
 IL_0028:
 	{
-		float L_6 = __this->___currentTime_5;
+		float L_6 = __this->___currentTime_6;
 		float L_7;
 		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_8 = ((float)il2cpp_codegen_subtract(L_6, L_7));
 		V_0 = L_8;
-		__this->___currentTime_5 = L_8;
+		__this->___currentTime_6 = L_8;
 		float L_9 = V_0;
 		G_B4_0 = L_9;
 		G_B4_1 = G_B3_0;
@@ -16762,13 +16762,13 @@ IL_0028:
 IL_003d:
 	{
 		NullCheck(G_B4_1);
-		G_B4_1->___currentTime_5 = G_B4_0;
+		G_B4_1->___currentTime_6 = G_B4_0;
 	}
 
 IL_0042:
 	{
 		// if(timeHasBeenReset)
-		bool L_10 = __this->___timeHasBeenReset_13;
+		bool L_10 = __this->___timeHasBeenReset_14;
 		if (!L_10)
 		{
 			goto IL_0084;
@@ -16776,7 +16776,7 @@ IL_0042:
 	}
 	{
 		// if(resetSeconds < 0)
-		float L_11 = __this->___resetSeconds_14;
+		float L_11 = __this->___resetSeconds_15;
 		if ((!(((float)L_11) < ((float)(0.0f)))))
 		{
 			goto IL_0072;
@@ -16784,42 +16784,42 @@ IL_0042:
 	}
 	{
 		// timeHasBeenReset = false;
-		__this->___timeHasBeenReset_13 = (bool)0;
+		__this->___timeHasBeenReset_14 = (bool)0;
 		// timerStopped = false;
-		__this->___timerStopped_12 = (bool)0;
+		__this->___timerStopped_13 = (bool)0;
 		// resetSeconds = 5f;
-		__this->___resetSeconds_14 = (5.0f);
+		__this->___resetSeconds_15 = (5.0f);
 		goto IL_0084;
 	}
 
 IL_0072:
 	{
 		// resetSeconds -= Time.deltaTime;
-		float L_12 = __this->___resetSeconds_14;
+		float L_12 = __this->___resetSeconds_15;
 		float L_13;
 		L_13 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___resetSeconds_14 = ((float)il2cpp_codegen_subtract(L_12, L_13));
+		__this->___resetSeconds_15 = ((float)il2cpp_codegen_subtract(L_12, L_13));
 	}
 
 IL_0084:
 	{
 		// if (hasLimit && ((countDown && (currentTime<=timerLimit))|| (!countDown && (currentTime >= timerLimit))))
-		bool L_14 = __this->___hasLimit_7;
+		bool L_14 = __this->___hasLimit_8;
 		if (!L_14)
 		{
 			goto IL_00ed;
 		}
 	}
 	{
-		bool L_15 = __this->___countDown_6;
+		bool L_15 = __this->___countDown_7;
 		if (!L_15)
 		{
 			goto IL_00a2;
 		}
 	}
 	{
-		float L_16 = __this->___currentTime_5;
-		float L_17 = __this->___timerLimit_8;
+		float L_16 = __this->___currentTime_6;
+		float L_17 = __this->___timerLimit_9;
 		if ((((float)L_16) <= ((float)L_17)))
 		{
 			goto IL_00b8;
@@ -16828,15 +16828,15 @@ IL_0084:
 
 IL_00a2:
 	{
-		bool L_18 = __this->___countDown_6;
+		bool L_18 = __this->___countDown_7;
 		if (L_18)
 		{
 			goto IL_00ed;
 		}
 	}
 	{
-		float L_19 = __this->___currentTime_5;
-		float L_20 = __this->___timerLimit_8;
+		float L_19 = __this->___currentTime_6;
+		float L_20 = __this->___timerLimit_9;
 		if ((!(((float)L_19) >= ((float)L_20))))
 		{
 			goto IL_00ed;
@@ -16846,8 +16846,8 @@ IL_00a2:
 IL_00b8:
 	{
 		// currentTime = timerLimit;
-		float L_21 = __this->___timerLimit_8;
-		__this->___currentTime_5 = L_21;
+		float L_21 = __this->___timerLimit_9;
+		__this->___currentTime_6 = L_21;
 		// SetTimerText();
 		Timer_SetTimerText_m56A6D032D7D3135F52927C1F8DAEB0EA9420A73F(__this, NULL);
 		// timerText.color = Color.red;
@@ -16859,7 +16859,7 @@ IL_00b8:
 		// enabled = false;
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
 		// handleForReset.enabled = false;
-		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_24 = __this->___handleForReset_15;
+		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_24 = __this->___handleForReset_16;
 		NullCheck(L_24);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_24, (bool)0, NULL);
 	}
@@ -16888,7 +16888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_SetTimerText_m56A6D032D7D3135F5292
 	{
 		// timerText.text = hasFormat ? currentTime.ToString(timeformats[format]) : TimeDisplay(currentTime);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___timerText_4;
-		bool L_1 = __this->___hasFormat_9;
+		bool L_1 = __this->___hasFormat_10;
 		G_B1_0 = L_0;
 		if (L_1)
 		{
@@ -16897,7 +16897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_SetTimerText_m56A6D032D7D3135F5292
 		}
 	}
 	{
-		float L_2 = __this->___currentTime_5;
+		float L_2 = __this->___currentTime_6;
 		String_t* L_3;
 		L_3 = Timer_TimeDisplay_m4B67773B831506C0124844BFAD85C341659F49F7(__this, L_2, NULL);
 		G_B3_0 = L_3;
@@ -16907,9 +16907,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_SetTimerText_m56A6D032D7D3135F5292
 
 IL_001c:
 	{
-		float* L_4 = (&__this->___currentTime_5);
-		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_5 = __this->___timeformats_11;
-		int32_t L_6 = __this->___format_10;
+		float* L_4 = (&__this->___currentTime_6);
+		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_5 = __this->___timeformats_12;
+		int32_t L_6 = __this->___format_11;
 		NullCheck(L_5);
 		String_t* L_7;
 		L_7 = Dictionary_2_get_Item_m176207973466438B618FD75A9BEBF47F996892BD(L_5, L_6, Dictionary_2_get_Item_m176207973466438B618FD75A9BEBF47F996892BD_RuntimeMethod_var);
@@ -16968,7 +16968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_stopTimer_mA0EAC4FE86E5A8913464414
 {
 	{
 		// timerStopped = true;
-		__this->___timerStopped_12 = (bool)1;
+		__this->___timerStopped_13 = (bool)1;
 		// }
 		return;
 	}
@@ -16978,7 +16978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_startTimer_mED570665F53405328CE307
 {
 	{
 		// timerStopped = false;
-		__this->___timerStopped_12 = (bool)0;
+		__this->___timerStopped_13 = (bool)0;
 		// }
 		return;
 	}
@@ -16990,27 +16990,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_ResetTimer_mCA50A5937DE4ED16CB1EFA
 		// enabled = true;
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)1, NULL);
 		// currentTime = 0;
-		__this->___currentTime_5 = (0.0f);
+		__this->___currentTime_6 = (0.0f);
 		// SetTimerText();
 		Timer_SetTimerText_m56A6D032D7D3135F52927C1F8DAEB0EA9420A73F(__this, NULL);
-		// timerText.color = Color.green;
+		// timerText.color = colorReferenceText.color;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___timerText_4;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
-		L_1 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_1 = __this->___colorReferenceText_5;
+		NullCheck(L_1);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
+		L_2 = VirtualFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, L_1);
 		NullCheck(L_0);
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_1);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_0, L_2);
 		// timerStopped = true;
-		__this->___timerStopped_12 = (bool)1;
+		__this->___timerStopped_13 = (bool)1;
 		// timeHasBeenReset = true;
-		__this->___timeHasBeenReset_13 = (bool)1;
+		__this->___timeHasBeenReset_14 = (bool)1;
 		// handleForReset.enabled = true;
-		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_2 = __this->___handleForReset_15;
-		NullCheck(L_2);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_2, (bool)1, NULL);
-		// handleForReset.ResetAll();
-		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_3 = __this->___handleForReset_15;
+		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_3 = __this->___handleForReset_16;
 		NullCheck(L_3);
-		TrackHandle_ResetAll_m630B3AACAF41DE41A100620D504D9A212B8E588C(L_3, NULL);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_3, (bool)1, NULL);
+		// handleForReset.ResetAll();
+		TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* L_4 = __this->___handleForReset_16;
+		NullCheck(L_4);
+		TrackHandle_ResetAll_m630B3AACAF41DE41A100620D504D9A212B8E588C(L_4, NULL);
 		// }
 		return;
 	}
@@ -17030,8 +17032,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_m5FF13F1DAD0527F97E229A1904A
 		Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* L_0 = (Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B*)il2cpp_codegen_object_new(Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Dictionary_2__ctor_mC1B17B735B25D9813B06A0115B766EED15B2FD35(L_0, Dictionary_2__ctor_mC1B17B735B25D9813B06A0115B766EED15B2FD35_RuntimeMethod_var);
-		__this->___timeformats_11 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___timeformats_11), (void*)L_0);
+		__this->___timeformats_12 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___timeformats_12), (void*)L_0);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -28668,24 +28670,6 @@ IL_000c:
 	{
 		int32_t L_2 = V_0;
 		return L_2;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) 
-{
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
-		memset((&L_0), 0, sizeof(L_0));
-		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (0.0f), (1.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
-		return L_1;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) 

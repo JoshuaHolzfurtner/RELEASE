@@ -7,6 +7,8 @@ public class Timer : MonoBehaviour
 {
     [Header("Component")] 
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI colorReferenceText;
+
     [Header("TimerSettings")]
     public float currentTime;
     public bool countDown;
@@ -108,7 +110,7 @@ public class Timer : MonoBehaviour
         enabled = true;
         currentTime = 0;
         SetTimerText();
-        timerText.color = Color.green;
+        timerText.color = colorReferenceText.color;
         timerStopped = true;
         timeHasBeenReset = true;
         handleForReset.enabled = true;

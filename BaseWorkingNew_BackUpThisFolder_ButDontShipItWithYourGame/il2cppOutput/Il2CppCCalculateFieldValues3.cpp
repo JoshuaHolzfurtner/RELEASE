@@ -30759,28 +30759,30 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 {
 	// TMPro.TextMeshProUGUI Timer::timerText
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText_4;
+	// TMPro.TextMeshProUGUI Timer::colorReferenceText
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___colorReferenceText_5;
 	// System.Single Timer::currentTime
-	float ___currentTime_5;
+	float ___currentTime_6;
 	// System.Boolean Timer::countDown
-	bool ___countDown_6;
+	bool ___countDown_7;
 	// System.Boolean Timer::hasLimit
-	bool ___hasLimit_7;
+	bool ___hasLimit_8;
 	// System.Single Timer::timerLimit
-	float ___timerLimit_8;
+	float ___timerLimit_9;
 	// System.Boolean Timer::hasFormat
-	bool ___hasFormat_9;
+	bool ___hasFormat_10;
 	// Timer/TimerFormats Timer::format
-	int32_t ___format_10;
+	int32_t ___format_11;
 	// System.Collections.Generic.Dictionary`2<Timer/TimerFormats,System.String> Timer::timeformats
-	Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* ___timeformats_11;
+	Dictionary_2_tAC3BEAD49355286FB8738567E8BD8B158F32653B* ___timeformats_12;
 	// System.Boolean Timer::timerStopped
-	bool ___timerStopped_12;
+	bool ___timerStopped_13;
 	// System.Boolean Timer::timeHasBeenReset
-	bool ___timeHasBeenReset_13;
+	bool ___timeHasBeenReset_14;
 	// System.Single Timer::resetSeconds
-	float ___resetSeconds_14;
+	float ___resetSeconds_15;
 	// TrackHandle Timer::handleForReset
-	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_15;
+	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_16;
 };
 
 // Oculus.Voice.Demo.BuiltInDemo.TimerController
@@ -33106,9 +33108,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9172[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9173[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9174[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9174[13] = 
 {
-	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerText_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___countDown_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasLimit_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerLimit_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasFormat_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___format_10)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeformats_11)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerStopped_12)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeHasBeenReset_13)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___resetSeconds_14)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___handleForReset_15)),};
+	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerText_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___colorReferenceText_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___countDown_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasLimit_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerLimit_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasFormat_10)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___format_11)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeformats_12)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerStopped_13)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeHasBeenReset_14)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___resetSeconds_15)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___handleForReset_16)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9175[4] = 
 {
 	static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distance_4)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseOne_5)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseTwo_6)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distanceText_7)),};
