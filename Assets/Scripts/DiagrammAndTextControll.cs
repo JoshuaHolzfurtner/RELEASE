@@ -10,7 +10,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     public GameObject thisTutorialVariant;
     public GameObject nextMenu;
     public DisplayDryExercises dryExerciseController;
-
+    public PlayerSounds speechesSounds;
     public int startCatchDry;
     public int startDriveDry;
     public int startFinishDry;
@@ -52,6 +52,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     {
         counterText = 1;
         tutorialText.text = textsExplainRow[1];
+        speechesSounds.footStep(counterText);
         charPics[0].SetActive(true);
         ChangePicMan();
         CheckDiagramms(counterText);
@@ -78,6 +79,7 @@ public class DiagrammAndTextControll : MonoBehaviour
         counterText++;
         CheckDryExercise(counterText);
         CheckDiagramms(counterText);
+        speechesSounds.footStep(counterText);
         tutorialText.text = textsExplainRow[counterText];
         pageIndexText.text = counterText.ToString();
 
@@ -97,6 +99,7 @@ public class DiagrammAndTextControll : MonoBehaviour
     {
         ChangePicMan();
         counterText--;
+        speechesSounds.footStep(counterText);
         CheckDryExercise(counterText);
         CheckDiagrammsBackwards(counterText);
         tutorialText.text = textsExplainRow[counterText];
