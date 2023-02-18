@@ -9,7 +9,8 @@ public class seatWaterrower : MonoBehaviour
 
     void Update()
     {
-        transform.localPosition = new Vector3 (goalMatchUp.localPosition.x + offsetX, transform.localPosition.y, transform.localPosition.z);
+        //transform.localPosition = new Vector3 (goalMatchUp.localPosition.x + offsetX, transform.localPosition.y, transform.localPosition.z);
+        transform.position = new Vector3(goalMatchUp.position.x + offsetX, transform.position.y, transform.position.z);
         
     }
 }
