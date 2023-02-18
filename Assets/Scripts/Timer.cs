@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     [Header("Component")] 
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI colorReferenceText;
-
+    public PlayerSounds sounds;
     [Header("TimerSettings")]
     public float currentTime;
     public bool countDown;
@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
     public bool timeHasBeenReset;
     public float resetSeconds;
     public TrackHandle handleForReset;
+    public float startTime;
     
     void Start()
     {
@@ -71,6 +72,7 @@ public class Timer : MonoBehaviour
             timerText.color = Color.red;
             enabled = false;
             handleForReset.enabled = false;
+            sounds.footStep(0);
         }
         SetTimerText();
     }
@@ -108,7 +110,7 @@ public class Timer : MonoBehaviour
     public void ResetTimer()
     {
         enabled = true;
-        currentTime = 0;
+        currentTime = startTime;
         SetTimerText();
         timerText.color = colorReferenceText.color;
         timerStopped = true;
