@@ -588,6 +588,8 @@ struct ScaleFromAudioClip_t0D226F7F6C2178137C6C892FA561AD4D769F3C40;
 struct ScaleFromMicrophone_t635C1DF2ACBF6C70FDEC434EFCB98B3A1D4F2129;
 // SceneSettings
 struct SceneSettings_t8E60BC1E6E0851E2337C71A0B8461D328BEDB577;
+// SeatPlayer
+struct SeatPlayer_tF6F64B4D13578583830B5B6461165E7A3A18F7F7;
 // UnityEngine.UI.Selectable
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 // System.Runtime.Serialization.SerializationInfo
@@ -4624,6 +4626,21 @@ struct SceneSettings_t8E60BC1E6E0851E2337C71A0B8461D328BEDB577  : public MonoBeh
 	float ___m_gravityScalar_5;
 	// System.Single SceneSettings::m_defaultContactOffset
 	float ___m_defaultContactOffset_6;
+};
+
+// SeatPlayer
+struct SeatPlayer_tF6F64B4D13578583830B5B6461165E7A3A18F7F7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Transform SeatPlayer::goalMatchUp
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___goalMatchUp_4;
+	// System.Single SeatPlayer::offsetZ
+	float ___offsetZ_5;
+	// System.Single SeatPlayer::maxZ
+	float ___maxZ_6;
+	// System.Single SeatPlayer::minZ
+	float ___minZ_7;
+	// TMPro.TextMeshProUGUI SeatPlayer::debug
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___debug_8;
 };
 
 // SpatialAnchorLoader
@@ -18030,6 +18047,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdtMv_Update_mB4B5015F900A5FD277276327B
 }
 // System.Void UpdtMv::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdtMv__ctor_mEBD682C695261BD9FC098BB7DA7D2144E41A08FC (UpdtMv_t7B0443C837F7F8DB734F13D98F0572BF4540FB67* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SeatPlayer::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SeatPlayer_Update_m0DBB46FA10B511F2F2ED36F09E91C453DA3B3BD6 (SeatPlayer_tF6F64B4D13578583830B5B6461165E7A3A18F7F7* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		// debug.text = (goalMatchUp.position.z + offsetZ).ToString();
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___debug_8;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___goalMatchUp_4;
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		float L_3 = L_2.___z_4;
+		float L_4 = __this->___offsetZ_5;
+		V_0 = ((float)il2cpp_codegen_add(L_3, L_4));
+		String_t* L_5;
+		L_5 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_0), NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_0, L_5);
+		// transform.position = new Vector3(transform.position.x, transform.position.y, goalMatchUp.position.z + offsetZ);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
+		float L_9 = L_8.___x_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
+		float L_12 = L_11.___y_3;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = __this->___goalMatchUp_4;
+		NullCheck(L_13);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_13, NULL);
+		float L_15 = L_14.___z_4;
+		float L_16 = __this->___offsetZ_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		memset((&L_17), 0, sizeof(L_17));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_17), L_9, L_12, ((float)il2cpp_codegen_add(L_15, L_16)), /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_6, L_17, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SeatPlayer::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SeatPlayer__ctor_m0F206C6E14E2071A6CFF7CEC626762611C65A494 (SeatPlayer_tF6F64B4D13578583830B5B6461165E7A3A18F7F7* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);

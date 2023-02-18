@@ -171,7 +171,7 @@ public class TrackHandle : MonoBehaviour
         if ((currentZ < farthestBackZ) && (direction == true))
         {
             farthestBackZ = currentZ;
-            intensityText.text = farthestBackZ.ToString();
+            //intensityText.text = farthestBackZ.ToString();
 
             //New
             if(heightHeadCatch < headPlayer.position.y)
