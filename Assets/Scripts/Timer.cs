@@ -22,7 +22,9 @@ public class Timer : MonoBehaviour
     public bool timeHasBeenReset;
     public float resetSeconds;
     public TrackHandle handleForReset;
-    
+    public PlayerSounds soundEffects;
+    //private Color startColor = new Color(0.5294118f, 0.8313726f, 4431373f); //so you can reset the color;
+
     void Start()
     {
         timeformats.Add(TimerFormats.Whole, "0");
@@ -34,6 +36,8 @@ public class Timer : MonoBehaviour
         ResetTimer();//to start whenever it opens
         handleForReset.ResetAll();
         
+
+
     }
 
     // Update is called once per frame
@@ -66,9 +70,10 @@ public class Timer : MonoBehaviour
         {
             currentTime = timerLimit;
             SetTimerText();
-            timerText.color = Color.red;
+            //timerText.color = Color.red;
             enabled = false;
             handleForReset.enabled = false;
+            soundEffects.footStep(0);
         }
         SetTimerText();
     }
@@ -108,7 +113,7 @@ public class Timer : MonoBehaviour
         enabled = true;
         currentTime = 0;
         SetTimerText();
-        timerText.color = Color.green;
+        //timerText.color = startColor;
         timerStopped = true;
         timeHasBeenReset = true;
         handleForReset.enabled = true;
