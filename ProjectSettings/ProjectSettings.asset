@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Joshua Holzfurtner
-  productName: Catch, Drive, Finish Release
+  productName: Catch, Drive, Finish and Release
   defaultCursor: {fileID: 2800000, guid: dd7ca25baa93645008ed3637bf127ba7, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.5849056, g: 0.58214664, b: 0.5828364, a: 1}
@@ -140,7 +140,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 4.3
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.JoshuaHolzfurtner.CatchDriveFinishRelease
+    Android: com.JoshuaHolzfurtner.CatchDriveFinishandRelease
     Standalone: com.DefaultCompany.base
   buildNumber:
     Standalone: 0
