@@ -13,7 +13,7 @@ public class HandleUpAndBack : MonoBehaviour
     {
         //# transform.localPosition = new Vector3 (goalMatchUp.localPosition.x + offsetX, transform.localPosition.y, transform.localPosition.z);
         transform.position = new Vector3(goalMatchUp.position.x + offsetX, goalMatchUp.position.y+ offsetY, goalMatchUp.position.z + +offsetZ);
-        transform.rotation = new Quaternion(goalMatchUp.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w);
+        //transform.rotation = new Quaternion(goalMatchUp.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w);
     }
 }
 

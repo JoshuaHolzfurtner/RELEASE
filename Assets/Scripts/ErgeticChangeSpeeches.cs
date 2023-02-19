@@ -38,7 +38,9 @@ public class ErgeticChangeSpeeches : MonoBehaviour
     public int startFinishDry;
     public int startFullStrokeDry;
 
-
+    public GameObject diagrammsCatch;
+    public GameObject diagrammsDrive;
+    public GameObject diagrammsFinish;
 
 
 
@@ -74,6 +76,9 @@ public class ErgeticChangeSpeeches : MonoBehaviour
             animRower.AnimateFullStroke();
             phaseText.text = "What are the Phases?";
             handleGrip.SetActive(false);
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
 
 
 
@@ -82,23 +87,35 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         {
             animRower.AnimateCatch();
             phaseText.text = "CATCH";
+            diagrammsCatch.SetActive(true);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
         }
         else if (scriptCounterAnim == indexDrive)
         {
             animRower.AnimateDrive();
             phaseText.text = "Drive";
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(true);
+            diagrammsFinish.SetActive(false);
 
         }
         else if (scriptCounterAnim == indexFinish)
         {
             animRower.AnimateFinish();
             phaseText.text = "Finish";
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(true);
 
         }
         else if (scriptCounterAnim == indexFullStroke)
         {
             animRower.AnimateFullStroke();
             phaseText.text = "Full Stroke";
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
 
         }
         else if (scriptCounterAnim == lastIndexSpeeches)
@@ -121,7 +138,7 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         pageIndexText.text = scriptCounterAnim.ToString();
 
         CheckDryExercise(scriptCounterAnim);
-
+        
         //animTrainer.SetInteger("CurrentAnimation", scriptCounterAnim);
         
         if ((scriptCounterAnim+1) == indexHandle)
@@ -142,23 +159,35 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         {
             animRower.AnimateFullStroke();
             phaseText.text = "Rowing Phases";
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
         }
         else if ((scriptCounterAnim+1) == indexDrive)
         {
             animRower.AnimateCatch();
             phaseText.text = "Catch";
+            diagrammsCatch.SetActive(true);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
 
         }
         else if ((scriptCounterAnim+1) == indexFinish)
         {
             animRower.AnimateDrive();
             phaseText.text = "Drive";
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(true);
+            diagrammsFinish.SetActive(false);
 
         }
         else if ((scriptCounterAnim+1) == indexFullStroke)
         {
             animRower.AnimateFinish();
             phaseText.text = "Finish";
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(true);
 
         }
         
@@ -205,5 +234,71 @@ public class ErgeticChangeSpeeches : MonoBehaviour
         scriptCounterSpeech--;
         animTrainer.SetInteger("index", scriptCounterSpeech);
         backAnim();
+    }
+    public void CheckDiagramms(int index)
+    {
+        if (index == indexCatch)
+        {
+            
+            diagrammsCatch.SetActive(true);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+        }
+        else if (index == indexDrive)
+        {
+            
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(true);
+            diagrammsFinish.SetActive(false);
+        }
+        else if (index == indexFinish)
+        {
+            
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(true);
+        }
+        else if (index == indexFullStroke)
+        {
+            
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+        }
+    }
+
+    public void CheckDiagrammsBackwards(int index)
+    {
+        if (index == (indexCatch - 1))
+        {
+            
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            
+        }
+        else if (index == (indexDrive - 1))
+        {
+            
+            diagrammsCatch.SetActive(true);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(false);
+            
+        }
+        else if (index == (indexFinish - 1))
+        {
+            
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(true);
+            diagrammsFinish.SetActive(false);
+        }
+        else if (index == (indexFullStroke - 1))
+        {
+            
+            diagrammsCatch.SetActive(false);
+            diagrammsDrive.SetActive(false);
+            diagrammsFinish.SetActive(true);
+            
+        }
     }
 }

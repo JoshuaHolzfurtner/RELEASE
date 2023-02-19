@@ -25,7 +25,13 @@ public class Timer : MonoBehaviour
     public float resetSeconds;
     public TrackHandle handleForReset;
     public float startTime;
-    
+
+
+    private void OnEnable()
+    {
+        sounds.footStep(1);
+    }
+
     void Start()
     {
         timeformats.Add(TimerFormats.Whole, "0");
