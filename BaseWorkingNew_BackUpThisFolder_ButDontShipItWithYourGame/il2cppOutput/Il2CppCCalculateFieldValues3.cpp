@@ -30795,6 +30795,10 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_17;
 	// System.Single Timer::startTime
 	float ___startTime_18;
+	// UnityEngine.GameObject Timer::resetButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___resetButton_19;
+	// UnityEngine.GameObject Timer::pauseButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pauseButton_20;
 };
 
 // Oculus.Voice.Demo.BuiltInDemo.TimerController
@@ -33120,9 +33124,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9172[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9173[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9174[15] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9174[17] = 
 {
-	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerText_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___colorReferenceText_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___sounds_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___countDown_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasLimit_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerLimit_10)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasFormat_11)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___format_12)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeformats_13)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerStopped_14)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeHasBeenReset_15)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___resetSeconds_16)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___handleForReset_17)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___startTime_18)),};
+	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerText_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___colorReferenceText_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___sounds_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___countDown_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasLimit_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerLimit_10)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___hasFormat_11)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___format_12)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeformats_13)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timerStopped_14)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeHasBeenReset_15)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___resetSeconds_16)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___handleForReset_17)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___startTime_18)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___resetButton_19)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___pauseButton_20)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9175[4] = 
 {
 	static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distance_4)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseOne_5)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___baseTwo_6)),static_cast<int32_t>(offsetof(TrackDistance_tB57E33B7D126907EA5F01696A0C75CA6C81B3012, ___distanceText_7)),};

@@ -4780,6 +4780,10 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	TrackHandle_t001EEFDCA83573C0EBDFAB0D833725CC7510588F* ___handleForReset_17;
 	// System.Single Timer::startTime
 	float ___startTime_18;
+	// UnityEngine.GameObject Timer::resetButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___resetButton_19;
+	// UnityEngine.GameObject Timer::pauseButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pauseButton_20;
 };
 
 // TrackDistance
@@ -17019,6 +17023,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_OnEnable_m8D6A1454A133DFFEDEFC76E1
 		PlayerSounds_tDA381A299938882ADBB577C7D052D0F15295A81D* L_0 = __this->___sounds_6;
 		NullCheck(L_0);
 		PlayerSounds_footStep_mD0B63CFE352FDF68B0453C9A6C52A506E9FDF669(L_0, 1, NULL);
+		// resetButton.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___resetButton_19;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// pauseButton.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___pauseButton_20;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
 		// }
 		return;
 	}

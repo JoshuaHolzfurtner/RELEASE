@@ -26,10 +26,15 @@ public class Timer : MonoBehaviour
     public TrackHandle handleForReset;
     public float startTime;
 
+    public GameObject resetButton;
+    public GameObject pauseButton;
+
 
     private void OnEnable()
     {
         sounds.footStep(1);
+        resetButton.SetActive(true);
+        pauseButton.SetActive(true);
     }
 
     void Start()
