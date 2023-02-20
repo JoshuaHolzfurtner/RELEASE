@@ -28,6 +28,8 @@ public class Timer : MonoBehaviour
 
     public GameObject resetButton;
     public GameObject pauseButton;
+    public GameObject musicOnButton;
+
 
 
     private void OnEnable()
@@ -35,6 +37,8 @@ public class Timer : MonoBehaviour
         sounds.footStep(1);
         resetButton.SetActive(true);
         pauseButton.SetActive(true);
+        musicOnButton.SetActive(true);
+
     }
 
     void Start()
