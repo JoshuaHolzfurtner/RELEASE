@@ -105,6 +105,8 @@ struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
 // System.Action`2<OVRSpatialAnchor/UnboundAnchor,System.Boolean>
 struct Action_2_t979AFF408DA299E0AA292FEEB3C2633BBD5B4EBD;
+// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,OVRPassthroughLayer/PassthroughMeshInstance>
+struct Dictionary_2_t227ED0E55120DCFEBEF612A08C2B742657B0F7E2;
 // System.Collections.Generic.Dictionary`2<System.Guid,OVRSpatialAnchor>
 struct Dictionary_2_t61E5EC5D807EB182F05CC4BB8EE1CC3E0288F240;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
@@ -199,6 +201,10 @@ struct List_1_t961B63350603C7ECDDDCD6793D2157F9BE734EEA;
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 // System.Collections.Generic.List`1<UnityEngine.RectTransform>
 struct List_1_t5ED555E220A2C0CA4F1CC393401AF0D7BA5B456B;
+// System.Collections.Generic.List`1<OVRPassthroughLayer/DeferredPassthroughMeshAddition>
+struct List_1_tE96A44A704D2D0F763BBB5A6DA3B61D6F4322B3D;
+// System.Collections.Generic.List`1<OVRPassthroughLayer/SerializedSurfaceGeometry>
+struct List_1_t830A660DD58A1951A3E35A48C5E65AFB7A118FE3;
 // System.Collections.Generic.List`1<OVRSkeletonRenderer/BoneVisualization>
 struct List_1_t2311A8AE9F316BB7FCC8EDA6E7973A3D0323EBE4;
 // System.Collections.Generic.List`1<OVRSkeletonRenderer/CapsuleVisualization>
@@ -247,6 +253,8 @@ struct AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31;
 struct BoneCapsuleTriggerLogicU5BU5D_t64ED5F6F7CC8EC2BCC09E320BEA4964700E8F407;
 // System.Boolean[]
 struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 // System.Char[]
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 // UnityEngine.Collider[]
@@ -429,6 +437,8 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct GrabManager_tFDD6F5108DC387CBC460080257A754833896B753;
 // OculusSampleFramework.GrabbableCrosshair
 struct GrabbableCrosshair_tD64497CB725FFAC3BADD88AA55713B55DEDD28B2;
+// UnityEngine.Gradient
+struct Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E;
 // UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 // GreenLightSound
@@ -515,6 +525,8 @@ struct OVRMesh_t756948B40B5EB9969B164170047E3FAF57DBAE5C;
 struct OVRMeshRenderer_t23CDF8B7FB77C9DE7FE7EE9148DC8589B2FD1A76;
 // OVROverlay
 struct OVROverlay_t236C8597A48845938E1DE1D591224817058AC43D;
+// OVRPassthroughLayer
+struct OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F;
 // OVRSkeleton
 struct OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374;
 // OVRSkeletonRenderer
@@ -645,6 +657,8 @@ struct remoteRowerManipulation_t3C60D8E83442D8D225B9E9097D073194109BE2FC;
 struct rotateOnYAxis_t99AC961ED5B969B4E5278286B296F901EA4CC18B;
 // seatWaterrower
 struct seatWaterrower_tDF732A169F50FA2AE7BDD85979BD6DBE3C579944;
+// waitTillBackport
+struct waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387;
 // AnchorUIManager/PrimaryPressDelegate
 struct PrimaryPressDelegate_tED364AEF243F75F45C071DA3E1B596D16F2C9123;
 // UnityEngine.AudioClip/PCMReaderCallback
@@ -2653,6 +2667,13 @@ struct Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8_StaticFields
 	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___uninitialized_1;
 };
 
+// System.Runtime.InteropServices.GCHandle
+struct GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC 
+{
+	// System.IntPtr System.Runtime.InteropServices.GCHandle::handle
+	intptr_t ___handle_0;
+};
+
 // TMPro.HighlightState
 struct HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B 
 {
@@ -4179,6 +4200,83 @@ struct OVRMeshRenderer_t23CDF8B7FB77C9DE7FE7EE9148DC8589B2FD1A76  : public MonoB
 	bool ___U3CShouldUseSystemGestureMaterialU3Ek__BackingField_15;
 };
 
+// OVRPassthroughLayer
+struct OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// OVRPassthroughLayer/ProjectionSurfaceType OVRPassthroughLayer::projectionSurfaceType
+	int32_t ___projectionSurfaceType_4;
+	// OVROverlay/OverlayType OVRPassthroughLayer::overlayType
+	int32_t ___overlayType_5;
+	// System.Int32 OVRPassthroughLayer::compositionDepth
+	int32_t ___compositionDepth_6;
+	// System.Boolean OVRPassthroughLayer::hidden
+	bool ___hidden_7;
+	// System.Boolean OVRPassthroughLayer::overridePerLayerColorScaleAndOffset
+	bool ___overridePerLayerColorScaleAndOffset_8;
+	// UnityEngine.Vector4 OVRPassthroughLayer::colorScale
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___colorScale_9;
+	// UnityEngine.Vector4 OVRPassthroughLayer::colorOffset
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___colorOffset_10;
+	// OVRPassthroughLayer/ColorMapEditorType OVRPassthroughLayer::colorMapEditorType_
+	int32_t ___colorMapEditorType__11;
+	// UnityEngine.Gradient OVRPassthroughLayer::colorMapEditorGradient
+	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___colorMapEditorGradient_12;
+	// UnityEngine.Gradient OVRPassthroughLayer::colorMapEditorGradientOld
+	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___colorMapEditorGradientOld_13;
+	// System.Single OVRPassthroughLayer::colorMapEditorContrast
+	float ___colorMapEditorContrast_14;
+	// System.Single OVRPassthroughLayer::colorMapEditorContrast_
+	float ___colorMapEditorContrast__15;
+	// System.Single OVRPassthroughLayer::colorMapEditorBrightness
+	float ___colorMapEditorBrightness_16;
+	// System.Single OVRPassthroughLayer::colorMapEditorBrightness_
+	float ___colorMapEditorBrightness__17;
+	// System.Single OVRPassthroughLayer::colorMapEditorPosterize
+	float ___colorMapEditorPosterize_18;
+	// System.Single OVRPassthroughLayer::colorMapEditorPosterize_
+	float ___colorMapEditorPosterize__19;
+	// System.Single OVRPassthroughLayer::colorMapEditorSaturation
+	float ___colorMapEditorSaturation_20;
+	// System.Single OVRPassthroughLayer::colorMapEditorSaturation_
+	float ___colorMapEditorSaturation__21;
+	// OVRCameraRig OVRPassthroughLayer::cameraRig
+	OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* ___cameraRig_22;
+	// System.Boolean OVRPassthroughLayer::cameraRigInitialized
+	bool ___cameraRigInitialized_23;
+	// UnityEngine.GameObject OVRPassthroughLayer::auxGameObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___auxGameObject_24;
+	// OVROverlay OVRPassthroughLayer::passthroughOverlay
+	OVROverlay_t236C8597A48845938E1DE1D591224817058AC43D* ___passthroughOverlay_25;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,OVRPassthroughLayer/PassthroughMeshInstance> OVRPassthroughLayer::surfaceGameObjects
+	Dictionary_2_t227ED0E55120DCFEBEF612A08C2B742657B0F7E2* ___surfaceGameObjects_26;
+	// System.Collections.Generic.List`1<OVRPassthroughLayer/DeferredPassthroughMeshAddition> OVRPassthroughLayer::deferredSurfaceGameObjects
+	List_1_tE96A44A704D2D0F763BBB5A6DA3B61D6F4322B3D* ___deferredSurfaceGameObjects_27;
+	// System.Collections.Generic.List`1<OVRPassthroughLayer/SerializedSurfaceGeometry> OVRPassthroughLayer::serializedSurfaceGeometry
+	List_1_t830A660DD58A1951A3E35A48C5E65AFB7A118FE3* ___serializedSurfaceGeometry_28;
+	// System.Single OVRPassthroughLayer::textureOpacity_
+	float ___textureOpacity__29;
+	// System.Boolean OVRPassthroughLayer::edgeRenderingEnabled_
+	bool ___edgeRenderingEnabled__30;
+	// UnityEngine.Color OVRPassthroughLayer::edgeColor_
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___edgeColor__31;
+	// OVRPlugin/InsightPassthroughColorMapType OVRPassthroughLayer::colorMapType
+	int32_t ___colorMapType_32;
+	// System.Byte[] OVRPassthroughLayer::colorMapData
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___colorMapData_33;
+	// System.Byte[] OVRPassthroughLayer::tmpColorMapData
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___tmpColorMapData_34;
+	// System.Runtime.InteropServices.GCHandle OVRPassthroughLayer::colorMapDataHandle
+	GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC ___colorMapDataHandle_35;
+	// System.Boolean OVRPassthroughLayer::styleDirty
+	bool ___styleDirty_36;
+};
+
+struct OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F_StaticFields
+{
+	// UnityEngine.Gradient OVRPassthroughLayer::colorMapNeutralGradient
+	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___colorMapNeutralGradient_37;
+};
+
 // OVRSkeleton
 struct OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4938,6 +5036,23 @@ struct seatWaterrower_tDF732A169F50FA2AE7BDD85979BD6DBE3C579944  : public MonoBe
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___goalMatchUp_4;
 	// System.Single seatWaterrower::offsetX
 	float ___offsetX_5;
+};
+
+// waitTillBackport
+struct waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Single waitTillBackport::waitTime
+	float ___waitTime_4;
+	// System.Single waitTillBackport::timeLimit
+	float ___timeLimit_5;
+	// System.Boolean waitTillBackport::isWaiting
+	bool ___isWaiting_6;
+	// TeleportToOther waitTillBackport::forSetBack
+	TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0* ___forSetBack_7;
+	// OVRPassthroughLayer waitTillBackport::toEnable
+	OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F* ___toEnable_8;
+	// UnityEngine.GameObject waitTillBackport::room
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___room_9;
 };
 
 // OculusSampleFramework.ButtonController
@@ -7303,6 +7418,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339 (double* __this, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// System.Void TeleportToOther::startTeleportation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportToOther_startTeleportation_m8CA378A29AEB06CCEFA5F492764004292F15A95C (TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0* __this, const RuntimeMethod* method) ;
 // System.Void OculusSampleFramework.ColorGrabbable::UpdateColor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorGrabbable_UpdateColor_mCE9D7D0D07EFD5755541BA9DAB7E6CB8AA29DE2F (ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121* __this, const RuntimeMethod* method) ;
 // System.Boolean OVRGrabbable::get_isGrabbed()
@@ -18204,6 +18321,106 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SeatPlayer__ctor_m0F206C6E14E2071A6CFF7C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void waitTillBackport::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void waitTillBackport_Start_mFB8FAD3D60E8BF900DDD4790FF93C90D9F4FC503 (waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387* __this, const RuntimeMethod* method) 
+{
+	{
+		// waitTime = 0f;
+		__this->___waitTime_4 = (0.0f);
+		// isWaiting = false;
+		__this->___isWaiting_6 = (bool)0;
+		// }
+		return;
+	}
+}
+// System.Void waitTillBackport::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void waitTillBackport_Update_m9CED91C001A0FC407B1CF758B24184C73609A8D9 (waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387* __this, const RuntimeMethod* method) 
+{
+	{
+		// if(isWaiting)
+		bool L_0 = __this->___isWaiting_6;
+		if (!L_0)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// waitTime += Time.deltaTime;
+		float L_1 = __this->___waitTime_4;
+		float L_2;
+		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___waitTime_4 = ((float)il2cpp_codegen_add(L_1, L_2));
+	}
+
+IL_001a:
+	{
+		// if(waitTime> timeLimit)
+		float L_3 = __this->___waitTime_4;
+		float L_4 = __this->___timeLimit_5;
+		if ((!(((float)L_3) > ((float)L_4))))
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		// forSetBack.startTeleportation();
+		TeleportToOther_tEE6B4965A83467B562E0215ACD4DAD8A501BD3B0* L_5 = __this->___forSetBack_7;
+		NullCheck(L_5);
+		TeleportToOther_startTeleportation_m8CA378A29AEB06CCEFA5F492764004292F15A95C(L_5, NULL);
+		// room.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___room_9;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// toEnable.enabled = true;
+		OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F* L_7 = __this->___toEnable_8;
+		NullCheck(L_7);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_7, (bool)1, NULL);
+	}
+
+IL_004b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void waitTillBackport::wait()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void waitTillBackport_wait_m29485F2F064000BDFDBD4BAF1DE03D50386F644D (waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387* __this, const RuntimeMethod* method) 
+{
+	{
+		// isWaiting = true;
+		__this->___isWaiting_6 = (bool)1;
+		// }
+		return;
+	}
+}
+// System.Void waitTillBackport::Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void waitTillBackport_Reset_mA817AB907C64D9881CD6DA0B418E336662FCF63D (waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387* __this, const RuntimeMethod* method) 
+{
+	{
+		// isWaiting = false;
+		__this->___isWaiting_6 = (bool)0;
+		// waitTime = 0;
+		__this->___waitTime_4 = (0.0f);
+		// }
+		return;
+	}
+}
+// System.Void waitTillBackport::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void waitTillBackport__ctor_m5F31EB196EACDABA7D9FE0D88C652A598673AD3D (waitTillBackport_t462C39F09B8163A87CC9B402CA5D22082D7F3387* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Boolean OculusSampleFramework.ColorGrabbable::get_Highlight()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ColorGrabbable_get_Highlight_m4F58065C790D757D19E29FBFBE43E5CD777C87E0 (ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121* __this, const RuntimeMethod* method) 
 {
@@ -26858,36 +27075,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FingerTipPokeToolView__ctor_m7B5CA4CCC5C
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void OculusSampleFramework.InteractableCollisionInfo::.ctor(OculusSampleFramework.ColliderZone,OculusSampleFramework.InteractableCollisionDepth,OculusSampleFramework.InteractableTool)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableCollisionInfo__ctor_mF048A8CAC8CED3F12917993E39C3DF9B2C459DBD (InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* __this, RuntimeObject* ___collider0, int32_t ___collisionDepth1, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___collidingTool2, const RuntimeMethod* method) 
-{
-	{
-		// public InteractableCollisionInfo(ColliderZone collider, InteractableCollisionDepth collisionDepth,
-		//   InteractableTool collidingTool)
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		// InteractableCollider = collider;
-		RuntimeObject* L_0 = ___collider0;
-		__this->___InteractableCollider_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___InteractableCollider_0), (void*)L_0);
-		// CollisionDepth = collisionDepth;
-		int32_t L_1 = ___collisionDepth1;
-		__this->___CollisionDepth_1 = L_1;
-		// CollidingTool = collidingTool;
-		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_2 = ___collidingTool2;
-		__this->___CollidingTool_2 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___CollidingTool_2), (void*)L_2);
-		// }
 		return;
 	}
 }
