@@ -195,7 +195,6 @@ public class TrackHandle : MonoBehaviour
                 //DebugTextSix.text = "DRIVE-TRUE";
 
                 greenLightDrive.SetActive(true);
-                correctFormCatch = true;
                 
 
             }
@@ -223,7 +222,7 @@ public class TrackHandle : MonoBehaviour
             {
                 //DebugTextSeventeen.text = "armsBack";
                 greenLightFinish.SetActive(true);
-                if(correctFormCatch)
+                if(correctFormCatch)  //all three phases are correct
                 {
                     //DebugTextThirteen.text = "BoTHFORM";
                     greenLightFullStroke.SetActive(true);
